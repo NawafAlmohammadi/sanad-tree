@@ -25,6 +25,8 @@ This design intentionally trades unrestricted phrasing for verifiable answers. R
 
 ## Interface and verification
 
-The opening screen waits for the visitor to select a hadith. Tracing takes 1.7 seconds per step, with a progress indicator, pause/replay controls and reduced-motion support. Interacting with the map pauses automatic scrolling. Arabic and English use bundled IBM Plex Sans Arabic, Noto Naskh Arabic and Source Sans 3 font files; their OFL licences are included in `public/fonts`.
+The opening screen waits for the visitor to select a hadith. Tracing takes 1.7 seconds per step, with a progress indicator, pause/replay controls and reduced-motion support. Interacting with the map pauses automatic scrolling. Arabic uses bundled IBM Plex Sans Arabic and Noto Naskh Arabic; English uses DM Sans for body text and Cormorant Garamond for display headings; their OFL licences are included in `public/fonts`.
 
 Run `npm test`, `npm run check:data` and the relevant type/build checks. Tests cover identity separation, citations, fabricated warnings, source translations, scoped teaching plans, malicious model identifiers, prompt injection and provider failures. These checks verify software behaviour and source bindings; they do not replace a hadith specialist’s review of the underlying scholarly material.
+
+The interface now uses an olive (#4F5B2A), brass (#B8892D) and parchment (#D8C9A8) palette with decorative geometric SVG accents. The top row has one centred library count in each language. Theme colours do not replace narrator-assessment or report-grading colours.
