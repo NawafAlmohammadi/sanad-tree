@@ -1,7 +1,8 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
 import {useLanguage} from './language';
-import {BookOpen,ShieldCheck,CircleHelp,ShieldX,Info,RotateCcw,Pause,Plus,Minus,ExternalLink} from 'lucide-react';
+import {sourceLabel} from '@/lib/reviewed-language.mjs';
+import {BookOpen,ShieldCheck,CircleHelp,ShieldX,Info,RotateCcw,Pause,Plus,Minus} from 'lucide-react';
 import type {Chain,Data,Hadith} from '@/lib/catalog-types';
 import {journeySteps,narratorTone,TRUST_LABELS} from '@/lib/sanad-map.mjs';
 
@@ -23,7 +24,7 @@ export default function SanadMap({data,hadith,chain,selected,onSelect,zoom,onZoo
   },[last]);
   useEffect(()=>{
     if(!playing)return;
-    const timer=window.setTimeout(()=>{if(cursor>=last){setPlaying(false);setFinished(true);}else setCursor(i=>i+1);},1200);
+    const timer=window.setTimeout(()=>{if(cursor>=last){setPlaying(false);setFinished(true);}else setCursor(i=>i+1);},1700);
     return()=>window.clearTimeout(timer);
   },[playing,cursor,last]);
   useEffect(()=>{
@@ -42,9 +43,9 @@ export default function SanadMap({data,hadith,chain,selected,onSelect,zoom,onZoo
   const icons={trusted:ShieldCheck,review:CircleHelp,untrusted:ShieldX,unknown:Info,companion:ShieldCheck,prophet:BookOpen};
   return <>
     <div className="map-legend" aria-label={t("معاني ألوان الرواة")}>
-      <span className="legend-trusted"><ShieldCheck size={14}/> {t("أخضر: موثوق")}</span><span className="legend-review"><CircleHelp size={14}/> {t("أصفر: فيه شك")}</span><span className="legend-untrusted"><ShieldX size={14}/> {t("أحمر: غير ثقة")}</span><span className="legend-unknown">{t("رمادي: لم يسجل حكم")}</span>
+      <span className="legend-trusted"><ShieldCheck size={14}/> {t("أخضر: موثوق")}</span><span className="legend-review"><CircleHelp size={14}/> {t("أصفر: يحتاج مراجعة")}</span><span className="legend-untrusted"><ShieldX size={14}/> {t("أحمر: ضعيف أو متروك")}</span><span className="legend-unknown">{t("رمادي: لم يسجل حكم")}</span>
     </div>
-    <div className="journey-controls"><span aria-hidden="true">{playing?locale==='en'?`Now tracing: ${name(steps[cursor]?.key,compiler(steps[cursor]?.name))}`:`نتتبّع الآن: ${steps[cursor]?.name}`:finished?locale==='en'?`Path complete: ${name(steps[last]?.key,steps[last]?.name)}`:`اكتمل المسار إلى ${steps[last]?.name}`:t("تتبّع السند خطوة بخطوة")}</span><button onClick={replay} aria-label={playing?t("إيقاف حركة السند"):t("إعادة تتبع السند")}>{playing?<Pause size={15}/>:<RotateCcw size={15}/>} {playing?t("إيقاف الحركة"):t("إعادة التتبع")}</button><span className="sr-only" role="status" aria-live="polite">{playing?t("بدأ تتبع السند"):finished?t("اكتمل تتبع السند"):''}</span></div>
+    <div className="journey-progress" role="progressbar" aria-label={t("تقدم تتبع السند")} aria-valuenow={cursor+1} aria-valuemin={0} aria-valuemax={steps.length}><span style={{width:`${(cursor+1)/steps.length*100}%`}}/></div><div className="journey-controls"><span aria-hidden="true">{playing?locale==='en'?`Now tracing: ${name(steps[cursor]?.key,compiler(steps[cursor]?.name))}`:`نتتبّع الآن: ${steps[cursor]?.name}`:finished?locale==='en'?`Path complete: ${name(steps[last]?.key,steps[last]?.name)}`:`اكتمل المسار إلى ${steps[last]?.name}`:t("تتبّع السند خطوة بخطوة")}</span><button onClick={replay} aria-label={playing?t("إيقاف حركة السند"):t("إعادة تتبع السند")}>{playing?<Pause size={15}/>:<RotateCcw size={15}/>} {playing?t("إيقاف الحركة"):t("إعادة التتبع")}</button><span className="sr-only" role="status" aria-live="polite">{playing?t("بدأ تتبع السند"):finished?t("اكتمل تتبع السند"):''}</span></div>
     <div ref={canvas} role="region" aria-label={t("خريطة سلسلة الإسناد")} tabIndex={0} className={`tree-canvas sanad-canvas ${playing?'journey-playing':''}`} onWheel={()=>setPlaying(false)} onTouchStart={()=>setPlaying(false)} onKeyDown={e=>{if(['ArrowDown','ArrowUp','PageDown','PageUp','Home','End'].includes(e.key))setPlaying(false);}}>
       <div className="tree sanad-tree" style={{zoom}}>
         {steps.map((step:{key:string;name:string;kind:string},index:number)=>{
@@ -54,8 +55,8 @@ export default function SanadMap({data,hadith,chain,selected,onSelect,zoom,onZoo
           const wording=index===1&&hadith.compiler?hadith.compiler.wording:chain.links[nodeIndex-1]?.wording;
           return <div className={`node-wrap journey-step ${playing&&index>cursor?'awaiting':''} ${playing&&index===cursor?'journey-active':''}`} key={step.key} ref={node=>{if(node)nodes.current.set(index,node);else nodes.current.delete(index);}}>
             {index>0?<div className={`edge journey-edge ${index<=cursor?'traversed':''} ${playing&&index===cursor?'edge-active':''}`}><span>{displayWording(wording||'')}</span><i/></div>:null}
-            {person?<button type="button" className={`narrator-node tone-${tone} ${selected===person.id?'picked':''}`} onClick={()=>select(person.id)} aria-pressed={selected===person.id} aria-label={`${name(person.id,person.name)}، ${trust(tone,TRUST_LABELS[tone as keyof typeof TRUST_LABELS])}`}><span className="node-index">{(nodeIndex+1).toLocaleString(locale)}</span><span className="node-content"><strong>{name(person.id,person.name)}</strong><span className={`trust-badge tone-${tone}`}><Icon size={13}/>{trust(tone,TRUST_LABELS[tone as keyof typeof TRUST_LABELS])}</span></span><Info size={16}/></button>:<div className="compiler-node"><span className="compiler-icon"><BookOpen size={21}/></span><span><small>{t("مصنّف الكتاب · بداية المسار")}</small><strong>{compiler(step.name)}</strong><span className="compiler-reference source-original" dir="rtl" lang="ar">{data.sources.find(s=>s.id===hadith.compiler?.sourceIds[0])?.title}</span></span></div>}
-            {person?.role?.type==='prophet'&&<div className={`map-matn grade-${hadith.judgement?.grade||'unknown'}`} role="note" aria-label={t("متن الرواية")}><small>{hadith.judgement?.grade==='fabricated'?t("نص الرواية الموضوعة — لا يثبت عن النبي ﷺ"):hadith.judgement?.grade==='weak'?t("نص الرواية الضعيفة — انظر حكم المحدث"):t("متن الحديث")}</small><blockquote>{matn(hadith)}</blockquote>{locale==='en'&&<small className="translation-note">{t("ترجمة للعرض؛ النص العربي في المصادر")}</small>}{hadith.judgement&&<p className="source-original" lang="ar" dir="rtl">{hadith.judgement.text}</p>}<div className="matn-references">{[...new Set([...hadith.sourceIds,...(hadith.judgement?.sourceIds||[])])].map(id=>{const source=data.sources.find(s=>s.id===id);return source&&<div key={id}><span className="source-original" lang="ar" dir="rtl">{source.reference}</span>{source.url&&<a href={source.url} target="_blank" rel="noopener noreferrer">{t("المصدر")} <ExternalLink size={12}/></a>}</div>;})}</div></div>}
+            {person?<button type="button" className={`narrator-node tone-${tone} ${selected===person.id?'picked':''}`} onClick={()=>select(person.id)} aria-pressed={selected===person.id} aria-label={`${name(person.id,person.name)}، ${trust(tone,TRUST_LABELS[tone as keyof typeof TRUST_LABELS])}`}><span className="node-index">{(nodeIndex+1).toLocaleString(locale)}</span><span className="node-content"><strong>{name(person.id,person.name)}</strong><span className={`trust-badge tone-${tone}`}><Icon size={13}/>{trust(tone,TRUST_LABELS[tone as keyof typeof TRUST_LABELS])}</span></span><Info size={16}/></button>:<div className="compiler-node"><span className="compiler-icon"><BookOpen size={21}/></span><span><small>{t("مصنّف الكتاب · بداية المسار")}</small><strong>{compiler(step.name)}</strong><span className="compiler-reference">{hadith.compiler&&sourceLabel(data.sources.find(s=>s.id===hadith.compiler?.sourceIds[0])!,locale).title}</span></span></div>}
+            {person?.role?.type==='prophet'&&<div className={`map-matn grade-${hadith.judgement?.grade||'unknown'}`} role="note" aria-label={t("متن الرواية")}><small>{hadith.judgement?.grade==='fabricated'?t("نص الرواية الموضوعة — لا يثبت عن النبي ﷺ"):hadith.judgement?.grade==='weak'?t("نص الرواية الضعيفة — انظر حكم المحدث"):t("متن الحديث")}</small><blockquote>{matn(hadith)}</blockquote>{locale==='en'&&<small className="translation-note">{t("ترجمة للعرض؛ النص العربي في المصادر")}</small>}<p className="map-source-hint">{t("اقرأ الحكم والمراجع كاملة في تبويب المتن والمصدر.")}</p></div>}
           </div>;
         })}
       </div>
