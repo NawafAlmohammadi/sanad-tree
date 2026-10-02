@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.vinext/
+.next/
+.env
+.env.*
+!.env.example
+API.env
+API.env.*
+!API.env.example
+*.tsbuildinfo
+*.log
+.DS_Store
