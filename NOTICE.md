@@ -1,9 +1,11 @@
-# إشعارات المصادر والأدوات
+# Notices
 
-هذه الحزمة تضم شيفرة مشروع شجرة الأسانيد وبياناته التعليمية؛ لم يحدد الفريق ترخيص إعادة توزيع شيفرته بعد. يحتفظ الفريق بحقوق شيفرته. لا يمنح هذا الملف ترخيصًا عن مالك أي مصدر آخر.
+The team retains the rights to its own code. No redistribution licence has been selected for that code. This notice does not grant rights on behalf of another source owner.
 
-المكتبات الأساسية: React وReact DOM وNext.js وVite وVinext (MIT)، Lucide (ISC)، TypeScript (Apache-2.0). تظهر ملفات تراخيصها في node_modules بعد التثبيت، ولكل تبعية رخصتها. خطوط IBM Plex Sans Arabic وNoto Naskh Arabic من Google Fonts (SIL OFL)، مع خط بديل من الجهاز عند غياب الإنترنت.
+Core dependencies: React, React DOM, Next.js, Vite and Vinext (MIT); Lucide (ISC); TypeScript (Apache-2.0). Their licence files are available in node_modules after installation.
 
-البيانات: النصوص التراثية وأقوال النقد من المصادر المحددة في catalog.json وTEN-HADITHS-REVIEW.md. حق rights لكل مرجع يبين طبيعة النقل؛ لا يدعي ترخيص كل محتويات موقع المصدر. لم تنقل الحزمة صفحات المواقع أو صور الكتب كاملة.
+Bundled fonts: IBM Plex Sans Arabic, Noto Naskh Arabic and Source Sans 3 from official Google Fonts. SIL Open Font Licence files are included in public/fonts. Fonts are served locally and require no external font service at runtime.
 
-هذه نسخة Node محلية من المصدر المستضاف في الالتزام 66e5e0be68bf3b466940ccf217246045b5f16c19. تاريخ الاستخراج: ٢ أكتوبر٢٠٢٦. تغير إعداد التشغيل فقط للتشغيل المستقل؛ لم تغير نصوص البيانات أو قواعد الحماية أو تصميم الموقع.
+Hadith texts, narrator biographies and scholarly assessments are documented per source in data/catalog.json. Short explanatory summaries and English display translations are independently prepared; original Arabic records remain accessible. No full website pages or scans are redistributed. Source metadata does not claim a licence for every item on a referenced website.
+
+This portable edition shares the hosted catalog, interface and grounding logic. API routes read process.env instead of Cloudflare bindings. Each device supplies its own optional API key in API.env, which is excluded from GitHub and the download archive.
