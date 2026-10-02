@@ -4,7 +4,7 @@ The team retains the rights to its own code. No redistribution licence has been 
 
 Core dependencies: React, React DOM, Next.js, Vite and Vinext (MIT); Lucide (ISC); TypeScript (Apache-2.0). Their licence files are available in node_modules after installation.
 
-Bundled fonts: IBM Plex Sans Arabic, Noto Naskh Arabic and Source Sans 3 from official Google Fonts. SIL Open Font Licence files are included in public/fonts. Fonts are served locally and require no external font service at runtime.
+Bundled fonts: IBM Plex Sans Arabic, Noto Naskh Arabic, Source Sans 3, DM Sans and Cormorant Garamond from official Google Fonts. SIL Open Font Licence files are included in public/fonts. Fonts are served locally and require no external font service at runtime.
 
 Hadith texts, narrator biographies and scholarly assessments are documented per source in data/catalog.json. Short explanatory summaries and English display translations are independently prepared; original Arabic records remain accessible. No full website pages or scans are redistributed. Source metadata does not claim a licence for every item on a referenced website.
 
