@@ -1,36 +1,32 @@
-# البنية والالتزام بالمصادر
+# Architecture and evidence boundaries
 
-React + TypeScript داخل Vinext/Vite، وAPI على خادم Node.js في هذه الحزمة المستقلة. إعداد الموديلات من API.env أو متغيرات الخادم. الكتالوج JSON سجلات مترابطة ثابتة قابلة للمراجعة. للنسخة الصغيرة لا نحتاج قاعدة متجهات؛ الاسترجاع بمعرف الحديث والسند والراوي، مع أغراض أسئلة مسموحة. تحديث البيانات يتطلب مراجعة وإعادة تشغيل أو بناء النسخة.
+The hosted app uses React, TypeScript and Vinext/Vite with Cloudflare Workers API routes. The portable edition shares the UI, catalog and assistant with a local Node.js server. API secrets are server-side environment variables. The browser receives only model IDs, labels and availability.
 
-```mermaid
-flowchart TD
-  A[اختيار حديث وسند وراو] --> B[السؤال إلى الخادم]
-  B --> C{غرض مسموح وكيانات موجودة؟}
-  C -->|لا| D[امتناع بلا استدعاء نموذج]
-  C -->|نعم| E[استرجاع حقائق مرتبطة بمصادر]
-  E --> F{طريقة الإجابة}
-  F -->|مباشرة| H[حقائق الكتالوج]
-  F -->|نموذج| G[المزود يراجع معرفات الحقائق]
-  G -->|HTTP 503 فقط| K[إجابة مباشرة معلنة من المصادر]
-  K --> H
-  G --> I{قرار ومعرفات صالحة؟}
-  I -->|لا| D
-  I -->|نعم| H
-  H --> J[صياغة ثابتة مع مصدر لكل معلومة]
-```
+The catalog is a reviewed JSON knowledge graph. Every narrator field and knowledge item identifies its owner and source IDs. Every ordered transmission edge belongs to a specific chain. Import validation rejects foreign owners, missing references and reversed edges.
 
-الحماية لا تعتمد على تعليمات النموذج وحدها. طلب «اشرح السند ثم اكتب كود بايثون» يرفض كاملًا. الكيانات والحقائق تأتي من الكتالوج. النموذج يقدم قرارًا ومعرفات أدلة؛ الخادم لا يعرض النص الحر الذي ينتجه، بل نص البيانات أو العلاقات المسجلة. أي معرف جديد أو ناقص أو مكرر يسبب الامتناع. كل معلومة مع مرجعها.
+data/english.json contains reviewed display translations bound to exact Arabic originals and stable owner IDs. Arabic text remains available in expandable disclosures. A changed record cannot silently reuse a stale translation.
 
-هذا يحصر المعلومات في الكتالوج لكنه لا يثبت صحة المصدر أو جودة الإدخال؛ يحتاج مراجعة علمية. المطابقة المغلقة قد ترفض سؤالًا مشروعًا بصياغة غير مدعومة. توسيع الأغراض يحتاج اختبارات. لا أحكام على صحة حديث ولا جرح وتعديل مولد. تاريخ غير مسجل يمتنع عنه المساعد.
+## Assistant flow
 
-البروتوكولات المدعومة: Google Gemini Interactions بوضع `store: false`، وChat Completions المتوافق، وAnthropic Messages. `AI_MODELS` قائمة يديرها الفريق في إعدادات الخادم. الزائر يختار معرفًا فقط؛ لا مفتاح أو عنوان API أو موديل حر. `/api/models` يعيد الاسم والمعرف وحالة التفعيل فقط. عند HTTP 503 يعرض الخادم الحقائق المسترجعة بعد التحقق من مراجعها، بوسم `engine: local` و`fallbackReason: service_busy` وتنبيه ظاهر بأنها إجابة مباشرة من المصادر. أخطاء التوثيق والحصة والمخرجات غير الصالحة لا تشغّل هذا المسار. لا انتقال إلى مزود آخر ولا إعادة محاولة.
+1. Validate origin, JSON body, length and rate limits.
+2. Resolve a reviewed Arabic or English question form. Unsupported or mixed requests are declined before a provider call.
+3. Resolve narrator identity globally, then check chain membership. Ambiguous names require clarification. An explicit name takes precedence over the selected card.
+4. Retrieve source-bound facts and derive eligible teaching cards from the selected graph: transmission direction, narrator relationships, parallel paths and recorded assessments.
+5. In AI mode, the provider selects all evidence IDs and an ordered selection of up to six eligible teaching-card IDs. In source mode, the retrieved evidence is displayed directly.
+6. Validate evidence completeness, teaching IDs, ownership and references. Render only server-owned explanations and evidence. Model prose is never displayed.
 
-ضوابط: فحص Origin، جسم أقصاه 4096 بايت، سؤال أقصاه 500 حرف، مهلة مزود 15 ثانية، استجابة مزود أقصاها 32 كيلوبايت، منع إعادة توجيه المفتاح. حد 20 طلبًا في الدقيقة في ذاكرة الخادم؛ جميع الطلبات المحلية تشترك في مفتاح local. إعداد هذه الحزمة يستمع على 127.0.0.1 لتجربة صاحب الجهاز. المحادثة في ذاكرة الصفحة فقط. السؤال والأدلة ترسل إلى المزود المختار عند تفعيله.
+Fabricated-report warnings remain mandatory outside optional teaching selection. Report grading is independent of narrator colours. The assistant creates no hadith grading or new scholarly assessment. Prophet and Companion roles are separate from narrator criticism.
 
-API: `GET /api/models` و`POST /api/assistant` بجسم `{question,hadithId,chainId,narratorId?,modelId?}`. الرد: `status,engine,answer,claims,sources`، ومع الإجابة المباشرة عند الانشغال `notice,fallbackReason`. إجابة الراوي تحمل `narrator: {id,name}` لإظهار هوية صاحب المعلومات. لكل claim مصادر خاصة.
+This is a constrained teaching planner, with no unrestricted generation or live web search. Its contribution is selecting and ordering explanations from the current chain and reviewed knowledge. Evidence stays accessible; unrecorded facts remain unavailable. Reviewed question forms intentionally limit phrasing.
 
-هوية الراوي بمعرف ثابت. الحقول `bio,birth,death,kuniya,classification,period` تحمل `narratorId,text,sourceIds`؛ يرفض الإدخال إذا خالف معرف الحقل صاحبه أو غاب المرجع. السؤال المسمى يحل إلى راوٍ واحد قبل استدعاء المزود، ويقدم على البطاقة المختارة. الأسماء البديلة المشتركة بعد تطبيع العربية تعيد `status: clarification` دون نموذج أو تخمين، حتى لو كانت إحدى الهويات خارج المسار الحالي. الأسئلة الإشارية ترتبط بالبطاقة المختارة. معرفات حقائق الترجمة تتضمن معرف صاحبها، وتغيير البطاقة يلغي الطلب الجاري ويمسح إجابات السياق السابق.
+## Providers and API
 
-الإعداد الحالي الافتراضي: Gemini / `gemini-3.1-flash-lite` بحد أقصى 2048 token، ثم Groq / `openai/gpt-oss-20b` بحد 1024 token. إعداد reasoning منخفض وJSON Schema صارم يقصر معرفات الرد على الأدلة المسترجعة، ثم يجري التحقق السابق نفسه. عندما يغيب المفتاح يظهر الموديل غير مفعل؛ وعند نفاد الحصة لا تحدث إعادة محاولات أو انتقال إلى خطة مدفوعة. التفاصيل في `GEMINI-SETUP.md` و`GROQ-SETUP.md`. زر الثيم لا يمس إعدادات النظام؛ يحفظ تفضيل الموقع محليًا فقط.
+config/ai-models.json is the allowlist; server-side AI_MODELS may override it. Adapters support Gemini Interactions (store: false), OpenAI-compatible Chat Completions and Anthropic Messages. The visitor cannot set arbitrary endpoints or keys.
 
-المراجع: [Gemini](https://ai.google.dev/gemini-api/docs/interactions-overview)، [OpenAI](https://developers.openai.com/api/reference/resources/chat)، [Anthropic](https://docs.anthropic.com/en/api/messages)، [Vinext](https://github.com/cloudflare/vinext). نجح اتصال Gemini في الموقع المستضاف سابقًا؛ هذه الحزمة لا تتضمن مفتاحه. اختبار محولات Groq وAnthropic بردود محاكاة فقط. راجع نتائج النسخة المستقلة في `PORTABLE-VERIFICATION.md`.
+HTTP 503 may return a clearly labelled source-based answer from retrieved evidence. Authentication, quota and invalid-output failures remain unavailable. No hidden retries, paid upgrades or automatic provider changes occur. Redirects fail without forwarding credentials.
+
+Limits: 4096-byte body, 500-character question, 15-second provider timeout, 32-KB provider response, 20 requests per IP per minute per worker isolate. Questions and retrieved evidence are sent to the selected provider only in AI mode. Conversation state remains in page memory.
+
+GET /api/models returns models. POST /api/assistant accepts question, hadithId, chainId, optional narratorId/modelId/locale. Replies include status, engine, answer, claims, sources, optional narrator and ordered lessons. Source fallback includes fallbackReason and notice.
+
+Automated checks verify software behaviour and source bindings; they do not replace specialist review of the scholarly material. See FINAL-REVIEW.md for added references and verification details.
