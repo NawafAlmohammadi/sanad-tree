@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import {root,loadApiConfig} from './env.mjs';
+const [command,...args]=process.argv.slice(2);
+if(!['dev','build','start'].includes(command))throw Error('Use dev, build, or start.');
+const [major,minor]=process.versions.node.split('.').map(Number);
+if(major<22||(major===22&&minor<13))throw Error('Install Node.js 22.13+ from https://nodejs.org/en/download');
+process.chdir(root);loadApiConfig();
+const cli=new URL('../node_modules/vinext/dist/cli.js',import.meta.url);
+if(!fs.existsSync(cli))throw Error('Dependencies are missing. Run SETUP.cmd on Windows, or npm ci.');
+const defaults=command==='build'?[]:['--port','5173','--hostname','127.0.0.1'];
+process.argv=[process.execPath,fileURLToPath(cli),command,...defaults,...args];
+await import(cli.href);
