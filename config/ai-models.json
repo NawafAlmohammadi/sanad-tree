@@ -1,0 +1,25 @@
+[
+  {
+    "id": "gemini-free",
+    "label": "Google Gemini · Flash-Lite",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "keyEnv": "AI_KEY_GEMINI",
+    "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+    "maxOutputTokens": 2048,
+    "reasoningEffort": "low",
+    "strictJson": true
+  },
+  {
+    "id": "groq-free",
+    "label": "Groq · GPT-OSS 20B",
+    "provider": "openai-compatible",
+    "model": "openai/gpt-oss-20b",
+    "keyEnv": "AI_KEY_GROQ",
+    "baseUrl": "https://api.groq.com/openai/v1",
+    "tokenParameter": "max_completion_tokens",
+    "maxOutputTokens": 1024,
+    "reasoningEffort": "low",
+    "strictJson": true
+  }
+]
