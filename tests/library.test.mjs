@@ -84,11 +84,15 @@ test('father and son retain separate identities; the father is a Companion',asyn
   }
   assert.equal(c.links[4].wording,'عن أبيه');
 });
-test('unresolved Ibrahim remains gray, while an unknown shaykh has a sourced review label',async()=>{
+test('the linked Ibrahim profile has its exact sourced assessment, without borrowing a namesake’s grade',async()=>{
   const nid='ibrahim-muhammad-sabra',n=catalog.narrators.find(n=>n.id===nid);
-  assert.equal(narratorTone(n),'unknown');assert.equal(n.reliability,undefined);
-  assert.equal((await answerQuestion(catalog,input('ibnmajah-1388','ما حكم هذا الراوي',{narratorId:nid}))).status,'refused');
+  assert.equal(narratorTone(n),'trusted');assert.equal(n.reliability.narratorId,nid);
+  assert.match(n.reliability.text,/صدوق حسن الحديث/);assert.ok(!n.reliability.text.includes('«ثقة»'));
+  const source=catalog.sources.find(s=>s.id===n.reliability.sourceIds[0]);assert.equal(source.url,'https://sunnah.com/narrator/11814');
+  const assessment=await answerQuestion(catalog,input('ibnmajah-1388','ما حكم هذا الراوي',{narratorId:nid}));
+  assert.equal(assessment.status,'answered');assert.ok(assessment.claims.some(f=>f.id===`narrator-${nid}-reliability`&&f.text.endsWith(n.reliability.text)&&f.sourceIds.includes(source.id)));
   assert.equal((await answerQuestion(catalog,input('ibnmajah-1388','من هذا الراوي',{narratorId:nid}))).narrator.id,nid);
+  const imported=structuredClone(n);imported.reliability.narratorId='ibrahim-fadl';assert.equal(narratorTone(imported),'unknown');
   const alaq=catalog.narrators.find(n=>n.id==='alaq-abi-muslim');assert.equal(narratorTone(alaq),'review');assert.match(alaq.reliability.text,/مجهول/);assert.ok(!alaq.reliability.text.includes('يضع الحديث'));
 });
 test('a kunyah and name in one chain remain one person, with distinct Muhammad identities',async()=>{
