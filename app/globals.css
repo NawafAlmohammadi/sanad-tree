@@ -366,11 +366,11 @@ main{padding-top:24px}
 
 .hadith-translation blockquote{white-space:pre-line}.translation-introduction{font-size:.85rem;line-height:1.7;font-weight:600;margin:1rem 0 .6rem;color:var(--muted)}.translation-source{display:inline-flex;align-items:center;gap:.35rem;font-size:.75rem;line-height:1.7;color:var(--gold-ink);text-decoration:underline;text-underline-offset:3px;flex-wrap:wrap}.translation-unavailable{font-size:.85rem;line-height:1.8;color:var(--muted);padding:.75rem;border:1px solid var(--line);border-radius:.5rem}.map-matn .translation-introduction{font-size:.75rem}.map-matn .translation-source{font-size:.7rem}
 
-/* Supplied university artwork is displayed unchanged; the frame excludes its transparent margins. */
+/* Original vector artwork from the university website, without raster scaling or cropping. */
 .header{gap:22px;padding-block:18px;background:var(--surface);box-shadow:0 3px 0 #C5AF5C12}
 .brand{gap:22px;min-width:0}.brand>span:last-child{border-inline-start:1px solid var(--line);padding-inline-start:22px;white-space:nowrap}.brand small{display:none}
-.university-logo{display:block;position:relative;width:228px;aspect-ratio:718/174;overflow:hidden;flex-shrink:0;background:#F0F5FA;border-radius:4px;outline:5px solid #F0F5FA}
-.university-logo img{position:absolute;width:139.275766%;max-width:none;height:auto;left:-19.637883%;top:-237.356322%}
+.university-logo{display:block;width:242px;aspect-ratio:545.4/139.24;flex-shrink:0;background:#F0F5FA;border-radius:5px;padding:5px 7px;box-sizing:content-box}
+.university-logo img{display:block;width:100%;height:100%;object-fit:contain}
 .header nav{margin-inline-start:auto;gap:20px}.header-actions{margin-inline-start:0}
 .header::before{height:3px;background:linear-gradient(90deg,#08749B,var(--brass),#08749B)}
 .library-banner{min-height:84px;background:linear-gradient(90deg,transparent,#08749B10 50%,transparent);border-color:var(--line)}
@@ -389,20 +389,30 @@ main{padding-top:24px}
 :root[data-theme="dark"] .narrator-node.tone-unknown{background:#1B3043;border-color:#587186}
 :root[data-theme="dark"] .trust-badge.tone-unknown{background:#2C465B;color:#C8D7E4}
 .assistant-intro{background:var(--surface);border-top:2px solid var(--brass)}
-.university-assistant{width:82px;height:64px;background:#F0F5FA;border:0;border-radius:6px;overflow:hidden;flex-shrink:0}
-.university-assistant img{width:100%;height:100%;object-fit:contain}
 .question-form button,.primary{background:var(--olive);border-color:#3384A5}.modal-backdrop{background:#04111ecd}
-.university-footer{align-items:center;gap:22px;padding:24px 0 28px;border-top-color:var(--line)}
-.footer-logo{width:160px}.project-credits{flex:1;text-align:center;font-size:13px;line-height:1.9;color:var(--muted)}
+.university-footer{position:relative;align-items:center;justify-content:center;gap:16px;padding:24px 170px 28px;border-top-color:var(--line)}
+.project-credits{flex:1;text-align:center;font-size:13px;line-height:1.9;color:var(--muted)}
 .project-credits p:first-child{color:var(--ink)}.footer button{font-size:13px;white-space:nowrap}
+.university-footer>button{position:absolute;inset-inline-end:0;top:50%;transform:translateY(-50%)}
 @media(max-width:1250px){.header{gap:14px}.university-logo{width:190px}.brand{gap:16px}.brand>span:last-child{padding-inline-start:16px}.header nav{gap:14px}}
-@media(max-width:780px){.header{gap:12px;padding:14px 4%}.brand{flex:1;gap:12px;font-size:19px}.brand .university-logo{width:145px}.brand>span:last-child{padding-inline-start:12px}.header nav{margin-inline-start:0}.library-banner{min-height:76px}.university-footer{flex-wrap:wrap;justify-content:center}.footer-logo{width:165px}.project-credits{flex-basis:100%;order:2}.footer button{margin-inline-start:auto}}
-@media(max-width:430px){.brand{gap:9px;font-size:17px}.brand .university-logo{width:118px}.brand>span:last-child{padding-inline-start:9px}.header{gap:8px}.language-toggle{min-width:44px}.theme-toggle{width:40px;min-height:40px}.language-toggle{min-height:40px}[dir="ltr"] .brand{font-size:20px}}
+@media(max-width:780px){.header{gap:12px;padding:14px 4%}.brand{flex:1;gap:12px;font-size:19px}.brand .university-logo{width:145px}.brand>span:last-child{padding-inline-start:12px}.header nav{margin-inline-start:0}.library-banner{min-height:76px}.university-footer{flex-direction:column;padding-inline:0}.project-credits{flex-basis:100%}.university-footer>button{position:static;transform:none;margin:0}}
+@media(max-width:430px){.brand{gap:9px;font-size:17px}.brand .university-logo{width:clamp(150px,44vw,185px)}.brand>span:last-child{display:none}.header{gap:8px}.language-toggle{min-width:44px}.theme-toggle{width:40px;min-height:40px}.language-toggle{min-height:40px}[dir="ltr"] .brand{font-size:20px}}
 
-/* Calm, complete map on selection; tracing is optional and never moves the viewport. */
+/* The map is complete on selection. Explicit tracing spotlights one card inside the map. */
 .sanad-tree{animation:map-arrive .45s ease-out both}
 @keyframes map-arrive{from{opacity:.82;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
 .journey-edge.traversed{background:var(--accent)}.journey-edge.traversed i{border-top-color:var(--accent)}
 .journey-edge.edge-active::after{content:none}
-.journey-active>.narrator-node,.journey-active>.compiler-node{box-shadow:0 0 0 2px var(--brass);transition:box-shadow .35s ease}
-@media(prefers-reduced-motion:reduce){.sanad-tree{animation:none}.journey-active>.narrator-node,.journey-active>.compiler-node{transition:none}}
+.sanad-tree{isolation:isolate}.journey-step{position:relative;z-index:0}.journey-active{z-index:6}
+.narrator-node,.compiler-node{position:relative;transform-origin:center;transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease,filter .3s ease}
+.narrator-node:focus-visible,.narrator-node.picked{outline:2px solid var(--gold-ink);outline-offset:3px;box-shadow:0 0 0 6px #72C5E418,0 0 24px #72C5E43D;transform:scale(1.018)}
+.narrator-node.picked{animation:narrator-select .5s ease-out}
+@media(hover:hover){.narrator-node:hover{transform:translateY(-2px) scale(1.018);border-color:var(--gold-ink);box-shadow:0 0 0 3px #72C5E418,0 0 24px #72C5E44D;filter:brightness(1.08)}}
+.journey-active>.narrator-node,.journey-active>.compiler-node{animation:card-spotlight 2400ms cubic-bezier(.22,.68,.32,1) both;outline:2px solid var(--gold-ink);outline-offset:3px}
+.sanad-canvas .zoom-controls{z-index:12}
+@keyframes narrator-select{0%{transform:scale(.99)}55%{transform:scale(1.035)}100%{transform:scale(1.018)}}
+@keyframes card-spotlight{
+ 0%,100%{transform:scale(1);filter:brightness(1);box-shadow:0 0 0 5px #72C5E400,0 0 32px #72C5E400,0 0 0 150vmax #030B1400}
+ 17%,78%{transform:scale(1.055);filter:brightness(1.1);box-shadow:0 0 0 5px #72C5E455,0 0 32px #72C5E4A6,0 0 0 150vmax #030B14D4}
+}
+@media(prefers-reduced-motion:reduce){.sanad-tree{animation:none}.narrator-node,.compiler-node{transition:none}.narrator-node:hover,.narrator-node.picked,.narrator-node:focus-visible{transform:none;animation:none}.journey-active>.narrator-node,.journey-active>.compiler-node{animation:none;transform:none;filter:none;box-shadow:0 0 0 2px var(--brass)}}
