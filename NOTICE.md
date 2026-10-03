@@ -9,3 +9,5 @@ Bundled fonts: IBM Plex Sans Arabic, Noto Naskh Arabic, Source Sans 3, DM Sans a
 Hadith texts, narrator biographies and scholarly assessments are documented per source in data/catalog.json. Short explanatory summaries and English display translations are independently prepared; original Arabic records remain accessible. No full website pages or scans are redistributed. Source metadata does not claim a licence for every item on a referenced website.
 
 This portable edition shares the hosted catalog, interface and grounding logic. API routes read process.env instead of Cloudflare bindings. Each device supplies its own optional API key in API.env, which is excluded from GitHub and the download archive.
+
+See docs/TOOLS-AND-LICENSES.md for locked dependency licences and service terms, and docs/SOURCES-REGISTER.md for the complete source register.
