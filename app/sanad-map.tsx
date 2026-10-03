@@ -1,5 +1,6 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
+import HadithText from './hadith-text';
 import {useLanguage} from './language';
 import {sourceLabel} from '@/lib/reviewed-language.mjs';
 import {BookOpen,ShieldCheck,CircleHelp,ShieldX,Info,RotateCcw,Pause,Plus,Minus} from 'lucide-react';
@@ -8,7 +9,7 @@ import {journeySteps,narratorTone,TRUST_LABELS} from '@/lib/sanad-map.mjs';
 
 type Props={data:Data;hadith:Hadith;chain:Chain;selected:string;onSelect:(id:string)=>void;zoom:number;onZoom:(value:number)=>void};
 export default function SanadMap({data,hadith,chain,selected,onSelect,zoom,onZoom}:Props){
-  const {locale,t,name,matn,compiler,trust,wording:displayWording}=useLanguage();
+  const {locale,t,name,compiler,trust,wording:displayWording}=useLanguage();
   const steps=journeySteps(hadith,chain,data.narrators);
   const last=steps.length-1;
   const [cursor,setCursor]=useState(0),[playing,setPlaying]=useState(false),[finished,setFinished]=useState(false);
@@ -56,7 +57,7 @@ export default function SanadMap({data,hadith,chain,selected,onSelect,zoom,onZoo
           return <div className={`node-wrap journey-step ${playing&&index>cursor?'awaiting':''} ${playing&&index===cursor?'journey-active':''}`} key={step.key} ref={node=>{if(node)nodes.current.set(index,node);else nodes.current.delete(index);}}>
             {index>0?<div className={`edge journey-edge ${index<=cursor?'traversed':''} ${playing&&index===cursor?'edge-active':''}`}><span>{displayWording(wording||'')}</span><i/></div>:null}
             {person?<button type="button" className={`narrator-node tone-${tone} ${selected===person.id?'picked':''}`} onClick={()=>select(person.id)} aria-pressed={selected===person.id} aria-label={`${name(person.id,person.name)}، ${trust(tone,TRUST_LABELS[tone as keyof typeof TRUST_LABELS])}`}><span className="node-index">{(nodeIndex+1).toLocaleString(locale)}</span><span className="node-content"><strong>{name(person.id,person.name)}</strong><span className={`trust-badge tone-${tone}`}><Icon size={13}/>{trust(tone,TRUST_LABELS[tone as keyof typeof TRUST_LABELS])}</span></span><Info size={16}/></button>:<div className="compiler-node"><span className="compiler-icon"><BookOpen size={21}/></span><span><small>{t("مصنّف الكتاب · بداية المسار")}</small><strong>{compiler(step.name)}</strong><span className="compiler-reference">{hadith.compiler&&sourceLabel(data.sources.find(s=>s.id===hadith.compiler?.sourceIds[0])!,locale).title}</span></span></div>}
-            {person?.role?.type==='prophet'&&<div className={`map-matn grade-${hadith.judgement?.grade||'unknown'}`} role="note" aria-label={t("متن الرواية")}><small>{hadith.judgement?.grade==='fabricated'?t("نص الرواية الموضوعة — لا يثبت عن النبي ﷺ"):hadith.judgement?.grade==='weak'?t("نص الرواية الضعيفة — انظر حكم المحدث"):t("متن الحديث")}</small><blockquote>{matn(hadith)}</blockquote>{locale==='en'&&<small className="translation-note">{t("ترجمة للعرض؛ النص العربي في المصادر")}</small>}<p className="map-source-hint">{t("اقرأ الحكم والمراجع كاملة في تبويب المتن والمصدر.")}</p></div>}
+            {person?.role?.type==='prophet'&&<div className={`map-matn grade-${hadith.judgement?.grade||'unknown'}`} role="note" aria-label={t("متن الرواية")}><small>{hadith.judgement?.grade==='fabricated'?t("نص الرواية الموضوعة — لا يثبت عن النبي ﷺ"):hadith.judgement?.grade==='weak'?t("نص الرواية الضعيفة — انظر حكم المحدث"):t("متن الحديث")}</small><HadithText hadith={hadith}/><p className="map-source-hint">{t("اقرأ الحكم والمراجع كاملة في تبويب المتن والمصدر.")}</p></div>}
           </div>;
         })}
       </div>

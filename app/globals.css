@@ -363,3 +363,5 @@ main{padding-top:24px}
  .empty-tree{padding:35px 22px 26px;max-width:90%}.empty-tree h3{font-size:25px}
 }
 @media(prefers-reduced-motion:reduce){.hadith-item{transition:none}}
+
+.hadith-translation blockquote{white-space:pre-line}.translation-introduction{font-size:.85rem;line-height:1.7;font-weight:600;margin:1rem 0 .6rem;color:var(--muted)}.translation-source{display:inline-flex;align-items:center;gap:.35rem;font-size:.75rem;line-height:1.7;color:var(--gold-ink);text-decoration:underline;text-underline-offset:3px;flex-wrap:wrap}.translation-unavailable{font-size:.85rem;line-height:1.8;color:var(--muted);padding:.75rem;border:1px solid var(--line);border-radius:.5rem}.map-matn .translation-introduction{font-size:.75rem}.map-matn .translation-source{font-size:.7rem}
