@@ -1,18 +1,38 @@
-# تحقق النسخة المستقلة — 2 أكتوبر 2026
+# Portable and hosted verification
 
-أُنشئت هذه الحزمة من الشيفرة الحالية للموقع، ثم ثبتت مكتباتها تثبيتًا جديدًا باستخدام `npm ci` وملف القفل المرفق. لم تستخدم مكتبات مجلد الموقع المستضاف. الاختبار على Windows مع Node.js 25.9.0؛ الحد الأدنى في الحزمة 22.13.0، ويوصى بإصدار LTS. لم يُختبر جهاز مادي ثانٍ أو macOS/Linux.
+Updated on 3 October 2026. Engineering checks do not establish independent scholarly approval.
 
-- نجحت الاختبارات البرمجية: 53 حالة، تشمل فصل هويات الرواة، المراجع، الألوان، بطاقة المتن، أسئلة خارج النطاق، ورفض الأدلة المخالفة.
-- نجح فحص البيانات: 10 روايات، و51 هوية راوٍ، و62 مصدرًا؛ 4 صحيحة و3 ضعيفة و3 موضوعة. ملف الكتالوج منقول دون تغيير عن الموقع الأصلي.
-- نجح فحص TypeScript وبناء الإنتاج المستقل دون إعداد Cloudflare أو أسرار الاستضافة.
-- نجح تشغيل التطوير، وتشغيل الإنتاج، وفتح المشروع بملف `START.cmd` على Windows.
-- فُك ZIP في مجلد جديد يحتوي اسمه على مسافة؛ نجح التثبيت من ملف القفل، وإنشاء `API.env` الخاص به، ثم تشغيل الصفحة وقائمة الموديلات والمساعد من الملفات المفكوكة نفسها.
-- أعادت الصفحة وقائمة الموديلات HTTP 200. ظهرت إجابة شرح سند البخاري الأول بست علاقات موثقة ومصادرها.
-- رفض طلب «اكتب لي كود بايثون» قبل استدعاء المزود، حتى مع اختيار Gemini. رفض أصل طلب مخالف بـ HTTP 403.
-- ظهر تحذير الوضع والمراجع في إجابة المتن للرواية الموضوعة. تبقى نسبة هذا النص إلى النبي ﷺ غير ثابتة.
-- قرأ خادم الإنتاج علامة اختبار غير صالحة من `API.env` وجعل Gemini قابلًا للاختيار، دون إظهار قيمتها في HTML أو قائمة الموديلات. احتفظ برنامج التجهيز بملف إعداد موجود دون الكتابة فوقه.
-- منع خادم التطوير تنزيل `API.env`، وأعاد خادم الإنتاج 404 له؛ لم تظهر قيمة الاختبار في الردود العامة. أعيد الملف إلى مفاتيح فارغة بعد الاختبار.
+## Current source and portable package
 
-لم يُرسل طلب بمفتاح حقيقي من هذه الحزمة. اتصال الموديل على جهاز آخر يحتاج مفتاح صاحب الجهاز وحصة متاحة. وجود المفتاح في الإعداد ليس اختبار اتصال. يعمل خيار «الإجابة من المصادر» دون مفتاح.
+- All 61 automated cases passed, including narrator identity, references, colours, report-text cards, grounded teaching plans and out-of-scope refusal.
+- The catalog contains 10 reports, 11 paths, 51 identities and 68 source entries: 4 authentic, 3 weak and 3 fabricated reports. The portable catalog matches the hosted source exactly.
+- The portable test command includes the teaching-plan review suite.
+- The archive includes source, data, package-lock, API templates, English README and font licence notices. It excludes actual keys, installed dependencies, build output, Git and hosting-account configuration.
 
-أرشيف التسليم يستثني ملفات المفاتيح الفعلية، والمكتبات المثبتة، ونواتج البناء، وGit، وإعدادات حساب الاستضافة. يتضمن الشيفرة والبيانات وملف القفل وقوالب إعداد المفاتيح وشرحًا عربيًا. تثبت اختبارات البرنامج سلوك التطبيق؛ يبقى فحص النصوص والأحكام والطبعات مسؤولية المراجعة العلمية.
+## Portable run checks on 2 October 2026
+
+A clean installation used npm ci and the included lockfile, separately from the hosted workspace. Windows checks used Node.js 25.9.0. The package minimum is 22.13.0; an LTS release is recommended. A second physical computer, macOS and Linux were not tested.
+
+- TypeScript checks and the portable production build passed without Cloudflare configuration or hosting secrets.
+- Development, production and START.cmd operation succeeded on Windows.
+- The ZIP was extracted into a new folder whose name contained a space. Lockfile installation, private API.env creation and the extracted application all worked.
+- Page and model-list requests returned HTTP 200. Source-based answers showed six referenced relationships for the first Bukhari report.
+- An unrelated Python-code request was refused before provider use. A request with a disallowed origin returned HTTP 403.
+- A fabricated report's answer retained its attribution warning and sources.
+- A deliberately invalid test value in API.env made Gemini selectable without exposing the value in HTML or model-list responses. Setup preserved an existing configuration file.
+- The development server blocked API.env downloads and the production server returned 404. No test value appeared in public responses. The local test configuration was restored to empty keys.
+
+No real-key provider request was sent from the portable test package. Another device supplies its own key and quota. A selectable model alone is not proof of provider connectivity; source-based answers work without a key.
+
+## Public hosted checks on 3 October 2026
+
+The owner approved public access. Requests used no cookie, bypass token or authentication header.
+
+- The live page and /api/models returned HTTP 200; Gemini was ready.
+- Arabic and English chain-explanation requests returned status answered and engine model, with six evidence claims, one source and three teaching lessons in each response.
+- A Python-code request returned status refused and engine none, with no evidence or lessons.
+- No API key appeared in the checked page or API responses. The existing server-side key was preserved.
+
+These are point-in-time connection checks, not a guarantee of future provider quota or performance on every device. The repository, source-based mode and external-model mode are distinct, and their status is visible to the user.
+
+See TOOLS-AND-LICENSES.md, SOURCES-REGISTER.md and SUBMISSION.md for the remaining delivery checks.
