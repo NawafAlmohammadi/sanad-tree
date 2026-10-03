@@ -279,4 +279,4 @@ This is a metadata inventory, not a substitute for each package's complete copyr
 
 ## University artwork
 
-The Islamic University of Madinah logos in public/university were supplied by the team and are displayed unchanged. University marks remain the property of the university; no open-source licence for those marks is granted by this project.
+The header uses the original Islamic University of Madinah SVG, served by the university at https://cdn.iu.edu.sa/NDS-iu/assets/img/iu-logo.svg and linked from https://iu.edu.sa/. The artwork is bundled unchanged. The previously supplied PNGs remain available for the favicon and asset history. University marks remain the property of the university; no open-source licence for those marks is granted by this project.

@@ -19,7 +19,7 @@ Reviewed on 3 October 2026. All ten current records have an exact English quotat
 
 At the team’s request, the previous three fabricated reports without matching Sunnah.com English texts were replaced with Ibn Majah 1388, 4313 and 4054. These are different reports, with their own Arabic texts, chains and narrator profiles. All three pages display Maudu’ (Darussalam); the project explicitly attributes that classification and retains a non-attribution warning in the map, text view and assistant.
 
-Ibn Majah 1388: “from his father” is Abdullah ibn Ja’far, distinct from his son Mu’awiyah. Ibrahim ibn Muhammad retains the recorded name: al-Mizzi leaves the expanded identification unresolved. No reliability grade is invented for him.
+Ibn Majah 1388: “from his father” is Abdullah ibn Ja’far, distinct from his son Mu’awiyah. The name link in Ibn Majah 1388 leads directly to Sunnah.com narrator 11814, Ibrahim ibn Muhammad al-Hashimi. That profile records “Truthful, Good Hadith”, Ibn Hajar’s “saduq” and Ibn Hibban’s inclusion in al-Thiqat. Its teacher and student match the recorded chain. The green card uses this cited assessment; al-Mizzi’s earlier uncertainty remains documented in the chain note.
 
 Ibn Majah 4313: Ahmad ibn Yunus maps to Ahmad ibn Abdullah ibn Yunus. Alaq’s unknown status and Anbasah’s accusation of fabrication belong to separate identities.
 

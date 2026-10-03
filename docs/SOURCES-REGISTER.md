@@ -79,3 +79,5 @@ The current catalog contains 10 reports, 55 narrator identities and 73 source re
 | ibnmajah-4054-source | Sunan Ibn Majah | Hadith 4054; Book 36, Hadith 129; displayed grade: Maudu’ (Darussalam) | [Open source](https://sunnah.com/ibnmajah:4054) |
 
 The individual Sunnah.com English quotations and their reproduction conditions are documented in SUNNAH-ENGLISH-AUDIT.md.
+
+| sunnah-ibrahim-hashimi-11814 | Ibrahim ibn Muhammad al-Hashimi — Sunnah.com | Narrator 11814, linked from Ibn Majah 1388; identity and recorded assessments | [Open source](https://sunnah.com/narrator/11814) |

@@ -92,7 +92,7 @@ Selected path: `ibnmajah-1388-chain`.
 
 Ordered identities: hasan-ali-khallal → abdrazzaq-hammam → ibn-abi-sabra → ibrahim-muhammad-sabra → muawiya-abdullah-jafar → abdullah-jafar → ali-abi-talib → messenger.
 
-“From his father” refers to Abdullah ibn Ja’far. Ibrahim ibn Muhammad retains the recorded name because al-Mizzi leaves his precise identification unresolved. Ibn Abi Sabrah’s accusation of fabrication is recorded in his biography. The fabricated grade belongs to this report and is separate from the other cards’ colours.
+“From his father” refers to Abdullah ibn Ja’far. The name link in Ibn Majah 1388 identifies Ibrahim ibn Muhammad with Sunnah.com narrator 11814; its teacher and student match this chain. His recorded assessment is “Truthful, Good Hadith”, with Ibn Hajar’s “saduq” and Ibn Hibban’s inclusion in al-Thiqat. Al-Mizzi’s earlier uncertainty remains documented in the chain note. Ibn Abi Sabrah’s accusation of fabrication is recorded in his biography. The fabricated grade belongs to this report and is separate from the other cards’ colours.
 
 ## Three will intercede on the Day of Resurrection
 

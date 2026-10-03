@@ -42,3 +42,10 @@ The supplied Islamic University of Madinah artwork replaces the app’s brand ma
 The chain appears complete with a brief, calm fade. No animation or automatic scrolling starts on selection. Optional tracing highlights one step every two seconds while leaving the viewport under the user’s control. Reduced-motion preferences disable the reveal and animated tracing.
 
 The current catalog has 10 reports, 55 narrator identities and 73 source records. 65 automated checks and TypeScript checks pass. Missing assessments, ambiguous identity expansions and external requests continue to fail closed.
+
+## Map focus and university header update — 3 October 2026
+
+- Only the header displays the university logo. It uses the original SVG from https://cdn.iu.edu.sa/NDS-iu/assets/img/iu-logo.svg, without changing the artwork. The assistant and footer logos were removed; credits remain.
+- Explicit tracing highlights one card for 2.4 seconds with enlargement, a dimmed map background and a glow. Only the map scrolls to the current card. Opening the page or selecting a hadith still does not start tracing. Pointer, keyboard and selection feedback are visible; reduced-motion settings disable movement.
+- Ibn Majah 1388 directly links Ibrahim ibn Muhammad to Sunnah.com narrator 11814. His cited assessment is “Truthful, Good Hadith” / “صدوق حسن الحديث”; Ibn Hajar’s wording is “صدوق”. The green card and assistant use that assessment. Al-Mizzi’s uncertainty remains attributed in the chain note. No “thiqa” wording is substituted for “saduq”.
+- The catalogue now contains 74 cited sources and 55 narrators; the ten exact English quotations and 4/3/3 report distribution are unchanged.
