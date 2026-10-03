@@ -1,0 +1,281 @@
+{
+  "bukhari-1": {
+    "original": "إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى دُنْيَا يُصِيبُهَا أَوْ إِلَى امْرَأَةٍ يَنْكِحُهَا فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ.",
+    "chainNodes": {
+      "bukhari-1-chain": [
+        "al-humaydi",
+        "sufyan",
+        "yahya-al-ansari",
+        "muhammad-al-taymi",
+        "alqama-al-laythi",
+        "umar-ibn-al-khattab",
+        "messenger"
+      ]
+    },
+    "checkedAt": "2026-10-03",
+    "sourceIds": [
+      "bukhari-1-source"
+    ],
+    "status": "verified",
+    "url": "https://sunnah.com/bukhari:1",
+    "reference": "Sahih al-Bukhari 1",
+    "inBookReference": "Book 1, Hadith 1",
+    "introduction": "Narrated 'Umar bin Al-Khattab:",
+    "title": "The reward of deeds depends upon the intentions",
+    "text": "I heard Allah's Messenger (ﷺ) saying, \"The reward of deeds depends upon the intentions and every person will get the reward according to what he has intended. So whoever emigrated for worldly benefits or for a woman to marry, his emigration was for what he emigrated for.\"",
+    "rightsUrl": "https://sunnah.com/about",
+    "sourceTextSha256": "9821da061f9cda4c20bf5a2e5d0860cea2fe2d50bdb7f787c3a022ec03612fbb"
+  },
+  "bukhari-10": {
+    "original": "المسلم من سلم المسلمون من لسانه ويده، والمهاجر من هجر ما نهى الله عنه.",
+    "chainNodes": {
+      "bukhari-10-abdullah-abi-safar": [
+        "adam-abi-iyas",
+        "shuba-hajjaj",
+        "abdullah-abi-safar",
+        "amir-shabi",
+        "abdullah-amr-as",
+        "messenger"
+      ],
+      "bukhari-10-ismail-abi-khalid": [
+        "adam-abi-iyas",
+        "shuba-hajjaj",
+        "ismail-abi-khalid",
+        "amir-shabi",
+        "abdullah-amr-as",
+        "messenger"
+      ]
+    },
+    "checkedAt": "2026-10-03",
+    "sourceIds": [
+      "bukhari-10-source"
+    ],
+    "status": "verified",
+    "url": "https://sunnah.com/bukhari:10",
+    "reference": "Sahih al-Bukhari 10",
+    "inBookReference": "Book 2, Hadith 3",
+    "introduction": "Narrated 'Abdullah bin 'Amr:",
+    "title": "A Muslim is the one who avoids harming Muslims",
+    "text": "The Prophet (ﷺ) said, \"A Muslim is the one who avoids harming Muslims with his tongue and hands. And a Muhajir (emigrant) is the one who gives up (abandons) all what Allah has forbidden.\"",
+    "rightsUrl": "https://sunnah.com/about",
+    "sourceTextSha256": "dd6949d7e510a5dc8c8f1bcb0afc489d01837052c43b910126417e70964d5e31"
+  },
+  "bukhari-6018": {
+    "original": "من كان يؤمن بالله واليوم الآخر فلا يؤذ جاره، ومن كان يؤمن بالله واليوم الآخر فليكرم ضيفه، ومن كان يؤمن بالله واليوم الآخر فليقل خيرًا أو ليصمت.",
+    "chainNodes": {
+      "bukhari-6018-chain": [
+        "qutayba-said",
+        "salam-sulaym-ahwas",
+        "uthman-asim-hasin",
+        "dhakwan-samman",
+        "abu-hurayra",
+        "messenger"
+      ]
+    },
+    "checkedAt": "2026-10-03",
+    "sourceIds": [
+      "bukhari-6018-source"
+    ],
+    "status": "verified",
+    "url": "https://sunnah.com/bukhari:6018",
+    "reference": "Sahih al-Bukhari 6018",
+    "inBookReference": "Book 78, Hadith 49",
+    "introduction": "Narrated Abu Huraira:",
+    "title": "should talk what is good or keep quiet",
+    "text": "Allah's Messenger (ﷺ) said, \"Anybody who believes in Allah and the Last Day should not harm his neighbor, and anybody who believes in Allah and the Last Day should entertain his guest generously and anybody who believes in Allah and the Last Day should talk what is good or keep quiet. (i.e. abstain from all kinds of evil and dirty talk).",
+    "rightsUrl": "https://sunnah.com/about",
+    "sourceTextSha256": "11835538cbe40f3675f205f4cc2126aa26ca1b8dc9d8a666687932aa5bf1e5c1"
+  },
+  "bukhari-6116": {
+    "original": "أن رجلًا قال للنبي صلى الله عليه وسلم: أوصني. قال: «لا تغضب». فردد مرارًا، قال: «لا تغضب».",
+    "chainNodes": {
+      "bukhari-6116-chain": [
+        "yahya-yusuf-zammi",
+        "abu-bakr-ayyash",
+        "uthman-asim-hasin",
+        "dhakwan-samman",
+        "abu-hurayra",
+        "messenger"
+      ]
+    },
+    "checkedAt": "2026-10-03",
+    "sourceIds": [
+      "bukhari-6116-source"
+    ],
+    "status": "verified",
+    "url": "https://sunnah.com/bukhari:6116",
+    "reference": "Sahih al-Bukhari 6116",
+    "inBookReference": "Book 78, Hadith 143",
+    "introduction": "Narrated Abu Huraira:",
+    "title": "Do not become angry.",
+    "text": "A man said to the Prophet (ﷺ) , \"Advise me! \"The Prophet (ﷺ) said, \"Do not become angry.\" The man asked (the same) again and again, and the Prophet (ﷺ) said in each case, \"Do not become angry.\"",
+    "rightsUrl": "https://sunnah.com/about",
+    "sourceTextSha256": "3f3b582f194f3e87df99e4fd5225eb7f15dc02a3367404e081453d7b446b80a3"
+  },
+  "nasai-518": {
+    "original": "لا صلاة بعد العصر حتى تغيب الشمس، ولا بعد الصبح حتى تطلع الشمس.",
+    "chainNodes": {
+      "nasai-518-chain": [
+        "abu-dawud-sulayman-sayf",
+        "said-amir-dubai",
+        "shuba-hajjaj",
+        "saad-ibrahim-zuhri",
+        "nasr-abdurrahman-qurashi",
+        "muadh-qurashi-grandfather",
+        "muadh-ibn-afra",
+        "messenger"
+      ]
+    },
+    "checkedAt": "2026-10-03",
+    "sourceIds": [
+      "nasai-518-source"
+    ],
+    "status": "verified",
+    "url": "https://sunnah.com/nasai:518",
+    "reference": "Sunan an-Nasa'i 518",
+    "inBookReference": "Book 6, Hadith 25",
+    "introduction": "It was narrated from Nasr bin 'Abdur-Rahman, from his grandfather Mu'adh, that he performed Tawaf with Mu'adh bin 'Afra' but he did not pray. \"I said:",
+    "title": "There is no prayer after 'Asr until the sun has set",
+    "text": "'Are you not going to pray?' He said: 'The Messenger of Allah (ﷺ) said: 'There is no prayer after 'Asr until the sun has set, nor after Subh until the sun has risen.'\"",
+    "gradeOnPage": "Da'if (Darussalam)",
+    "englishReference": "Vol. 1, Book 6, Hadith 519",
+    "rightsUrl": "https://sunnah.com/about",
+    "sourceTextSha256": "c0c75a70cda7c4db91fd318cf4468e406f32b7fec49ec8e1748ac546752229fa"
+  },
+  "tirmidhi-2687": {
+    "original": "الكلمة الحكمة ضالة المؤمن، فحيث وجدها فهو أحق بها.",
+    "chainNodes": {
+      "tirmidhi-2687-chain": [
+        "muhammad-umar-walid",
+        "abdullah-numayr",
+        "ibrahim-fadl",
+        "said-maqburi",
+        "abu-hurayra",
+        "messenger"
+      ]
+    },
+    "checkedAt": "2026-10-03",
+    "sourceIds": [
+      "tirmidhi-2687-source"
+    ],
+    "status": "verified",
+    "url": "https://sunnah.com/tirmidhi:2687",
+    "reference": "Jami` at-Tirmidhi 2687",
+    "inBookReference": "Book 41, Hadith 43",
+    "introduction": "Narrated Abu Hurairah:",
+    "title": "The wise statement is the lost property of the believer",
+    "text": "that the Messenger of Allah (ﷺ) said: \"The wise statement is the lost property of the believer, so wherever he finds it, then he is more worthy of it.\"",
+    "gradeOnPage": "Da'if (Darussalam)",
+    "rightsUrl": "https://sunnah.com/about",
+    "sourceTextSha256": "ec6163ce52cc03119823f193406c92541aaea1e370d107c77f2717068b678297"
+  },
+  "ibnmajah-802": {
+    "original": "إذا رأيتم الرجل يعتاد المساجد فاشهدوا له بالإيمان، قال الله تعالى: {إنما يعمر مساجد الله من آمن بالله} الآية.",
+    "chainNodes": {
+      "ibnmajah-802-chain": [
+        "muhammad-ala-kuraib",
+        "rushdin-saad",
+        "amr-harith-masri",
+        "darraj-abi-samh",
+        "sulayman-amr-haytham",
+        "abu-said-khudri",
+        "messenger"
+      ]
+    },
+    "checkedAt": "2026-10-03",
+    "sourceIds": [
+      "ibnmajah-802-source"
+    ],
+    "status": "verified",
+    "url": "https://sunnah.com/ibnmajah:802",
+    "reference": "Sunan Ibn Majah 802",
+    "inBookReference": "Book 4, Hadith 68",
+    "introduction": "It was narrated from Abu Sa'eed that:",
+    "title": "If you see a man frequenting the mosques, then bear witness to his faith.",
+    "text": "The Messenger of Allah said: \"If you see a man frequenting the mosques, then bear witness to his faith. Allah says: 'The mosques of Allah shall be maintained only by those who believe in Allah and the Last Day. [At-Taubah: 18]'\"",
+    "gradeOnPage": "Da'if (Darussalam)",
+    "rightsUrl": "https://sunnah.com/about",
+    "sourceTextSha256": "abc7a8ae53b49665c95ca8dea83757e8578fb4ab86a02c1d4ddb00c12b12ceb6"
+  },
+  "kamil-mothers": {
+    "original": "الجنة تحت أقدام الأمهات، من شئن أدخلن، ومن شئن أخرجن.",
+    "chainNodes": {
+      "kamil-mothers-chain": [
+        "umar-sinan-kamil",
+        "abbas-walid-khallal",
+        "musa-muhammad-ata",
+        "hasan-umar-malih",
+        "maymun-mihran",
+        "abdullah-abbas",
+        "messenger"
+      ]
+    },
+    "checkedAt": "2026-10-03",
+    "sourceIds": [
+      "kamil-mothers"
+    ],
+    "status": "not-found",
+    "text": null,
+    "introduction": null,
+    "url": null,
+    "searchTerms": [
+      "\"من شئن أدخلن\""
+    ],
+    "reviewNote": "No exact text and chain match found. Sunan an-Nasa'i 3104 is a different report through Mu'awiyah ibn Jahimah about staying with one's mother; it does not contain this expanded wording.",
+    "relatedUrl": "https://sunnah.com/nasai:3104"
+  },
+  "abd-humayd-781": {
+    "original": "مثل أصحابي مثل النجوم، يهتدى به، فأيهم أخذتم بقوله اهتديتم.",
+    "chainNodes": {
+      "abd-humayd-781-chain": [
+        "ahmad-abdullah-yunus",
+        "abd-rabbih-shihab",
+        "hamza-abi-hamza",
+        "nafi-umar",
+        "abdullah-umar",
+        "messenger"
+      ]
+    },
+    "checkedAt": "2026-10-03",
+    "sourceIds": [
+      "abd-humayd-781"
+    ],
+    "status": "not-found",
+    "text": null,
+    "introduction": null,
+    "url": null,
+    "searchTerms": [
+      "\"مثل أصحابي مثل النجوم\"",
+      "\"أصحابي كالنجوم\""
+    ],
+    "reviewNote": "No exact text and chain match found. Mishkat al-Masabih, Book 30, Hadith 40 contains a related report from Umar ibn al-Khattab, transmitted by Razin. The selected catalog route is Abd ibn Humayd 781 from Ibn Umar, with different wording. The related English text is not reused.",
+    "relatedUrl": "https://sunnah.com/mishkat/30/40"
+  },
+  "kamil-visit": {
+    "original": "من حج البيت فلم يزرني فقد جفاني.",
+    "chainNodes": {
+      "kamil-visit-chain": [
+        "ali-ishaq-kamil",
+        "muhammad-muhammad-nuuman",
+        "nuuman-shibl",
+        "malik-anas",
+        "nafi-umar",
+        "abdullah-umar",
+        "messenger"
+      ]
+    },
+    "checkedAt": "2026-10-03",
+    "sourceIds": [
+      "kamil-visit"
+    ],
+    "status": "not-found",
+    "text": null,
+    "introduction": null,
+    "url": null,
+    "searchTerms": [
+      "\"من حج البيت\"",
+      "\"من حج البيت فلم يزرني فقد جفاني\""
+    ],
+    "reviewNote": "The site's phrase search returned five reports for the opening words, none with this wording. No exact text and chain match found for Ibn Adi's selected route. No English translation is supplied."
+  }
+}
