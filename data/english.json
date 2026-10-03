@@ -476,8 +476,12 @@
     },
     "ibrahim-muhammad-sabra": {
       "bio": {
-        "original": "يروي عن معاوية بن عبد الله بن جعفر، ويروي عنه ابن أبي سبرة. ذكر المزي احتمال تعيينه بإبراهيم بن محمد الهاشمي ثم توقف: لا يدري أهو هذا أم غيره. نحفظ الاسم الوارد ولا ننقل إليه حكم شخص آخر.",
-        "text": "He narrates from Mu’awiyah ibn Abdullah ibn Ja’far, and Ibn Abi Sabrah narrates from him. Al-Mizzi discusses a possible identification with Ibrahim ibn Muhammad al-Hashimi but leaves it unresolved. The recorded name is retained without borrowing another person’s assessment."
+        "original": "إبراهيم بن محمد بن علي بن عبد الله بن جعفر بن أبي طالب الهاشمي. يقود رابط اسمه في سند ابن ماجه ١٣٨٨ إلى هذه الترجمة في Sunnah.com، وفيها معاوية بن عبد الله بن جعفر من شيوخه وابن أبي سبرة من تلاميذه.",
+        "text": "Ibrahim ibn Muhammad ibn Ali ibn Abdullah ibn Ja’far ibn Abi Talib al-Hashimi. His name in Ibn Majah 1388 links to this Sunnah.com profile, which lists Mu’awiyah ibn Abdullah ibn Ja’far as a teacher and Ibn Abi Sabrah as a student."
+      },
+      "reliability": {
+        "original": "حكمه في Sunnah.com: «صدوق حسن الحديث». ينقل الموقع عن ابن حجر «صدوق»، وعن ابن حبان أنه ذكره في الثقات.",
+        "text": "Sunnah.com labels him “Truthful, Good Hadith”. It records Ibn Hajar’s assessment as truthful (saduq) and notes that Ibn Hibban included him in al-Thiqat."
       }
     },
     "muawiya-abdullah-jafar": {
@@ -1037,6 +1041,12 @@
       "reference": "Hadith 4054; Book 36, Hadith 129; displayed grade: Maudu’ (Darussalam)",
       "originalTitle": "سنن ابن ماجه",
       "originalReference": "الحديث 4054؛ الكتاب 36، الحديث 129؛ الحكم المعروض: موضوع (دار السلام)"
+    },
+    "sunnah-ibrahim-hashimi-11814": {
+      "title": "Ibrahim ibn Muhammad al-Hashimi — Sunnah.com",
+      "reference": "Narrator 11814; name linked from Ibn Majah 1388, lineage and critical appraisals",
+      "originalTitle": "ترجمة إبراهيم بن محمد الهاشمي — Sunnah.com",
+      "originalReference": "الراوي 11814؛ رابط الاسم في سند ابن ماجه 1388، والاسم الكامل وأقوال النقاد"
     }
   },
   "judgements": {
@@ -1095,8 +1105,8 @@
       "text": "In this version, Muadh, Nasr's grandfather, walked with Muadh ibn Afra and asked him about not praying. Al-Mizzi records differences in the grandfather's identification. This path keeps the two men called Muadh separate."
     },
     "ibnmajah-1388-chain": {
-      "original": "«عن أبيه» يقصد عبد الله بن جعفر. إبراهيم بن محمد محفوظ باسمه الوارد مع توقف المزي في تعيينه. اتهام ابن أبي سبرة بالوضع منقول في ترجمته، وحكم الرواية الموضوع مستقل عن ألوان بقية البطاقات.",
-      "text": "“From his father” refers to Abdullah ibn Ja’far. Ibrahim ibn Muhammad retains the recorded name because al-Mizzi leaves his precise identification unresolved. Ibn Abi Sabrah’s accusation of fabrication is recorded in his biography. The fabricated grade belongs to this report and is separate from the other cards’ colours."
+      "original": "«عن أبيه» يقصد عبد الله بن جعفر. يربط Sunnah.com إبراهيم بن محمد بترجمة الهاشمي، مع بقاء توقف المزي في تعيينه موثقًا في المرجع الآخر. الحكم المسجل له «صدوق حسن الحديث»؛ وحكم الرواية «موضوع» مستقل عن حال بقية رواتها.",
+      "text": "“From his father” refers to Abdullah ibn Ja’far. Sunnah.com links Ibrahim ibn Muhammad to the al-Hashimi profile; al-Mizzi’s uncertainty about the identification remains documented in the other reference. The recorded narrator assessment is “Truthful, Good Hadith”. The report’s fabricated grade is separate from the other narrators’ assessments."
     },
     "ibnmajah-4313-chain": {
       "original": "أحمد بن يونس هو أحمد بن عبد الله بن يونس. أبان هو ابن عثمان وليس عثمان نفسه. المزي يصف علاق بأنه مجهول، وينقل اتهام عنبسة بالوضع؛ لا ننقل أحد الحكمين إلى الآخر.",

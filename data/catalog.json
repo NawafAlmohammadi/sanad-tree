@@ -510,6 +510,13 @@
       "reference": "الحديث 4054؛ الكتاب 36، الحديث 129؛ الحكم المعروض: موضوع (دار السلام)",
       "url": "https://sunnah.com/ibnmajah:4054",
       "rights": "Classical Arabic hadith text; individual English educational quotation from Sunnah.com, with attribution. See https://sunnah.com/about section 8."
+    },
+    {
+      "id": "sunnah-ibrahim-hashimi-11814",
+      "title": "ترجمة إبراهيم بن محمد الهاشمي — Sunnah.com",
+      "reference": "الراوي 11814؛ رابط الاسم في سند ابن ماجه 1388، والاسم الكامل وأقوال النقاد",
+      "url": "https://sunnah.com/narrator/11814",
+      "rights": "بيانات تعريفية وتلخيص قصير للأقوال المنقولة مع الإحالة؛ حقوق الموقع والمراجع لأصحابها."
     }
   ],
   "narrators": [
@@ -1797,20 +1804,32 @@
     },
     {
       "id": "ibrahim-muhammad-sabra",
-      "name": "إبراهيم بن محمد — في طريق ابن أبي سبرة",
+      "name": "إبراهيم بن محمد الهاشمي",
       "aliases": [
-        "إبراهيم بن محمد"
+        "إبراهيم بن محمد",
+        "إبراهيم بن محمد الهاشمي",
+        "إبراهيم بن محمد بن علي القرشي",
+        "إبراهيم بن محمد بن علي بن عبد الله بن جعفر"
       ],
       "sourceIds": [
+        "sunnah-ibrahim-hashimi-11814",
         "profile-ibrahim-muhammad-sabra"
       ],
       "bio": {
         "narratorId": "ibrahim-muhammad-sabra",
-        "text": "يروي عن معاوية بن عبد الله بن جعفر، ويروي عنه ابن أبي سبرة. ذكر المزي احتمال تعيينه بإبراهيم بن محمد الهاشمي ثم توقف: لا يدري أهو هذا أم غيره. نحفظ الاسم الوارد ولا ننقل إليه حكم شخص آخر.",
+        "text": "إبراهيم بن محمد بن علي بن عبد الله بن جعفر بن أبي طالب الهاشمي. يقود رابط اسمه في سند ابن ماجه ١٣٨٨ إلى هذه الترجمة في Sunnah.com، وفيها معاوية بن عبد الله بن جعفر من شيوخه وابن أبي سبرة من تلاميذه.",
         "sourceIds": [
-          "profile-ibrahim-muhammad-sabra",
+          "sunnah-ibrahim-hashimi-11814",
           "ibnmajah-1388-source"
         ]
+      },
+      "reliability": {
+        "narratorId": "ibrahim-muhammad-sabra",
+        "text": "حكمه في Sunnah.com: «صدوق حسن الحديث». ينقل الموقع عن ابن حجر «صدوق»، وعن ابن حبان أنه ذكره في الثقات.",
+        "sourceIds": [
+          "sunnah-ibrahim-hashimi-11814"
+        ],
+        "status": "trusted"
       }
     },
     {
@@ -2967,7 +2986,7 @@
           ],
           "note": {
             "chainId": "ibnmajah-1388-chain",
-            "text": "«عن أبيه» يقصد عبد الله بن جعفر. إبراهيم بن محمد محفوظ باسمه الوارد مع توقف المزي في تعيينه. اتهام ابن أبي سبرة بالوضع منقول في ترجمته، وحكم الرواية الموضوع مستقل عن ألوان بقية البطاقات.",
+            "text": "«عن أبيه» يقصد عبد الله بن جعفر. يربط Sunnah.com إبراهيم بن محمد بترجمة الهاشمي، مع بقاء توقف المزي في تعيينه موثقًا في المرجع الآخر. الحكم المسجل له «صدوق حسن الحديث»؛ وحكم الرواية «موضوع» مستقل عن حال بقية رواتها.",
             "sourceIds": [
               "ibnmajah-1388-source",
               "profile-hasan-ali-khallal",
@@ -2976,7 +2995,8 @@
               "profile-ibrahim-muhammad-sabra",
               "profile-muawiya-abdullah-jafar",
               "profile-abdullah-jafar",
-              "profile-ali-abi-talib"
+              "profile-ali-abi-talib",
+              "sunnah-ibrahim-hashimi-11814"
             ]
           }
         }
