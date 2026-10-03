@@ -16,7 +16,7 @@ This register copies source metadata from data/catalog.json. Every source's owne
 | tahdhib-alqama | تهذيب الكمال — المزي | ترجمة علقمة بن وقاص، رقم ٤٠٢١، ج ٢٠، ص ٣١٣–٣١٤ | [Open source](https://www.islamweb.net/ar/library/content/1001/5071/علقمة-بن-وقاص-بن-محصن-بن-كلدة) |
 | siyar-umar | سير أعلام النبلاء — الذهبي | ج ٢٨، سيرة عمر الفاروق، ترجمة عمر ومناقبه، ص ٧١ | [Open source](https://islamweb.net/ar/library/content/60/6448/ترجمة-عمر-الفاروق-ومناقبه) |
 | quran-ahzab-40 | القرآن الكريم | سورة الأحزاب، الآية ٤٠ | [Open source](https://quran.com/33/40) |
-| nasai-518-source | سنن النسائي | كتاب المواقيت، الحديث ٥١٨ في الترقيم الموافق لصورة الفريق؛ قد يختلف الرقم باختلاف الطبعة | [Open source](https://www.alim.org/hadith/sunan-an-nasai/6/518/) |
+| nasai-518-source | سنن النسائي | كتاب المواقيت، الحديث ٥١٨ في الترقيم الموافق لصورة الفريق؛ قد يختلف الرقم باختلاف الطبعة | [Open source](https://sunnah.com/nasai:518) |
 | albani-nasai-518 | ضعيف سنن النسائي — الألباني | كتاب المواقيت، رقم ١٥ / أصل الحديث ٥١٨؛ الحكم: ضعيف الإسناد. مطابق للمقتطف الذي أرسله الفريق. | Printed reference; see location |
 | dhakhira-nasai-518 | ذخيرة العقبى في شرح المجتبى — محمد بن علي بن آدم الإتيوبي | ج ٦، ص ٧٠٨–٧١٣، رجال إسناد الحديث ٥١٨ والتنبيه على اختلافه | [Open source](https://scribetools.com/en/library/six-books/شرح-سنن-النسائي-ذخيرة-العقبى-في-شرح-المجتبى-دار-المعراج-الدولية/shsuns06-0ca094d9/text/0036) |
 | siyar-sulayman-sayf | سير أعلام النبلاء — الذهبي | ج ١٣، ص ١٤٧–١٤٨، ترجمة سليمان بن سيف؛ نقل توثيق النسائي | [Open source](https://islamweb.net/ar/library/content/60/2476/سليمان-بن-سيف) |
@@ -76,3 +76,7 @@ This register copies source metadata from data/catalog.json. Every source's owne
 | taysir-terms | تيسير مصطلح الحديث — محمود الطحان | مكتبة المعارف، الطبعة العاشرة، ص ١٥–١٦، تعريفات أولية: السند والمتن | [Open source](https://www.islamarchive.cc/ketab_content/6165/p-15) |
 
 Rights notes for each entry are in data/catalog.json. Existing DATA-REVIEW.md, NASAI-518-REVIEW.md and TEN-HADITHS-REVIEW.md retain the detailed matching decisions.
+
+## English hadith quotations
+
+Seven exact English quotations are separately documented in [SUNNAH-ENGLISH-AUDIT.md](SUNNAH-ENGLISH-AUDIT.md), with the original Arabic and reviewed path identities in data/hadith-english.json. Three unmatched fabricated reports have no English quotation. Sources and grading are retained. Reproduction of the seven individual records follows Sunnah.com About section 8 for this educational selection.

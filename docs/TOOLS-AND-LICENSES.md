@@ -32,7 +32,7 @@ The geometric SVG ornaments were authored for the project. The presentation uses
 
 ## Hadith data and scholarly references
 
-data/catalog.json records 68 source entries, including title, location, URL and a rights note. SOURCES-REGISTER.md reproduces this metadata, without adding material to the assistant. Narrator summaries and display translations are prepared for this project. External links are attribution and verification references, not a blanket redistribution licence. Modern translations, scans and complete third-party website pages are not bundled. Check the relevant owner's conditions before importing larger datasets.
+data/catalog.json records 68 source entries, including title, location, URL and a rights note. SOURCES-REGISTER.md reproduces this metadata, without adding material to the assistant. Narrator summaries and interface explanations are prepared for this project. Seven English hadith quotations are taken verbatim from Sunnah.com, after matching the Arabic text and selected route. Three unmatched reports have no English quotation. See SUNNAH-ENGLISH-AUDIT.md. External links are attribution and verification references, not a blanket redistribution licence. Sunnah.com About, section 8, permits reproducing individual hadith or selections for teaching/didactic/presentation purposes. These seven attributed English records are included as an educational selection under that permission; their owners retain translation rights. No complete third-party pages, books, collections or scans are bundled. Check the relevant owner's conditions before importing larger datasets.
 
 ## AI and hosting services
 

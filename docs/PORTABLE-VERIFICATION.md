@@ -4,9 +4,10 @@ Updated on 3 October 2026. Engineering checks do not establish independent schol
 
 ## Current source and portable package
 
-- All 61 automated cases passed, including narrator identity, references, colours, report-text cards, grounded teaching plans and out-of-scope refusal.
+- All 64 automated cases passed, including narrator identity, references, colours, report-text cards, grounded teaching plans and out-of-scope refusal.
 - The catalog contains 10 reports, 11 paths, 51 identities and 68 source entries: 4 authentic, 3 weak and 3 fabricated reports. The portable catalog matches the hosted source exactly.
-- The portable test command includes the teaching-plan review suite.
+- The portable test command includes the teaching-plan review suite and exact-English source-binding tests.
+- The ten-report Sunnah.com audit verified seven exact English quotations. Three unmatched fabricated reports retain Arabic text with an explicit English availability notice. The map, text panel and assistant use the same verified record.
 - The archive includes source, data, package-lock, API templates, English README and font licence notices. It excludes actual keys, installed dependencies, build output, Git and hosting-account configuration.
 
 ## Portable run checks on 2 October 2026

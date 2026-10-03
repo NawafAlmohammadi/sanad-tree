@@ -30,3 +30,7 @@ The opening screen waits for the visitor to select a hadith. Tracing takes 1.7 s
 Run `npm test`, `npm run check:data` and the relevant type/build checks. Tests cover identity separation, citations, fabricated warnings, source translations, scoped teaching plans, malicious model identifiers, prompt injection and provider failures. These checks verify software behaviour and source bindings; they do not replace a hadith specialist’s review of the underlying scholarly material.
 
 The interface now uses an olive (#4F5B2A), brass (#B8892D) and parchment (#D8C9A8) palette with decorative geometric SVG accents. The top row has one centred library count in each language. Theme colours do not replace narrator-assessment or report-grading colours.
+
+## Exact English hadith quotations — 3 October 2026
+
+The ten reports were compared with Sunnah.com. Seven matching records now use its English text verbatim, with attribution, under its individual educational reproduction permission. Three unmatched fabricated reports keep the original Arabic and an English availability notice. This replaces the previous independently prepared matn translations. See SUNNAH-ENGLISH-AUDIT.md and data/hadith-english.json. The source and chain bindings invalidate a translation when its Arabic record changes.
