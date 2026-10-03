@@ -33,4 +33,12 @@ The interface now uses an olive (#4F5B2A), brass (#B8892D) and parchment (#D8C9A
 
 ## Exact English hadith quotations — 3 October 2026
 
-The ten reports were compared with Sunnah.com. Seven matching records now use its English text verbatim, with attribution, under its individual educational reproduction permission. Three unmatched fabricated reports keep the original Arabic and an English availability notice. This replaces the previous independently prepared matn translations. See SUNNAH-ENGLISH-AUDIT.md and data/hadith-english.json. The source and chain bindings invalidate a translation when its Arabic record changes.
+The ten reports were compared with Sunnah.com. All ten current records use its English text verbatim, with attribution, under its individual educational reproduction permission. The three previously unmatched fabricated reports were replaced at the team’s request with Ibn Majah 1388, 4313 and 4054, each with a separate verified chain. This replaces the previous independently prepared matn translations. See SUNNAH-ENGLISH-AUDIT.md and data/hadith-english.json. The source and chain bindings invalidate a translation when its Arabic record changes.
+
+## University identity update — 3 October 2026
+
+The supplied Islamic University of Madinah artwork replaces the app’s brand marks and favicon. Default dark mode uses navy, blue and gold; narrator assessment colours retain their meanings. The footer names Team Sanad, the College of Computer Science and Dr. Ahmad Badr al-Din al-Khidr in the Arabic wording supplied by the team.
+
+The chain appears complete with a brief, calm fade. No animation or automatic scrolling starts on selection. Optional tracing highlights one step every two seconds while leaving the viewport under the user’s control. Reduced-motion preferences disable the reveal and animated tracing.
+
+The current catalog has 10 reports, 55 narrator identities and 73 source records. 65 automated checks and TypeScript checks pass. Missing assessments, ambiguous identity expansions and external requests continue to fail closed.

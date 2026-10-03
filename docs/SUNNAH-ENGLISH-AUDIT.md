@@ -1,37 +1,36 @@
 # Sunnah.com English-text audit
 
-Reviewed on 3 October 2026. The unit of comparison is the exact Arabic report and its selected chain, not a similar saying or topic.
+Reviewed on 3 October 2026. All ten current records have an exact English quotation tied to the Arabic record, source IDs and selected chain nodes. The library retains four authentic, three weak and three fabricated reports.
 
-## Seven verified records
-
-| Catalog record | Exact English source | In-book reference | Result |
+| Catalog record | Exact source | In-book reference | Classification |
 | --- | --- | --- | --- |
-| bukhari-1 | [Sahih al-Bukhari 1](https://sunnah.com/bukhari:1) | Book 1, Hadith 1 | Text and selected chain match |
-| bukhari-10 | [Sahih al-Bukhari 10](https://sunnah.com/bukhari:10) | Book 2, Hadith 3 | Text and both selected branches match |
-| bukhari-6018 | [Sahih al-Bukhari 6018](https://sunnah.com/bukhari:6018) | Book 78, Hadith 49 | Text and selected chain match |
-| bukhari-6116 | [Sahih al-Bukhari 6116](https://sunnah.com/bukhari:6116) | Book 78, Hadith 143 | Text and selected chain match |
-| nasai-518 | [Sunan an-Nasa'i 518](https://sunnah.com/nasai:518) | Book 6, Hadith 25 | Same route through Nasr, his grandfather Mu'adh, and Mu'adh ibn Afra; Da'if (Darussalam) |
-| tirmidhi-2687 | [Jami` at-Tirmidhi 2687](https://sunnah.com/tirmidhi:2687) | Book 41, Hadith 43 | Text and selected chain match; Da'if (Darussalam) |
-| ibnmajah-802 | [Sunan Ibn Majah 802](https://sunnah.com/ibnmajah:802) | Book 4, Hadith 68 | Same route through Rushdin, Amr, Darraj and Abu al-Haytham; Da'if (Darussalam) |
+| bukhari-1 | [Sahih al-Bukhari 1](https://sunnah.com/bukhari:1) | Book 1, Hadith 1 | sahih |
+| bukhari-10 | [Sahih al-Bukhari 10](https://sunnah.com/bukhari:10) | Book 2, Hadith 3 | sahih |
+| bukhari-6018 | [Sahih al-Bukhari 6018](https://sunnah.com/bukhari:6018) | Book 78, Hadith 49 | sahih |
+| bukhari-6116 | [Sahih al-Bukhari 6116](https://sunnah.com/bukhari:6116) | Book 78, Hadith 143 | sahih |
+| nasai-518 | [Sunan an-Nasa'i 518](https://sunnah.com/nasai:518) | Book 6, Hadith 25 | weak |
+| tirmidhi-2687 | [Jami` at-Tirmidhi 2687](https://sunnah.com/tirmidhi:2687) | Book 41, Hadith 43 | weak |
+| ibnmajah-802 | [Sunan Ibn Majah 802](https://sunnah.com/ibnmajah:802) | Book 4, Hadith 68 | weak |
+| ibnmajah-1388 | [Sunan Ibn Majah 1388](https://sunnah.com/ibnmajah:1388) | Book 5, Hadith 586 | fabricated |
+| ibnmajah-4313 | [Sunan Ibn Majah 4313](https://sunnah.com/ibnmajah:4313) | Book 37, Hadith 214 | fabricated |
+| ibnmajah-4054 | [Sunan Ibn Majah 4054](https://sunnah.com/ibnmajah:4054) | Book 36, Hadith 129 | fabricated |
 
-The older English numbering for Nasa'i 518 is Vol. 1, Book 6, Hadith 519. This is the same page, not a replacement report. Its weak classification and the two distinct Mu'adh identities are preserved.
+## Replacement records
 
-The introduction and English body were checked on the seven individual source pages. `data/hadith-english.json` preserves their visible wording and punctuation. The source's explanatory parenthesis in Bukhari 6018 is retained as part of its English text, without adding it to the Arabic record. Library titles for these records are exact excerpts from the English body, not independent translations.
+At the team’s request, the previous three fabricated reports without matching Sunnah.com English texts were replaced with Ibn Majah 1388, 4313 and 4054. These are different reports, with their own Arabic texts, chains and narrator profiles. All three pages display Maudu’ (Darussalam); the project explicitly attributes that classification and retains a non-attribution warning in the map, text view and assistant.
 
-## Three records without an exact English match
+Ibn Majah 1388: “from his father” is Abdullah ibn Ja’far, distinct from his son Mu’awiyah. Ibrahim ibn Muhammad retains the recorded name: al-Mizzi leaves the expanded identification unresolved. No reliability grade is invented for him.
 
-| Catalog record | Original Arabic wording | Finding |
-| --- | --- | --- |
-| kamil-mothers | الجنة تحت أقدام الأمهات، من شئن أدخلن، ومن شئن أخرجن | No result for the distinctive phrase "من شئن أدخلن". [Nasa'i 3104](https://sunnah.com/nasai:3104) concerns Mu'awiyah ibn Jahimah and is a different report, without this expansion. Its translation is not reused. |
-| abd-humayd-781 | مثل أصحابي مثل النجوم، يهتدى به، فأيهم أخذتم بقوله اهتديتم | No result for "مثل أصحابي مثل النجوم". Searching "أصحابي كالنجوم" finds [Mishkat, Book 30, Hadith 40](https://sunnah.com/mishkat/30/40), from Umar ibn al-Khattab, transmitted by Razin. The catalog report is from Ibn Umar through Abd ibn Humayd 781, with different wording. Its translation is not reused. |
-| kamil-visit | من حج البيت فلم يزرني فقد جفاني | Searching "من حج البيت" returned five different reports, none containing this wording. No exact English match was found for the selected Ibn Adi route. |
+Ibn Majah 4313: Ahmad ibn Yunus maps to Ahmad ibn Abdullah ibn Yunus. Alaq’s unknown status and Anbasah’s accusation of fabrication belong to separate identities.
 
-These are search findings, not proof that the website can never contain such a record. Their original Arabic texts, sources, chains and fabricated-attribution warnings remain in the library. The previous independently written English quotations have been removed. English mode explicitly states that a matching translation was not found and displays the original Arabic with its language and direction marked. The assistant uses the same availability rule; a related text cannot silently replace an unmatched quotation.
+Ibn Majah 4054: Abu Shajarah is the kunyah of Kathir ibn Murrah, represented by one node. Abu al-Zahiriyyah is Hudayr ibn Kurayb. Sa’id ibn Sinan is Abu Mahdi al-Himsi. Ibn Umar remains distinct from Ibn Amr.
+
+The compiler is Ibn Majah, followed by the narrators in the Arabic source’s order. Companion and Prophet cards remain green; their colour does not authenticate a fabricated report.
 
 ## Source binding and reproduction
 
-Every verified English record contains the exact Arabic matn, source IDs, reviewed chain nodes, page URL, reference, review date and a digest of its introduction and body. Changing the Arabic text, its sources or its paths invalidates the English quotation until reviewed again. The map, text view and assistant share this lookup.
+data/hadith-english.json preserves the visible English introduction, wording and punctuation. Library titles are exact excerpts. A SHA-256 digest covers the introduction and body. Editing the Arabic matn, source IDs or chain nodes invalidates the English quotation until checked again. The map, text view and assistant use the same lookup.
 
-[Sunnah.com's About page, section 8](https://sunnah.com/about) permits reproducing individual hadith or selections for teaching, didactic or presentation purposes. This educational selection reproduces seven individual English records with attribution. It does not redistribute whole books, full website pages or scraped collections. Translation rights remain with their owners; this permission is not a blanket licence for other datasets or commercial reuse.
+[Sunnah.com About, section 8](https://sunnah.com/about) permits individual hadith selections for teaching, didactic and presentation purposes. Ten attributed English records are included for this educational selection. No full pages, books or scraped collections are distributed. Translation rights remain with their owners.
 
-Automated checks verify the source bindings, captured-text digests, unavailable-translation behaviour and preservation of weak/fabricated notices. They do not replace scholarly review or a future check of the live source.
+65 automated checks pass, including source bindings, quotation digests, missing-information refusals, fabricated-report warnings and identity isolation. These software checks do not constitute a new scholarly grading.

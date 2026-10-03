@@ -32,7 +32,7 @@ The geometric SVG ornaments were authored for the project. The presentation uses
 
 ## Hadith data and scholarly references
 
-data/catalog.json records 68 source entries, including title, location, URL and a rights note. SOURCES-REGISTER.md reproduces this metadata, without adding material to the assistant. Narrator summaries and interface explanations are prepared for this project. Seven English hadith quotations are taken verbatim from Sunnah.com, after matching the Arabic text and selected route. Three unmatched reports have no English quotation. See SUNNAH-ENGLISH-AUDIT.md. External links are attribution and verification references, not a blanket redistribution licence. Sunnah.com About, section 8, permits reproducing individual hadith or selections for teaching/didactic/presentation purposes. These seven attributed English records are included as an educational selection under that permission; their owners retain translation rights. No complete third-party pages, books, collections or scans are bundled. Check the relevant owner's conditions before importing larger datasets.
+data/catalog.json records 68 source entries, including title, location, URL and a rights note. SOURCES-REGISTER.md reproduces this metadata, without adding material to the assistant. Narrator summaries and interface explanations are prepared for this project. Ten English hadith quotations are taken verbatim from Sunnah.com, after matching the Arabic text and selected route. See SUNNAH-ENGLISH-AUDIT.md. External links are attribution and verification references, not a blanket redistribution licence. Sunnah.com About, section 8, permits reproducing individual hadith or selections for teaching/didactic/presentation purposes. These ten attributed English records are included as an educational selection under that permission; their owners retain translation rights. No complete third-party pages, books, collections or scans are bundled. Check the relevant owner's conditions before importing larger datasets.
 
 ## AI and hosting services
 
@@ -276,3 +276,7 @@ This is a metadata inventory, not a substitute for each package's complete copyr
 | webpack | 5.111.1 | MIT | Runtime / dependency |
 | webpack-sources | 3.6.0 | MIT | Runtime / dependency |
 | yoga-layout | 3.2.1 | MIT | Build / development |
+
+## University artwork
+
+The Islamic University of Madinah logos in public/university were supplied by the team and are displayed unchanged. University marks remain the property of the university; no open-source licence for those marks is granted by this project.
