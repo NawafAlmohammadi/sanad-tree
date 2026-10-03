@@ -424,62 +424,6 @@
         "text": "Companion."
       }
     },
-    "umar-sinan-kamil": {
-      "bio": {
-        "original": "ذكره ابن عدي في هذا الإسناد راوياً عن عباس بن الوليد الخلال. لم نثبت هنا نسبه الكامل أو حكمًا مستقلاً؛ الاسم محفوظ كما في النص.",
-        "text": "Ibn Adi names him in this chain as narrating from Abbas ibn al-Walid al-Khallal. No fuller identification or independent reliability rating has been established here."
-      }
-    },
-    "abbas-walid-khallal": {
-      "bio": {
-        "original": "عباس بن الوليد بن صبح السلمي الدمشقي؛ يميز عن عباس بن الوليد بن مزيد.",
-        "text": "Abbas ibn al-Walid ibn Subh al-Sulami al-Dimashqi, distinct from Abbas ibn al-Walid ibn Mazyad."
-      },
-      "reliability": {
-        "original": "ابن حجر: صدوق. وذكره ابن حبان في الثقات؛ لا ينقل إليه توثيق ابن مزيد.",
-        "text": "Ibn Hajar: truthful. Ibn Hibban included him among trustworthy narrators. Ibn Mazyad's rating must not be transferred to him."
-      }
-    },
-    "musa-muhammad-ata": {
-      "bio": {
-        "original": "أبو الطاهر البلقاوي، راوٍ عن أبي المليح الرقي في الطريق المختار.",
-        "text": "Abu al-Tahir al-Balqawi, who narrates from Abu al-Malih al-Raqqi in this path."
-      },
-      "reliability": {
-        "original": "كذّبه أبو زرعة وأبو حاتم، وعدّه الدارقطني متروكًا؛ نقل ذلك ابن حجر.",
-        "text": "Abu Zur'ah and Abu Hatim accused him of lying; al-Daraqutni rated him abandoned. Ibn Hajar reports these judgements."
-      }
-    },
-    "hasan-umar-malih": {
-      "bio": {
-        "original": "الحسن بن عمر الفزاري الرقي، معروف بأبي المليح؛ يروي عن ميمون بن مهران.",
-        "text": "Al-Hasan ibn Umar al-Fazari al-Raqqi, known as Abu al-Malih. He narrates from Maymun ibn Mihran."
-      },
-      "reliability": {
-        "original": "وثقه أحمد وأبو زرعة وابن معين.",
-        "text": "Ahmad, Abu Zur'ah and Ibn Ma'in judged him trustworthy."
-      }
-    },
-    "maymun-mihran": {
-      "bio": {
-        "original": "أبو أيوب، فقيه من أهل الرقة.",
-        "text": "Abu Ayyub, a jurist from al-Raqqah."
-      },
-      "reliability": {
-        "original": "ابن حجر: ثقة فقيه، وكان يرسل؛ التوثيق لا يثبت اتصال كل رواية بمجرده.",
-        "text": "Ibn Hajar: trustworthy and a jurist, but he transmitted mursal reports. Trustworthiness alone does not establish continuity in every chain."
-      }
-    },
-    "abdullah-abbas": {
-      "bio": {
-        "original": "صحابي هاشمي، ابن عم النبي ﷺ ومن فقهاء الصحابة.",
-        "text": "A Hashimi Companion, cousin of the Prophet ﷺ and one of the jurists among the Companions."
-      },
-      "classification": {
-        "original": "صحابي.",
-        "text": "Companion."
-      }
-    },
     "ahmad-abdullah-yunus": {
       "bio": {
         "original": "أبو عبد الله الكوفي؛ ينسب إلى جده اختصارًا فيقال أحمد بن يونس.",
@@ -488,36 +432,6 @@
       "reliability": {
         "original": "أبو حاتم: ثقة متقن.",
         "text": "Abu Hatim: trustworthy and precise."
-      }
-    },
-    "abd-rabbih-shihab": {
-      "bio": {
-        "original": "عبد ربه بن نافع الكناني، أبو شهاب الأصغر؛ روى عن حمزة الجزري.",
-        "text": "Abd Rabbih ibn Nafi al-Kinani, known as Abu Shihab al-Asghar. He narrated from Hamzah al-Jazari."
-      },
-      "reliability": {
-        "original": "وثقه ابن معين، وقال النسائي: ليس بالقوي؛ تكلموا في حفظه. تعرض أقوال التعديل والجرح معًا.",
-        "text": "Ibn Ma'in judged him trustworthy; al-Nasa'i said he was not strong. His memory was criticised. Both favourable and critical opinions are retained."
-      }
-    },
-    "hamza-abi-hamza": {
-      "bio": {
-        "original": "الجزري النصيبي، واسم أبيه ميمون؛ راوٍ عن نافع، وروى عنه أبو شهاب الحناط.",
-        "text": "Al-Jazari al-Nasibi; his father was named Maymun. He narrated from Nafi, and Abu Shihab al-Hannat narrated from him."
-      },
-      "reliability": {
-        "original": "النسائي والدارقطني: متروك الحديث؛ ذكر ابن عدي أن عامة مروياته مناكير موضوعة.",
-        "text": "Al-Nasa'i and al-Daraqutni: abandoned in hadith. Ibn Adi states that most of his reports are objectionable and fabricated."
-      }
-    },
-    "nafi-umar": {
-      "bio": {
-        "original": "راوٍ مدني، مولى عبد الله بن عمر؛ يميز عن نافع مولى أم سلمة.",
-        "text": "A narrator from Madinah and freedman of Abdullah ibn Umar, distinct from Nafi, the freedman of Umm Salamah."
-      },
-      "reliability": {
-        "original": "ابن حجر: ثقة ثبت مشهور.",
-        "text": "Ibn Hajar: trustworthy, firm in transmission and well known."
       }
     },
     "abdullah-umar": {
@@ -530,40 +444,158 @@
         "text": "Companion."
       }
     },
-    "ali-ishaq-kamil": {
+    "hasan-ali-khallal": {
       "bio": {
-        "original": "ورد بهذا الاسم في طريق ابن عدي عن محمد بن محمد بن النعمان. لا نجزم بنسبة إضافية أو حكم مستقل لم يثبت لهذا الاسم في هذا الطريق.",
-        "text": "Named this way in Ibn Adi's path from Muhammad ibn Muhammad ibn al-Numan. No further identification or independent rating has been established for this person in this path."
-      }
-    },
-    "muhammad-muhammad-nuuman": {
-      "bio": {
-        "original": "حفيد النعمان بن شبل؛ يروي في الطريق المختار عن جده، وليس عن مالك مباشرة.",
-        "text": "Grandson of al-Numan ibn Shibl. In this path he narrates from his grandfather, not directly from Malik."
+        "original": "الحسن بن علي الهذلي، المعروف بالخلال والحلواني، من شيوخ ابن ماجه في هذا الطريق.",
+        "text": "Al-Hasan ibn Ali al-Hudhali, known as al-Khallal and al-Hulwani. Ibn Majah narrates from him in this path."
       },
       "reliability": {
-        "original": "نقل ابن حجر أن الدارقطني طعن فيه واتهمه. يميز حكمه عن حكم جده النعمان.",
-        "text": "Ibn Hajar reports that al-Daraqutni criticised and accused him. His rating is distinct from that of his grandfather."
+        "original": "وثقه النسائي، ووصفه يعقوب بن شيبة بالإتقان، كما نقل المزي؛ ونقلت الترجمة أيضًا تحفظًا عن أحمد.",
+        "text": "Al-Nasa’i judged him trustworthy and Ya’qub ibn Shaybah praised his precision, as recorded by al-Mizzi. The biography also records a reservation from Ahmad."
       }
     },
-    "nuuman-shibl": {
+    "abdrazzaq-hammam": {
       "bio": {
-        "original": "راوٍ بصري عن مالك؛ جدّ محمد بن محمد بن النعمان في هذا الطريق.",
-        "text": "A Basran narrator from Malik, and grandfather of Muhammad ibn Muhammad ibn al-Numan in this path."
+        "original": "أبو بكر الصنعاني الحميري، محدث من صنعاء وصاحب تصانيف.",
+        "text": "Abu Bakr al-San’ani al-Himyari, a hadith scholar from Sana’a and an author."
       },
       "reliability": {
-        "original": "جرحه ابن حبان، ونقل لسان الميزان توثيقًا في أول ترجمة الكامل. أقواله متفاوتة؛ لا ينقل إليه حكم حفيده.",
-        "text": "Ibn Hibban criticised him. Lisan al-Mizan also reports a favourable assessment at the start of his entry in al-Kamil. Opinions differ; his grandson's rating must not be transferred to him."
+        "original": "ابن حجر: ثقة حافظ مصنف، تغير في آخر عمره بعد العمى. ونقل المصدر عن البخاري أن روايته من كتابه أصح؛ اللون ينبه إلى هذا التفصيل ولا يحكم على الطريق وحده.",
+        "text": "Ibn Hajar calls him trustworthy, a memoriser and an author, with changes in his later years after blindness. Al-Bukhari preferred his narration from his books. The colour highlights this qualification; it does not independently grade the path."
       }
     },
-    "malik-anas": {
+    "ibn-abi-sabra": {
       "bio": {
-        "original": "إمام دار الهجرة، من رواة نافع مولى ابن عمر.",
-        "text": "The imam of Madinah, who narrated from Nafi, the freedman of Ibn Umar."
+        "original": "راوٍ مدني قرشي، يرد في هذا الطريق باسم ابن أبي سبرة، بين عبد الرزاق وإبراهيم بن محمد.",
+        "text": "A Qurashi narrator from Madinah, named Ibn Abi Sabrah in this path between Abd al-Razzaq and Ibrahim ibn Muhammad."
       },
       "reliability": {
-        "original": "ابن حجر: رأس المتقنين وكبير المتثبتين.",
-        "text": "Ibn Hajar: a leading figure among precise and scrupulous narrators."
+        "original": "قال أحمد إنه كان يضع الحديث، وتركه النسائي، كما نقل الذهبي.",
+        "text": "Al-Dhahabi records Ahmad’s accusation that he fabricated hadith and al-Nasa’i’s judgement that he should be abandoned."
+      }
+    },
+    "ibrahim-muhammad-sabra": {
+      "bio": {
+        "original": "يروي عن معاوية بن عبد الله بن جعفر، ويروي عنه ابن أبي سبرة. ذكر المزي احتمال تعيينه بإبراهيم بن محمد الهاشمي ثم توقف: لا يدري أهو هذا أم غيره. نحفظ الاسم الوارد ولا ننقل إليه حكم شخص آخر.",
+        "text": "He narrates from Mu’awiyah ibn Abdullah ibn Ja’far, and Ibn Abi Sabrah narrates from him. Al-Mizzi discusses a possible identification with Ibrahim ibn Muhammad al-Hashimi but leaves it unresolved. The recorded name is retained without borrowing another person’s assessment."
+      }
+    },
+    "muawiya-abdullah-jafar": {
+      "bio": {
+        "original": "راوٍ هاشمي مدني يروي هنا عن أبيه عبد الله بن جعفر؛ هو الابن وليس الصحابي عبد الله بن جعفر.",
+        "text": "A Hashimi narrator from Madinah. Here he narrates from his father Abdullah ibn Ja’far. He is the son, distinct from his Companion father."
+      },
+      "reliability": {
+        "original": "وثقه العجلي، وذكره ابن حبان في الثقات، كما نقل المزي.",
+        "text": "Al-Mizzi records al-’Ijli’s judgement of trustworthiness and Ibn Hibban’s inclusion of him among trustworthy narrators."
+      }
+    },
+    "abdullah-jafar": {
+      "bio": {
+        "original": "صحابي هاشمي، يروي عنه ابنه معاوية في هذا الطريق. «عن أبيه» يعود إلى عبد الله بن جعفر، ثم يروي عبد الله هنا عن علي بن أبي طالب.",
+        "text": "A Hashimi Companion. His son Mu’awiyah narrates from him in this path. “From his father” refers to Abdullah ibn Ja’far, who here narrates from Ali ibn Abi Talib."
+      }
+    },
+    "ali-abi-talib": {
+      "bio": {
+        "original": "صحابي هاشمي، كنيته أبو الحسن. يرد اسمه في آخر هذا الطريق قبل نسبة القول إلى النبي ﷺ؛ صحة الصحبة لا تصحح الطريق الموضوع.",
+        "text": "A Hashimi Companion, known as Abu al-Hasan. He is named before the attribution to the Prophet ﷺ in this path. His Companion status does not authenticate this fabricated report."
+      }
+    },
+    "said-marwan": {
+      "bio": {
+        "original": "أبو عثمان البغدادي، سعيد بن مروان بن علي؛ يروي في هذا الطريق عن أحمد بن يونس.",
+        "text": "Abu Uthman al-Baghdadi, Sa’id ibn Marwan ibn Ali. He narrates from Ahmad ibn Yunus in this path."
+      },
+      "reliability": {
+        "original": "وصفه ابن حجر والخطيب بأنه صدوق في الأقوال المنقولة بالمصدر.",
+        "text": "The source records Ibn Hajar and al-Khatib describing him as truthful."
+      }
+    },
+    "anbasa-abdurrahman": {
+      "bio": {
+        "original": "يروي في هذا الطريق عن علاق بن أبي مسلم، ويروي عنه أحمد بن يونس.",
+        "text": "In this path he narrates from Alaq ibn Abi Muslim, and Ahmad ibn Yunus narrates from him."
+      },
+      "reliability": {
+        "original": "أبو حاتم: متروك الحديث وكان يضع الحديث. وتركه النسائي، كما نقل المزي.",
+        "text": "Al-Mizzi records Abu Hatim’s judgement that he was abandoned and fabricated hadith, and al-Nasa’i’s judgement that he should be abandoned."
+      }
+    },
+    "alaq-abi-muslim": {
+      "bio": {
+        "original": "يروي عن أبان بن عثمان، ويروي عنه عنبسة بن عبد الرحمن. ورد اسمه أيضًا بصيغة غلاق وبصيغة ابن مسلم؛ لا ينقل إليه حكم عنبسة.",
+        "text": "He narrates from Aban ibn Uthman, and Anbasah ibn Abd al-Rahman narrates from him. The biography records Ghilaq and Ibn Muslim as name variants. Anbasah’s assessment must not be transferred to him."
+      },
+      "reliability": {
+        "original": "وصفه المزي بأنه شيخ مجهول؛ اللون الأصفر ينبه إلى جهالة الراوي.",
+        "text": "Al-Mizzi describes him as an unknown shaykh. Yellow flags this lack of established identification and assessment."
+      }
+    },
+    "aban-uthman": {
+      "bio": {
+        "original": "تابعي مدني، ابن الصحابي عثمان بن عفان، يروي هنا عن أبيه.",
+        "text": "A Successor from Madinah and the son of the Companion Uthman ibn Affan. He narrates from his father here."
+      },
+      "reliability": {
+        "original": "قال ابن سعد إنه ثقة وله أحاديث عن أبيه، كما نقل الذهبي.",
+        "text": "Al-Dhahabi records Ibn Sa’d describing him as trustworthy and noting his reports from his father."
+      }
+    },
+    "uthman-affan": {
+      "bio": {
+        "original": "صحابي، يروي عنه ابنه أبان في هذا الطريق. يبقى حكم الرواية منقولًا عن المرجع ولا يستنتج من لون بطاقة الصحابي.",
+        "text": "A Companion. His son Aban narrates from him in this path. The report’s grade comes from its cited reference and is not inferred from the Companion card’s colour."
+      }
+    },
+    "muhammad-musaffa": {
+      "bio": {
+        "original": "أبو عبد الله الحمصي، محمد بن مصفى بن بهلول. يروي هنا عن محمد بن حرب؛ هما شخصان مختلفان.",
+        "text": "Abu Abdullah al-Himsi, Muhammad ibn Musaffa ibn Bahlul. He narrates here from Muhammad ibn Harb; these are two different people."
+      },
+      "reliability": {
+        "original": "ابن حجر: صدوق له أوهام وكان يدلس. ونقلت الترجمة أيضًا توثيقًا عن غيره؛ اللون الأصفر يحفظ هذا التفصيل.",
+        "text": "Ibn Hajar describes him as truthful, with errors, and practising tadlis. The entry also records favourable assessments from other critics. Yellow retains this qualification."
+      }
+    },
+    "muhammad-harb": {
+      "bio": {
+        "original": "أبو عبد الله الخولاني الأبرش، كاتب الزبيدي. يروي هنا عن سعيد بن سنان الحمصي.",
+        "text": "Abu Abdullah al-Khawlani, known as al-Abrash and al-Zubaydi’s scribe. Here he narrates from Sa’id ibn Sinan al-Himsi."
+      },
+      "reliability": {
+        "original": "وثقه العجلي والنسائي، كما نقل المزي.",
+        "text": "Al-Mizzi records al-’Ijli and al-Nasa’i judging him trustworthy."
+      }
+    },
+    "said-sinan-himsi": {
+      "bio": {
+        "original": "أبو مهدي الحمصي، يروي عن أبي الزاهرية. هذا هو سعيد بن سنان الشامي في الطريق، ولا يخلط براوٍ آخر يشترك معه في الاسم.",
+        "text": "Abu Mahdi al-Himsi, who narrates from Abu al-Zahiriyyah. He is the Syrian Sa’id ibn Sinan in this path and must not be confused with another narrator sharing his name."
+      },
+      "reliability": {
+        "original": "تركه النسائي، ووصف البخاري حديثه بالإنكار، كما نقل المزي. ونقلت الترجمة أيضًا توثيقًا عن أبي مسهر؛ لا نزعم اتفاق جميع النقاد.",
+        "text": "Al-Mizzi records al-Nasa’i abandoning him and al-Bukhari criticising his reports. The entry also records a favourable judgement from Abu Mushir; no consensus is claimed."
+      }
+    },
+    "hudayr-kurayb": {
+      "bio": {
+        "original": "راوٍ حمصي حضرمي، معروف بكنية أبي الزاهرية، يروي هنا عن أبي شجرة كثير بن مرة.",
+        "text": "A Hadrami narrator from Homs, known as Abu al-Zahiriyyah. Here he narrates from Abu Shajarah, Kathir ibn Murrah."
+      },
+      "reliability": {
+        "original": "قال ابن سعد: ثقة إن شاء الله، كثير الحديث، كما نقل المزي.",
+        "text": "Al-Mizzi records Ibn Sa’d describing him as trustworthy, God willing, and a prolific narrator."
+      }
+    },
+    "kathir-murra": {
+      "bio": {
+        "original": "تابعي حضرمي حمصي، كنيته أبو شجرة، وقيل أبو القاسم. الكنية والاسم في نص السند يعودان إلى راوٍ واحد.",
+        "text": "A Hadrami Successor from Homs, known as Abu Shajarah and also Abu al-Qasim. The kunyah and name in this chain refer to one person."
+      },
+      "reliability": {
+        "original": "وثقه ابن حجر والعجلي وابن سعد في الأقوال المنقولة بالمصدر؛ وتنبه الترجمة إلى خطأ عده صحابيًا.",
+        "text": "The source records Ibn Hajar, al-’Ijli and Ibn Sa’d judging him trustworthy. It also notes that counting him as a Companion is an error."
       }
     }
   },
@@ -796,83 +828,17 @@
       "originalTitle": "ترجمة أبي سعيد الخدري",
       "originalReference": "تهذيب الكمال وأقوال النقاد؛ صحبته واسمه"
     },
-    "kamil-mothers": {
-      "title": "Al-Kamil fi Duafa al-Rijal — Ibn Adi",
-      "reference": "Dar al-Fikr, vol. 6, p. 347; Musa ibn Muhammad ibn Ata; chain and text",
-      "originalTitle": "الكامل في ضعفاء الرجال — ابن عدي",
-      "originalReference": "دار الفكر، ج ٦، ص ٣٤٧، ترجمة موسى بن محمد بن عطاء؛ أصل الإسناد والمتن"
-    },
-    "albani-mothers-593": {
-      "title": "Al-Silsilah al-Daifah — al-Albani",
-      "reference": "Entry 593: fabricated; applies to the complete wording including admitting and excluding whom they wish",
-      "originalTitle": "السلسلة الضعيفة — الألباني",
-      "originalReference": "الرواية ٥٩٣؛ موضوع. المقصود اللفظ الكامل: «من شئن أدخلن ومن شئن أخرجن»."
-    },
-    "rijal-abbas-khallal": {
-      "title": "Narrator biography: Abbas ibn al-Walid al-Khallal",
-      "reference": "Identity and scholarly assessments; Ibn Hajar, Taqrib al-Tahdhib",
-      "originalTitle": "ترجمة عباس بن الوليد الخلال",
-      "originalReference": "الاسم وأقوال النقاد؛ نقل تقريب التهذيب لابن حجر"
-    },
-    "lisan-musa": {
-      "title": "Lisan al-Mizan — Ibn Hajar",
-      "reference": "Musa ibn Muhammad ibn Ata al-Balqawi, entry 442, vol. 6, pp. 127–128",
-      "originalTitle": "لسان الميزان — ابن حجر",
-      "originalReference": "ج ٦، ص ١٢٧–١٢٨، ترجمة ٤٤٢ موسى بن محمد بن عطاء البلقاوي"
-    },
-    "rijal-abu-malih-raqqi": {
-      "title": "Narrator biography: Abu al-Malih, al-Hasan ibn Umar al-Raqqi",
-      "reference": "Identity and scholarly assessments; Ibn Hajar, Taqrib al-Tahdhib",
-      "originalTitle": "ترجمة الحسن بن عمر أبي المليح الرقي",
-      "originalReference": "الاسم وأقوال النقاد؛ نقل تقريب التهذيب لابن حجر"
-    },
-    "rijal-maymun": {
-      "title": "Narrator biography: Maymun ibn Mihran",
-      "reference": "Identity and scholarly assessments; Ibn Hajar, Taqrib al-Tahdhib",
-      "originalTitle": "ترجمة ميمون بن مهران",
-      "originalReference": "الاسم وأقوال النقاد؛ نقل تقريب التهذيب لابن حجر"
-    },
-    "rijal-ibn-abbas": {
-      "title": "Narrator biography: Abdullah ibn Abbas",
-      "reference": "Identity and Companion status; Tahdhib al-Kamal and recorded scholarly assessments",
-      "originalTitle": "ترجمة عبد الله بن عباس",
-      "originalReference": "تهذيب الكمال وأقوال النقاد؛ صحبته واسمه"
-    },
     "abd-humayd-781": {
       "title": "Al-Muntakhab min Musnad Abd ibn Humayd",
       "reference": "Edited by Mustafa al-Adawi, vol. 2, p. 30, hadith 781; stars report",
       "originalTitle": "المنتخب من مسند عبد بن حميد",
       "originalReference": "تحقيق مصطفى العدوي، ج ٢، ص ٣٠، الحديث ٧٨١؛ المتن يبدأ «مثل أصحابي مثل النجوم»."
     },
-    "albani-stars-61": {
-      "title": "Al-Silsilah al-Daifah — al-Albani",
-      "reference": "Entry 61: fabricated; Hamzah → Nafi → Ibn Umar, with a slight wording variation",
-      "originalTitle": "السلسلة الضعيفة — الألباني",
-      "originalReference": "الرواية ٦١: موضوع؛ طريق حمزة الجزري عن نافع عن ابن عمر. لفظ المسند يختلف يسيرًا عن «إنما أصحابي مثل النجوم»."
-    },
     "siyar-ahmad-yunus": {
       "title": "Siyar Alam al-Nubala — al-Dhahabi",
       "reference": "Ahmad ibn Yunus, vol. 10, pp. 457–459; Abu Hatim’s assessment",
       "originalTitle": "سير أعلام النبلاء — الذهبي",
       "originalReference": "ج ١٠، ص ٤٥٧–٤٥٩، ترجمة أحمد بن يونس؛ توثيق أبي حاتم"
-    },
-    "tahdhib-abu-shihab": {
-      "title": "Tahdhib al-Kamal — al-Mizzi",
-      "reference": "Abd Rabbih ibn Nafi, entry 3744, vol. 16, pp. 485–488; differing assessments",
-      "originalTitle": "تهذيب الكمال — المزي",
-      "originalReference": "ج ١٦، ص ٤٨٥–٤٨٨، ترجمة ٣٧٤٤ عبد ربه بن نافع أبي شهاب الحناط؛ اختلاف الأقوال"
-    },
-    "tahdhib-hamza-nasibi": {
-      "title": "Tahdhib al-Kamal — al-Mizzi",
-      "reference": "Hamzah ibn Abi Hamzah, entry 1502, vol. 7, pp. 324–326",
-      "originalTitle": "تهذيب الكمال — المزي",
-      "originalReference": "ج ٧، ص ٣٢٤–٣٢٦، ترجمة ١٥٠٢ حمزة بن أبي حمزة؛ اسمه وشيوخه وتلاميذه وأقوال النقاد"
-    },
-    "rijal-nafi-umar": {
-      "title": "Narrator biography: Nafi, the freedman of Ibn Umar",
-      "reference": "Identity and scholarly assessments; Ibn Hajar, Taqrib al-Tahdhib",
-      "originalTitle": "ترجمة نافع مولى ابن عمر",
-      "originalReference": "الاسم وأقوال النقاد؛ نقل تقريب التهذيب لابن حجر"
     },
     "rijal-ibn-umar": {
       "title": "Narrator biography: Abdullah ibn Umar ibn al-Khattab",
@@ -885,30 +851,6 @@
       "reference": "Al-Numan ibn Shibl, vol. 7, p. 14; Ali ibn Ishaq’s path and original wording",
       "originalTitle": "الكامل في الضعفاء — ابن عدي",
       "originalReference": "ج ٧، ص ١٤، ترجمة النعمان بن شبل؛ طريق علي بن إسحاق. اللفظ: «فلم يزرني»."
-    },
-    "albani-visit-45": {
-      "title": "Al-Silsilah al-Daifah — al-Albani",
-      "reference": "Entry 45: fabricated; variant wording concerning Hajj and visiting",
-      "originalTitle": "السلسلة الضعيفة — الألباني",
-      "originalReference": "الرواية ٤٥: موضوع؛ «من حج البيت ولم يزرني فقد جفاني». أصل ابن عدي بلفظ «فلم»."
-    },
-    "lisan-muhammad-nuuman": {
-      "title": "Lisan al-Mizan — Ibn Hajar",
-      "reference": "Muhammad ibn Muhammad ibn al-Numan, entry 1173, vol. 5; PDF p. 184",
-      "originalTitle": "لسان الميزان — ابن حجر",
-      "originalReference": "ج ٥، ترجمة ١١٧٣ محمد بن محمد بن النعمان بن شبل؛ صفحة ملف PDF١٨٤"
-    },
-    "lisan-nuuman": {
-      "title": "Lisan al-Mizan — Ibn Hajar",
-      "reference": "Al-Numan ibn Shibl, entry 585, vol. 6; PDF p. 87; differing assessments",
-      "originalTitle": "لسان الميزان — ابن حجر",
-      "originalReference": "ج ٦، ترجمة ٥٨٥ النعمان بن شبل؛ صفحة ملف PDF٨٧؛ أقوال متفاوتة فيه"
-    },
-    "rijal-malik": {
-      "title": "Narrator biography: Malik ibn Anas al-Asbahi",
-      "reference": "Ibn Hajar, Taqrib al-Tahdhib; imam of Madinah and leading precise narrator",
-      "originalTitle": "ترجمة مالك بن أنس الأصبحي",
-      "originalReference": "أقوال النقاد؛ تقريب التهذيب لابن حجر: إمام دار الهجرة، رأس المتقنين"
     },
     "bukhari-10-source": {
       "title": "Sahih al-Bukhari",
@@ -975,6 +917,126 @@
       "reference": "Maktabat al-Maarif, 10th edition, pp. 15–16; definitions of isnad and matn",
       "originalTitle": "تيسير مصطلح الحديث — محمود الطحان",
       "originalReference": "مكتبة المعارف، الطبعة العاشرة، ص ١٥–١٦، تعريفات أولية: السند والمتن"
+    },
+    "profile-hasan-ali-khallal": {
+      "title": "Narrator biography — cited source",
+      "reference": "Al-Hasan ibn Ali al-Khallal; biography and recorded assessments",
+      "originalTitle": "تراجم الرواة — المصدر المحدد",
+      "originalReference": "تهذيب الكمال، ترجمة الحسن بن علي الخلال، ٦/٢٦٠–٢٦٣"
+    },
+    "profile-abdrazzaq-hammam": {
+      "title": "Narrator biography — cited source",
+      "reference": "Abd al-Razzaq ibn Hammam al-San'ani; biography and recorded assessments",
+      "originalTitle": "تراجم الرواة — المصدر المحدد",
+      "originalReference": "ترجمة عبد الرزاق بن همام، التقريب والأقوال المنقولة في Sunnah.com"
+    },
+    "profile-ibn-abi-sabra": {
+      "title": "Narrator biography — cited source",
+      "reference": "Abu Bakr ibn Abi Sabrah; biography and recorded assessments",
+      "originalTitle": "تراجم الرواة — المصدر المحدد",
+      "originalReference": "سير أعلام النبلاء، ترجمة ابن أبي سبرة، ٧/٣٣٠–٣٣٢"
+    },
+    "profile-ibrahim-muhammad-sabra": {
+      "title": "Narrator biography — cited source",
+      "reference": "Ibrahim ibn Muhammad — in Ibn Abi Sabrah’s path; biography and recorded assessments",
+      "originalTitle": "تراجم الرواة — المصدر المحدد",
+      "originalReference": "تهذيب الكمال، ترجمة إبراهيم بن محمد، ٢/١٩٣–١٩٤"
+    },
+    "profile-muawiya-abdullah-jafar": {
+      "title": "Narrator biography — cited source",
+      "reference": "Mu’awiyah ibn Abdullah ibn Ja’far; biography and recorded assessments",
+      "originalTitle": "تراجم الرواة — المصدر المحدد",
+      "originalReference": "تهذيب الكمال، ترجمة معاوية بن عبد الله بن جعفر، ٢٨/١٩٦–١٩٨"
+    },
+    "profile-abdullah-jafar": {
+      "title": "Narrator biography — cited source",
+      "reference": "Abdullah ibn Ja’far ibn Abi Talib; biography and recorded assessments",
+      "originalTitle": "تراجم الرواة — المصدر المحدد",
+      "originalReference": "ترجمة عبد الله بن جعفر، أقوال ابن حجر وابن أبي حاتم في Sunnah.com"
+    },
+    "profile-ali-abi-talib": {
+      "title": "Narrator biography — cited source",
+      "reference": "Ali ibn Abi Talib; biography and recorded assessments",
+      "originalTitle": "تراجم الرواة — المصدر المحدد",
+      "originalReference": "ترجمة علي بن أبي طالب في Sunnah.com"
+    },
+    "profile-said-marwan": {
+      "title": "Narrator biography — cited source",
+      "reference": "Sa’id ibn Marwan al-Baghdadi; biography and recorded assessments",
+      "originalTitle": "تراجم الرواة — المصدر المحدد",
+      "originalReference": "ترجمة سعيد بن مروان، أقوال ابن حجر والخطيب في Sunnah.com"
+    },
+    "profile-anbasa-abdurrahman": {
+      "title": "Narrator biography — cited source",
+      "reference": "Anbasah ibn Abd al-Rahman; biography and recorded assessments",
+      "originalTitle": "تراجم الرواة — المصدر المحدد",
+      "originalReference": "تهذيب الكمال، ترجمة عنبسة بن عبد الرحمن، ٢٢/٤١٦–٤١٩"
+    },
+    "profile-alaq-abi-muslim": {
+      "title": "Narrator biography — cited source",
+      "reference": "Alaq ibn Abi Muslim; biography and recorded assessments",
+      "originalTitle": "تراجم الرواة — المصدر المحدد",
+      "originalReference": "تهذيب الكمال، ترجمة علاق بن أبي مسلم ويقال غلاق، ٢٢/٥٥٠–٥٥٢"
+    },
+    "profile-aban-uthman": {
+      "title": "Narrator biography — cited source",
+      "reference": "Aban ibn Uthman ibn Affan; biography and recorded assessments",
+      "originalTitle": "تراجم الرواة — المصدر المحدد",
+      "originalReference": "سير أعلام النبلاء، ترجمة أبان بن عثمان"
+    },
+    "profile-uthman-affan": {
+      "title": "Narrator biography — cited source",
+      "reference": "Uthman ibn Affan; biography and recorded assessments",
+      "originalTitle": "تراجم الرواة — المصدر المحدد",
+      "originalReference": "ترجمة عثمان بن عفان في Sunnah.com"
+    },
+    "profile-muhammad-musaffa": {
+      "title": "Narrator biography — cited source",
+      "reference": "Muhammad ibn al-Musaffa al-Himsi; biography and recorded assessments",
+      "originalTitle": "تراجم الرواة — المصدر المحدد",
+      "originalReference": "ترجمة محمد بن المصفى، التقريب والأقوال المنقولة في Sunnah.com"
+    },
+    "profile-muhammad-harb": {
+      "title": "Narrator biography — cited source",
+      "reference": "Muhammad ibn Harb al-Khawlani; biography and recorded assessments",
+      "originalTitle": "تراجم الرواة — المصدر المحدد",
+      "originalReference": "تهذيب الكمال، ترجمة محمد بن حرب، ٢٥/٤٤–٤٦"
+    },
+    "profile-said-sinan-himsi": {
+      "title": "Narrator biography — cited source",
+      "reference": "Sa’id ibn Sinan al-Himsi — Abu Mahdi; biography and recorded assessments",
+      "originalTitle": "تراجم الرواة — المصدر المحدد",
+      "originalReference": "تهذيب الكمال، ترجمة سعيد بن سنان الشامي، ١٠/٤٩٥–٤٩٨"
+    },
+    "profile-hudayr-kurayb": {
+      "title": "Narrator biography — cited source",
+      "reference": "Abu al-Zahiriyyah — Hudayr ibn Kurayb; biography and recorded assessments",
+      "originalTitle": "تراجم الرواة — المصدر المحدد",
+      "originalReference": "تهذيب الكمال، ترجمة حدير بن كريب، ٥/٤٩١–٤٩٢"
+    },
+    "profile-kathir-murra": {
+      "title": "Narrator biography — cited source",
+      "reference": "Abu Shajarah — Kathir ibn Murrah; biography and recorded assessments",
+      "originalTitle": "تراجم الرواة — المصدر المحدد",
+      "originalReference": "ترجمة كثير بن مرة، الأقوال المنقولة عن ابن حجر والعجلي وابن سعد في Sunnah.com"
+    },
+    "ibnmajah-1388-source": {
+      "title": "Sunan Ibn Majah",
+      "reference": "Hadith 1388; Book 5, Hadith 586; displayed grade: Maudu’ (Darussalam)",
+      "originalTitle": "سنن ابن ماجه",
+      "originalReference": "الحديث 1388؛ الكتاب 5، الحديث 586؛ الحكم المعروض: موضوع (دار السلام)"
+    },
+    "ibnmajah-4313-source": {
+      "title": "Sunan Ibn Majah",
+      "reference": "Hadith 4313; Book 37, Hadith 214; displayed grade: Maudu’ (Darussalam)",
+      "originalTitle": "سنن ابن ماجه",
+      "originalReference": "الحديث 4313؛ الكتاب 37، الحديث 214؛ الحكم المعروض: موضوع (دار السلام)"
+    },
+    "ibnmajah-4054-source": {
+      "title": "Sunan Ibn Majah",
+      "reference": "Hadith 4054; Book 36, Hadith 129; displayed grade: Maudu’ (Darussalam)",
+      "originalTitle": "سنن ابن ماجه",
+      "originalReference": "الحديث 4054؛ الكتاب 36، الحديث 129؛ الحكم المعروض: موضوع (دار السلام)"
     }
   },
   "judgements": {
@@ -1006,17 +1068,17 @@
       "original": "ضعيف في حكم دار السلام المعروض مع سنن ابن ماجه ٨٠٢. في الطريق رشدين بن سعد، وفي رواية دراج عن أبي الهيثم ضعف. الحكم على الرواية لا على الآية القرآنية التي استشهد بها متنها.",
       "text": "Rated weak by Darussalam in the displayed edition of Ibn Majah 802. This path contains Rushdin ibn Sa'd and Darraj's weak transmission from Abu al-Haytham. The grading concerns the report, not the Quranic verse quoted in it."
     },
-    "kamil-mothers": {
-      "original": "موضوع عند الألباني، السلسلة الضعيفة ٥٩٣. هذا اللفظ الكامل لا تثبت نسبته إلى النبي ﷺ. الحكم لا يعمم على روايات أخرى في بر الأم أو على لفظ «فالزمها فإن الجنة تحت قدميها».",
-      "text": "Al-Albani rated this complete wording fabricated in al-Silsilah al-Daifah 593. It is not established as a saying of the Prophet ﷺ. This rating does not extend to other reports about honouring mothers or to the different wording about staying with one's mother."
+    "ibnmajah-1388": {
+      "original": "موضوع (دار السلام)، كما هو معروض في Sunnah.com، سنن ابن ماجه 1388. لا تثبت نسبة هذه الرواية إلى النبي ﷺ. يعرض الموقع السند لدراسته ولا يصحح الرواية.",
+      "text": "Fabricated (Maudu’), attributed to Darussalam on Sunnah.com, Sunan Ibn Majah 1388. This report is not established as a saying of the Prophet ﷺ. The chain is displayed for study; displaying it does not authenticate the report."
     },
-    "abd-humayd-781": {
-      "original": "موضوع عند الألباني، السلسلة الضعيفة ٦١، من طريق حمزة الجزري عن نافع عن ابن عمر. لا تثبت نسبة هذه الرواية إلى النبي ﷺ؛ لفظ المسند المعروض يختلف يسيرًا عن لفظ «إنما أصحابي مثل النجوم».",
-      "text": "Al-Albani rated this report fabricated in al-Silsilah al-Daifah 61, through Hamzah al-Jazari, Nafi and Ibn Umar. Its attribution to the Prophet ﷺ is not established. The Musnad wording shown differs slightly from the commonly quoted version."
+    "ibnmajah-4313": {
+      "original": "موضوع (دار السلام)، كما هو معروض في Sunnah.com، سنن ابن ماجه 4313. لا تثبت نسبة هذه الرواية إلى النبي ﷺ. يعرض الموقع السند لدراسته ولا يصحح الرواية.",
+      "text": "Fabricated (Maudu’), attributed to Darussalam on Sunnah.com, Sunan Ibn Majah 4313. This report is not established as a saying of the Prophet ﷺ. The chain is displayed for study; displaying it does not authenticate the report."
     },
-    "kamil-visit": {
-      "original": "موضوع عند الألباني، السلسلة الضعيفة ٤٥. لا تثبت نسبة هذه الرواية إلى النبي ﷺ. في التخريج المشهور «ولم يزرني»؛ نحفظ هنا لفظ أصل ابن عدي «فلم يزرني».",
-      "text": "Al-Albani rated this report fabricated in al-Silsilah al-Daifah 45. Its attribution to the Prophet ﷺ is not established. The displayed text preserves Ibn Adi's wording rather than silently substituting the better-known variant."
+    "ibnmajah-4054": {
+      "original": "موضوع (دار السلام)، كما هو معروض في Sunnah.com، سنن ابن ماجه 4054. لا تثبت نسبة هذه الرواية إلى النبي ﷺ. يعرض الموقع السند لدراسته ولا يصحح الرواية.",
+      "text": "Fabricated (Maudu’), attributed to Darussalam on Sunnah.com, Sunan Ibn Majah 4054. This report is not established as a saying of the Prophet ﷺ. The chain is displayed for study; displaying it does not authenticate the report."
     }
   },
   "notes": {
@@ -1032,17 +1094,17 @@
       "original": "في هذه الرواية طاف معاذ، جدّ نصر، مع معاذ بن عفراء، فسأله عن ترك الصلاة فأجابه بقول النبي ﷺ. ذكر المزي اختلاف الروايات في تعيين الجدّ؛ نحفظ هنا طريق سعيد بن عامر بهويتين منفصلتين لمعاذ، ولا ندمجهما.",
       "text": "In this version, Muadh, Nasr's grandfather, walked with Muadh ibn Afra and asked him about not praying. Al-Mizzi records differences in the grandfather's identification. This path keeps the two men called Muadh separate."
     },
-    "kamil-mothers-chain": {
-      "original": "الطريق محفوظ كما أورده ابن عدي، ولا يثبت به المتن. ضبط «أدخلن» موافق لنص الحكم؛ في النص الرقمي لأصل الكامل تصحيف «أدجلن». أبو المليح هنا الحسن بن عمر الرقي. لا يستنتج من وجود أسماء موثوقة صحة هذا الطريق.",
-      "text": "The path is preserved as Ibn Adi recorded it; it does not establish the report. The display corrects a typographical error in the digital text using the wording quoted in the grading. Abu al-Malih here is al-Hasan ibn Umar al-Raqqi. Trustworthy names do not by themselves authenticate the path."
+    "ibnmajah-1388-chain": {
+      "original": "«عن أبيه» يقصد عبد الله بن جعفر. إبراهيم بن محمد محفوظ باسمه الوارد مع توقف المزي في تعيينه. اتهام ابن أبي سبرة بالوضع منقول في ترجمته، وحكم الرواية الموضوع مستقل عن ألوان بقية البطاقات.",
+      "text": "“From his father” refers to Abdullah ibn Ja’far. Ibrahim ibn Muhammad retains the recorded name because al-Mizzi leaves his precise identification unresolved. Ibn Abi Sabrah’s accusation of fabrication is recorded in his biography. The fabricated grade belongs to this report and is separate from the other cards’ colours."
     },
-    "abd-humayd-781-chain": {
-      "original": "النص المعروض من المنتخب ٧٨١، وليس لفظ طريق جابر «أصحابي كالنجوم بأيهم اقتديتم». يشترك طريقا عبد بن حميد والآجري في أبي شهاب عن حمزة عن نافع عن ابن عمر، مع اختلاف يسير في اللفظ.",
-      "text": "The text is from al-Muntakhab 781, rather than the wording of Jabir's different path. The paths of Abd ibn Humayd and al-Ajurri share Abu Shihab, Hamzah, Nafi and Ibn Umar, with a slight difference in wording."
+    "ibnmajah-4313-chain": {
+      "original": "أحمد بن يونس هو أحمد بن عبد الله بن يونس. أبان هو ابن عثمان وليس عثمان نفسه. المزي يصف علاق بأنه مجهول، وينقل اتهام عنبسة بالوضع؛ لا ننقل أحد الحكمين إلى الآخر.",
+      "text": "Ahmad ibn Yunus is Ahmad ibn Abdullah ibn Yunus. Aban is Uthman’s son, distinct from Uthman. Al-Mizzi describes Alaq as unknown and records the accusation of fabrication against Anbasah; these assessments are not interchangeable."
     },
-    "kamil-visit-chain": {
-      "original": "نعتمد صيغة أصل الكامل المعروضة في الدرر: محمد بن محمد عن جده. توجد في بعض النقل صيغة محمد بن النعمان عن أبيه؛ لا تدمج هذه الصيغ. في الموضوعات نقل أن الطعن في هذا الحديث على الحفيد لا الجد.",
-      "text": "The map follows the version displayed from al-Kamil: Muhammad ibn Muhammad narrating from his grandfather. Other versions name Muhammad ibn al-Numan narrating from his father; they are not merged. Al-Mawduat places the criticism of this report on the grandson rather than the grandfather."
+    "ibnmajah-4054-chain": {
+      "original": "أبو شجرة وكثير بن مرة اسم وكنية لشخص واحد. أبو الزاهرية هو حدير بن كريب. سعيد بن سنان هنا هو أبو مهدي الحمصي، وعبد الله بن عمر غير عبد الله بن عمرو. الحكم على الرواية منقول عن دار السلام ولا يستنتج آليًا من الألوان.",
+      "text": "Abu Shajarah and Kathir ibn Murrah are one person’s kunyah and name. Abu al-Zahiriyyah is Hudayr ibn Kurayb. Sa’id ibn Sinan here is Abu Mahdi al-Himsi, and Abdullah ibn Umar is distinct from Abdullah ibn Amr. The report’s grade is attributed to Darussalam, not automatically inferred from colours."
     }
   },
   "knowledge": {

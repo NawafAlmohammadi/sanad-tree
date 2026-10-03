@@ -267,55 +267,6 @@
       "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
     },
     {
-      "id": "kamil-mothers",
-      "title": "الكامل في ضعفاء الرجال — ابن عدي",
-      "reference": "دار الفكر، ج ٦، ص ٣٤٧، ترجمة موسى بن محمد بن عطاء؛ أصل الإسناد والمتن",
-      "url": "https://dorar.net/h/vN9h5blm?osoul=1",
-      "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
-    },
-    {
-      "id": "albani-mothers-593",
-      "title": "السلسلة الضعيفة — الألباني",
-      "reference": "الرواية ٥٩٣؛ موضوع. المقصود اللفظ الكامل: «من شئن أدخلن ومن شئن أخرجن».",
-      "url": "https://dorar.net/h/vN9h5blm?osoul=1",
-      "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
-    },
-    {
-      "id": "rijal-abbas-khallal",
-      "title": "ترجمة عباس بن الوليد الخلال",
-      "reference": "الاسم وأقوال النقاد؛ نقل تقريب التهذيب لابن حجر",
-      "url": "https://sunnah.com/narrator/4165",
-      "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
-    },
-    {
-      "id": "lisan-musa",
-      "title": "لسان الميزان — ابن حجر",
-      "reference": "ج ٦، ص ١٢٧–١٢٨، ترجمة ٤٤٢ موسى بن محمد بن عطاء البلقاوي",
-      "url": "https://ablibrary.net/book_content/2255/127",
-      "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
-    },
-    {
-      "id": "rijal-abu-malih-raqqi",
-      "title": "ترجمة الحسن بن عمر أبي المليح الرقي",
-      "reference": "الاسم وأقوال النقاد؛ نقل تقريب التهذيب لابن حجر",
-      "url": "https://sunnah.com/narrator/1288",
-      "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
-    },
-    {
-      "id": "rijal-maymun",
-      "title": "ترجمة ميمون بن مهران",
-      "reference": "الاسم وأقوال النقاد؛ نقل تقريب التهذيب لابن حجر",
-      "url": "https://sunnah.com/narrator/7822",
-      "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
-    },
-    {
-      "id": "rijal-ibn-abbas",
-      "title": "ترجمة عبد الله بن عباس",
-      "reference": "تهذيب الكمال وأقوال النقاد؛ صحبته واسمه",
-      "url": "https://sunnah.com/narrator/4883",
-      "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
-    },
-    {
       "id": "abd-humayd-781",
       "title": "المنتخب من مسند عبد بن حميد",
       "reference": "تحقيق مصطفى العدوي، ج ٢، ص ٣٠، الحديث ٧٨١؛ المتن يبدأ «مثل أصحابي مثل النجوم».",
@@ -323,38 +274,10 @@
       "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
     },
     {
-      "id": "albani-stars-61",
-      "title": "السلسلة الضعيفة — الألباني",
-      "reference": "الرواية ٦١: موضوع؛ طريق حمزة الجزري عن نافع عن ابن عمر. لفظ المسند يختلف يسيرًا عن «إنما أصحابي مثل النجوم».",
-      "url": "https://dorar.net/hadith-category/cat/90d0bff47a?page=6",
-      "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
-    },
-    {
       "id": "siyar-ahmad-yunus",
       "title": "سير أعلام النبلاء — الذهبي",
       "reference": "ج ١٠، ص ٤٥٧–٤٥٩، ترجمة أحمد بن يونس؛ توثيق أبي حاتم",
       "url": "https://islamweb.net/ar/library/content/60/1826/أحمد-بن-يونس",
-      "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
-    },
-    {
-      "id": "tahdhib-abu-shihab",
-      "title": "تهذيب الكمال — المزي",
-      "reference": "ج ١٦، ص ٤٨٥–٤٨٨، ترجمة ٣٧٤٤ عبد ربه بن نافع أبي شهاب الحناط؛ اختلاف الأقوال",
-      "url": "https://www.islamweb.net/amp/ar/library/content/1001/4072/عبد-ربه-بن-نافع-الكناني-أبو-شهاب-الحناط",
-      "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
-    },
-    {
-      "id": "tahdhib-hamza-nasibi",
-      "title": "تهذيب الكمال — المزي",
-      "reference": "ج ٧، ص ٣٢٤–٣٢٦، ترجمة ١٥٠٢ حمزة بن أبي حمزة؛ اسمه وشيوخه وتلاميذه وأقوال النقاد",
-      "url": "https://islamweb.net/ar/library/content/1001/1599/حمزة-بن-أبي-حمزة-ميمون-الجعفي-الجزري-النصيبي",
-      "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
-    },
-    {
-      "id": "rijal-nafi-umar",
-      "title": "ترجمة نافع مولى ابن عمر",
-      "reference": "الاسم وأقوال النقاد؛ نقل تقريب التهذيب لابن حجر",
-      "url": "https://sunnah.com/narrator/7863",
       "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
     },
     {
@@ -369,34 +292,6 @@
       "title": "الكامل في الضعفاء — ابن عدي",
       "reference": "ج ٧، ص ١٤، ترجمة النعمان بن شبل؛ طريق علي بن إسحاق. اللفظ: «فلم يزرني».",
       "url": "https://dorar.net/h/5eLgzajm?osoul=1",
-      "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
-    },
-    {
-      "id": "albani-visit-45",
-      "title": "السلسلة الضعيفة — الألباني",
-      "reference": "الرواية ٤٥: موضوع؛ «من حج البيت ولم يزرني فقد جفاني». أصل ابن عدي بلفظ «فلم».",
-      "url": "https://dorar.net/h/5eLgzajm?osoul=1",
-      "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
-    },
-    {
-      "id": "lisan-muhammad-nuuman",
-      "title": "لسان الميزان — ابن حجر",
-      "reference": "ج ٥، ترجمة ١١٧٣ محمد بن محمد بن النعمان بن شبل؛ صفحة ملف PDF١٨٤",
-      "url": "https://www.cia.gov/library/abbottabad-compound/9F/9FC6BBEDA90B8A48C6F0360A27D6BF32_VOL5.pdf#page=184",
-      "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
-    },
-    {
-      "id": "lisan-nuuman",
-      "title": "لسان الميزان — ابن حجر",
-      "reference": "ج ٦، ترجمة ٥٨٥ النعمان بن شبل؛ صفحة ملف PDF٨٧؛ أقوال متفاوتة فيه",
-      "url": "https://www.cia.gov/library/abbottabad-compound/0B/0B6D623D573C311119ED8606B4B94E4D_VOL6.pdf#page=87",
-      "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
-    },
-    {
-      "id": "rijal-malik",
-      "title": "ترجمة مالك بن أنس الأصبحي",
-      "reference": "أقوال النقاد؛ تقريب التهذيب لابن حجر: إمام دار الهجرة، رأس المتقنين",
-      "url": "https://beta.sunnah.com/narrator/6659",
       "rights": "نص الحديث والترجمة من كتب تراثية؛ بيانات تعريفية وتلخيص قصير للأقوال المنقولة، مع إحالة إلى المرجع. لا يُعاد نشر شرح حديث كامل."
     },
     {
@@ -475,6 +370,146 @@
       "reference": "مكتبة المعارف، الطبعة العاشرة، ص ١٥–١٦، تعريفات أولية: السند والمتن",
       "url": "https://www.islamarchive.cc/ketab_content/6165/p-15",
       "rights": "Short independently written summaries of the cited primary text; references retained. No full commentary reproduced."
+    },
+    {
+      "id": "profile-hasan-ali-khallal",
+      "title": "تراجم الرواة — المصدر المحدد",
+      "reference": "تهذيب الكمال، ترجمة الحسن بن علي الخلال، ٦/٢٦٠–٢٦٣",
+      "url": "https://www.islamweb.net/ar/library/content/1001/1324/الحسن-بن-علي-بن-محمد-الهذلي-الخلال",
+      "rights": "Primary-source reference with a short independently written biographical summary. No full commentary reproduced."
+    },
+    {
+      "id": "profile-abdrazzaq-hammam",
+      "title": "تراجم الرواة — المصدر المحدد",
+      "reference": "ترجمة عبد الرزاق بن همام، التقريب والأقوال المنقولة في Sunnah.com",
+      "url": "https://sunnah.com/narrator/4533",
+      "rights": "Primary-source reference with a short independently written biographical summary. No full commentary reproduced."
+    },
+    {
+      "id": "profile-ibn-abi-sabra",
+      "title": "تراجم الرواة — المصدر المحدد",
+      "reference": "سير أعلام النبلاء، ترجمة ابن أبي سبرة، ٧/٣٣٠–٣٣٢",
+      "url": "https://islamweb.net/ar/library/content/60/1230/ابن-أبي-سبرة",
+      "rights": "Primary-source reference with a short independently written biographical summary. No full commentary reproduced."
+    },
+    {
+      "id": "profile-ibrahim-muhammad-sabra",
+      "title": "تراجم الرواة — المصدر المحدد",
+      "reference": "تهذيب الكمال، ترجمة إبراهيم بن محمد، ٢/١٩٣–١٩٤",
+      "url": "https://www.islamweb.net/ar/library/content/1001/256/إبراهيم-بن-محمد",
+      "rights": "Primary-source reference with a short independently written biographical summary. No full commentary reproduced."
+    },
+    {
+      "id": "profile-muawiya-abdullah-jafar",
+      "title": "تراجم الرواة — المصدر المحدد",
+      "reference": "تهذيب الكمال، ترجمة معاوية بن عبد الله بن جعفر، ٢٨/١٩٦–١٩٨",
+      "url": "https://www.islamweb.net/ar/library/content/1001/7308/معاوية-بن-عبد-الله-بن-جعفر-بن-أبي-طالب-القرشي-الهاشمي-المدني",
+      "rights": "Primary-source reference with a short independently written biographical summary. No full commentary reproduced."
+    },
+    {
+      "id": "profile-abdullah-jafar",
+      "title": "تراجم الرواة — المصدر المحدد",
+      "reference": "ترجمة عبد الله بن جعفر، أقوال ابن حجر وابن أبي حاتم في Sunnah.com",
+      "url": "https://sunnah.com/narrator/4762",
+      "rights": "Primary-source reference with a short independently written biographical summary. No full commentary reproduced."
+    },
+    {
+      "id": "profile-ali-abi-talib",
+      "title": "تراجم الرواة — المصدر المحدد",
+      "reference": "ترجمة علي بن أبي طالب في Sunnah.com",
+      "url": "https://sunnah.com/narrator/5722",
+      "rights": "Primary-source reference with a short independently written biographical summary. No full commentary reproduced."
+    },
+    {
+      "id": "profile-said-marwan",
+      "title": "تراجم الرواة — المصدر المحدد",
+      "reference": "ترجمة سعيد بن مروان، أقوال ابن حجر والخطيب في Sunnah.com",
+      "url": "https://sunnah.com/narrator/3395",
+      "rights": "Primary-source reference with a short independently written biographical summary. No full commentary reproduced."
+    },
+    {
+      "id": "profile-anbasa-abdurrahman",
+      "title": "تراجم الرواة — المصدر المحدد",
+      "reference": "تهذيب الكمال، ترجمة عنبسة بن عبد الرحمن، ٢٢/٤١٦–٤١٩",
+      "url": "https://www.islamweb.net/ar/library/content/1001/5639/عنبسة-بن-عبد-الرحمن-بن-عنبسة",
+      "rights": "Primary-source reference with a short independently written biographical summary. No full commentary reproduced."
+    },
+    {
+      "id": "profile-alaq-abi-muslim",
+      "title": "تراجم الرواة — المصدر المحدد",
+      "reference": "تهذيب الكمال، ترجمة علاق بن أبي مسلم ويقال غلاق، ٢٢/٥٥٠–٥٥٢",
+      "url": "https://www.islamweb.net/ar/library/content/1001/5700/علاق-بن-أبي-مسلم-ويقال-غلاق",
+      "rights": "Primary-source reference with a short independently written biographical summary. No full commentary reproduced."
+    },
+    {
+      "id": "profile-aban-uthman",
+      "title": "تراجم الرواة — المصدر المحدد",
+      "reference": "سير أعلام النبلاء، ترجمة أبان بن عثمان",
+      "url": "https://islamweb.net/ar/library/content/60/583/أبان-بن-عثمان",
+      "rights": "Primary-source reference with a short independently written biographical summary. No full commentary reproduced."
+    },
+    {
+      "id": "profile-uthman-affan",
+      "title": "تراجم الرواة — المصدر المحدد",
+      "reference": "ترجمة عثمان بن عفان في Sunnah.com",
+      "url": "https://sunnah.com/narrator/5543",
+      "rights": "Primary-source reference with a short independently written biographical summary. No full commentary reproduced."
+    },
+    {
+      "id": "profile-muhammad-musaffa",
+      "title": "تراجم الرواة — المصدر المحدد",
+      "reference": "ترجمة محمد بن المصفى، التقريب والأقوال المنقولة في Sunnah.com",
+      "url": "https://sunnah.com/narrator/7277",
+      "rights": "Primary-source reference with a short independently written biographical summary. No full commentary reproduced."
+    },
+    {
+      "id": "profile-muhammad-harb",
+      "title": "تراجم الرواة — المصدر المحدد",
+      "reference": "تهذيب الكمال، ترجمة محمد بن حرب، ٢٥/٤٤–٤٦",
+      "url": "https://islamweb.net/ar/library/content/1001/6273/محمد-بن-حرب-الخولاني-أبو-عبد-الله-الأبرش-كاتب-الزبيدي",
+      "rights": "Primary-source reference with a short independently written biographical summary. No full commentary reproduced."
+    },
+    {
+      "id": "profile-said-sinan-himsi",
+      "title": "تراجم الرواة — المصدر المحدد",
+      "reference": "تهذيب الكمال، ترجمة سعيد بن سنان الشامي، ١٠/٤٩٥–٤٩٨",
+      "url": "https://islamweb.net/ar/library/content/1001/2470/سعيد-بن-سنان-الشامي",
+      "rights": "Primary-source reference with a short independently written biographical summary. No full commentary reproduced."
+    },
+    {
+      "id": "profile-hudayr-kurayb",
+      "title": "تراجم الرواة — المصدر المحدد",
+      "reference": "تهذيب الكمال، ترجمة حدير بن كريب، ٥/٤٩١–٤٩٢",
+      "url": "https://islamweb.net/ar/library/content/1001/1207/حدير-بن-كريب-الحضرمي",
+      "rights": "Primary-source reference with a short independently written biographical summary. No full commentary reproduced."
+    },
+    {
+      "id": "profile-kathir-murra",
+      "title": "تراجم الرواة — المصدر المحدد",
+      "reference": "ترجمة كثير بن مرة، الأقوال المنقولة عن ابن حجر والعجلي وابن سعد في Sunnah.com",
+      "url": "https://sunnah.com/narrator/6576",
+      "rights": "Primary-source reference with a short independently written biographical summary. No full commentary reproduced."
+    },
+    {
+      "id": "ibnmajah-1388-source",
+      "title": "سنن ابن ماجه",
+      "reference": "الحديث 1388؛ الكتاب 5، الحديث 586؛ الحكم المعروض: موضوع (دار السلام)",
+      "url": "https://sunnah.com/ibnmajah:1388",
+      "rights": "Classical Arabic hadith text; individual English educational quotation from Sunnah.com, with attribution. See https://sunnah.com/about section 8."
+    },
+    {
+      "id": "ibnmajah-4313-source",
+      "title": "سنن ابن ماجه",
+      "reference": "الحديث 4313؛ الكتاب 37، الحديث 214؛ الحكم المعروض: موضوع (دار السلام)",
+      "url": "https://sunnah.com/ibnmajah:4313",
+      "rights": "Classical Arabic hadith text; individual English educational quotation from Sunnah.com, with attribution. See https://sunnah.com/about section 8."
+    },
+    {
+      "id": "ibnmajah-4054-source",
+      "title": "سنن ابن ماجه",
+      "reference": "الحديث 4054؛ الكتاب 36، الحديث 129؛ الحكم المعروض: موضوع (دار السلام)",
+      "url": "https://sunnah.com/ibnmajah:4054",
+      "rights": "Classical Arabic hadith text; individual English educational quotation from Sunnah.com, with attribution. See https://sunnah.com/about section 8."
     }
   ],
   "narrators": [
@@ -1620,163 +1655,6 @@
       }
     },
     {
-      "id": "umar-sinan-kamil",
-      "name": "عمر بن سنان",
-      "aliases": [
-        "عمر بن سنان"
-      ],
-      "sourceIds": [
-        "kamil-mothers"
-      ],
-      "bio": {
-        "narratorId": "umar-sinan-kamil",
-        "text": "ذكره ابن عدي في هذا الإسناد راوياً عن عباس بن الوليد الخلال. لم نثبت هنا نسبه الكامل أو حكمًا مستقلاً؛ الاسم محفوظ كما في النص.",
-        "sourceIds": [
-          "kamil-mothers"
-        ]
-      }
-    },
-    {
-      "id": "abbas-walid-khallal",
-      "name": "عباس بن الوليد الخلال",
-      "aliases": [
-        "عباس بن الوليد الخلال",
-        "عباس الخلال"
-      ],
-      "sourceIds": [
-        "rijal-abbas-khallal"
-      ],
-      "bio": {
-        "narratorId": "abbas-walid-khallal",
-        "text": "عباس بن الوليد بن صبح السلمي الدمشقي؛ يميز عن عباس بن الوليد بن مزيد.",
-        "sourceIds": [
-          "rijal-abbas-khallal",
-          "kamil-mothers"
-        ]
-      },
-      "reliability": {
-        "narratorId": "abbas-walid-khallal",
-        "status": "trusted",
-        "text": "ابن حجر: صدوق. وذكره ابن حبان في الثقات؛ لا ينقل إليه توثيق ابن مزيد.",
-        "sourceIds": [
-          "rijal-abbas-khallal"
-        ]
-      }
-    },
-    {
-      "id": "musa-muhammad-ata",
-      "name": "موسى بن محمد بن عطاء البلقاوي",
-      "aliases": [
-        "موسى بن محمد بن عطاء",
-        "موسى البلقاوي"
-      ],
-      "sourceIds": [
-        "lisan-musa"
-      ],
-      "bio": {
-        "narratorId": "musa-muhammad-ata",
-        "text": "أبو الطاهر البلقاوي، راوٍ عن أبي المليح الرقي في الطريق المختار.",
-        "sourceIds": [
-          "lisan-musa",
-          "kamil-mothers"
-        ]
-      },
-      "reliability": {
-        "narratorId": "musa-muhammad-ata",
-        "status": "untrusted",
-        "text": "كذّبه أبو زرعة وأبو حاتم، وعدّه الدارقطني متروكًا؛ نقل ذلك ابن حجر.",
-        "sourceIds": [
-          "lisan-musa"
-        ]
-      }
-    },
-    {
-      "id": "hasan-umar-malih",
-      "name": "أبو المليح الحسن بن عمر الرقي",
-      "aliases": [
-        "أبو المليح",
-        "الحسن بن عمر الرقي"
-      ],
-      "sourceIds": [
-        "rijal-abu-malih-raqqi"
-      ],
-      "bio": {
-        "narratorId": "hasan-umar-malih",
-        "text": "الحسن بن عمر الفزاري الرقي، معروف بأبي المليح؛ يروي عن ميمون بن مهران.",
-        "sourceIds": [
-          "rijal-abu-malih-raqqi",
-          "kamil-mothers"
-        ]
-      },
-      "reliability": {
-        "narratorId": "hasan-umar-malih",
-        "status": "trusted",
-        "text": "وثقه أحمد وأبو زرعة وابن معين.",
-        "sourceIds": [
-          "rijal-abu-malih-raqqi"
-        ]
-      }
-    },
-    {
-      "id": "maymun-mihran",
-      "name": "ميمون بن مهران",
-      "aliases": [
-        "ميمون بن مهران"
-      ],
-      "sourceIds": [
-        "rijal-maymun"
-      ],
-      "bio": {
-        "narratorId": "maymun-mihran",
-        "text": "أبو أيوب، فقيه من أهل الرقة.",
-        "sourceIds": [
-          "rijal-maymun",
-          "kamil-mothers"
-        ]
-      },
-      "reliability": {
-        "narratorId": "maymun-mihran",
-        "status": "trusted",
-        "text": "ابن حجر: ثقة فقيه، وكان يرسل؛ التوثيق لا يثبت اتصال كل رواية بمجرده.",
-        "sourceIds": [
-          "rijal-maymun"
-        ]
-      }
-    },
-    {
-      "id": "abdullah-abbas",
-      "name": "عبد الله بن عباس",
-      "aliases": [
-        "عبد الله بن عباس",
-        "ابن عباس"
-      ],
-      "sourceIds": [
-        "rijal-ibn-abbas"
-      ],
-      "bio": {
-        "narratorId": "abdullah-abbas",
-        "text": "صحابي هاشمي، ابن عم النبي ﷺ ومن فقهاء الصحابة.",
-        "sourceIds": [
-          "rijal-ibn-abbas",
-          "kamil-mothers"
-        ]
-      },
-      "role": {
-        "narratorId": "abdullah-abbas",
-        "type": "companion",
-        "sourceIds": [
-          "rijal-ibn-abbas"
-        ]
-      },
-      "classification": {
-        "narratorId": "abdullah-abbas",
-        "text": "صحابي.",
-        "sourceIds": [
-          "rijal-ibn-abbas"
-        ]
-      }
-    },
-    {
       "id": "ahmad-abdullah-yunus",
       "name": "أحمد بن عبد الله بن يونس",
       "aliases": [
@@ -1799,89 +1677,6 @@
         "text": "أبو حاتم: ثقة متقن.",
         "sourceIds": [
           "siyar-ahmad-yunus"
-        ]
-      }
-    },
-    {
-      "id": "abd-rabbih-shihab",
-      "name": "أبو شهاب عبد ربه بن نافع الحناط",
-      "aliases": [
-        "أبو شهاب",
-        "عبد ربه بن نافع"
-      ],
-      "sourceIds": [
-        "tahdhib-abu-shihab"
-      ],
-      "bio": {
-        "narratorId": "abd-rabbih-shihab",
-        "text": "عبد ربه بن نافع الكناني، أبو شهاب الأصغر؛ روى عن حمزة الجزري.",
-        "sourceIds": [
-          "tahdhib-abu-shihab",
-          "abd-humayd-781"
-        ]
-      },
-      "reliability": {
-        "narratorId": "abd-rabbih-shihab",
-        "status": "review",
-        "text": "وثقه ابن معين، وقال النسائي: ليس بالقوي؛ تكلموا في حفظه. تعرض أقوال التعديل والجرح معًا.",
-        "sourceIds": [
-          "tahdhib-abu-shihab"
-        ]
-      }
-    },
-    {
-      "id": "hamza-abi-hamza",
-      "name": "حمزة بن أبي حمزة النصيبي",
-      "aliases": [
-        "حمزة الجزري",
-        "حمزة النصيبي",
-        "حمزة بن أبي حمزة"
-      ],
-      "sourceIds": [
-        "tahdhib-hamza-nasibi"
-      ],
-      "bio": {
-        "narratorId": "hamza-abi-hamza",
-        "text": "الجزري النصيبي، واسم أبيه ميمون؛ راوٍ عن نافع، وروى عنه أبو شهاب الحناط.",
-        "sourceIds": [
-          "tahdhib-hamza-nasibi",
-          "abd-humayd-781"
-        ]
-      },
-      "reliability": {
-        "narratorId": "hamza-abi-hamza",
-        "status": "untrusted",
-        "text": "النسائي والدارقطني: متروك الحديث؛ ذكر ابن عدي أن عامة مروياته مناكير موضوعة.",
-        "sourceIds": [
-          "tahdhib-hamza-nasibi"
-        ]
-      }
-    },
-    {
-      "id": "nafi-umar",
-      "name": "نافع مولى ابن عمر",
-      "aliases": [
-        "نافع مولى ابن عمر",
-        "نافع"
-      ],
-      "sourceIds": [
-        "rijal-nafi-umar"
-      ],
-      "bio": {
-        "narratorId": "nafi-umar",
-        "text": "راوٍ مدني، مولى عبد الله بن عمر؛ يميز عن نافع مولى أم سلمة.",
-        "sourceIds": [
-          "rijal-nafi-umar",
-          "abd-humayd-781",
-          "kamil-visit"
-        ]
-      },
-      "reliability": {
-        "narratorId": "nafi-umar",
-        "status": "trusted",
-        "text": "ابن حجر: ثقة ثبت مشهور.",
-        "sourceIds": [
-          "rijal-nafi-umar"
         ]
       }
     },
@@ -1920,100 +1715,453 @@
       }
     },
     {
-      "id": "ali-ishaq-kamil",
-      "name": "علي بن إسحاق",
+      "id": "hasan-ali-khallal",
+      "name": "الحسن بن علي الخلال",
       "aliases": [
-        "علي بن إسحاق"
+        "الحسن بن علي الحلواني",
+        "الحسن بن علي الخلال"
       ],
       "sourceIds": [
-        "kamil-visit"
+        "profile-hasan-ali-khallal"
       ],
       "bio": {
-        "narratorId": "ali-ishaq-kamil",
-        "text": "ورد بهذا الاسم في طريق ابن عدي عن محمد بن محمد بن النعمان. لا نجزم بنسبة إضافية أو حكم مستقل لم يثبت لهذا الاسم في هذا الطريق.",
+        "narratorId": "hasan-ali-khallal",
+        "text": "الحسن بن علي الهذلي، المعروف بالخلال والحلواني، من شيوخ ابن ماجه في هذا الطريق.",
         "sourceIds": [
-          "kamil-visit"
-        ]
-      }
-    },
-    {
-      "id": "muhammad-muhammad-nuuman",
-      "name": "محمد بن محمد بن النعمان بن شبل",
-      "aliases": [
-        "محمد بن محمد بن النعمان"
-      ],
-      "sourceIds": [
-        "lisan-muhammad-nuuman"
-      ],
-      "bio": {
-        "narratorId": "muhammad-muhammad-nuuman",
-        "text": "حفيد النعمان بن شبل؛ يروي في الطريق المختار عن جده، وليس عن مالك مباشرة.",
-        "sourceIds": [
-          "lisan-muhammad-nuuman",
-          "kamil-visit"
+          "profile-hasan-ali-khallal",
+          "ibnmajah-1388-source"
         ]
       },
       "reliability": {
-        "narratorId": "muhammad-muhammad-nuuman",
-        "status": "untrusted",
-        "text": "نقل ابن حجر أن الدارقطني طعن فيه واتهمه. يميز حكمه عن حكم جده النعمان.",
-        "sourceIds": [
-          "lisan-muhammad-nuuman"
-        ]
-      }
-    },
-    {
-      "id": "nuuman-shibl",
-      "name": "النعمان بن شبل الباهلي",
-      "aliases": [
-        "النعمان بن شبل"
-      ],
-      "sourceIds": [
-        "lisan-nuuman"
-      ],
-      "bio": {
-        "narratorId": "nuuman-shibl",
-        "text": "راوٍ بصري عن مالك؛ جدّ محمد بن محمد بن النعمان في هذا الطريق.",
-        "sourceIds": [
-          "lisan-nuuman",
-          "kamil-visit"
-        ]
-      },
-      "reliability": {
-        "narratorId": "nuuman-shibl",
-        "status": "review",
-        "text": "جرحه ابن حبان، ونقل لسان الميزان توثيقًا في أول ترجمة الكامل. أقواله متفاوتة؛ لا ينقل إليه حكم حفيده.",
-        "sourceIds": [
-          "lisan-nuuman",
-          "kamil-visit"
-        ]
-      }
-    },
-    {
-      "id": "malik-anas",
-      "name": "مالك بن أنس الأصبحي",
-      "aliases": [
-        "مالك بن أنس",
-        "الإمام مالك",
-        "مالك"
-      ],
-      "sourceIds": [
-        "rijal-malik"
-      ],
-      "bio": {
-        "narratorId": "malik-anas",
-        "text": "إمام دار الهجرة، من رواة نافع مولى ابن عمر.",
-        "sourceIds": [
-          "rijal-malik",
-          "kamil-visit"
-        ]
-      },
-      "reliability": {
-        "narratorId": "malik-anas",
+        "narratorId": "hasan-ali-khallal",
         "status": "trusted",
-        "text": "ابن حجر: رأس المتقنين وكبير المتثبتين.",
+        "text": "وثقه النسائي، ووصفه يعقوب بن شيبة بالإتقان، كما نقل المزي؛ ونقلت الترجمة أيضًا تحفظًا عن أحمد.",
         "sourceIds": [
-          "rijal-malik"
+          "profile-hasan-ali-khallal"
+        ]
+      }
+    },
+    {
+      "id": "abdrazzaq-hammam",
+      "name": "عبد الرزاق بن همام الصنعاني",
+      "aliases": [
+        "عبد الرزاق",
+        "عبد الرزاق بن همام"
+      ],
+      "sourceIds": [
+        "profile-abdrazzaq-hammam"
+      ],
+      "bio": {
+        "narratorId": "abdrazzaq-hammam",
+        "text": "أبو بكر الصنعاني الحميري، محدث من صنعاء وصاحب تصانيف.",
+        "sourceIds": [
+          "profile-abdrazzaq-hammam",
+          "ibnmajah-1388-source"
+        ]
+      },
+      "reliability": {
+        "narratorId": "abdrazzaq-hammam",
+        "status": "review",
+        "text": "ابن حجر: ثقة حافظ مصنف، تغير في آخر عمره بعد العمى. ونقل المصدر عن البخاري أن روايته من كتابه أصح؛ اللون ينبه إلى هذا التفصيل ولا يحكم على الطريق وحده.",
+        "sourceIds": [
+          "profile-abdrazzaq-hammam"
+        ]
+      }
+    },
+    {
+      "id": "ibn-abi-sabra",
+      "name": "أبو بكر بن أبي سبرة",
+      "aliases": [
+        "ابن أبي سبرة",
+        "أبو بكر بن أبي سبرة"
+      ],
+      "sourceIds": [
+        "profile-ibn-abi-sabra"
+      ],
+      "bio": {
+        "narratorId": "ibn-abi-sabra",
+        "text": "راوٍ مدني قرشي، يرد في هذا الطريق باسم ابن أبي سبرة، بين عبد الرزاق وإبراهيم بن محمد.",
+        "sourceIds": [
+          "profile-ibn-abi-sabra",
+          "ibnmajah-1388-source"
+        ]
+      },
+      "reliability": {
+        "narratorId": "ibn-abi-sabra",
+        "status": "untrusted",
+        "text": "قال أحمد إنه كان يضع الحديث، وتركه النسائي، كما نقل الذهبي.",
+        "sourceIds": [
+          "profile-ibn-abi-sabra"
+        ]
+      }
+    },
+    {
+      "id": "ibrahim-muhammad-sabra",
+      "name": "إبراهيم بن محمد — في طريق ابن أبي سبرة",
+      "aliases": [
+        "إبراهيم بن محمد"
+      ],
+      "sourceIds": [
+        "profile-ibrahim-muhammad-sabra"
+      ],
+      "bio": {
+        "narratorId": "ibrahim-muhammad-sabra",
+        "text": "يروي عن معاوية بن عبد الله بن جعفر، ويروي عنه ابن أبي سبرة. ذكر المزي احتمال تعيينه بإبراهيم بن محمد الهاشمي ثم توقف: لا يدري أهو هذا أم غيره. نحفظ الاسم الوارد ولا ننقل إليه حكم شخص آخر.",
+        "sourceIds": [
+          "profile-ibrahim-muhammad-sabra",
+          "ibnmajah-1388-source"
+        ]
+      }
+    },
+    {
+      "id": "muawiya-abdullah-jafar",
+      "name": "معاوية بن عبد الله بن جعفر",
+      "aliases": [
+        "معاوية بن عبد الله",
+        "معاوية بن عبد الله بن جعفر"
+      ],
+      "sourceIds": [
+        "profile-muawiya-abdullah-jafar"
+      ],
+      "bio": {
+        "narratorId": "muawiya-abdullah-jafar",
+        "text": "راوٍ هاشمي مدني يروي هنا عن أبيه عبد الله بن جعفر؛ هو الابن وليس الصحابي عبد الله بن جعفر.",
+        "sourceIds": [
+          "profile-muawiya-abdullah-jafar",
+          "ibnmajah-1388-source"
+        ]
+      },
+      "reliability": {
+        "narratorId": "muawiya-abdullah-jafar",
+        "status": "trusted",
+        "text": "وثقه العجلي، وذكره ابن حبان في الثقات، كما نقل المزي.",
+        "sourceIds": [
+          "profile-muawiya-abdullah-jafar"
+        ]
+      }
+    },
+    {
+      "id": "abdullah-jafar",
+      "name": "عبد الله بن جعفر بن أبي طالب",
+      "aliases": [
+        "عبد الله بن جعفر",
+        "عبد الله بن جعفر بن أبي طالب"
+      ],
+      "sourceIds": [
+        "profile-abdullah-jafar"
+      ],
+      "bio": {
+        "narratorId": "abdullah-jafar",
+        "text": "صحابي هاشمي، يروي عنه ابنه معاوية في هذا الطريق. «عن أبيه» يعود إلى عبد الله بن جعفر، ثم يروي عبد الله هنا عن علي بن أبي طالب.",
+        "sourceIds": [
+          "profile-abdullah-jafar",
+          "ibnmajah-1388-source"
+        ]
+      },
+      "role": {
+        "narratorId": "abdullah-jafar",
+        "type": "companion",
+        "sourceIds": [
+          "profile-abdullah-jafar"
+        ]
+      }
+    },
+    {
+      "id": "ali-abi-talib",
+      "name": "علي بن أبي طالب",
+      "aliases": [
+        "علي بن أبي طالب",
+        "علي بن أبي طالب الهاشمي"
+      ],
+      "sourceIds": [
+        "profile-ali-abi-talib"
+      ],
+      "bio": {
+        "narratorId": "ali-abi-talib",
+        "text": "صحابي هاشمي، كنيته أبو الحسن. يرد اسمه في آخر هذا الطريق قبل نسبة القول إلى النبي ﷺ؛ صحة الصحبة لا تصحح الطريق الموضوع.",
+        "sourceIds": [
+          "profile-ali-abi-talib",
+          "ibnmajah-1388-source"
+        ]
+      },
+      "role": {
+        "narratorId": "ali-abi-talib",
+        "type": "companion",
+        "sourceIds": [
+          "profile-ali-abi-talib"
+        ]
+      }
+    },
+    {
+      "id": "said-marwan",
+      "name": "سعيد بن مروان البغدادي",
+      "aliases": [
+        "سعيد بن مروان",
+        "سعيد بن مروان البغدادي"
+      ],
+      "sourceIds": [
+        "profile-said-marwan"
+      ],
+      "bio": {
+        "narratorId": "said-marwan",
+        "text": "أبو عثمان البغدادي، سعيد بن مروان بن علي؛ يروي في هذا الطريق عن أحمد بن يونس.",
+        "sourceIds": [
+          "profile-said-marwan",
+          "ibnmajah-4313-source"
+        ]
+      },
+      "reliability": {
+        "narratorId": "said-marwan",
+        "status": "trusted",
+        "text": "وصفه ابن حجر والخطيب بأنه صدوق في الأقوال المنقولة بالمصدر.",
+        "sourceIds": [
+          "profile-said-marwan"
+        ]
+      }
+    },
+    {
+      "id": "anbasa-abdurrahman",
+      "name": "عنبسة بن عبد الرحمن",
+      "aliases": [
+        "عنبسة بن عبد الرحمن",
+        "عنبسة"
+      ],
+      "sourceIds": [
+        "profile-anbasa-abdurrahman"
+      ],
+      "bio": {
+        "narratorId": "anbasa-abdurrahman",
+        "text": "يروي في هذا الطريق عن علاق بن أبي مسلم، ويروي عنه أحمد بن يونس.",
+        "sourceIds": [
+          "profile-anbasa-abdurrahman",
+          "ibnmajah-4313-source"
+        ]
+      },
+      "reliability": {
+        "narratorId": "anbasa-abdurrahman",
+        "status": "untrusted",
+        "text": "أبو حاتم: متروك الحديث وكان يضع الحديث. وتركه النسائي، كما نقل المزي.",
+        "sourceIds": [
+          "profile-anbasa-abdurrahman"
+        ]
+      }
+    },
+    {
+      "id": "alaq-abi-muslim",
+      "name": "عِلاق بن أبي مسلم",
+      "aliases": [
+        "علاق بن أبي مسلم",
+        "علاق بن مسلم",
+        "غلاق بن أبي مسلم"
+      ],
+      "sourceIds": [
+        "profile-alaq-abi-muslim"
+      ],
+      "bio": {
+        "narratorId": "alaq-abi-muslim",
+        "text": "يروي عن أبان بن عثمان، ويروي عنه عنبسة بن عبد الرحمن. ورد اسمه أيضًا بصيغة غلاق وبصيغة ابن مسلم؛ لا ينقل إليه حكم عنبسة.",
+        "sourceIds": [
+          "profile-alaq-abi-muslim",
+          "ibnmajah-4313-source"
+        ]
+      },
+      "reliability": {
+        "narratorId": "alaq-abi-muslim",
+        "status": "review",
+        "text": "وصفه المزي بأنه شيخ مجهول؛ اللون الأصفر ينبه إلى جهالة الراوي.",
+        "sourceIds": [
+          "profile-alaq-abi-muslim"
+        ]
+      }
+    },
+    {
+      "id": "aban-uthman",
+      "name": "أبان بن عثمان بن عفان",
+      "aliases": [
+        "أبان بن عثمان",
+        "أبان بن عثمان بن عفان"
+      ],
+      "sourceIds": [
+        "profile-aban-uthman"
+      ],
+      "bio": {
+        "narratorId": "aban-uthman",
+        "text": "تابعي مدني، ابن الصحابي عثمان بن عفان، يروي هنا عن أبيه.",
+        "sourceIds": [
+          "profile-aban-uthman",
+          "ibnmajah-4313-source"
+        ]
+      },
+      "reliability": {
+        "narratorId": "aban-uthman",
+        "status": "trusted",
+        "text": "قال ابن سعد إنه ثقة وله أحاديث عن أبيه، كما نقل الذهبي.",
+        "sourceIds": [
+          "profile-aban-uthman"
+        ]
+      }
+    },
+    {
+      "id": "uthman-affan",
+      "name": "عثمان بن عفان",
+      "aliases": [
+        "عثمان بن عفان"
+      ],
+      "sourceIds": [
+        "profile-uthman-affan"
+      ],
+      "bio": {
+        "narratorId": "uthman-affan",
+        "text": "صحابي، يروي عنه ابنه أبان في هذا الطريق. يبقى حكم الرواية منقولًا عن المرجع ولا يستنتج من لون بطاقة الصحابي.",
+        "sourceIds": [
+          "profile-uthman-affan",
+          "ibnmajah-4313-source"
+        ]
+      },
+      "role": {
+        "narratorId": "uthman-affan",
+        "type": "companion",
+        "sourceIds": [
+          "profile-uthman-affan"
+        ]
+      }
+    },
+    {
+      "id": "muhammad-musaffa",
+      "name": "محمد بن المصفّى الحمصي",
+      "aliases": [
+        "محمد بن المصفى",
+        "محمد بن مصفى",
+        "محمد بن المصفّى الحمصي"
+      ],
+      "sourceIds": [
+        "profile-muhammad-musaffa"
+      ],
+      "bio": {
+        "narratorId": "muhammad-musaffa",
+        "text": "أبو عبد الله الحمصي، محمد بن مصفى بن بهلول. يروي هنا عن محمد بن حرب؛ هما شخصان مختلفان.",
+        "sourceIds": [
+          "profile-muhammad-musaffa",
+          "ibnmajah-4054-source"
+        ]
+      },
+      "reliability": {
+        "narratorId": "muhammad-musaffa",
+        "status": "review",
+        "text": "ابن حجر: صدوق له أوهام وكان يدلس. ونقلت الترجمة أيضًا توثيقًا عن غيره؛ اللون الأصفر يحفظ هذا التفصيل.",
+        "sourceIds": [
+          "profile-muhammad-musaffa"
+        ]
+      }
+    },
+    {
+      "id": "muhammad-harb",
+      "name": "محمد بن حرب الخولاني",
+      "aliases": [
+        "محمد بن حرب",
+        "محمد بن حرب الخولاني"
+      ],
+      "sourceIds": [
+        "profile-muhammad-harb"
+      ],
+      "bio": {
+        "narratorId": "muhammad-harb",
+        "text": "أبو عبد الله الخولاني الأبرش، كاتب الزبيدي. يروي هنا عن سعيد بن سنان الحمصي.",
+        "sourceIds": [
+          "profile-muhammad-harb",
+          "ibnmajah-4054-source"
+        ]
+      },
+      "reliability": {
+        "narratorId": "muhammad-harb",
+        "status": "trusted",
+        "text": "وثقه العجلي والنسائي، كما نقل المزي.",
+        "sourceIds": [
+          "profile-muhammad-harb"
+        ]
+      }
+    },
+    {
+      "id": "said-sinan-himsi",
+      "name": "سعيد بن سنان الحمصي — أبو مهدي",
+      "aliases": [
+        "سعيد بن سنان",
+        "سعيد بن سنان الحمصي",
+        "أبو مهدي"
+      ],
+      "sourceIds": [
+        "profile-said-sinan-himsi"
+      ],
+      "bio": {
+        "narratorId": "said-sinan-himsi",
+        "text": "أبو مهدي الحمصي، يروي عن أبي الزاهرية. هذا هو سعيد بن سنان الشامي في الطريق، ولا يخلط براوٍ آخر يشترك معه في الاسم.",
+        "sourceIds": [
+          "profile-said-sinan-himsi",
+          "ibnmajah-4054-source"
+        ]
+      },
+      "reliability": {
+        "narratorId": "said-sinan-himsi",
+        "status": "untrusted",
+        "text": "تركه النسائي، ووصف البخاري حديثه بالإنكار، كما نقل المزي. ونقلت الترجمة أيضًا توثيقًا عن أبي مسهر؛ لا نزعم اتفاق جميع النقاد.",
+        "sourceIds": [
+          "profile-said-sinan-himsi"
+        ]
+      }
+    },
+    {
+      "id": "hudayr-kurayb",
+      "name": "أبو الزاهرية — حُدير بن كُريب",
+      "aliases": [
+        "أبو الزاهرية",
+        "حدير بن كريب",
+        "حدير بن كريب الحضرمي"
+      ],
+      "sourceIds": [
+        "profile-hudayr-kurayb"
+      ],
+      "bio": {
+        "narratorId": "hudayr-kurayb",
+        "text": "راوٍ حمصي حضرمي، معروف بكنية أبي الزاهرية، يروي هنا عن أبي شجرة كثير بن مرة.",
+        "sourceIds": [
+          "profile-hudayr-kurayb",
+          "ibnmajah-4054-source"
+        ]
+      },
+      "reliability": {
+        "narratorId": "hudayr-kurayb",
+        "status": "trusted",
+        "text": "قال ابن سعد: ثقة إن شاء الله، كثير الحديث، كما نقل المزي.",
+        "sourceIds": [
+          "profile-hudayr-kurayb"
+        ]
+      }
+    },
+    {
+      "id": "kathir-murra",
+      "name": "أبو شجرة — كثير بن مرة",
+      "aliases": [
+        "أبو شجرة",
+        "كثير بن مرة",
+        "كثير بن مرة الحضرمي"
+      ],
+      "sourceIds": [
+        "profile-kathir-murra"
+      ],
+      "bio": {
+        "narratorId": "kathir-murra",
+        "text": "تابعي حضرمي حمصي، كنيته أبو شجرة، وقيل أبو القاسم. الكنية والاسم في نص السند يعودان إلى راوٍ واحد.",
+        "sourceIds": [
+          "profile-kathir-murra",
+          "ibnmajah-4054-source"
+        ]
+      },
+      "reliability": {
+        "narratorId": "kathir-murra",
+        "status": "trusted",
+        "text": "وثقه ابن حجر والعجلي وابن سعد في الأقوال المنقولة بالمصدر؛ وتنبه الترجمة إلى خطأ عده صحابيًا.",
+        "sourceIds": [
+          "profile-kathir-murra"
         ]
       }
     }
@@ -2720,293 +2868,323 @@
       ]
     },
     {
-      "id": "kamil-mothers",
-      "title": "الجنة تحت أقدام الأمهات — من شئن أدخلن",
-      "matn": "الجنة تحت أقدام الأمهات، من شئن أدخلن، ومن شئن أخرجن.",
+      "id": "ibnmajah-1388",
+      "title": "إذا كانت ليلة النصف من شعبان",
+      "matn": "إِذَا كَانَتْ لَيْلَةُ النِّصْفِ مِنْ شَعْبَانَ فَقُومُوا لَيْلَهَا وَصُومُوا يَوْمَهَا . فَإِنَّ اللَّهَ يَنْزِلُ فِيهَا لِغُرُوبِ الشَّمْسِ إِلَى سَمَاءِ الدُّنْيَا فَيَقُولُ أَلاَ مِنْ مُسْتَغْفِرٍ فَأَغْفِرَ لَهُ أَلاَ مُسْتَرْزِقٌ فَأَرْزُقَهُ أَلاَ مُبْتَلًى فَأُعَافِيَهُ أَلاَ كَذَا أَلاَ كَذَا حَتَّى يَطْلُعَ الْفَجْرُ",
       "sourceIds": [
-        "kamil-mothers"
+        "ibnmajah-1388-source"
       ],
       "compiler": {
-        "name": "ابن عدي",
+        "name": "الإمام ابن ماجه",
         "wording": "حدثنا",
         "sourceIds": [
-          "kamil-mothers"
+          "ibnmajah-1388-source"
         ]
       },
       "judgement": {
-        "hadithId": "kamil-mothers",
+        "hadithId": "ibnmajah-1388",
         "grade": "fabricated",
-        "text": "موضوع عند الألباني، السلسلة الضعيفة ٥٩٣. هذا اللفظ الكامل لا تثبت نسبته إلى النبي ﷺ. الحكم لا يعمم على روايات أخرى في بر الأم أو على لفظ «فالزمها فإن الجنة تحت قدميها».",
+        "text": "موضوع (دار السلام)، كما هو معروض في Sunnah.com، سنن ابن ماجه 1388. لا تثبت نسبة هذه الرواية إلى النبي ﷺ. يعرض الموقع السند لدراسته ولا يصحح الرواية.",
         "sourceIds": [
-          "albani-mothers-593"
+          "ibnmajah-1388-source"
         ]
       },
       "chains": [
         {
-          "id": "kamil-mothers-chain",
-          "label": "طريق موسى البلقاوي عن أبي المليح",
+          "id": "ibnmajah-1388-chain",
+          "label": "سند الرواية في سنن ابن ماجه",
           "nodes": [
-            "umar-sinan-kamil",
-            "abbas-walid-khallal",
-            "musa-muhammad-ata",
-            "hasan-umar-malih",
-            "maymun-mihran",
-            "abdullah-abbas",
+            "hasan-ali-khallal",
+            "abdrazzaq-hammam",
+            "ibn-abi-sabra",
+            "ibrahim-muhammad-sabra",
+            "muawiya-abdullah-jafar",
+            "abdullah-jafar",
+            "ali-abi-talib",
             "messenger"
           ],
           "sourceIds": [
-            "kamil-mothers"
+            "ibnmajah-1388-source"
           ],
-          "isnad": "ثنا عمر بن سنان، ثنا عباس بن الوليد الخلال، ثنا موسى بن محمد بن عطاء، ثنا أبو المليح، عن ميمون بن مهران، عن ابن عباس قال: قال رسول الله صلى الله عليه وسلم",
+          "isnad": "حَدَّثَنَا الْحَسَنُ بْنُ عَلِيٍّ الْخَلاَّلُ، حَدَّثَنَا عَبْدُ الرَّزَّاقِ، أَنْبَأَنَا ابْنُ أَبِي سَبْرَةَ، عَنْ إِبْرَاهِيمَ بْنِ مُحَمَّدٍ، عَنْ مُعَاوِيَةَ بْنِ عَبْدِ اللَّهِ بْنِ جَعْفَرٍ، عَنْ أَبِيهِ، عَنْ عَلِيِّ بْنِ أَبِي طَالِبٍ، قَالَ قَالَ رَسُولُ اللَّهِ ـ صلى الله عليه وسلم ـ",
           "links": [
             {
-              "from": "umar-sinan-kamil",
-              "to": "abbas-walid-khallal",
+              "to": "abdrazzaq-hammam",
               "wording": "حدثنا",
               "sourceIds": [
-                "kamil-mothers"
-              ]
+                "ibnmajah-1388-source"
+              ],
+              "from": "hasan-ali-khallal"
             },
             {
-              "from": "abbas-walid-khallal",
-              "to": "musa-muhammad-ata",
-              "wording": "حدثنا",
+              "to": "ibn-abi-sabra",
+              "wording": "أنبأنا",
               "sourceIds": [
-                "kamil-mothers"
-              ]
+                "ibnmajah-1388-source"
+              ],
+              "from": "abdrazzaq-hammam"
             },
             {
-              "from": "musa-muhammad-ata",
-              "to": "hasan-umar-malih",
-              "wording": "حدثنا",
-              "sourceIds": [
-                "kamil-mothers"
-              ]
-            },
-            {
-              "from": "hasan-umar-malih",
-              "to": "maymun-mihran",
+              "to": "ibrahim-muhammad-sabra",
               "wording": "عن",
               "sourceIds": [
-                "kamil-mothers"
-              ]
+                "ibnmajah-1388-source"
+              ],
+              "from": "ibn-abi-sabra"
             },
             {
-              "from": "maymun-mihran",
-              "to": "abdullah-abbas",
+              "to": "muawiya-abdullah-jafar",
               "wording": "عن",
               "sourceIds": [
-                "kamil-mothers"
-              ]
+                "ibnmajah-1388-source"
+              ],
+              "from": "ibrahim-muhammad-sabra"
             },
             {
-              "from": "abdullah-abbas",
+              "to": "abdullah-jafar",
+              "wording": "عن أبيه",
+              "sourceIds": [
+                "ibnmajah-1388-source"
+              ],
+              "from": "muawiya-abdullah-jafar"
+            },
+            {
+              "to": "ali-abi-talib",
+              "wording": "عن",
+              "sourceIds": [
+                "ibnmajah-1388-source"
+              ],
+              "from": "abdullah-jafar"
+            },
+            {
               "to": "messenger",
               "wording": "قال: قال رسول الله ﷺ (نسبة لا تثبت)",
               "sourceIds": [
-                "kamil-mothers"
-              ]
+                "ibnmajah-1388-source"
+              ],
+              "from": "ali-abi-talib"
             }
           ],
           "note": {
-            "chainId": "kamil-mothers-chain",
-            "text": "الطريق محفوظ كما أورده ابن عدي، ولا يثبت به المتن. ضبط «أدخلن» موافق لنص الحكم؛ في النص الرقمي لأصل الكامل تصحيف «أدجلن». أبو المليح هنا الحسن بن عمر الرقي. لا يستنتج من وجود أسماء موثوقة صحة هذا الطريق.",
+            "chainId": "ibnmajah-1388-chain",
+            "text": "«عن أبيه» يقصد عبد الله بن جعفر. إبراهيم بن محمد محفوظ باسمه الوارد مع توقف المزي في تعيينه. اتهام ابن أبي سبرة بالوضع منقول في ترجمته، وحكم الرواية الموضوع مستقل عن ألوان بقية البطاقات.",
             "sourceIds": [
-              "kamil-mothers",
-              "albani-mothers-593"
+              "ibnmajah-1388-source",
+              "profile-hasan-ali-khallal",
+              "profile-abdrazzaq-hammam",
+              "profile-ibn-abi-sabra",
+              "profile-ibrahim-muhammad-sabra",
+              "profile-muawiya-abdullah-jafar",
+              "profile-abdullah-jafar",
+              "profile-ali-abi-talib"
             ]
           }
         }
       ]
     },
     {
-      "id": "abd-humayd-781",
-      "title": "أصحابي مثل النجوم",
-      "matn": "مثل أصحابي مثل النجوم، يهتدى به، فأيهم أخذتم بقوله اهتديتم.",
+      "id": "ibnmajah-4313",
+      "title": "يشفع يوم القيامة ثلاثة",
+      "matn": "يَشْفَعُ يَوْمَ الْقِيَامَةِ ثَلاَثَةٌ الأَنْبِيَاءُ ثُمَّ الْعُلَمَاءُ ثُمَّ الشُّهَدَاءُ",
       "sourceIds": [
-        "abd-humayd-781"
+        "ibnmajah-4313-source"
       ],
       "compiler": {
-        "name": "عبد بن حميد",
-        "wording": "أخبرني",
+        "name": "الإمام ابن ماجه",
+        "wording": "حدثنا",
         "sourceIds": [
-          "abd-humayd-781"
+          "ibnmajah-4313-source"
         ]
       },
       "judgement": {
-        "hadithId": "abd-humayd-781",
+        "hadithId": "ibnmajah-4313",
         "grade": "fabricated",
-        "text": "موضوع عند الألباني، السلسلة الضعيفة ٦١، من طريق حمزة الجزري عن نافع عن ابن عمر. لا تثبت نسبة هذه الرواية إلى النبي ﷺ؛ لفظ المسند المعروض يختلف يسيرًا عن لفظ «إنما أصحابي مثل النجوم».",
+        "text": "موضوع (دار السلام)، كما هو معروض في Sunnah.com، سنن ابن ماجه 4313. لا تثبت نسبة هذه الرواية إلى النبي ﷺ. يعرض الموقع السند لدراسته ولا يصحح الرواية.",
         "sourceIds": [
-          "albani-stars-61"
+          "ibnmajah-4313-source"
         ]
       },
       "chains": [
         {
-          "id": "abd-humayd-781-chain",
-          "label": "طريق أبي شهاب عن حمزة الجزري",
+          "id": "ibnmajah-4313-chain",
+          "label": "سند الرواية في سنن ابن ماجه",
           "nodes": [
+            "said-marwan",
             "ahmad-abdullah-yunus",
-            "abd-rabbih-shihab",
-            "hamza-abi-hamza",
-            "nafi-umar",
-            "abdullah-umar",
+            "anbasa-abdurrahman",
+            "alaq-abi-muslim",
+            "aban-uthman",
+            "uthman-affan",
             "messenger"
           ],
           "sourceIds": [
-            "abd-humayd-781"
+            "ibnmajah-4313-source"
           ],
-          "isnad": "أخبرني أحمد بن يونس، ثنا أبو شهاب، عن حمزة الجزري، عن نافع، عن ابن عمر: أن رسول الله صلى الله عليه وسلم قال",
+          "isnad": "حَدَّثَنَا سَعِيدُ بْنُ مَرْوَانَ، حَدَّثَنَا أَحْمَدُ بْنُ يُونُسَ، حَدَّثَنَا عَنْبَسَةُ بْنُ عَبْدِ الرَّحْمَنِ، عَنْ عِلاَقِ بْنِ أَبِي مُسْلِمٍ، عَنْ أَبَانَ بْنِ عُثْمَانَ، عَنْ عُثْمَانَ بْنِ عَفَّانَ، قَالَ قَالَ رَسُولُ اللَّهِ ـ صلى الله عليه وسلم ـ",
           "links": [
             {
-              "from": "ahmad-abdullah-yunus",
-              "to": "abd-rabbih-shihab",
+              "to": "ahmad-abdullah-yunus",
               "wording": "حدثنا",
               "sourceIds": [
-                "abd-humayd-781"
-              ]
+                "ibnmajah-4313-source"
+              ],
+              "from": "said-marwan"
             },
             {
-              "from": "abd-rabbih-shihab",
-              "to": "hamza-abi-hamza",
+              "to": "anbasa-abdurrahman",
+              "wording": "حدثنا",
+              "sourceIds": [
+                "ibnmajah-4313-source"
+              ],
+              "from": "ahmad-abdullah-yunus"
+            },
+            {
+              "to": "alaq-abi-muslim",
               "wording": "عن",
               "sourceIds": [
-                "abd-humayd-781"
-              ]
+                "ibnmajah-4313-source"
+              ],
+              "from": "anbasa-abdurrahman"
             },
             {
-              "from": "hamza-abi-hamza",
-              "to": "nafi-umar",
+              "to": "aban-uthman",
               "wording": "عن",
               "sourceIds": [
-                "abd-humayd-781"
-              ]
+                "ibnmajah-4313-source"
+              ],
+              "from": "alaq-abi-muslim"
             },
             {
-              "from": "nafi-umar",
-              "to": "abdullah-umar",
+              "to": "uthman-affan",
               "wording": "عن",
               "sourceIds": [
-                "abd-humayd-781"
-              ]
+                "ibnmajah-4313-source"
+              ],
+              "from": "aban-uthman"
             },
             {
-              "from": "abdullah-umar",
               "to": "messenger",
-              "wording": "أن رسول الله ﷺ قال (نسبة لا تثبت)",
+              "wording": "قال: قال رسول الله ﷺ (نسبة لا تثبت)",
               "sourceIds": [
-                "abd-humayd-781"
-              ]
+                "ibnmajah-4313-source"
+              ],
+              "from": "uthman-affan"
             }
           ],
           "note": {
-            "chainId": "abd-humayd-781-chain",
-            "text": "النص المعروض من المنتخب ٧٨١، وليس لفظ طريق جابر «أصحابي كالنجوم بأيهم اقتديتم». يشترك طريقا عبد بن حميد والآجري في أبي شهاب عن حمزة عن نافع عن ابن عمر، مع اختلاف يسير في اللفظ.",
+            "chainId": "ibnmajah-4313-chain",
+            "text": "أحمد بن يونس هو أحمد بن عبد الله بن يونس. أبان هو ابن عثمان وليس عثمان نفسه. المزي يصف علاق بأنه مجهول، وينقل اتهام عنبسة بالوضع؛ لا ننقل أحد الحكمين إلى الآخر.",
             "sourceIds": [
-              "abd-humayd-781",
-              "albani-stars-61"
+              "ibnmajah-4313-source",
+              "profile-said-marwan",
+              "profile-anbasa-abdurrahman",
+              "profile-alaq-abi-muslim",
+              "profile-aban-uthman",
+              "profile-uthman-affan"
             ]
           }
         }
       ]
     },
     {
-      "id": "kamil-visit",
-      "title": "من حج البيت فلم يزرني فقد جفاني",
-      "matn": "من حج البيت فلم يزرني فقد جفاني.",
+      "id": "ibnmajah-4054",
+      "title": "إذا أراد أن يهلك عبدًا نزع منه الحياء",
+      "matn": "إِنَّ اللَّهَ عَزَّ وَجَلَّ إِذَا أَرَادَ أَنْ يُهْلِكَ عَبْدًا نَزَعَ مِنْهُ الْحَيَاءَ فَإِذَا نَزَعَ مِنْهُ الْحَيَاءَ لَمْ تَلْقَهُ إِلاَّ مَقِيتًا مُمَقَّتًا فَإِذَا لَمْ تَلْقَهُ إِلاَّ مَقِيتًا مُمَقَّتًا نُزِعَتْ مِنْهُ الأَمَانَةُ فَإِذَا نُزِعَتْ مِنْهُ الأَمَانَةُ لَمْ تَلْقَهُ إِلاَّ خَائِنًا مُخَوَّنًا فَإِذَا لَمْ تَلْقَهُ إِلاَّ خَائِنًا مُخَوَّنًا نُزِعَتْ مِنْهُ الرَّحْمَةُ فَإِذَا نُزِعَتْ مِنْهُ الرَّحْمَةُ لَمْ تَلْقَهُ إِلاَّ رَجِيمًا مُلَعَّنًا فَإِذَا لَمْ تَلْقَهُ إِلاَّ رَجِيمًا مُلَعَّنًا نُزِعَتْ مِنْهُ رِبْقَةُ الإِسْلاَمِ",
       "sourceIds": [
-        "kamil-visit"
+        "ibnmajah-4054-source"
       ],
       "compiler": {
-        "name": "ابن عدي",
+        "name": "الإمام ابن ماجه",
         "wording": "حدثنا",
         "sourceIds": [
-          "kamil-visit"
+          "ibnmajah-4054-source"
         ]
       },
       "judgement": {
-        "hadithId": "kamil-visit",
+        "hadithId": "ibnmajah-4054",
         "grade": "fabricated",
-        "text": "موضوع عند الألباني، السلسلة الضعيفة ٤٥. لا تثبت نسبة هذه الرواية إلى النبي ﷺ. في التخريج المشهور «ولم يزرني»؛ نحفظ هنا لفظ أصل ابن عدي «فلم يزرني».",
+        "text": "موضوع (دار السلام)، كما هو معروض في Sunnah.com، سنن ابن ماجه 4054. لا تثبت نسبة هذه الرواية إلى النبي ﷺ. يعرض الموقع السند لدراسته ولا يصحح الرواية.",
         "sourceIds": [
-          "albani-visit-45"
+          "ibnmajah-4054-source"
         ]
       },
       "chains": [
         {
-          "id": "kamil-visit-chain",
-          "label": "طريق حفيد النعمان عن جده",
+          "id": "ibnmajah-4054-chain",
+          "label": "سند الرواية في سنن ابن ماجه",
           "nodes": [
-            "ali-ishaq-kamil",
-            "muhammad-muhammad-nuuman",
-            "nuuman-shibl",
-            "malik-anas",
-            "nafi-umar",
+            "muhammad-musaffa",
+            "muhammad-harb",
+            "said-sinan-himsi",
+            "hudayr-kurayb",
+            "kathir-murra",
             "abdullah-umar",
             "messenger"
           ],
           "sourceIds": [
-            "kamil-visit"
+            "ibnmajah-4054-source"
           ],
-          "isnad": "ثنا علي بن إسحاق، ثنا محمد بن محمد بن النعمان بن شبل، حدثني جدي، حدثني مالك، عن نافع، عن ابن عمر قال: قال رسول الله صلى الله عليه وسلم",
+          "isnad": "حَدَّثَنَا مُحَمَّدُ بْنُ الْمُصَفَّى، حَدَّثَنَا مُحَمَّدُ بْنُ حَرْبٍ، عَنْ سَعِيدِ بْنِ سِنَانٍ، عَنْ أَبِي الزَّاهِرِيَّةِ، عَنْ أَبِي شَجَرَةَ، كَثِيرِ بْنِ مُرَّةَ عَنِ ابْنِ عُمَرَ، أَنَّ النَّبِيَّ ـ صلى الله عليه وسلم ـ قَالَ",
           "links": [
             {
-              "from": "ali-ishaq-kamil",
-              "to": "muhammad-muhammad-nuuman",
+              "to": "muhammad-harb",
               "wording": "حدثنا",
               "sourceIds": [
-                "kamil-visit"
-              ]
+                "ibnmajah-4054-source"
+              ],
+              "from": "muhammad-musaffa"
             },
             {
-              "from": "muhammad-muhammad-nuuman",
-              "to": "nuuman-shibl",
-              "wording": "حدثني جدي",
-              "sourceIds": [
-                "kamil-visit"
-              ]
-            },
-            {
-              "from": "nuuman-shibl",
-              "to": "malik-anas",
-              "wording": "حدثني",
-              "sourceIds": [
-                "kamil-visit"
-              ]
-            },
-            {
-              "from": "malik-anas",
-              "to": "nafi-umar",
+              "to": "said-sinan-himsi",
               "wording": "عن",
               "sourceIds": [
-                "kamil-visit"
-              ]
+                "ibnmajah-4054-source"
+              ],
+              "from": "muhammad-harb"
             },
             {
-              "from": "nafi-umar",
+              "to": "hudayr-kurayb",
+              "wording": "عن",
+              "sourceIds": [
+                "ibnmajah-4054-source"
+              ],
+              "from": "said-sinan-himsi"
+            },
+            {
+              "to": "kathir-murra",
+              "wording": "عن",
+              "sourceIds": [
+                "ibnmajah-4054-source"
+              ],
+              "from": "hudayr-kurayb"
+            },
+            {
               "to": "abdullah-umar",
               "wording": "عن",
               "sourceIds": [
-                "kamil-visit"
-              ]
+                "ibnmajah-4054-source"
+              ],
+              "from": "kathir-murra"
             },
             {
-              "from": "abdullah-umar",
               "to": "messenger",
-              "wording": "قال: قال رسول الله ﷺ (نسبة لا تثبت)",
+              "wording": "عن النبي ﷺ قال (نسبة لا تثبت)",
               "sourceIds": [
-                "kamil-visit"
-              ]
+                "ibnmajah-4054-source"
+              ],
+              "from": "abdullah-umar"
             }
           ],
           "note": {
-            "chainId": "kamil-visit-chain",
-            "text": "نعتمد صيغة أصل الكامل المعروضة في الدرر: محمد بن محمد عن جده. توجد في بعض النقل صيغة محمد بن النعمان عن أبيه؛ لا تدمج هذه الصيغ. في الموضوعات نقل أن الطعن في هذا الحديث على الحفيد لا الجد.",
+            "chainId": "ibnmajah-4054-chain",
+            "text": "أبو شجرة وكثير بن مرة اسم وكنية لشخص واحد. أبو الزاهرية هو حدير بن كريب. سعيد بن سنان هنا هو أبو مهدي الحمصي، وعبد الله بن عمر غير عبد الله بن عمرو. الحكم على الرواية منقول عن دار السلام ولا يستنتج آليًا من الألوان.",
             "sourceIds": [
-              "kamil-visit",
-              "albani-visit-45",
-              "lisan-muhammad-nuuman",
-              "lisan-nuuman"
+              "ibnmajah-4054-source",
+              "profile-muhammad-musaffa",
+              "profile-muhammad-harb",
+              "profile-said-sinan-himsi",
+              "profile-hudayr-kurayb",
+              "profile-kathir-murra"
             ]
           }
         }

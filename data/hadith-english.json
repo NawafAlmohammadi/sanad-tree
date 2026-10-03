@@ -197,85 +197,86 @@
     "rightsUrl": "https://sunnah.com/about",
     "sourceTextSha256": "abc7a8ae53b49665c95ca8dea83757e8578fb4ab86a02c1d4ddb00c12b12ceb6"
   },
-  "kamil-mothers": {
-    "original": "الجنة تحت أقدام الأمهات، من شئن أدخلن، ومن شئن أخرجن.",
+  "ibnmajah-1388": {
+    "original": "إِذَا كَانَتْ لَيْلَةُ النِّصْفِ مِنْ شَعْبَانَ فَقُومُوا لَيْلَهَا وَصُومُوا يَوْمَهَا . فَإِنَّ اللَّهَ يَنْزِلُ فِيهَا لِغُرُوبِ الشَّمْسِ إِلَى سَمَاءِ الدُّنْيَا فَيَقُولُ أَلاَ مِنْ مُسْتَغْفِرٍ فَأَغْفِرَ لَهُ أَلاَ مُسْتَرْزِقٌ فَأَرْزُقَهُ أَلاَ مُبْتَلًى فَأُعَافِيَهُ أَلاَ كَذَا أَلاَ كَذَا حَتَّى يَطْلُعَ الْفَجْرُ",
     "chainNodes": {
-      "kamil-mothers-chain": [
-        "umar-sinan-kamil",
-        "abbas-walid-khallal",
-        "musa-muhammad-ata",
-        "hasan-umar-malih",
-        "maymun-mihran",
-        "abdullah-abbas",
+      "ibnmajah-1388-chain": [
+        "hasan-ali-khallal",
+        "abdrazzaq-hammam",
+        "ibn-abi-sabra",
+        "ibrahim-muhammad-sabra",
+        "muawiya-abdullah-jafar",
+        "abdullah-jafar",
+        "ali-abi-talib",
         "messenger"
       ]
     },
     "checkedAt": "2026-10-03",
     "sourceIds": [
-      "kamil-mothers"
+      "ibnmajah-1388-source"
     ],
-    "status": "not-found",
-    "text": null,
-    "introduction": null,
-    "url": null,
-    "searchTerms": [
-      "\"من شئن أدخلن\""
-    ],
-    "reviewNote": "No exact text and chain match found. Sunan an-Nasa'i 3104 is a different report through Mu'awiyah ibn Jahimah about staying with one's mother; it does not contain this expanded wording.",
-    "relatedUrl": "https://sunnah.com/nasai:3104"
+    "status": "verified",
+    "url": "https://sunnah.com/ibnmajah:1388",
+    "reference": "Sunan Ibn Majah 1388",
+    "inBookReference": "Book 5, Hadith 586",
+    "introduction": "It was narrated that ‘Ali bin Abu Talib said:",
+    "title": "When it is the night of the middle of Sha’ban",
+    "text": "“The Messenger of Allah (ﷺ) said: ‘When it is the night of the middle of Sha’ban, spend its night in prayer and observe a fast on that day. For Allah descends at sunset on that night to the lowest heaven and says: ‘Is there no one who will ask Me for forgiveness, that I may forgive him? Is there no one who will ask Me for provision, that I may provide for him? Is there no one who is afflicted by trouble, that I may relieve him?’ And so on, until dawn comes.’”",
+    "rightsUrl": "https://sunnah.com/about",
+    "sourceTextSha256": "00a2e6e54e8e7a45a557a0d7c439353f8fbf534bbfc43ac1c2fd699d51c92758"
   },
-  "abd-humayd-781": {
-    "original": "مثل أصحابي مثل النجوم، يهتدى به، فأيهم أخذتم بقوله اهتديتم.",
+  "ibnmajah-4313": {
+    "original": "يَشْفَعُ يَوْمَ الْقِيَامَةِ ثَلاَثَةٌ الأَنْبِيَاءُ ثُمَّ الْعُلَمَاءُ ثُمَّ الشُّهَدَاءُ",
     "chainNodes": {
-      "abd-humayd-781-chain": [
+      "ibnmajah-4313-chain": [
+        "said-marwan",
         "ahmad-abdullah-yunus",
-        "abd-rabbih-shihab",
-        "hamza-abi-hamza",
-        "nafi-umar",
-        "abdullah-umar",
+        "anbasa-abdurrahman",
+        "alaq-abi-muslim",
+        "aban-uthman",
+        "uthman-affan",
         "messenger"
       ]
     },
     "checkedAt": "2026-10-03",
     "sourceIds": [
-      "abd-humayd-781"
+      "ibnmajah-4313-source"
     ],
-    "status": "not-found",
-    "text": null,
-    "introduction": null,
-    "url": null,
-    "searchTerms": [
-      "\"مثل أصحابي مثل النجوم\"",
-      "\"أصحابي كالنجوم\""
-    ],
-    "reviewNote": "No exact text and chain match found. Mishkat al-Masabih, Book 30, Hadith 40 contains a related report from Umar ibn al-Khattab, transmitted by Razin. The selected catalog route is Abd ibn Humayd 781 from Ibn Umar, with different wording. The related English text is not reused.",
-    "relatedUrl": "https://sunnah.com/mishkat/30/40"
+    "status": "verified",
+    "url": "https://sunnah.com/ibnmajah:4313",
+    "reference": "Sunan Ibn Majah 4313",
+    "inBookReference": "Book 37, Hadith 214",
+    "introduction": "It was narrated from ‘Uthman bin ‘Affan that the Messenger of Allah (ﷺ) said:",
+    "title": "Three will intercede on the Day of Resurrection",
+    "text": "“Three will intercede on the Day of Resurrection: The Prophets, then the scholars, then the martyrs.”",
+    "rightsUrl": "https://sunnah.com/about",
+    "sourceTextSha256": "2e66b71acd16fc8adfca9824c3ed2594ec15ce4aa9c539e73ba1db365fd9e347"
   },
-  "kamil-visit": {
-    "original": "من حج البيت فلم يزرني فقد جفاني.",
+  "ibnmajah-4054": {
+    "original": "إِنَّ اللَّهَ عَزَّ وَجَلَّ إِذَا أَرَادَ أَنْ يُهْلِكَ عَبْدًا نَزَعَ مِنْهُ الْحَيَاءَ فَإِذَا نَزَعَ مِنْهُ الْحَيَاءَ لَمْ تَلْقَهُ إِلاَّ مَقِيتًا مُمَقَّتًا فَإِذَا لَمْ تَلْقَهُ إِلاَّ مَقِيتًا مُمَقَّتًا نُزِعَتْ مِنْهُ الأَمَانَةُ فَإِذَا نُزِعَتْ مِنْهُ الأَمَانَةُ لَمْ تَلْقَهُ إِلاَّ خَائِنًا مُخَوَّنًا فَإِذَا لَمْ تَلْقَهُ إِلاَّ خَائِنًا مُخَوَّنًا نُزِعَتْ مِنْهُ الرَّحْمَةُ فَإِذَا نُزِعَتْ مِنْهُ الرَّحْمَةُ لَمْ تَلْقَهُ إِلاَّ رَجِيمًا مُلَعَّنًا فَإِذَا لَمْ تَلْقَهُ إِلاَّ رَجِيمًا مُلَعَّنًا نُزِعَتْ مِنْهُ رِبْقَةُ الإِسْلاَمِ",
     "chainNodes": {
-      "kamil-visit-chain": [
-        "ali-ishaq-kamil",
-        "muhammad-muhammad-nuuman",
-        "nuuman-shibl",
-        "malik-anas",
-        "nafi-umar",
+      "ibnmajah-4054-chain": [
+        "muhammad-musaffa",
+        "muhammad-harb",
+        "said-sinan-himsi",
+        "hudayr-kurayb",
+        "kathir-murra",
         "abdullah-umar",
         "messenger"
       ]
     },
     "checkedAt": "2026-10-03",
     "sourceIds": [
-      "kamil-visit"
+      "ibnmajah-4054-source"
     ],
-    "status": "not-found",
-    "text": null,
-    "introduction": null,
-    "url": null,
-    "searchTerms": [
-      "\"من حج البيت\"",
-      "\"من حج البيت فلم يزرني فقد جفاني\""
-    ],
-    "reviewNote": "The site's phrase search returned five reports for the opening words, none with this wording. No exact text and chain match found for Ibn Adi's selected route. No English translation is supplied."
+    "status": "verified",
+    "url": "https://sunnah.com/ibnmajah:4054",
+    "reference": "Sunan Ibn Majah 4054",
+    "inBookReference": "Book 36, Hadith 129",
+    "introduction": "It was narrated from Ibn ‘Umar that the Prophet (ﷺ) said:",
+    "title": "When Allah wants to destroy a person",
+    "text": "“When Allah wants to destroy a person, He takes away modesty from him, you will only see him with the wrath of Allah upon him, and he will be hated by people. When you only see him with the wrath of Allah upon him, and hated by people, then honesty will be taken away from him, and when honesty is taken away from him, you will only see him as a traitor who is called such by others. When you only see him as a traitor who is called such by others, then mercy will be taken away from him, and when mercy is taken away from him, you will only see him as rejected and accursed, and when you only see him as rejected and accursed, then the bond of Islam will be taken away from him.”",
+    "rightsUrl": "https://sunnah.com/about",
+    "sourceTextSha256": "af9b1721b93fec4ab497f6004c578b4baf25cdd668ea2825a90ca392c2ee541a"
   }
 }
