@@ -16,7 +16,7 @@ The live solution is a server application. The GitHub repository provides the co
 
 | Item | Readiness |
 | --- | --- |
-| PDF or PowerPoint presentation | Prepared separately in the submission bundle: 12 main slides and 6 evidence/Q&A appendices. |
+| PDF or PowerPoint presentation | Prepared separately as an editable PowerPoint file: 12 main slides and 3 appendices on verification, documentation and current limitations. |
 | Working live solution | Public visitor access enabled with the team's approval; page, model list and assistant tested without authentication using the existing server-side Gemini key. |
 | Public GitHub repository | Available; download/run instructions are in English. Check the latest commit before submission. |
 | Practical video, no longer than two minutes | To be recorded and supplied by the team. |
@@ -39,9 +39,9 @@ These are engineering checks, not an independent scholarly approval or an educat
 1. Open the live link in a signed-out browser. It must show the library without the owner's account.
 2. Select a report, open a narrator, open the text/source tab, ask the active model and verify an out-of-scope refusal. Repeat one question in English.
 3. Download this repository on another device and follow README. Each device supplies its own API.env key.
-4. Confirm all five required items, including the video duration and readable PDF.
+4. Confirm all five required items, including the video duration and readable PowerPoint slides.
 5. Upload through the official submission portal, check the uploaded files and links, then save its actual confirmation message or receipt.
 
 ## Final presentation
 
-Rehearse slides 1–12 in five minutes, including a short live demonstration. Keep slides 13–18 for the three-minute question period. The seven judging weights in the supplied opening-session image are 25%, 15%, 15%, 10%, 20%, 10% and 5%; the appendix maps each to inspectable evidence. Do not claim measured learning outcomes or a new automatic hadith judgement.
+Rehearse slides 1–12 in five minutes, including a short live demonstration. Keep slides 13–15 as supporting evidence for the three-minute question period. The seven judging weights in the supplied opening-session image are 25%, 15%, 15%, 10%, 20%, 10% and 5%; their evidence mapping remains in the separate submission guide. Do not claim measured learning outcomes or a new automatic hadith judgement.
