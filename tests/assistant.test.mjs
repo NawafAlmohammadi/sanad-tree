@@ -23,7 +23,7 @@ test('English questions preserve scoped evidence, identities, warnings and the r
   const answer=await answerQuestion(catalog,{hadithId:fabricated.id,chainId:fabricated.chains[0].id,question:'Explain this chain?',modelId:'local'});
   assert.equal(answer.status,'answered');assert.equal(answer.claims[0].id,'attribution-warning');assert.ok(answer.claims.every(f=>f.sourceIds.length));
   for(const n of catalog.narrators)assert.ok(names[n.id],`Missing English identity: ${n.id}`);
-  for(const h of catalog.hadiths){assert.ok(titles[h.id]);assert.ok(texts[h.id]);}
+  for(const h of catalog.hadiths){assert.ok(titles[h.id]);assert.equal(Boolean(texts[h.id]),h.judgement?.grade!=='fabricated');}
 });
 // Entirely fictional test data, never imported by the production application.
 const fixture={version:1,sources:[{id:'test-source',title:'مرجع اختبار برمجي',reference:'اختبار فقط، ليس حديثًا',rights:'test-only'}],narrators:[{id:'test-a',name:'اسم اختبار ألف',aliases:['ألف'],sourceIds:['test-source']},{id:'test-b',name:'اسم اختبار باء',aliases:['باء'],sourceIds:['test-source']}],hadiths:[{id:'test-h',title:'سجل اختبار برمجي',matn:'هذا نص لاختبار البرنامج وليس حديثًا.',sourceIds:['test-source'],chains:[{id:'test-c',label:'مسار الاختبار',nodes:['test-a','test-b'],sourceIds:['test-source'],links:[{from:'test-a',to:'test-b',wording:'صيغة اختبار',sourceIds:['test-source']}]}]}]};
