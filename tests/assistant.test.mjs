@@ -19,11 +19,11 @@ test('English questions preserve scoped evidence, identities, warnings and the r
     const answer=await answerQuestion(catalog,{...scope,modelId:'gemini',question},{},noProvider);assert.equal(answer.status,'refused');
   }
   assert.equal(calls,0);
-  const fabricated=catalog.hadiths.find(h=>h.id==='kamil-mothers');
+  const fabricated=catalog.hadiths.find(h=>h.id==='ibnmajah-1388');
   const answer=await answerQuestion(catalog,{hadithId:fabricated.id,chainId:fabricated.chains[0].id,question:'Explain this chain?',modelId:'local'});
   assert.equal(answer.status,'answered');assert.equal(answer.claims[0].id,'attribution-warning');assert.ok(answer.claims.every(f=>f.sourceIds.length));
   for(const n of catalog.narrators)assert.ok(names[n.id],`Missing English identity: ${n.id}`);
-  for(const h of catalog.hadiths){assert.ok(titles[h.id]);assert.equal(Boolean(texts[h.id]),h.judgement?.grade!=='fabricated');}
+  for(const h of catalog.hadiths){assert.ok(titles[h.id]);assert.equal(Boolean(texts[h.id]),true);}
 });
 // Entirely fictional test data, never imported by the production application.
 const fixture={version:1,sources:[{id:'test-source',title:'مرجع اختبار برمجي',reference:'اختبار فقط، ليس حديثًا',rights:'test-only'}],narrators:[{id:'test-a',name:'اسم اختبار ألف',aliases:['ألف'],sourceIds:['test-source']},{id:'test-b',name:'اسم اختبار باء',aliases:['باء'],sourceIds:['test-source']}],hadiths:[{id:'test-h',title:'سجل اختبار برمجي',matn:'هذا نص لاختبار البرنامج وليس حديثًا.',sourceIds:['test-source'],chains:[{id:'test-c',label:'مسار الاختبار',nodes:['test-a','test-b'],sourceIds:['test-source'],links:[{from:'test-a',to:'test-b',wording:'صيغة اختبار',sourceIds:['test-source']}]}]}]};
@@ -144,7 +144,7 @@ test('directional narrator questions retrieve only the requested recorded transm
   const noOutgoing=await answerQuestion(catalog,{...input,narratorId:'messenger',question:'عن من روى هذا الراوي'});assert.equal(noOutgoing.status,'refused');
 });
 test('production narrator profiles bind each recorded field to its owner and source',()=>{
-  validateCatalog(catalog);assert.equal(catalog.narrators.length,51);assert.ok(catalog.narrators.every(n=>n.bio?.narratorId===n.id));
+  validateCatalog(catalog);assert.equal(new Set(catalog.hadiths.flatMap(h=>h.chains.flatMap(c=>c.nodes))).size,catalog.narrators.length);assert.ok(catalog.narrators.every(n=>n.bio?.narratorId===n.id));
   const sufyan=catalog.narrators.find(n=>n.id==='sufyan');assert.equal(sufyan.name,'سفيان بن عيينة');assert.ok(sufyan.sourceIds.includes('fath-bukhari-1'));
 });
 test('explicit narrator overrides the selected card without borrowing its dates or references',async()=>{

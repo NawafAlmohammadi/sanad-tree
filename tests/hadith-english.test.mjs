@@ -6,10 +6,10 @@ import records from '../data/hadith-english.json' with {type:'json'};
 import {hadithEnglish,englishMatn,englishMatnClaim,ENGLISH_UNAVAILABLE} from '../lib/hadith-english.mjs';
 import {answerQuestion} from '../lib/assistant.mjs';
 
-test('the ten records distinguish seven exact Sunnah matches from three unmatched reports',()=>{
+test('the ten records distinguish ten exact Sunnah matches, including three replacement fabricated reports',()=>{
   assert.deepEqual(Object.keys(records).sort(),catalog.hadiths.map(h=>h.id).sort());
-  assert.equal(Object.values(records).filter(r=>r.status==='verified').length,7);
-  assert.deepEqual(Object.keys(records).filter(id=>records[id].status==='not-found').sort(),['abd-humayd-781','kamil-mothers','kamil-visit']);
+  assert.equal(Object.values(records).filter(r=>r.status==='verified').length,10);
+  assert.deepEqual(Object.keys(records).filter(id=>records[id].status==='not-found').sort(),[]);
   for(const h of catalog.hadiths){const r=records[h.id];assert.equal(r.original,h.matn);assert.deepEqual(r.chainNodes,Object.fromEntries(h.chains.map(c=>[c.id,c.nodes])));
     if(r.status==='verified'){
       assert.ok(hadithEnglish(h));assert.ok(r.text.includes(r.title));
@@ -33,6 +33,6 @@ test('English matn answers retain the exact sourced quotation and all three weak
     assert.equal(a.status,'answered');const matn=a.displayClaims.find(f=>f.id==='matn');assert.ok(matn);
     assert.equal(matn.text,englishMatnClaim(h));assert.deepEqual(matn.sourceIds,h.sourceIds);
     if(h.judgement.grade==='weak') assert.ok(a.displayClaims.some(f=>f.id==='attribution-warning'));
-    if(h.judgement.grade==='fabricated') {assert.ok(a.displayClaims.some(f=>f.id==='attribution-warning'));assert.equal(matn.text,ENGLISH_UNAVAILABLE);assert.ok(!/[\u0621-\u064a]/u.test(matn.text));}
+    if(h.judgement.grade==='fabricated') {assert.ok(a.displayClaims.some(f=>f.id==='attribution-warning'));assert.notEqual(matn.text,ENGLISH_UNAVAILABLE);assert.equal(matn.text,englishMatnClaim(h));assert.ok(!/[\u0621-\u064a]/u.test(matn.text));}
   }
 });

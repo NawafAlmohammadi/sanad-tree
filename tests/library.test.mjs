@@ -32,14 +32,14 @@ test('Bukhari 10 represents the two parallel teachers as separate paths',async()
 test('Abd Allah ibn Amr and ibn Umar cannot resolve to each other or a selected card',async()=>{
   const amr=await answerQuestion(catalog,input('bukhari-10','من هو عبد الله بن عمرو',{narratorId:'amir-shabi'}));
   assert.equal(amr.narrator.id,'abdullah-amr-as');assert.ok(!amr.answer.includes('الخطاب'));
-  const umar=await answerQuestion(catalog,input('abd-humayd-781','من هو عبد الله بن عمر',{narratorId:'hamza-abi-hamza'}));
+  const umar=await answerQuestion(catalog,input('ibnmajah-4054','من هو عبد الله بن عمر',{narratorId:'said-sinan-himsi'}));
   assert.equal(umar.narrator.id,'abdullah-umar');
   // His sourced biography explicitly distinguishes him from ibn Amr. Mentioning
   // the other name in that distinction must not be mistaken for identity mixing.
   assert.ok(umar.claims.slice(1).every(f=>f.id.startsWith('narrator-abdullah-umar-')));
   assert.equal(umar.claims.find(f=>f.id.endsWith('-bio')).text,`التعريف — عبد الله بن عمر بن الخطاب: ${catalog.narrators.find(n=>n.id==='abdullah-umar').bio.text}`);
   assert.equal((await answerQuestion(catalog,input('bukhari-10','من هو عبد الله بن عمر'))).status,'refused');
-  assert.equal((await answerQuestion(catalog,input('abd-humayd-781','من هو عبد الله بن عمرو'))).status,'refused');
+  assert.equal((await answerQuestion(catalog,input('ibnmajah-4054','من هو عبد الله بن عمرو'))).status,'refused');
 });
 test('fabricated texts and chains always include cited non-attribution notices',async()=>{
   for(const h of catalog.hadiths.filter(h=>h.judgement.grade==='fabricated')){
@@ -57,7 +57,7 @@ test('fabricated texts and chains always include cited non-attribution notices',
   }
 });
 test('fabricated reports cannot lose the notice on a disclosed busy-service fallback',async()=>{
-  const h=catalog.hadiths.find(h=>h.id==='kamil-visit');
+  const h=catalog.hadiths.find(h=>h.id==='ibnmajah-4313');
   const answer=await answerQuestion(catalog,input(h.id,'اعرض متن الحديث',{modelId:'gemini-free'}),{AI_KEY_GEMINI:'test-key'},async()=>new Response('',{status:503}));
   assert.equal(answer.status,'answered');assert.equal(answer.engine,'local');assert.equal(answer.claims[0].id,'attribution-warning');
 });
@@ -75,21 +75,28 @@ test('a weak chain does not transfer its defect to trusted narrators',async()=>{
     assert.equal(answer.narrator.id,nid);assert.ok(answer.answer.includes(n.reliability.text));
   }
 });
-test('grandfather and grandson retain separate names, chain positions and criticism',async()=>{
-  const h=catalog.hadiths.find(h=>h.id==='kamil-visit'),c=h.chains[0];
-  assert.deepEqual(c.nodes.slice(1,4),['muhammad-muhammad-nuuman','nuuman-shibl','malik-anas']);
-  for(const [name,nid,tone] of [['محمد بن محمد بن النعمان','muhammad-muhammad-nuuman','untrusted'],['النعمان بن شبل','nuuman-shibl','review']]){
-    const n=catalog.narrators.find(n=>n.id===nid),answer=await answerQuestion(catalog,input(h.id,`ما حكم ${name}`));
+test('father and son retain separate identities; the father is a Companion',async()=>{
+  const h=catalog.hadiths.find(h=>h.id==='ibnmajah-1388'),c=h.chains[0];
+  assert.deepEqual(c.nodes.slice(4,7),['muawiya-abdullah-jafar','abdullah-jafar','ali-abi-talib']);
+  for(const [name,nid,tone] of [['معاوية بن عبد الله بن جعفر','muawiya-abdullah-jafar','trusted'],['عبد الله بن جعفر','abdullah-jafar','companion']]){
+    const n=catalog.narrators.find(n=>n.id===nid),answer=await answerQuestion(catalog,input(h.id,`من هو ${name}`));
     assert.equal(answer.narrator.id,nid);assert.equal(narratorTone(n),tone);
-    assert.equal(answer.claims.at(-1).text,`الحكم المسجل — ${n.name}: ${n.reliability.text}`);
   }
+  assert.equal(c.links[4].wording,'عن أبيه');
 });
-test('two unresolved expanded identities remain gray and missing judgements refuse',async()=>{
-  for(const [hid,nid] of [['kamil-mothers','umar-sinan-kamil'],['kamil-visit','ali-ishaq-kamil']]){
-    const n=catalog.narrators.find(n=>n.id===nid);assert.equal(narratorTone(n),'unknown');assert.equal(n.reliability,undefined);
-    assert.equal((await answerQuestion(catalog,input(hid,'ما حكم هذا الراوي',{narratorId:nid}))).status,'refused');
-    assert.equal((await answerQuestion(catalog,input(hid,'من هذا الراوي',{narratorId:nid}))).narrator.id,nid);
-  }
+test('unresolved Ibrahim remains gray, while an unknown shaykh has a sourced review label',async()=>{
+  const nid='ibrahim-muhammad-sabra',n=catalog.narrators.find(n=>n.id===nid);
+  assert.equal(narratorTone(n),'unknown');assert.equal(n.reliability,undefined);
+  assert.equal((await answerQuestion(catalog,input('ibnmajah-1388','ما حكم هذا الراوي',{narratorId:nid}))).status,'refused');
+  assert.equal((await answerQuestion(catalog,input('ibnmajah-1388','من هذا الراوي',{narratorId:nid}))).narrator.id,nid);
+  const alaq=catalog.narrators.find(n=>n.id==='alaq-abi-muslim');assert.equal(narratorTone(alaq),'review');assert.match(alaq.reliability.text,/مجهول/);assert.ok(!alaq.reliability.text.includes('يضع الحديث'));
+});
+test('a kunyah and name in one chain remain one person, with distinct Muhammad identities',async()=>{
+  const h=catalog.hadiths.find(h=>h.id==='ibnmajah-4054'),c=h.chains[0];
+  assert.deepEqual(c.nodes,['muhammad-musaffa','muhammad-harb','said-sinan-himsi','hudayr-kurayb','kathir-murra','abdullah-umar','messenger']);
+  for(const q of ['من هو أبو شجرة','من هو كثير بن مرة'])assert.equal((await answerQuestion(catalog,input(h.id,q))).narrator.id,'kathir-murra');
+  const musaffa=await answerQuestion(catalog,input(h.id,'من هو محمد بن المصفى',{narratorId:'muhammad-harb'}));assert.equal(musaffa.narrator.id,'muhammad-musaffa');
+  assert.equal(narratorTone(catalog.narrators.find(n=>n.id==='kathir-murra')),'trusted');
 });
 test('new literal isnad and grade fields reject invalid input instead of silently defaulting',()=>{
   for(const field of ['isnad','grade']){
