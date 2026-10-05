@@ -6,9 +6,10 @@
     "model": "gemini-3.1-flash-lite",
     "keyEnv": "AI_KEY_GEMINI",
     "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
-    "maxOutputTokens": 2048,
+    "maxOutputTokens": 4096,
     "reasoningEffort": "low",
-    "strictJson": true
+    "strictJson": true,
+    "groundedGeneration": true
   },
   {
     "id": "groq-free",
@@ -20,6 +21,7 @@
     "tokenParameter": "max_completion_tokens",
     "maxOutputTokens": 1024,
     "reasoningEffort": "low",
-    "strictJson": true
+    "strictJson": true,
+    "groundedGeneration": true
   }
 ]
