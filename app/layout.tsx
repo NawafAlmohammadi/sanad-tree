@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   title: "شجرة الأسانيد | استكشف رحلة الحديث",
   description: "استكشاف بصري لأسانيد الحديث والرواة، ومساعد معرفي محصور في مصادر المشروع.",
   icons: {
-    icon: "/university/logo.png",
-    shortcut: "/university/logo.png",
+    icon: { url: "/favicon.svg?v=navy", type: "image/svg+xml" },
+    shortcut: "/favicon.svg?v=navy",
   },
 };
 
