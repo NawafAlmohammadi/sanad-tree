@@ -586,3 +586,81 @@ html[lang=en] .map-matn{direction:ltr}
 
 .integrated-assistant{margin:0;border:0;background:transparent}.integrated-assistant .assistant-body{padding:0}.lab-tabs{flex-wrap:wrap}.lab-tabs button{min-height:48px}
 @media(max-width:760px){.lab-tabs button{flex:1 1 45%;font-size:14px}.integrated-assistant .prompt-list{gap:8px}}
+
+/* Give the map the screen; open reference panels only when requested. */
+main{width:100%;max-width:none;padding:16px clamp(12px,1.2vw,28px) 0}
+.header{padding-inline:clamp(14px,1.5vw,32px)}
+.library-banner{min-height:62px;margin-bottom:14px;padding-block:6px}
+.library-count-button{display:inline-flex;align-items:center;gap:12px;padding:4px 14px;min-height:44px;border-radius:10px;font:inherit;color:inherit}
+.library-count-button:hover,.library-count-button:focus-visible{background:var(--soft);outline:1px solid var(--gold)}
+.workspace{display:block;width:100%}
+.explorer-top{align-items:center;padding:18px 24px 12px}
+.explorer-top h2{font-size:27px}
+.library-open-button{display:inline-flex;align-items:center;gap:9px;flex:none;padding:11px 16px;border:1px solid var(--gold);border-radius:10px;color:var(--ink);background:var(--soft);min-height:46px;font-size:16px}
+.library-open-button:hover,.library-open-button:focus-visible{box-shadow:0 0 0 3px #72C5E424}
+.tree-toolbar{padding-block:9px}
+.tree-canvas.is-empty,.unified-canvas{height:clamp(600px,72dvh,1000px);min-height:600px;max-height:1000px}
+.library-launcher{display:flex;flex-direction:column;align-items:center;gap:16px;width:min(500px,85%);padding:45px 30px;border-radius:36px;cursor:pointer;color:var(--muted);font:inherit;min-height:210px}
+.library-launcher svg{color:var(--accent)}
+.launcher-title{font-size:30px;font-weight:600;color:var(--ink)}
+.library-launcher:hover,.library-launcher:focus-visible{border-color:var(--gold);box-shadow:0 0 0 5px #72C5E418,0 16px 45px #0003;outline:none;transform:translateY(-2px)}
+.overlay-panel{position:fixed;margin:auto;width:min(620px,calc(100vw - 28px));max-width:none;max-height:calc(100dvh - 40px);padding:0;border:1px solid var(--gold);border-radius:20px;background:var(--surface);color:var(--ink);box-shadow:0 22px 100px #0008;overflow:hidden}
+.overlay-panel:not([open]){display:none}
+.overlay-panel[open]{display:flex;flex-direction:column}
+.overlay-panel::backdrop{background:#020b16b8;backdrop-filter:blur(3px)}
+.overlay-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 22px;border-bottom:1px solid var(--line);flex:none}
+.overlay-heading h2{font-size:22px;font-weight:600;margin:0}
+.overlay-heading button{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:10px;flex:none}
+.overlay-heading button:hover{background:var(--soft)}
+.overlay-content{overflow:auto;overscroll-behavior:contain;min-height:0;scrollbar-width:thin}
+.overlay-narrator{width:min(540px,calc(100vw - 28px))}
+.overlay-content .narrator-detail{display:block;max-height:none;padding:24px!important}
+.overlay-content .profile-heading h3{font-size:26px!important}
+.overlay-content .profile-summary,.overlay-content .profile-section{font-size:16px;line-height:1.9}
+.overlay-content .profile-section h4,.overlay-content .profile-section>summary{font-size:16px}
+.library-picker{display:flex;flex-direction:column;background:transparent}
+.library-picker .library-list{max-height:none;overflow:visible}
+.library-picker .hadith-item{padding:18px 24px;min-height:110px}
+.library-picker .hadith-item strong{font-size:18px;font-weight:600}
+.library-picker .hadith-item small{font-size:14px}
+.library-picker .search{margin:20px 24px 12px;min-height:52px}
+.library-picker .search input{font-size:17px}
+.library-picker .grade-summary{padding:8px 24px 20px}
+.connection-detail{padding:22px;font-size:17px;line-height:1.9}
+.connection-detail>p{color:var(--muted)}
+.connection-detail blockquote{margin:16px 0;padding:14px 18px;background:var(--soft);border-inline-start:2px solid var(--gold);border-radius:8px}
+.edge-caption{cursor:pointer;outline:none}
+.edge-caption:hover rect,.edge-caption:focus-visible rect{stroke:var(--gold);stroke-width:1.5}
+.graph-edge text{font-size:13px}
+.ai-workbench{width:100%;min-height:440px;margin-top:22px}
+.lab-heading{padding:24px 30px}
+.lab-heading h2{font-size:32px;margin:4px 0 8px}
+.lab-heading p{font-size:17px}
+.lab-tabs button{font-size:17px;min-height:62px;padding-inline:24px}
+.lab-model{font-size:14px;min-width:290px}
+.lab-body{padding:30px;min-height:280px}
+.question-form{min-height:76px;background:var(--bg)}
+.question-form input{font-size:20px;padding:14px 18px}
+.question-form button{font-size:17px;min-width:120px}
+.integrated-assistant .prompt-list button{font-size:16px;min-height:46px;padding:9px 17px}
+.narrator-context{font-size:17px}
+.assistant-suggestions{margin-block:16px 22px;color:var(--accent);font-size:16px}
+.assistant-suggestions>summary{cursor:pointer;width:max-content;padding-block:6px;min-height:40px}
+.integrated-assistant .conversation{max-height:75dvh}
+.integrated-assistant .answer{max-width:none}
+.generated-answer .teaching-card p{font-size:18px}
+.lab-body textarea{min-height:230px;font-size:20px}
+.is-expanded .unified-canvas{height:auto;min-height:0;max-height:none}
+@media(max-width:780px){
+ main{padding:12px 10px 0}.workspace{display:block}.library-banner{min-height:52px;margin-bottom:10px}
+ .explorer-top{padding:16px;gap:10px;align-items:flex-start}.explorer-top h2{font-size:22px}
+ .library-open-button{font-size:14px;padding:8px 10px;gap:6px}.library-open-button svg{width:16px}
+ .tree-canvas.is-empty,.unified-canvas{height:70dvh;min-height:510px;max-height:850px}
+ .library-launcher{width:85%;padding:32px 20px;min-height:190px}.launcher-title{font-size:26px}
+ .overlay-panel{max-height:calc(100dvh - 24px)}.overlay-heading{padding:13px 16px}.library-picker .hadith-item{padding:16px 18px}
+ .lab-heading{padding:22px}.lab-heading h2{font-size:28px}.lab-heading p{font-size:16px}.lab-model{min-width:0}
+ .lab-body{padding:20px;min-height:280px}.lab-tabs button{font-size:15px;padding-inline:10px;flex:1 1 auto}
+ .question-form input{font-size:17px;padding:10px 6px}.question-form button{min-width:80px;padding-inline:12px}
+ .integrated-assistant .prompt-list button{font-size:14px}.lab-body textarea{font-size:18px}
+ .is-expanded .unified-canvas{height:auto;min-height:0;max-height:none}
+}

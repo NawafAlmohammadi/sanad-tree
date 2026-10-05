@@ -1,6 +1,8 @@
 'use client';
 import {useEffect,useLayoutEffect,useId,useMemo,useRef,useState,type PointerEvent as ReactPointerEvent} from 'react';
 import HadithText from './hadith-text';
+import OverlayPanel from './overlay-panel';
+import SourceList from './source-list';
 import {useLanguage} from './language';
 import {BookOpen,ShieldCheck,CircleHelp,ShieldX,Info,RotateCcw,Pause,Plus,Minus,GitBranch,Maximize,Minimize,Move,PenLine,Eraser,Type,Undo2,Trash2,X,Check} from 'lucide-react';
 import type {Data,Hadith} from '@/lib/catalog-types';
@@ -17,6 +19,7 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
   const {locale,t,name,compiler,trust,wording}=useLanguage();
   const say=(ar:string,en:string)=>locale==='en'?en:ar;
   const [expanded,setExpanded]=useState(false),[tool,setTool]=useState<Tool>('move');
+  const [edgeKey,setEdgeKey]=useState('');
   const [offsets,setOffsets]=useState<Record<string,Point>>({}),[notes,setNotes]=useState<Note[]>([]),[color,setColor]=useState('#e6c76b');
   const [history,setHistory]=useState<Note[][]>([]);
   const [draft,setDraft]=useState<(Point&{text:string})|null>(null);
@@ -34,7 +37,9 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
   const positions=useMemo(()=>new Map(graph.nodes.map(node=>[node.key,{...node,x:world.paddingX+node.x+(offsets[node.key]?.x??0),y:world.paddingY+node.y+(offsets[node.key]?.y??0)}])),[graph,world,offsets]);
   function buildEdgeDisplay(){
     const entries=graph.edges.map(edge=>{const from=positions.get(edge.from)!,to=positions.get(edge.to)!;
-      return {...edge,...linkGeometry(from,to,from.diameter/2,edge.route.map((p:Point)=>({x:p.x+world.paddingX,y:p.y+world.paddingY}))),lines:wrapEdgeLabel(edge.wordings.map(wording).join(' / '))};});
+      const full=edge.wordings.map(wording).join(' / ');
+      const caption=edge.wordings.length>1?say(`يروي عن · ${edge.wordings.length} صيغ`,`Narrates from · ${edge.wordings.length} wordings`):full.length>38?say('يروي عن','Narrates from'):full;
+      return {...edge,...linkGeometry(from,to,from.diameter/2,edge.route.map((p:Point)=>({x:p.x+world.paddingX,y:p.y+world.paddingY}))),lines:wrapEdgeLabel(caption)};});
     const labels=placeEdgeLabels(entries,[...positions.values()]);
     return new Map(entries.map(edge=>[edge.key,{path:edge.path,lines:edge.lines,...labels.get(edge.key)!}]));
   }
@@ -72,7 +77,7 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
     onZoom(Math.max(.35,Math.min(reviewDraft?1.15:1,(canvas.clientWidth-72)/graph.width)));
     requestAnimationFrame(centreMap);
   }
-  useEffect(()=>{const id=requestAnimationFrame(expanded?fitBranches:centreMap);return()=>cancelAnimationFrame(id);},[graph,expanded]);
+  useEffect(()=>{const id=requestAnimationFrame(expanded||(canvasRef.current?.clientWidth||0)>900?fitBranches:centreMap);return()=>cancelAnimationFrame(id);},[graph,expanded]);
   useEffect(()=>{
     const canvas=canvasRef.current;if(!canvas)return;
     const observer=new ResizeObserver(([entry])=>{if(!workspaceRef.current?.classList.contains('is-expanded'))setViewportWidth(entry.contentRect.width);else if(!drag.current&&!textDrag.current&&!pan.current)requestAnimationFrame(centreMap);});
@@ -159,7 +164,7 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
     noteElements.current.get(d.id)?.removeAttribute('transform');textDrag.current=null;if(e.currentTarget.hasPointerCapture(e.pointerId))e.currentTarget.releasePointerCapture(e.pointerId);
   }
   function startPan(e:ReactPointerEvent<HTMLDivElement>){
-    if(tool!=='move'||e.button!==0||(e.target as Element).closest('.graph-node,.map-annotations,.zoom-controls,.map-matn'))return;
+    if(tool!=='move'||e.button!==0||(e.target as Element).closest('.graph-node,.map-annotations,.zoom-controls,.map-matn,.edge-caption'))return;
     pan.current={id:e.pointerId,x:e.clientX,y:e.clientY,left:e.currentTarget.scrollLeft,top:e.currentTarget.scrollTop};e.currentTarget.setPointerCapture(e.pointerId);e.currentTarget.classList.add('is-panning');moveViewport();
   }
   function movePan(e:ReactPointerEvent<HTMLDivElement>){
@@ -205,10 +210,10 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
   const active=graph.nodes[cursor];
   const icons={trusted:ShieldCheck,review:CircleHelp,untrusted:ShieldX,unknown:Info,companion:ShieldCheck,prophet:BookOpen};
   const graphDrawing=useMemo(()=><>
-          <svg className="graph-connections" viewBox={'0 0 '+world.width+' '+world.height} aria-hidden="true"><defs><marker id={marker} markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="currentColor"/></marker></defs>{graph.edges.map(edge=>{
+          <svg className="graph-connections" viewBox={'0 0 '+world.width+' '+world.height} role="group" aria-label={say('وصلات السند','Chain connections')}><defs><marker id={marker} markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="currentColor"/></marker></defs>{graph.edges.map(edge=>{
             const to=positions.get(edge.to)!,display=edgeDisplay.get(edge.key)!;
             const traversed=to.index<=cursor,focused=playing&&to.index===cursor;
-            return <g key={edge.key} ref={el=>{if(el)edgeElements.current.set(edge.key,el);else edgeElements.current.delete(edge.key);}} data-edge-from={edge.from} data-edge-to={edge.to} className={'graph-edge '+(traversed?'is-traced ':'')+(focused?'is-current ':'')+(highlight?(highlight.edgeKeys.includes(`${edge.from}|${edge.to}`)?'ai-highlighted':'ai-muted'):'')}><path d={display.path} markerEnd={'url(#'+marker+')'}/><g className="edge-caption" transform={`translate(${display.x} ${display.y})`}><rect x={-display.width/2} y={-display.height/2} width={display.width} height={display.height} rx="6"/><text textAnchor="middle" direction={locale==='ar'?'rtl':'ltr'}>{display.lines.map((line:string,i:number)=><tspan key={i} x="0" y={(i-(display.lines.length-1)/2)*16+4}>{line}</tspan>)}</text></g></g>;
+            return <g key={edge.key} ref={el=>{if(el)edgeElements.current.set(edge.key,el);else edgeElements.current.delete(edge.key);}} data-edge-from={edge.from} data-edge-to={edge.to} className={'graph-edge '+(traversed?'is-traced ':'')+(focused?'is-current ':'')+(highlight?(highlight.edgeKeys.includes(`${edge.from}|${edge.to}`)?'ai-highlighted':'ai-muted'):'')}><path d={display.path} markerEnd={'url(#'+marker+')'}/><g className="edge-caption" role="button" tabIndex={0} aria-label={say('عرض صيغ الرواية','Show transmission wordings')} onClick={()=>setEdgeKey(edge.key)} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();e.stopPropagation();setEdgeKey(edge.key);}}} transform={`translate(${display.x} ${display.y})`}><rect x={-display.width/2} y={-display.height/2} width={display.width} height={display.height} rx="6"/><text textAnchor="middle" direction={locale==='ar'?'rtl':'ltr'}>{display.lines.map((line:string,i:number)=><tspan key={i} x="0" y={(i-(display.lines.length-1)/2)*16+4}>{line}</tspan>)}</text></g></g>;
           })}</svg>
           {graph.nodes.map(node=>{
             const person=people.get(node.key),tone=person?narratorTone(person):'compiler',Icon=person?icons[tone as keyof typeof icons]:BookOpen;
@@ -247,6 +252,7 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
       </div>
       <div className="zoom-controls"><button aria-label={t('تكبير')} onClick={()=>changeZoom(Math.min(1.5,zoom+.1))}><Plus size={18}/></button><button aria-label={t('تصغير')} onClick={()=>changeZoom(Math.max(.35,zoom-.1))}><Minus size={18}/></button><button aria-label={say('عرض جميع الفروع','Fit all branches')} onClick={fitBranches}><RotateCcw size={16}/></button></div>
     </div>
+    <OverlayPanel open={!!edgeKey} onClose={()=>setEdgeKey('')} title={say('صيغ الرواية في المصدر','Transmission wordings in the source')} closeLabel={t('إغلاق')} kind="connection">{graph.edges.filter(e=>e.key===edgeKey).map(edge=><div key={edge.key} className="connection-detail"><p>{name(edge.from,graph.nodes.find(n=>n.key===edge.from)?.name)} · {name(edge.to,graph.nodes.find(n=>n.key===edge.to)?.name)}</p>{edge.wordings.map((w:string)=><blockquote key={w} lang="ar" dir="rtl">{w}</blockquote>)}<SourceList data={data} ids={edge.sourceIds}/></div>)}</OverlayPanel>
     {draft&&<form className="map-text-form" onSubmit={e=>{e.preventDefault();saveText();}}><label htmlFor={marker+'-text'}>{say('اكتب ملاحظتك','Write your annotation')}</label><textarea id={marker+'-text'} autoFocus maxLength={500} value={draft.text} onChange={e=>setDraft({...draft,text:e.target.value})} dir="auto"/><div><button type="submit" disabled={!draft.text.trim()}><Check size={16}/>{say('إضافة','Add')}</button><button type="button" onClick={()=>setDraft(null)}><X size={16}/>{say('إلغاء','Cancel')}</button></div></form>}
   </div>;
 }
