@@ -14,8 +14,8 @@
         "text": "Died in Makkah in 219 AH according to Fath al-Bari. His entry in Siyar also records 220 AH as another opinion."
       },
       "reliability": {
-        "original": "وصفه أبو حاتم بأنه «ثقة إمام»، كما نقل الذهبي.",
-        "text": "Abu Hatim described him as trustworthy and an imam, as reported by al-Dhahabi."
+        "original": "خلاصة Sunnah.com: ثقة حافظ، أجل أصحاب ابن عيينة.",
+        "text": "Sunnah.com summary: trustworthy, a memorizer and a leading student of Ibn Uyaynah."
       }
     },
     "sufyan": {
@@ -36,8 +36,8 @@
         "text": "Died in 198 AH, according to the continuation of his entry in Siyar."
       },
       "reliability": {
-        "original": "وصفه العجلي بأنه ثبت في الحديث، كما نقل الذهبي.",
-        "text": "Al-'Ijli described him as firm in hadith transmission, as reported by al-Dhahabi."
+        "original": "ابن حجر: ثقة حافظ فقيه إمام حجة؛ كان ربما دلس لكن عن الثقات، وتغير حفظه بأخرة. تحفظ هذه القيود.",
+        "text": "Ibn Hajar: trustworthy, a memorizer, jurist, imam and authority; he sometimes practised tadlis, but from trustworthy narrators, and his memory changed late in life. These qualifications are retained."
       }
     },
     "yahya-al-ansari": {
@@ -62,8 +62,8 @@
         "text": "A member of the younger generation of the Successors, according to Ibn Hajar's explanation of this chain."
       },
       "reliability": {
-        "original": "وصفه النسائي بأنه «ثقة ثبت»، كما نقل الذهبي.",
-        "text": "Al-Nasa'i described him as trustworthy and firm in transmission, as reported by al-Dhahabi."
+        "original": "خلاصة Sunnah.com: ثقة ثبت.",
+        "text": "Sunnah.com summary: trustworthy and firm."
       }
     },
     "muhammad-al-taymi": {
@@ -84,8 +84,8 @@
         "text": "A member of the middle generation of the Successors, according to Ibn Hajar's explanation of this chain."
       },
       "reliability": {
-        "original": "وثقه ابن معين وأبو حاتم والنسائي وابن خراش في النقل المذكور في السير؛ ونقلت الترجمة أيضًا نقدًا عن أحمد لبعض مروياته. اللون هنا يعرض التوثيق المنقول، ولا يلغي الأقوال الأخرى.",
-        "text": "Ibn Ma'in, Abu Hatim, al-Nasa'i and Ibn Khirash judged him trustworthy in the accounts recorded in Siyar. The biography also records Ahmad's criticism of some of his reports. The green label retains these qualifications."
+        "original": "خلاصة Sunnah.com: ثقة؛ نقل الموقع توثيق ابن معين وأبي حاتم والنسائي، ونقد أحمد لبعض مروياته. لا نزعم اتفاق النقاد.",
+        "text": "Sunnah.com summary: trustworthy. The page records approval from Ibn Main, Abu Hatim and al-Nasai, and Ahmad’s criticism of some narrations. No consensus is claimed."
       }
     },
     "alqama-al-laythi": {
@@ -102,8 +102,8 @@
         "text": "One of the senior Successors in Ibn Hajar's explanation, which also mentions another opinion that he was a Companion."
       },
       "reliability": {
-        "original": "وثقه النسائي، كما نقل المزي في تهذيب الكمال.",
-        "text": "Al-Nasa'i judged him trustworthy, as reported by al-Mizzi in Tahdhib al-Kamal."
+        "original": "ابن حجر: ثقة ثبت؛ أخطأ من زعم أن له صحبة.",
+        "text": "Ibn Hajar: trustworthy and firm; those claiming he was a Companion were mistaken."
       }
     },
     "umar-ibn-al-khattab": {
@@ -140,8 +140,8 @@
         "text": "Al-Nasa'i's teacher in this path: Sulayman ibn Sayf al-Harrani. He is a different person from Abu Dawud al-Sijistani, author of the Sunan."
       },
       "reliability": {
-        "original": "وثقه النسائي، ووصفه شارح هذا الإسناد بأنه ثقة حافظ.",
-        "text": "Al-Nasa'i judged him trustworthy; the commentator on this chain describes him as a trustworthy hadith memoriser."
+        "original": "ابن حجر: ثقة حافظ؛ النسائي: ثقة.",
+        "text": "Ibn Hajar: trustworthy and a memorizer. Al-Nasai: trustworthy."
       }
     },
     "said-amir-dubai": {
@@ -150,8 +150,8 @@
         "text": "Abu Muhammad al-Basri, who narrates from Shu'bah in this path. He is distinct from the Companion Sa'id ibn Amir al-Jumahi."
       },
       "reliability": {
-        "original": "وثقه ابن معين. وقال أبو حاتم إنه صدوق مع وقوع بعض الغلط في حديثه؛ فالتوثيق هنا مع تسجيل هذا القيد.",
-        "text": "Ibn Ma'in judged him trustworthy. Abu Hatim described him as truthful, while noting some errors in his reports. That qualification is retained."
+        "original": "ابن حجر: ثقة صالح؛ أبو حاتم: صدوق وفي حديثه بعض الغلط؛ البخاري: كثير الغلط. لا يلغي التوثيق هذه الأقوال.",
+        "text": "Ibn Hajar: trustworthy and righteous. Abu Hatim: truthful, with some errors in his narrations. Al-Bukhari: many errors. The approval does not erase these appraisals."
       }
     },
     "shuba-hajjaj": {
@@ -160,8 +160,8 @@
         "text": "A narrator associated with Wasit and Basrah. Here he narrates from Sa'd ibn Ibrahim."
       },
       "reliability": {
-        "original": "وصفه الإتيوبي في رجال هذا الإسناد بالإمامة والحجة والثبت.",
-        "text": "Al-Ityubi describes him in his discussion of this chain as an imam, an authoritative narrator and firm in transmission."
+        "original": "خلاصة Sunnah.com: ثقة حافظ متقن عابد.",
+        "text": "Sunnah.com summary: trustworthy, a precise memorizer and worshipper."
       }
     },
     "saad-ibrahim-zuhri": {
@@ -170,8 +170,8 @@
         "text": "Al-Zuhri al-Madani, who served as judge in Madinah. Shu'bah narrates from him in this chain."
       },
       "reliability": {
-        "original": "وصفه الإتيوبي بأنه ثقة فاضل عابد.",
-        "text": "Al-Ityubi describes him as trustworthy, virtuous and devout."
+        "original": "خلاصة Sunnah.com: ثقة.",
+        "text": "Sunnah.com summary: trustworthy."
       }
     },
     "nasr-abdurrahman-qurashi": {
@@ -180,18 +180,14 @@
         "text": "A narrator from the Hijaz. In this path, he narrates from his grandfather, Muadh al-Qurashi."
       },
       "reliability": {
-        "original": "نقل الإتيوبي وصفه بمقبول، وذكر توثيق ابن حبان، ثم خلص إلى جهالة عينه. لا يُعرض كتوثيق مطلق.",
-        "text": "Al-Ityubi reports a rating of maqbul (accepted when supported) and Ibn Hibban's inclusion of him among trustworthy narrators, but concludes that his identity is insufficiently established. This is not an unconditional endorsement."
+        "original": "ابن حجر: مقبول؛ مصنفو تحرير تقريب التهذيب: مجهول، تفرد شعبة بالرواية عنه؛ وذكره ابن حبان في الثقات. تحفظ الأقوال المختلفة دون حكم من التطبيق.",
+        "text": "Ibn Hajar: acceptable (maqbul). The editors of Tahrir Taqrib al-Tahdhib: unknown, with Shubah alone narrating from him. Ibn Hibban included him among the trustworthy. The differing appraisals are preserved without an app-generated verdict."
       }
     },
     "muadh-qurashi-grandfather": {
       "bio": {
         "original": "جدّ نصر في رواية سعيد بن عامر؛ شخص مستقل عن معاذ بن عفراء في المسار المعروض.",
         "text": "Nasr's grandfather in Sa'id ibn Amir's report. He is represented separately from Muadh ibn Afra in this path."
-      },
-      "reliability": {
-        "original": "لم يعرف الإتيوبي جدّ نصر، ولم يجد ترجمته. نقص التعريف يستدعي المراجعة، ولا يعني اتهامه بالكذب.",
-        "text": "Al-Ityubi could not identify Nasr's grandfather or find his biography. This calls for review; it is not an accusation of lying."
       }
     },
     "muadh-ibn-afra": {
@@ -208,6 +204,18 @@
       "reliability": {
         "original": "ابن حجر: ثقة عابد.",
         "text": "Ibn Hajar: trustworthy and devout."
+      },
+      "kuniya": {
+        "original": "أبو الحسن.",
+        "text": "Abu al-Hasan."
+      },
+      "classification": {
+        "original": "من الطبقة التاسعة في فهرس الرواة.",
+        "text": "Listed in the ninth generation of narrators."
+      },
+      "period": {
+        "original": "تعرض الترجمة الفترة ١٣٢–٢٢٠ هـ.",
+        "text": "The profile lists the period 132–220 AH."
       }
     },
     "abdullah-abi-safar": {
@@ -228,6 +236,18 @@
       "reliability": {
         "original": "ابن حجر: ثقة ثبت.",
         "text": "Ibn Hajar: trustworthy and firm in transmission."
+      },
+      "kuniya": {
+        "original": "أبو عبد الله.",
+        "text": "Abu Abd Allah."
+      },
+      "classification": {
+        "original": "من الطبقة الرابعة في فهرس الرواة.",
+        "text": "Listed in the fourth generation of narrators."
+      },
+      "death": {
+        "original": "تذكر ترجمة Sunnah.com وفاته سنة ١٤٦ هـ.",
+        "text": "The Sunnah.com profile records his death in 146 AH."
       }
     },
     "amir-shabi": {
@@ -238,6 +258,14 @@
       "reliability": {
         "original": "ابن حجر: ثقة مشهور فقيه فاضل.",
         "text": "Ibn Hajar: trustworthy, well known, a jurist and virtuous."
+      },
+      "kuniya": {
+        "original": "أبو عمرو.",
+        "text": "Abu Amr."
+      },
+      "classification": {
+        "original": "من الطبقة الثالثة في فهرس الرواة.",
+        "text": "Listed in the third generation of narrators."
       }
     },
     "abdullah-amr-as": {
@@ -410,8 +438,20 @@
         "text": "Sulayman ibn Amr ibn Abd (also given as Ubayd), al-Laythi al-Atwari al-Misri, an associate of Abu Sa'id al-Khudri."
       },
       "reliability": {
-        "original": "وثقه ابن معين وابن حجر؛ ضعف دراج عنه لا ينتقل إلى أبي الهيثم.",
-        "text": "Ibn Ma'in and Ibn Hajar judged him trustworthy. Weakness in Darraj's reports from him is not transferred to Abu al-Haytham."
+        "original": "خلاصة Sunnah.com: ثقة؛ قال ابن حجر في التقريب: ثقة، ووثّقه يحيى بن معين والدارقطني.",
+        "text": "Sunnah.com summary: trustworthy. Ibn Hajar’s Taqrib describes him as trustworthy, as do Yahya ibn Main and al-Daraqutni."
+      },
+      "classification": {
+        "original": "من الطبقة الرابعة بحسب بطاقة Sunnah.com.",
+        "text": "Sunnah.com places him in the fourth generation."
+      },
+      "kuniya": {
+        "original": "أبو الهيثم.",
+        "text": "Abu al-Haytham."
+      },
+      "death": {
+        "original": "تعرض بطاقة Sunnah.com وفاته سنة ١٠٠ هـ.",
+        "text": "Sunnah.com lists his death as 100 AH."
       }
     },
     "abu-said-khudri": {
@@ -430,8 +470,8 @@
         "text": "Abu Abdullah al-Kufi, sometimes named Ahmad ibn Yunus after his grandfather."
       },
       "reliability": {
-        "original": "أبو حاتم: ثقة متقن.",
-        "text": "Abu Hatim: trustworthy and precise."
+        "original": "ابن حجر: ثقة حافظ؛ أبو حاتم: ثقة متقن.",
+        "text": "Ibn Hajar: trustworthy and a memorizer. Abu Hatim: trustworthy and precise."
       }
     },
     "abdullah-umar": {
@@ -450,8 +490,8 @@
         "text": "Al-Hasan ibn Ali al-Hudhali, known as al-Khallal and al-Hulwani. Ibn Majah narrates from him in this path."
       },
       "reliability": {
-        "original": "وثقه النسائي، ووصفه يعقوب بن شيبة بالإتقان، كما نقل المزي؛ ونقلت الترجمة أيضًا تحفظًا عن أحمد.",
-        "text": "Al-Nasa’i judged him trustworthy and Ya’qub ibn Shaybah praised his precision, as recorded by al-Mizzi. The biography also records a reservation from Ahmad."
+        "original": "خلاصة Sunnah.com: ثقة حافظ له تصانيف؛ ونقل الموقع تحفظًا عن أحمد. يحفظ هذا الاختلاف.",
+        "text": "Sunnah.com summary: trustworthy, a memorizer and author; the page also records reservations from Ahmad. This disagreement is retained."
       }
     },
     "abdrazzaq-hammam": {
@@ -462,6 +502,18 @@
       "reliability": {
         "original": "ابن حجر: ثقة حافظ مصنف، تغير في آخر عمره بعد العمى. ونقل المصدر عن البخاري أن روايته من كتابه أصح؛ اللون ينبه إلى هذا التفصيل ولا يحكم على الطريق وحده.",
         "text": "Ibn Hajar calls him trustworthy, a memoriser and an author, with changes in his later years after blindness. Al-Bukhari preferred his narration from his books. The colour highlights this qualification; it does not independently grade the path."
+      },
+      "kuniya": {
+        "original": "أبو بكر.",
+        "text": "Abu Bakr."
+      },
+      "classification": {
+        "original": "من الطبقة التاسعة في فهرس الرواة.",
+        "text": "Listed in the ninth generation of narrators."
+      },
+      "period": {
+        "original": "تعرض الترجمة الفترة ١٢٦–٢١١ هـ.",
+        "text": "The profile lists the period 126–211 AH."
       }
     },
     "ibn-abi-sabra": {
@@ -470,8 +522,8 @@
         "text": "A Qurashi narrator from Madinah, named Ibn Abi Sabrah in this path between Abd al-Razzaq and Ibrahim ibn Muhammad."
       },
       "reliability": {
-        "original": "قال أحمد إنه كان يضع الحديث، وتركه النسائي، كما نقل الذهبي.",
-        "text": "Al-Dhahabi records Ahmad’s accusation that he fabricated hadith and al-Nasa’i’s judgement that he should be abandoned."
+        "original": "خلاصة Sunnah.com: متهم بالوضع؛ ابن حجر: رموه بالوضع؛ أحمد: كان يضع الحديث.",
+        "text": "Sunnah.com summary: accused of fabrication. Ibn Hajar: accused of fabrication. Ahmad: he fabricated hadith."
       }
     },
     "ibrahim-muhammad-sabra": {
@@ -490,8 +542,8 @@
         "text": "A Hashimi narrator from Madinah. Here he narrates from his father Abdullah ibn Ja’far. He is the son, distinct from his Companion father."
       },
       "reliability": {
-        "original": "وثقه العجلي، وذكره ابن حبان في الثقات، كما نقل المزي.",
-        "text": "Al-Mizzi records al-’Ijli’s judgement of trustworthiness and Ibn Hibban’s inclusion of him among trustworthy narrators."
+        "original": "خلاصة Sunnah.com: ثقة؛ ابن حجر: مقبول؛ العجلي والذهبي: ثقة. تحفظ الأقوال المختلفة.",
+        "text": "Sunnah.com summary: trustworthy. Ibn Hajar: acceptable (maqbul). Al-Ijli and al-Dhahabi: trustworthy. The differing appraisals are retained."
       }
     },
     "abdullah-jafar": {
@@ -522,8 +574,8 @@
         "text": "In this path he narrates from Alaq ibn Abi Muslim, and Ahmad ibn Yunus narrates from him."
       },
       "reliability": {
-        "original": "أبو حاتم: متروك الحديث وكان يضع الحديث. وتركه النسائي، كما نقل المزي.",
-        "text": "Al-Mizzi records Abu Hatim’s judgement that he was abandoned and fabricated hadith, and al-Nasa’i’s judgement that he should be abandoned."
+        "original": "خلاصة Sunnah.com: متروك الحديث؛ أبو حاتم: متروك الحديث، كان يضع الحديث.",
+        "text": "Sunnah.com summary: abandoned in hadith. Abu Hatim: abandoned; he fabricated hadith."
       }
     },
     "alaq-abi-muslim": {
@@ -532,8 +584,8 @@
         "text": "He narrates from Aban ibn Uthman, and Anbasah ibn Abd al-Rahman narrates from him. The biography records Ghilaq and Ibn Muslim as name variants. Anbasah’s assessment must not be transferred to him."
       },
       "reliability": {
-        "original": "وصفه المزي بأنه شيخ مجهول؛ اللون الأصفر ينبه إلى جهالة الراوي.",
-        "text": "Al-Mizzi describes him as an unknown shaykh. Yellow flags this lack of established identification and assessment."
+        "original": "ابن حجر: مجهول؛ الذهبي: واه؛ ابن حبان: لا يجوز الاحتجاج به إذا انفرد.",
+        "text": "Ibn Hajar: unknown. Al-Dhahabi: very weak. Ibn Hibban: his solitary narrations cannot be relied upon."
       }
     },
     "aban-uthman": {
@@ -542,8 +594,8 @@
         "text": "A Successor from Madinah and the son of the Companion Uthman ibn Affan. He narrates from his father here."
       },
       "reliability": {
-        "original": "قال ابن سعد إنه ثقة وله أحاديث عن أبيه، كما نقل الذهبي.",
-        "text": "Al-Dhahabi records Ibn Sa’d describing him as trustworthy and noting his reports from his father."
+        "original": "ابن حجر وأحمد: ثقة.",
+        "text": "Ibn Hajar and Ahmad: trustworthy."
       }
     },
     "uthman-affan": {
@@ -568,8 +620,8 @@
         "text": "Abu Abdullah al-Khawlani, known as al-Abrash and al-Zubaydi’s scribe. Here he narrates from Sa’id ibn Sinan al-Himsi."
       },
       "reliability": {
-        "original": "وثقه العجلي والنسائي، كما نقل المزي.",
-        "text": "Al-Mizzi records al-’Ijli and al-Nasa’i judging him trustworthy."
+        "original": "ابن حجر والنسائي وابن معين: ثقة.",
+        "text": "Ibn Hajar, al-Nasai and Ibn Main: trustworthy."
       }
     },
     "said-sinan-himsi": {
@@ -578,8 +630,8 @@
         "text": "Abu Mahdi al-Himsi, who narrates from Abu al-Zahiriyyah. He is the Syrian Sa’id ibn Sinan in this path and must not be confused with another narrator sharing his name."
       },
       "reliability": {
-        "original": "تركه النسائي، ووصف البخاري حديثه بالإنكار، كما نقل المزي. ونقلت الترجمة أيضًا توثيقًا عن أبي مسهر؛ لا نزعم اتفاق جميع النقاد.",
-        "text": "Al-Mizzi records al-Nasa’i abandoning him and al-Bukhari criticising his reports. The entry also records a favourable judgement from Abu Mushir; no consensus is claimed."
+        "original": "خلاصة Sunnah.com: متهم بالوضع؛ ابن حجر والنسائي: متروك الحديث؛ ونقل الموقع عن صدقة بن خالد: ثقة مرضي. تحفظ الأقوال ولا يزعم الاتفاق.",
+        "text": "Sunnah.com summary: accused of fabrication. Ibn Hajar and al-Nasai: abandoned in hadith. The page also quotes Sadaqah ibn Khalid: trustworthy and approved. The differing appraisals are retained; no consensus is claimed."
       }
     },
     "hudayr-kurayb": {
@@ -588,8 +640,8 @@
         "text": "A Hadrami narrator from Homs, known as Abu al-Zahiriyyah. Here he narrates from Abu Shajarah, Kathir ibn Murrah."
       },
       "reliability": {
-        "original": "قال ابن سعد: ثقة إن شاء الله، كثير الحديث، كما نقل المزي.",
-        "text": "Al-Mizzi records Ibn Sa’d describing him as trustworthy, God willing, and a prolific narrator."
+        "original": "خلاصة Sunnah.com: ثقة؛ ابن حجر: صدوق؛ الدارقطني: لا بأس به إذا روي عنه ثقة. تحفظ القيود.",
+        "text": "Sunnah.com summary: trustworthy. Ibn Hajar: truthful. Al-Daraqutni: acceptable when a trustworthy narrator transmits from him. The qualifications are retained."
       }
     },
     "kathir-murra": {
@@ -600,6 +652,284 @@
       "reliability": {
         "original": "وثقه ابن حجر والعجلي وابن سعد في الأقوال المنقولة بالمصدر؛ وتنبه الترجمة إلى خطأ عده صحابيًا.",
         "text": "The source records Ibn Hajar, al-’Ijli and Ibn Sa’d judging him trustworthy. It also notes that counting him as a Companion is an error."
+      },
+      "kuniya": {
+        "original": "أبو شجرة، ويكنى أيضًا أبا القاسم.",
+        "text": "Abu Shajara; also known by the kunya Abu al-Qasim."
+      },
+      "classification": {
+        "original": "من الطبقة الثانية في فهرس الرواة.",
+        "text": "Listed in the second generation of narrators."
+      }
+    },
+    "abdullah-maslama-qanabi": {
+      "reliability": {
+        "original": "ابن حجر: ثقة عابد.",
+        "text": "Ibn Hajar: trustworthy and devout."
+      },
+      "bio": {
+        "original": "موطنه المدينة والبصرة، وكنيته أبو عبد الرحمن.",
+        "text": "His recorded cities are Madinah and Basrah; his kunyah is Abu Abd al-Rahman."
+      }
+    },
+    "malik-anas": {
+      "reliability": {
+        "original": "خلاصة Sunnah.com: رأس المتقنين وكبير المتثبتين؛ أبو حاتم: ثقة، إمام أهل الحجاز.",
+        "text": "Sunnah.com summary: a leading authority in precision and verification. Abu Hatim: trustworthy, imam of the people of the Hijaz."
+      },
+      "bio": {
+        "original": "فقيه المدينة، وكنيته أبو عبد الله.",
+        "text": "A jurist of Madinah; his kunyah is Abu Abdullah."
+      }
+    },
+    "yahya-qazaa": {
+      "reliability": {
+        "original": "خلاصة Sunnah.com: ثقة؛ ابن حجر: مقبول؛ الذهبي: ثقة. تحفظ الأقوال المختلفة كما وردت.",
+        "text": "Sunnah.com summary: trustworthy. Ibn Hajar: acceptable (maqbul). Al-Dhahabi: trustworthy. These differing appraisals are retained."
+      },
+      "bio": {
+        "original": "مكي، من الطبقة العاشرة، ووصفه المصدر بالمؤذن.",
+        "text": "A Makkan narrator of the tenth generation, described in the source as a muezzin."
+      }
+    },
+    "muhammad-kathir-abdi": {
+      "reliability": {
+        "original": "ابن حجر: ثقة، لم يصب من ضعفه؛ ونقل المصدر تضعيف ابن معين والعجلي. لا نزعم اتفاق النقاد.",
+        "text": "Ibn Hajar: trustworthy; he considered the weakening mistaken. The source also records adverse appraisals from Ibn Main and al-Ijli; no consensus is claimed."
+      },
+      "bio": {
+        "original": "بصري، كنيته أبو عبد الله، من الطبقة العاشرة.",
+        "text": "A Basran narrator of the tenth generation; his kunyah is Abu Abdullah."
+      }
+    },
+    "sufyan-thawri": {
+      "reliability": {
+        "original": "ابن حجر: ثقة حافظ فقيه عابد إمام حجة، وربما دلس. قيد التدليس محفوظ.",
+        "text": "Ibn Hajar: trustworthy, a memorizer, jurist, worshipper, imam and authority; he sometimes practised tadlis. This qualification is retained."
+      },
+      "bio": {
+        "original": "كوفي، كنيته أبو عبد الله، من الطبقة السابعة. هو سفيان الثوري، وليس سفيان بن عيينة.",
+        "text": "A Kufan narrator of the seventh generation; his kunyah is Abu Abdullah. He is Sufyan al-Thawri, a distinct person from Sufyan ibn Uyaynah."
+      }
+    },
+    "abd-wahhab-thaqafi": {
+      "reliability": {
+        "original": "ابن حجر: ثقة، تغير قبل موته بثلاث سنين. ونقل العقيلي أن أهله منعوه من التحديث في اختلاطه؛ لا يعمم هذا القيد على كل مروياته.",
+        "text": "Ibn Hajar: trustworthy; his memory changed three years before his death. Al-Uqayli reports that his family prevented him from narrating during that deterioration. This does not grade every narration."
+      },
+      "bio": {
+        "original": "بصري، كنيته أبو محمد، من الطبقة الثامنة.",
+        "text": "A Basran narrator of the eighth generation; his kunyah is Abu Muhammad."
+      }
+    },
+    "abu-numan-arim": {
+      "reliability": {
+        "original": "ابن حجر: ثقة ثبت، تغير في آخر عمره؛ وذكر أن البخاري سمع منه قبل اختلاطه بمدة. لا تنقل علة الاختلاط إلى هذا السماع بلا دليل.",
+        "text": "Ibn Hajar: trustworthy and firm; he changed late in life. He states that al-Bukhari heard him well before that deterioration. It is not automatically attributed to this hearing."
+      },
+      "bio": {
+        "original": "لقبه عارم، وكنيته أبو النعمان، من الطبقة التاسعة.",
+        "text": "His byname is Arim and his kunyah Abu al-Numan; he belongs to the ninth generation."
+      }
+    },
+    "hammad-zayd": {
+      "reliability": {
+        "original": "ابن حجر: ثقة ثبت فقيه.",
+        "text": "Ibn Hajar: trustworthy, firm and a jurist."
+      },
+      "bio": {
+        "original": "بصري، كنيته أبو إسماعيل، من الطبقة الثامنة.",
+        "text": "A Basran narrator of the eighth generation; his kunyah is Abu Ismail."
+      }
+    },
+    "abu-nuaym-fadl": {
+      "reliability": {
+        "original": "ابن حجر: ثقة ثبت.",
+        "text": "Ibn Hajar: trustworthy and firm."
+      },
+      "bio": {
+        "original": "كوفي، كنيته أبو نعيم، من الطبقة التاسعة.",
+        "text": "A Kufan narrator of the ninth generation; his kunyah is Abu Nuaym."
+      }
+    },
+    "zakariyya-abi-zaida": {
+      "reliability": {
+        "original": "ابن حجر: ثقة وكان يدلس، وسماعه من أبي إسحاق بأخرة؛ ونقل المصدر عن الذهبي تدليسه عن الشعبي، وعن أبي حاتم وصفه بلين. تحفظ القيود والاختلاف.",
+        "text": "Ibn Hajar: trustworthy, but practised tadlis; his hearing from Abu Ishaq was late. The source records al-Dhahabi on tadlis from al-Shabi and Abu Hatim describing him as lenient. Qualifications and disagreement are retained."
+      },
+      "bio": {
+        "original": "كوفي، كنيته أبو يحيى، من الطبقة السادسة.",
+        "text": "A Kufan narrator of the sixth generation; his kunyah is Abu Yahya."
+      }
+    },
+    "abdaziz-abdallah-uwaysi": {
+      "reliability": {
+        "original": "خلاصة Sunnah.com: ثقة.",
+        "text": "Sunnah.com summary: trustworthy."
+      },
+      "bio": {
+        "original": "مدني، كنيته أبو القاسم، من الطبقة العاشرة.",
+        "text": "A Madinan narrator of the tenth generation; his kunyah is Abu al-Qasim."
+      }
+    },
+    "ibrahim-saad": {
+      "reliability": {
+        "original": "ابن حجر: ثقة، تكلم فيه بلا قادح؛ ووصفه في هدي الساري بثقة حجة.",
+        "text": "Ibn Hajar: trustworthy; criticism of him was not damaging. In Hady al-Sari he describes him as trustworthy and an authority."
+      },
+      "bio": {
+        "original": "كنيته أبو إسحاق، من الطبقة الثامنة؛ يذكر المصدر المدينة وبغداد ضمن مواطنه.",
+        "text": "His kunyah is Abu Ishaq and he belongs to the eighth generation; the source lists Madinah and Baghdad among his cities."
+      }
+    },
+    "ibn-shihab-zuhri": {
+      "reliability": {
+        "original": "خلاصة Sunnah.com: الفقيه الحافظ، متفق على جلالته وإتقانه.",
+        "text": "Sunnah.com summary: a jurist and memorizer whose stature and precision are agreed upon."
+      },
+      "bio": {
+        "original": "كنيته أبو بكر، من الطبقة الرابعة؛ يذكر المصدر المدينة والشام ضمن مواطنه.",
+        "text": "His kunyah is Abu Bakr and he belongs to the fourth generation; the source lists Madinah and al-Sham among his cities."
+      }
+    },
+    "abu-salama-abdurrahman": {
+      "reliability": {
+        "original": "خلاصة Sunnah.com: ثقة إمام مكثر.",
+        "text": "Sunnah.com summary: trustworthy, an imam and a prolific narrator."
+      },
+      "bio": {
+        "original": "فقيه وقاض بالمدينة، من الطبقة الثالثة.",
+        "text": "A jurist and judge in Madinah, of the third generation."
+      }
+    },
+    "abdullah-muhammad-musnadi": {
+      "reliability": {
+        "original": "ابن حجر: ثقة حافظ، جمع المسند.",
+        "text": "Ibn Hajar: trustworthy and a memorizer who compiled a musnad."
+      },
+      "bio": {
+        "original": "كنيته أبو جعفر، من الطبقة العاشرة؛ يذكر المصدر بخارى ضمن مواطنه.",
+        "text": "His kunyah is Abu Jafar and he belongs to the tenth generation; the source lists Bukhara among his cities."
+      }
+    },
+    "abdrahman-mahdi": {
+      "reliability": {
+        "original": "ابن حجر: ثقة ثبت حافظ، عارف بالرجال والحديث.",
+        "text": "Ibn Hajar: trustworthy, firm and a memorizer, knowledgeable about narrators and hadith."
+      },
+      "bio": {
+        "original": "بصري، كنيته أبو سعيد، من الطبقة التاسعة.",
+        "text": "A Basran narrator of the ninth generation; his kunyah is Abu Said."
+      }
+    },
+    "abdrahman-abdwahhab-ammi": {
+      "reliability": {
+        "original": "ابن حجر: ثقة.",
+        "text": "Ibn Hajar: trustworthy."
+      },
+      "bio": {
+        "original": "بصري، من الطبقة الحادية عشرة، ووصفه المصدر بالصيرفي.",
+        "text": "A Basran narrator of the eleventh generation, described in the source as a money changer."
+      }
+    },
+    "muhammad-abi-umar-adani": {
+      "reliability": {
+        "original": "ابن حجر: ثقة؛ أبو حاتم: صالح وبه غفلة. ينقل المصدر اختلاف الأقوال دون إلغاء القيد.",
+        "text": "Ibn Hajar: trustworthy. Abu Hatim: righteous, with some inattentiveness. The differing appraisals and qualification are retained."
+      },
+      "bio": {
+        "original": "مكي، كنيته أبو عبد الله، من الطبقة العاشرة.",
+        "text": "A Makkan narrator of the tenth generation; his kunyah is Abu Abdullah."
+      }
+    },
+    "abdullah-wahb": {
+      "reliability": {
+        "original": "ابن حجر: ثقة حافظ عابد فقيه.",
+        "text": "Ibn Hajar: trustworthy, a memorizer, worshipper and jurist."
+      },
+      "bio": {
+        "original": "مصري، كنيته أبو محمد، من الطبقة التاسعة.",
+        "text": "An Egyptian narrator of the ninth generation; his kunyah is Abu Muhammad."
+      }
+    },
+    "ali-hujr": {
+      "bio": {
+        "original": "راوٍ سعدي مروزي، من الطبقة التاسعة في بطاقة Sunnah.com.",
+        "text": "A Sadi narrator associated with Marw; Sunnah.com places him in the ninth generation."
+      },
+      "kuniya": {
+        "original": "أبو الحسن.",
+        "text": "Abu al-Hasan."
+      },
+      "reliability": {
+        "original": "خلاصة Sunnah.com وابن حجر: ثقة حافظ؛ ووصفه النسائي بأنه ثقة مأمون حافظ.",
+        "text": "Sunnah.com and Ibn Hajar describe him as trustworthy and a memorizer; al-Nasai also describes him as reliable and a memorizer."
+      }
+    },
+    "walid-muslim": {
+      "bio": {
+        "original": "راوٍ قرشي دمشقي، من الطبقة الثامنة في بطاقة Sunnah.com.",
+        "text": "A Qurashi narrator from Damascus, placed in the eighth generation by Sunnah.com."
+      },
+      "kuniya": {
+        "original": "أبو العباس.",
+        "text": "Abu al-Abbas."
+      },
+      "reliability": {
+        "original": "خلاصة Sunnah.com: ثقة مع وصفه بالتدليس. قال ابن حجر: ثقة لكنه كثير التدليس والتسوية. تُحفظ هذه القيود، ولا يعني اللون الأخضر إثبات اتصال كل رواية له.",
+        "text": "Sunnah.com summarises him as trustworthy, with tadlis. Ibn Hajar notes frequent tadlis and taswiyah. These qualifications are retained; the green colour does not establish the continuity of every report he transmits."
+      }
+    },
+    "abdullah-lahia": {
+      "bio": {
+        "original": "فقيه وقاضٍ مصري، من الطبقة السابعة في بطاقة Sunnah.com.",
+        "text": "An Egyptian jurist and judge, placed in the seventh generation by Sunnah.com."
+      },
+      "kuniya": {
+        "original": "أبو عبد الرحمن؛ وتذكر البطاقة أيضًا أبا عبد الله.",
+        "text": "Abu Abd al-Rahman; the profile also records Abu Abdullah."
+      },
+      "reliability": {
+        "original": "خلاصة Sunnah.com: ضعيف الحديث. وصف ابن حجر اختلاطه بعد احتراق كتبه، وميّز رواية ابن المبارك وابن وهب عنه. هذا وصف بالضعف، وليس اتهامًا بوضع الحديث.",
+        "text": "Sunnah.com summarises him as weak in hadith. Ibn Hajar describes confusion after his books burned and distinguishes the transmissions of Ibn al-Mubarak and Ibn Wahb from him. Weakness is not an accusation of fabrication."
+      }
+    },
+    "ubaydullah-abi-jafar": {
+      "bio": {
+        "original": "فقيه مصري، من الطبقة الخامسة في بطاقة Sunnah.com؛ اسمه عبيد الله بن يسار.",
+        "text": "An Egyptian jurist, placed in the fifth generation by Sunnah.com; his name is Ubayd Allah ibn Yasar."
+      },
+      "kuniya": {
+        "original": "أبو بكر.",
+        "text": "Abu Bakr."
+      },
+      "reliability": {
+        "original": "خلاصة Sunnah.com: ثقة. وصفه ابن حجر بالثقة والفقه والعبادة، ووثّقه أبو حاتم. وتعرض الصفحة أقوالًا أخرى: الذهبي «ليس بقوي»، وأحمد تليين حديثه وقولًا آخر بأنه لا بأس به؛ تُحفظ هذه الأقوال المختلفة.",
+        "text": "Sunnah.com summarises him as trustworthy. Ibn Hajar describes him as trustworthy, a jurist and devout; Abu Hatim also regards him as trustworthy. The page retains other assessments: al-Dhahabi says he is not strong, and Ahmad reports both softness in his hadith and an acceptable assessment. These differing views are preserved."
+      }
+    },
+    "aban-salih": {
+      "bio": {
+        "original": "هو أبان بن صالح بن عمير القرشي، من الطبقة الخامسة في بطاقة Sunnah.com.",
+        "text": "Aban ibn Salih ibn Umayr al-Qurashi, placed in the fifth generation by Sunnah.com."
+      },
+      "kuniya": {
+        "original": "أبو بكر.",
+        "text": "Abu Bakr."
+      },
+      "reliability": {
+        "original": "خلاصة Sunnah.com: ثقة؛ ووثّقه أبو حاتم ويحيى بن معين وأبو زرعة. وبيّن ابن حجر توثيق الأئمة له وخطأ من جهّله أو ضعّفه.",
+        "text": "Sunnah.com summarises him as trustworthy, as do Abu Hatim, Yahya ibn Main and Abu Zurah. Ibn Hajar records the scholars’ authentication of him and corrects claims that he was unknown or weak."
+      }
+    },
+    "anas-malik": {
+      "bio": {
+        "original": "صحابي أنصاري وخادم النبي ﷺ، سكن البصرة.",
+        "text": "An Ansari Companion and servant of the Prophet ﷺ, who lived in Basrah."
+      },
+      "kuniya": {
+        "original": "أبو حمزة؛ وتذكر البطاقة أيضًا أبا النضر.",
+        "text": "Abu Hamzah; the profile also records Abu al-Nadr."
       }
     }
   },
@@ -1047,6 +1377,303 @@
       "reference": "Narrator 11814; name linked from Ibn Majah 1388, lineage and critical appraisals",
       "originalTitle": "ترجمة إبراهيم بن محمد الهاشمي — Sunnah.com",
       "originalReference": "الراوي 11814؛ رابط الاسم في سند ابن ماجه 1388، والاسم الكامل وأقوال النقاد"
+    },
+    "sunnah-rijal-5085": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Abdullah ibn Maslamah al-Qanabi, narrator record 5085",
+      "originalReference": "عبد الله بن مسلمة القعنبي، سجل الراوي 5085"
+    },
+    "sunnah-rijal-6659": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Malik ibn Anas al-Asbahi, narrator record 6659",
+      "originalReference": "مالك بن أنس الأصبحي، سجل الراوي 6659"
+    },
+    "sunnah-rijal-8325": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Yahya ibn Qazaah al-Qurashi, narrator record 8325",
+      "originalReference": "يحيى بن قزعة القرشي، سجل الراوي 8325"
+    },
+    "sunnah-rijal-7248": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Muhammad ibn Kathir al-Abdi, narrator record 7248",
+      "originalReference": "محمد بن كثير العبدي، سجل الراوي 7248"
+    },
+    "sunnah-rijal-3436": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Sufyan ibn Said al-Thawri, narrator record 3436",
+      "originalReference": "سفيان بن سعيد الثوري، سجل الراوي 3436"
+    },
+    "sunnah-rijal-5280": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Abd al-Wahhab ibn Abd al-Majid al-Thaqafi, narrator record 5280",
+      "originalReference": "عبد الوهاب بن عبد المجيد الثقفي، سجل الراوي 5280"
+    },
+    "sunnah-rijal-6855": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Abu al-Numan, Muhammad ibn al-Fadl al-Sadusi, narrator record 6855",
+      "originalReference": "أبو النعمان محمد بن الفضل السدوسي، سجل الراوي 6855"
+    },
+    "sunnah-rijal-2491": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Hammad ibn Zayd al-Azdi, narrator record 2491",
+      "originalReference": "حماد بن زيد الأزدي، سجل الراوي 2491"
+    },
+    "sunnah-rijal-1548": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Abu Nuaym, al-Fadl ibn Dukayn, narrator record 1548",
+      "originalReference": "أبو نعيم الفضل بن دكين، سجل الراوي 1548"
+    },
+    "sunnah-rijal-3010": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Zakariyya ibn Abi Zaidah al-Wadii, narrator record 3010",
+      "originalReference": "زكريا بن أبي زائدة الوادعي، سجل الراوي 3010"
+    },
+    "sunnah-rijal-4581": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Abd al-Aziz ibn Abdullah al-Uwaysi, narrator record 4581",
+      "originalReference": "عبد العزيز بن عبد الله الأويسي، سجل الراوي 4581"
+    },
+    "sunnah-rijal-823": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Ibrahim ibn Sad al-Zuhri, narrator record 823",
+      "originalReference": "إبراهيم بن سعد الزهري، سجل الراوي 823"
+    },
+    "sunnah-rijal-7272": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Muhammad ibn Shihab al-Zuhri, narrator record 7272",
+      "originalReference": "محمد بن شهاب الزهري، سجل الراوي 7272"
+    },
+    "sunnah-rijal-4903": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Abu Salamah ibn Abd al-Rahman al-Zuhri, narrator record 4903",
+      "originalReference": "أبو سلمة بن عبد الرحمن الزهري، سجل الراوي 4903"
+    },
+    "sunnah-rijal-5060": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Abdullah ibn Muhammad al-Musnadi, narrator record 5060",
+      "originalReference": "عبد الله بن محمد المسندي، سجل الراوي 5060"
+    },
+    "sunnah-rijal-4493": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Abd al-Rahman ibn Mahdi al-Anbari, narrator record 4493",
+      "originalReference": "عبد الرحمن بن مهدي العنبري، سجل الراوي 4493"
+    },
+    "sunnah-rijal-4433": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Abd al-Rahman ibn Abd al-Wahhab al-Ammi, narrator record 4433",
+      "originalReference": "عبد الرحمن بن عبد الوهاب العمي، سجل الراوي 4433"
+    },
+    "sunnah-rijal-7317": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Muhammad ibn Abi Umar al-Adani, narrator record 7317",
+      "originalReference": "محمد بن أبي عمر العدني، سجل الراوي 7317"
+    },
+    "sunnah-rijal-5147": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Abdullah ibn Wahb al-Qurashi, narrator record 5147",
+      "originalReference": "عبد الله بن وهب القرشي، سجل الراوي 5147"
+    },
+    "sunnah-rijal-4698": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Al-Humaydi, Abdullah ibn al-Zubayr, narrator record 4698",
+      "originalReference": "الحميدي عبد الله بن الزبير، سجل الراوي 4698"
+    },
+    "sunnah-rijal-3443": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Sufyan ibn 'Uyaynah, narrator record 3443",
+      "originalReference": "سفيان بن عيينة، سجل الراوي 3443"
+    },
+    "sunnah-rijal-8272": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Yahya ibn Sa'id al-Ansari, narrator record 8272",
+      "originalReference": "يحيى بن سعيد الأنصاري، سجل الراوي 8272"
+    },
+    "sunnah-rijal-6796": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Muhammad ibn Ibrahim al-Taymi, narrator record 6796",
+      "originalReference": "محمد بن إبراهيم التيمي، سجل الراوي 6796"
+    },
+    "sunnah-rijal-5719": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Alqamah ibn Waqqas al-Laythi, narrator record 5719",
+      "originalReference": "علقمة بن وقاص الليثي، سجل الراوي 5719"
+    },
+    "sunnah-rijal-3598": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Abu Dawud, Sulayman ibn Sayf al-Harrani, narrator record 3598",
+      "originalReference": "أبو داود سليمان بن سيف الحراني، سجل الراوي 3598"
+    },
+    "sunnah-rijal-3349": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Sa'id ibn Amir al-Duba'i, narrator record 3349",
+      "originalReference": "سعيد بن عامر الضبعي، سجل الراوي 3349"
+    },
+    "sunnah-rijal-3795": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Shu'bah ibn al-Hajjaj, narrator record 3795",
+      "originalReference": "شعبة بن الحجاج، سجل الراوي 3795"
+    },
+    "sunnah-rijal-3236": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Sa'd ibn Ibrahim ibn Abd al-Rahman ibn Awf, narrator record 3236",
+      "originalReference": "سعد بن إبراهيم بن عبد الرحمن بن عوف، سجل الراوي 3236"
+    },
+    "sunnah-rijal-7896": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Nasr ibn Abd al-Rahman al-Qurashi, narrator record 7896",
+      "originalReference": "نصر بن عبد الرحمن القرشي، سجل الراوي 7896"
+    },
+    "sunnah-rijal-465": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Ahmad ibn Abdullah ibn Yunus, narrator record 465",
+      "originalReference": "أحمد بن عبد الله بن يونس، سجل الراوي 465"
+    },
+    "sunnah-rijal-1284": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Al-Hasan ibn Ali al-Khallal, narrator record 1284",
+      "originalReference": "الحسن بن علي الخلال، سجل الراوي 1284"
+    },
+    "sunnah-rijal-121": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Abu Bakr ibn Abi Sabrah, narrator record 121",
+      "originalReference": "أبو بكر بن أبي سبرة، سجل الراوي 121"
+    },
+    "sunnah-rijal-7586": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Mu’awiyah ibn Abdullah ibn Ja’far, narrator record 7586",
+      "originalReference": "معاوية بن عبد الله بن جعفر، سجل الراوي 7586"
+    },
+    "sunnah-rijal-6251": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Anbasah ibn Abd al-Rahman, narrator record 6251",
+      "originalReference": "عنبسة بن عبد الرحمن، سجل الراوي 6251"
+    },
+    "sunnah-rijal-5706": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Alaq ibn Abi Muslim, narrator record 5706",
+      "originalReference": "عِلاق بن أبي مسلم، سجل الراوي 5706"
+    },
+    "sunnah-rijal-17": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Aban ibn Uthman ibn Affan, narrator record 17",
+      "originalReference": "أبان بن عثمان بن عفان، سجل الراوي 17"
+    },
+    "sunnah-rijal-6916": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Muhammad ibn Harb al-Khawlani, narrator record 6916",
+      "originalReference": "محمد بن حرب الخولاني، سجل الراوي 6916"
+    },
+    "sunnah-rijal-3344": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Sa’id ibn Sinan al-Himsi — Abu Mahdi, narrator record 3344",
+      "originalReference": "سعيد بن سنان الحمصي — أبو مهدي، سجل الراوي 3344"
+    },
+    "sunnah-rijal-2321": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Abu al-Zahiriyyah — Hudayr ibn Kurayb, narrator record 2321",
+      "originalReference": "أبو الزاهرية — حُدير بن كُريب، سجل الراوي 2321"
+    },
+    "path-bukhari-54": {
+      "title": "Sahih al-Bukhari",
+      "reference": "Hadith 54; additional path of the selected report",
+      "originalReference": "الحديث 54؛ طريق إضافي للرواية المختارة"
+    },
+    "path-bukhari-2529": {
+      "title": "Sahih al-Bukhari",
+      "reference": "Hadith 2529; additional path of the selected report",
+      "originalReference": "الحديث 2529؛ طريق إضافي للرواية المختارة"
+    },
+    "path-bukhari-5070": {
+      "title": "Sahih al-Bukhari",
+      "reference": "Hadith 5070; additional path of the selected report",
+      "originalReference": "الحديث 5070؛ طريق إضافي للرواية المختارة"
+    },
+    "path-bukhari-6689": {
+      "title": "Sahih al-Bukhari",
+      "reference": "Hadith 6689; additional path of the selected report",
+      "originalReference": "الحديث 6689؛ طريق إضافي للرواية المختارة"
+    },
+    "path-bukhari-6953": {
+      "title": "Sahih al-Bukhari",
+      "reference": "Hadith 6953; additional path of the selected report",
+      "originalReference": "الحديث 6953؛ طريق إضافي للرواية المختارة"
+    },
+    "path-bukhari-6484": {
+      "title": "Sahih al-Bukhari",
+      "reference": "Hadith 6484; additional path of the selected report",
+      "originalReference": "الحديث 6484؛ طريق إضافي للرواية المختارة"
+    },
+    "path-bukhari-6475": {
+      "title": "Sahih al-Bukhari",
+      "reference": "Hadith 6475; additional path of the selected report",
+      "originalReference": "الحديث 6475؛ طريق إضافي للرواية المختارة"
+    },
+    "path-bukhari-6136": {
+      "title": "Sahih al-Bukhari",
+      "reference": "Hadith 6136; additional path of the selected report",
+      "originalReference": "الحديث 6136؛ طريق إضافي للرواية المختارة"
+    },
+    "path-tirmidhi-2020": {
+      "title": "Jami at-Tirmidhi",
+      "reference": "Hadith 2020; additional path of the selected report",
+      "originalReference": "الحديث 2020؛ طريق إضافي للرواية المختارة"
+    },
+    "path-ibnmajah-4169": {
+      "title": "Sunan Ibn Majah",
+      "reference": "Hadith 4169; additional path of the selected report",
+      "originalReference": "الحديث 4169؛ طريق إضافي للرواية المختارة"
+    },
+    "path-tirmidhi-2617": {
+      "title": "Jami at-Tirmidhi",
+      "reference": "Hadith 2617; additional path of the selected report",
+      "originalReference": "الحديث 2617؛ طريق إضافي للرواية المختارة"
+    },
+    "tirmidhi-3371-source": {
+      "originalTitle": "جامع الترمذي",
+      "originalReference": "كتاب الدعوات، باب ما جاء في فضل الدعاء، الحديث ٣٣٧١",
+      "title": "Jami at-Tirmidhi",
+      "reference": "Supplications, hadith 3371"
+    },
+    "sunnah-rijal-5757": {
+      "originalTitle": "Sunnah.com — الرواة",
+      "originalReference": "علي بن حجر السعدي، سجل الراوي 5757",
+      "title": "Sunnah.com — Narrators",
+      "reference": "Ali ibn Hujr al-Sadi, narrator record 5757"
+    },
+    "sunnah-rijal-1807": {
+      "originalTitle": "Sunnah.com — الرواة",
+      "originalReference": "الوليد بن مسلم القرشي، سجل الراوي 1807",
+      "title": "Sunnah.com — Narrators",
+      "reference": "Al-Walid ibn Muslim al-Qurashi, narrator record 1807"
+    },
+    "sunnah-rijal-5033": {
+      "originalTitle": "Sunnah.com — الرواة",
+      "originalReference": "عبد الله بن لهيعة الحضرمي، سجل الراوي 5033",
+      "title": "Sunnah.com — Narrators",
+      "reference": "Abdullah ibn Lahiah al-Hadrami, narrator record 5033"
+    },
+    "sunnah-rijal-5362": {
+      "originalTitle": "Sunnah.com — الرواة",
+      "originalReference": "عبيد الله بن أبي جعفر المصري، سجل الراوي 5362",
+      "title": "Sunnah.com — Narrators",
+      "reference": "Ubayd Allah ibn Abi Jafar al-Misri, narrator record 5362"
+    },
+    "sunnah-rijal-13": {
+      "originalTitle": "Sunnah.com — الرواة",
+      "originalReference": "أبان بن صالح القرشي، سجل الراوي 13",
+      "title": "Sunnah.com — Narrators",
+      "reference": "Aban ibn Salih al-Qurashi, narrator record 13"
+    },
+    "sunnah-rijal-720": {
+      "originalTitle": "Sunnah.com — الرواة",
+      "originalReference": "أنس بن مالك الأنصاري، سجل الراوي 720",
+      "title": "Sunnah.com — Narrators",
+      "reference": "Anas ibn Malik al-Ansari, narrator record 720"
+    },
+    "sunnah-rijal-3617": {
+      "title": "Sunnah.com — Narrators",
+      "reference": "Abu al-Haytham, Sulayman ibn Amr al-Laythi, narrator record 3617",
+      "originalReference": "أبو الهيثم سليمان بن عمرو الليثي، سجل الراوي 3617"
     }
   },
   "judgements": {
@@ -1089,16 +1716,20 @@
     "ibnmajah-4054": {
       "original": "موضوع (دار السلام)، كما هو معروض في Sunnah.com، سنن ابن ماجه 4054. لا تثبت نسبة هذه الرواية إلى النبي ﷺ. يعرض الموقع السند لدراسته ولا يصحح الرواية.",
       "text": "Fabricated (Maudu’), attributed to Darussalam on Sunnah.com, Sunan Ibn Majah 4054. This report is not established as a saying of the Prophet ﷺ. The chain is displayed for study; displaying it does not authenticate the report."
+    },
+    "tirmidhi-3371": {
+      "original": "ضعيف (دار السلام) بحسب الحكم المعروض في Sunnah.com للترمذي ٣٣٧١. وصف الترمذي هذا الطريق بأنه غريب، وذكر أنه لا يعرفه إلا من حديث ابن لهيعة. الحكم منقول على الرواية المعروضة، ولا يعمّم الضعف على جميع رواتها.",
+      "text": "Weak (Darussalam), as displayed on Sunnah.com for Tirmidhi 3371. Al-Tirmidhi calls this route gharib and states that he knows it only through Ibn Lahiah. The recorded grading concerns this report; it does not make every narrator weak."
     }
   },
   "notes": {
     "bukhari-10-abdullah-abi-safar": {
-      "original": "جمع أصل البخاري عبد الله بن أبي السفر وإسماعيل في موضع واحد عن الشعبي؛ تعرض الخريطة كل فرع على حدة، ولا تجعل أحدهما يروي عن الآخر. التعليقات التي تلي أصل الإسناد ليست ضمن هذين المسارين.",
-      "text": "Al-Bukhari names Abdullah ibn Abi al-Safar and Ismail as parallel narrators from al-Sha'bi. The map presents them as two paths, without placing one after the other. Comments following the original chain are not added to either path."
+      "original": "جمع أصل البخاري عبد الله بن أبي السفر وإسماعيل في موضع واحد عن الشعبي؛ تعرض الخريطة الفرعين في خريطة واحدة، مع إبقاء كل علاقة نقل مستقلة، ولا تجعل أحدهما يروي عن الآخر. التعليقات التي تلي أصل الإسناد ليست ضمن هذين المسارين.",
+      "text": "The source records two parallel branches. Both appear in one map, with each transmission relationship kept separate; the branches must not be read as consecutive narrators."
     },
     "bukhari-10-ismail-abi-khalid": {
-      "original": "جمع أصل البخاري عبد الله بن أبي السفر وإسماعيل في موضع واحد عن الشعبي؛ تعرض الخريطة كل فرع على حدة، ولا تجعل أحدهما يروي عن الآخر. التعليقات التي تلي أصل الإسناد ليست ضمن هذين المسارين.",
-      "text": "Al-Bukhari names Abdullah ibn Abi al-Safar and Ismail as parallel narrators from al-Sha'bi. The map presents them as two paths, without placing one after the other. Comments following the original chain are not added to either path."
+      "original": "جمع أصل البخاري عبد الله بن أبي السفر وإسماعيل في موضع واحد عن الشعبي؛ تعرض الخريطة الفرعين في خريطة واحدة، مع إبقاء كل علاقة نقل مستقلة، ولا تجعل أحدهما يروي عن الآخر. التعليقات التي تلي أصل الإسناد ليست ضمن هذين المسارين.",
+      "text": "The source records two parallel branches. Both appear in one map, with each transmission relationship kept separate; the branches must not be read as consecutive narrators."
     },
     "nasai-518-chain": {
       "original": "في هذه الرواية طاف معاذ، جدّ نصر، مع معاذ بن عفراء، فسأله عن ترك الصلاة فأجابه بقول النبي ﷺ. ذكر المزي اختلاف الروايات في تعيين الجدّ؛ نحفظ هنا طريق سعيد بن عامر بهويتين منفصلتين لمعاذ، ولا ندمجهما.",
@@ -1115,6 +1746,54 @@
     "ibnmajah-4054-chain": {
       "original": "أبو شجرة وكثير بن مرة اسم وكنية لشخص واحد. أبو الزاهرية هو حدير بن كريب. سعيد بن سنان هنا هو أبو مهدي الحمصي، وعبد الله بن عمر غير عبد الله بن عمرو. الحكم على الرواية منقول عن دار السلام ولا يستنتج آليًا من الألوان.",
       "text": "Abu Shajarah and Kathir ibn Murrah are one person’s kunyah and name. Abu al-Zahiriyyah is Hudayr ibn Kurayb. Sa’id ibn Sinan here is Abu Mahdi al-Himsi, and Abdullah ibn Umar is distinct from Abdullah ibn Amr. The report’s grade is attributed to Darussalam, not automatically inferred from colours."
+    },
+    "bukhari-1-via-bukhari-54": {
+      "original": "طريق آخر لحديث النيات من عمر بن الخطاب. يختلف لفظه عن الرواية المختارة؛ تعرض البطاقة متن البخاري ١، ويعرض هذا المصدر لفظ هذا الطريق. لا يدمج سفيان الثوري مع سفيان بن عيينة.",
+      "text": "Another path of the intentions report from Umar ibn al-Khattab. Its wording differs from the selected narration: the main card displays Bukhari 1, while this source preserves this path’s wording. Sufyan al-Thawri and Sufyan ibn Uyaynah remain distinct identities."
+    },
+    "bukhari-1-via-bukhari-2529": {
+      "original": "طريق آخر لحديث النيات من عمر بن الخطاب. يختلف لفظه عن الرواية المختارة؛ تعرض البطاقة متن البخاري ١، ويعرض هذا المصدر لفظ هذا الطريق. لا يدمج سفيان الثوري مع سفيان بن عيينة.",
+      "text": "Another path of the intentions report from Umar ibn al-Khattab. Its wording differs from the selected narration: the main card displays Bukhari 1, while this source preserves this path’s wording. Sufyan al-Thawri and Sufyan ibn Uyaynah remain distinct identities."
+    },
+    "bukhari-1-via-bukhari-5070": {
+      "original": "طريق آخر لحديث النيات من عمر بن الخطاب. يختلف لفظه عن الرواية المختارة؛ تعرض البطاقة متن البخاري ١، ويعرض هذا المصدر لفظ هذا الطريق. لا يدمج سفيان الثوري مع سفيان بن عيينة.",
+      "text": "Another path of the intentions report from Umar ibn al-Khattab. Its wording differs from the selected narration: the main card displays Bukhari 1, while this source preserves this path’s wording. Sufyan al-Thawri and Sufyan ibn Uyaynah remain distinct identities."
+    },
+    "bukhari-1-via-bukhari-6689": {
+      "original": "طريق آخر لحديث النيات من عمر بن الخطاب. يختلف لفظه عن الرواية المختارة؛ تعرض البطاقة متن البخاري ١، ويعرض هذا المصدر لفظ هذا الطريق. لا يدمج سفيان الثوري مع سفيان بن عيينة.",
+      "text": "Another path of the intentions report from Umar ibn al-Khattab. Its wording differs from the selected narration: the main card displays Bukhari 1, while this source preserves this path’s wording. Sufyan al-Thawri and Sufyan ibn Uyaynah remain distinct identities."
+    },
+    "bukhari-1-via-bukhari-6953": {
+      "original": "طريق آخر لحديث النيات من عمر بن الخطاب. يختلف لفظه عن الرواية المختارة؛ تعرض البطاقة متن البخاري ١، ويعرض هذا المصدر لفظ هذا الطريق. لا يدمج سفيان الثوري مع سفيان بن عيينة.",
+      "text": "Another path of the intentions report from Umar ibn al-Khattab. Its wording differs from the selected narration: the main card displays Bukhari 1, while this source preserves this path’s wording. Sufyan al-Thawri and Sufyan ibn Uyaynah remain distinct identities."
+    },
+    "bukhari-10-via-bukhari-6484": {
+      "original": "طريق آخر من عبد الله بن عمرو، يلتقي مع طريقي البخاري ١٠ عند عامر الشعبي. زكريا راوٍ مستقل عن شعبة، ولا توصل بينهما علاقة نقل.",
+      "text": "Another path from Abdullah ibn Amr, joining the two Bukhari 10 paths at Amir al-Shabi. Zakariyya and Shubah are separate branches; no transmission between them is asserted."
+    },
+    "bukhari-6018-via-bukhari-6475": {
+      "original": "طريق آخر من أبي هريرة، يختلف فيه ترتيب جمل المتن. يلتقي مع الطريق المختار عند أبي هريرة؛ متن البطاقة هو نص البخاري ٦٠١٨.",
+      "text": "Another path from Abu Hurayrah with the clauses in a different order. It joins the selected path at Abu Hurayrah; the main card retains Bukhari 6018’s text."
+    },
+    "bukhari-6018-via-bukhari-6136": {
+      "original": "طريق آخر لنفس المتن، يلتقي مع الطريق المختار عند أبي حصين. سفيان هنا هو الثوري بحسب رابط هوية الراوي في المصدر، وليس ابن عيينة.",
+      "text": "Another path of the same text, joining the selected path at Abu Hasin. The linked narrator profile identifies this Sufyan as al-Thawri, not Ibn Uyaynah."
+    },
+    "bukhari-6116-via-tirmidhi-2020": {
+      "original": "طريق الترمذي يلتقي مع البخاري عند أبي بكر بن عياش. يختلف لفظ سؤال الرجل، وتبقى الإجابة «لا تغضب». حكم دار السلام: صحيح؛ قال الترمذي: حسن صحيح غريب من هذا الوجه.",
+      "text": "The Tirmidhi path joins Bukhari’s at Abu Bakr ibn Ayyash. The man’s question differs, while the reply remains “Do not become angry.” Darussalam: Sahih. Al-Tirmidhi: hasan sahih gharib through this route."
+    },
+    "tirmidhi-2687-via-ibnmajah-4169": {
+      "original": "طريق ابن ماجه يلتقي مع الترمذي عند عبد الله بن نمير، مع اختلاف يسير في اللفظ. حكم دار السلام على ابن ماجه ٤١٦٩: ضعيف؛ لا ينتج حكم جديد من ألوان البطاقات.",
+      "text": "The Ibn Majah path joins Tirmidhi’s at Abdullah ibn Numayr, with a small wording difference. Darussalam grades Ibn Majah 4169 Daif; node colours do not produce a new grade."
+    },
+    "ibnmajah-802-via-tirmidhi-2617": {
+      "original": "طريق آخر من أبي سعيد يلتقي مع ابن ماجه عند عمرو بن الحارث، وفيه «يتعاهد المسجد» بدل «يعتاد المساجد». حكم دار السلام: ضعيف؛ ونص الترمذي: غريب حسن. تحفظ النسبتان إلى قائليهما دون ترجيح من التطبيق. تثبت بطاقة أبي الهيثم المرتبطة بهذا السند في Sunnah.com أنه ثقة؛ وهذا حكم الراوي، ولا يغيّر حكم الحديث المنقول.",
+      "text": "Another path from Abu Said joins Ibn Majah’s at Amr ibn al-Harith, with a wording variant about frequenting the mosque. Darussalam: Daif; al-Tirmidhi: gharib hasan. Both are attributed to their respective graders without the app resolving the difference. The matching Sunnah.com profile identifies Abu al-Haytham as trustworthy. This narrator appraisal does not change the attributed hadith grade."
+    },
+    "tirmidhi-3371-chain": {
+      "original": "أسماء الرواة وترتيبهم وصيغ الرواية من نص الترمذي ٣٣٧١ في Sunnah.com. أبان هنا هو ابن صالح، وليس أبان بن عثمان في الرواية الأخرى بالمكتبة. لم يُضف طريق آخر غير متحقق لهذا الحديث.",
+      "text": "Narrator names, order and transmission wording follow Tirmidhi 3371 on Sunnah.com. Aban here is Ibn Salih, distinct from Aban ibn Uthman in another library report. No unverified additional route has been added."
     }
   },
   "knowledge": {

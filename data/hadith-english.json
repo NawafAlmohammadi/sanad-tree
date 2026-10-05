@@ -10,6 +10,51 @@
         "alqama-al-laythi",
         "umar-ibn-al-khattab",
         "messenger"
+      ],
+      "bukhari-1-via-bukhari-54": [
+        "abdullah-maslama-qanabi",
+        "malik-anas",
+        "yahya-al-ansari",
+        "muhammad-al-taymi",
+        "alqama-al-laythi",
+        "umar-ibn-al-khattab",
+        "messenger"
+      ],
+      "bukhari-1-via-bukhari-2529": [
+        "muhammad-kathir-abdi",
+        "sufyan-thawri",
+        "yahya-al-ansari",
+        "muhammad-al-taymi",
+        "alqama-al-laythi",
+        "umar-ibn-al-khattab",
+        "messenger"
+      ],
+      "bukhari-1-via-bukhari-5070": [
+        "yahya-qazaa",
+        "malik-anas",
+        "yahya-al-ansari",
+        "muhammad-al-taymi",
+        "alqama-al-laythi",
+        "umar-ibn-al-khattab",
+        "messenger"
+      ],
+      "bukhari-1-via-bukhari-6689": [
+        "qutayba-said",
+        "abd-wahhab-thaqafi",
+        "yahya-al-ansari",
+        "muhammad-al-taymi",
+        "alqama-al-laythi",
+        "umar-ibn-al-khattab",
+        "messenger"
+      ],
+      "bukhari-1-via-bukhari-6953": [
+        "abu-numan-arim",
+        "hammad-zayd",
+        "yahya-al-ansari",
+        "muhammad-al-taymi",
+        "alqama-al-laythi",
+        "umar-ibn-al-khattab",
+        "messenger"
       ]
     },
     "checkedAt": "2026-10-03",
@@ -24,7 +69,8 @@
     "title": "The reward of deeds depends upon the intentions",
     "text": "I heard Allah's Messenger (ﷺ) saying, \"The reward of deeds depends upon the intentions and every person will get the reward according to what he has intended. So whoever emigrated for worldly benefits or for a woman to marry, his emigration was for what he emigrated for.\"",
     "rightsUrl": "https://sunnah.com/about",
-    "sourceTextSha256": "9821da061f9cda4c20bf5a2e5d0860cea2fe2d50bdb7f787c3a022ec03612fbb"
+    "sourceTextSha256": "9821da061f9cda4c20bf5a2e5d0860cea2fe2d50bdb7f787c3a022ec03612fbb",
+    "translationScope": "primary-source-only; additional path wording is available at its own source"
   },
   "bukhari-10": {
     "original": "المسلم من سلم المسلمون من لسانه ويده، والمهاجر من هجر ما نهى الله عنه.",
@@ -44,6 +90,13 @@
         "amir-shabi",
         "abdullah-amr-as",
         "messenger"
+      ],
+      "bukhari-10-via-bukhari-6484": [
+        "abu-nuaym-fadl",
+        "zakariyya-abi-zaida",
+        "amir-shabi",
+        "abdullah-amr-as",
+        "messenger"
       ]
     },
     "checkedAt": "2026-10-03",
@@ -58,7 +111,8 @@
     "title": "A Muslim is the one who avoids harming Muslims",
     "text": "The Prophet (ﷺ) said, \"A Muslim is the one who avoids harming Muslims with his tongue and hands. And a Muhajir (emigrant) is the one who gives up (abandons) all what Allah has forbidden.\"",
     "rightsUrl": "https://sunnah.com/about",
-    "sourceTextSha256": "dd6949d7e510a5dc8c8f1bcb0afc489d01837052c43b910126417e70964d5e31"
+    "sourceTextSha256": "dd6949d7e510a5dc8c8f1bcb0afc489d01837052c43b910126417e70964d5e31",
+    "translationScope": "primary-source-only; additional path wording is available at its own source"
   },
   "bukhari-6018": {
     "original": "من كان يؤمن بالله واليوم الآخر فلا يؤذ جاره، ومن كان يؤمن بالله واليوم الآخر فليكرم ضيفه، ومن كان يؤمن بالله واليوم الآخر فليقل خيرًا أو ليصمت.",
@@ -66,6 +120,23 @@
       "bukhari-6018-chain": [
         "qutayba-said",
         "salam-sulaym-ahwas",
+        "uthman-asim-hasin",
+        "dhakwan-samman",
+        "abu-hurayra",
+        "messenger"
+      ],
+      "bukhari-6018-via-bukhari-6475": [
+        "abdaziz-abdallah-uwaysi",
+        "ibrahim-saad",
+        "ibn-shihab-zuhri",
+        "abu-salama-abdurrahman",
+        "abu-hurayra",
+        "messenger"
+      ],
+      "bukhari-6018-via-bukhari-6136": [
+        "abdullah-muhammad-musnadi",
+        "abdrahman-mahdi",
+        "sufyan-thawri",
         "uthman-asim-hasin",
         "dhakwan-samman",
         "abu-hurayra",
@@ -84,13 +155,22 @@
     "title": "should talk what is good or keep quiet",
     "text": "Allah's Messenger (ﷺ) said, \"Anybody who believes in Allah and the Last Day should not harm his neighbor, and anybody who believes in Allah and the Last Day should entertain his guest generously and anybody who believes in Allah and the Last Day should talk what is good or keep quiet. (i.e. abstain from all kinds of evil and dirty talk).",
     "rightsUrl": "https://sunnah.com/about",
-    "sourceTextSha256": "11835538cbe40f3675f205f4cc2126aa26ca1b8dc9d8a666687932aa5bf1e5c1"
+    "sourceTextSha256": "11835538cbe40f3675f205f4cc2126aa26ca1b8dc9d8a666687932aa5bf1e5c1",
+    "translationScope": "primary-source-only; additional path wording is available at its own source"
   },
   "bukhari-6116": {
     "original": "أن رجلًا قال للنبي صلى الله عليه وسلم: أوصني. قال: «لا تغضب». فردد مرارًا، قال: «لا تغضب».",
     "chainNodes": {
       "bukhari-6116-chain": [
         "yahya-yusuf-zammi",
+        "abu-bakr-ayyash",
+        "uthman-asim-hasin",
+        "dhakwan-samman",
+        "abu-hurayra",
+        "messenger"
+      ],
+      "bukhari-6116-via-tirmidhi-2020": [
+        "muhammad-ala-kuraib",
         "abu-bakr-ayyash",
         "uthman-asim-hasin",
         "dhakwan-samman",
@@ -110,43 +190,22 @@
     "title": "Do not become angry.",
     "text": "A man said to the Prophet (ﷺ) , \"Advise me! \"The Prophet (ﷺ) said, \"Do not become angry.\" The man asked (the same) again and again, and the Prophet (ﷺ) said in each case, \"Do not become angry.\"",
     "rightsUrl": "https://sunnah.com/about",
-    "sourceTextSha256": "3f3b582f194f3e87df99e4fd5225eb7f15dc02a3367404e081453d7b446b80a3"
-  },
-  "nasai-518": {
-    "original": "لا صلاة بعد العصر حتى تغيب الشمس، ولا بعد الصبح حتى تطلع الشمس.",
-    "chainNodes": {
-      "nasai-518-chain": [
-        "abu-dawud-sulayman-sayf",
-        "said-amir-dubai",
-        "shuba-hajjaj",
-        "saad-ibrahim-zuhri",
-        "nasr-abdurrahman-qurashi",
-        "muadh-qurashi-grandfather",
-        "muadh-ibn-afra",
-        "messenger"
-      ]
-    },
-    "checkedAt": "2026-10-03",
-    "sourceIds": [
-      "nasai-518-source"
-    ],
-    "status": "verified",
-    "url": "https://sunnah.com/nasai:518",
-    "reference": "Sunan an-Nasa'i 518",
-    "inBookReference": "Book 6, Hadith 25",
-    "introduction": "It was narrated from Nasr bin 'Abdur-Rahman, from his grandfather Mu'adh, that he performed Tawaf with Mu'adh bin 'Afra' but he did not pray. \"I said:",
-    "title": "There is no prayer after 'Asr until the sun has set",
-    "text": "'Are you not going to pray?' He said: 'The Messenger of Allah (ﷺ) said: 'There is no prayer after 'Asr until the sun has set, nor after Subh until the sun has risen.'\"",
-    "gradeOnPage": "Da'if (Darussalam)",
-    "englishReference": "Vol. 1, Book 6, Hadith 519",
-    "rightsUrl": "https://sunnah.com/about",
-    "sourceTextSha256": "c0c75a70cda7c4db91fd318cf4468e406f32b7fec49ec8e1748ac546752229fa"
+    "sourceTextSha256": "3f3b582f194f3e87df99e4fd5225eb7f15dc02a3367404e081453d7b446b80a3",
+    "translationScope": "primary-source-only; additional path wording is available at its own source"
   },
   "tirmidhi-2687": {
     "original": "الكلمة الحكمة ضالة المؤمن، فحيث وجدها فهو أحق بها.",
     "chainNodes": {
       "tirmidhi-2687-chain": [
         "muhammad-umar-walid",
+        "abdullah-numayr",
+        "ibrahim-fadl",
+        "said-maqburi",
+        "abu-hurayra",
+        "messenger"
+      ],
+      "tirmidhi-2687-via-ibnmajah-4169": [
+        "abdrahman-abdwahhab-ammi",
         "abdullah-numayr",
         "ibrahim-fadl",
         "said-maqburi",
@@ -167,7 +226,8 @@
     "text": "that the Messenger of Allah (ﷺ) said: \"The wise statement is the lost property of the believer, so wherever he finds it, then he is more worthy of it.\"",
     "gradeOnPage": "Da'if (Darussalam)",
     "rightsUrl": "https://sunnah.com/about",
-    "sourceTextSha256": "ec6163ce52cc03119823f193406c92541aaea1e370d107c77f2717068b678297"
+    "sourceTextSha256": "ec6163ce52cc03119823f193406c92541aaea1e370d107c77f2717068b678297",
+    "translationScope": "primary-source-only; additional path wording is available at its own source"
   },
   "ibnmajah-802": {
     "original": "إذا رأيتم الرجل يعتاد المساجد فاشهدوا له بالإيمان، قال الله تعالى: {إنما يعمر مساجد الله من آمن بالله} الآية.",
@@ -175,6 +235,15 @@
       "ibnmajah-802-chain": [
         "muhammad-ala-kuraib",
         "rushdin-saad",
+        "amr-harith-masri",
+        "darraj-abi-samh",
+        "sulayman-amr-haytham",
+        "abu-said-khudri",
+        "messenger"
+      ],
+      "ibnmajah-802-via-tirmidhi-2617": [
+        "muhammad-abi-umar-adani",
+        "abdullah-wahb",
         "amr-harith-masri",
         "darraj-abi-samh",
         "sulayman-amr-haytham",
@@ -195,7 +264,8 @@
     "text": "The Messenger of Allah said: \"If you see a man frequenting the mosques, then bear witness to his faith. Allah says: 'The mosques of Allah shall be maintained only by those who believe in Allah and the Last Day. [At-Taubah: 18]'\"",
     "gradeOnPage": "Da'if (Darussalam)",
     "rightsUrl": "https://sunnah.com/about",
-    "sourceTextSha256": "abc7a8ae53b49665c95ca8dea83757e8578fb4ab86a02c1d4ddb00c12b12ceb6"
+    "sourceTextSha256": "abc7a8ae53b49665c95ca8dea83757e8578fb4ab86a02c1d4ddb00c12b12ceb6",
+    "translationScope": "primary-source-only; additional path wording is available at its own source"
   },
   "ibnmajah-1388": {
     "original": "إِذَا كَانَتْ لَيْلَةُ النِّصْفِ مِنْ شَعْبَانَ فَقُومُوا لَيْلَهَا وَصُومُوا يَوْمَهَا . فَإِنَّ اللَّهَ يَنْزِلُ فِيهَا لِغُرُوبِ الشَّمْسِ إِلَى سَمَاءِ الدُّنْيَا فَيَقُولُ أَلاَ مِنْ مُسْتَغْفِرٍ فَأَغْفِرَ لَهُ أَلاَ مُسْتَرْزِقٌ فَأَرْزُقَهُ أَلاَ مُبْتَلًى فَأُعَافِيَهُ أَلاَ كَذَا أَلاَ كَذَا حَتَّى يَطْلُعَ الْفَجْرُ",
@@ -223,7 +293,8 @@
     "title": "When it is the night of the middle of Sha’ban",
     "text": "“The Messenger of Allah (ﷺ) said: ‘When it is the night of the middle of Sha’ban, spend its night in prayer and observe a fast on that day. For Allah descends at sunset on that night to the lowest heaven and says: ‘Is there no one who will ask Me for forgiveness, that I may forgive him? Is there no one who will ask Me for provision, that I may provide for him? Is there no one who is afflicted by trouble, that I may relieve him?’ And so on, until dawn comes.’”",
     "rightsUrl": "https://sunnah.com/about",
-    "sourceTextSha256": "00a2e6e54e8e7a45a557a0d7c439353f8fbf534bbfc43ac1c2fd699d51c92758"
+    "sourceTextSha256": "00a2e6e54e8e7a45a557a0d7c439353f8fbf534bbfc43ac1c2fd699d51c92758",
+    "translationScope": "primary-source-only; additional path wording is available at its own source"
   },
   "ibnmajah-4313": {
     "original": "يَشْفَعُ يَوْمَ الْقِيَامَةِ ثَلاَثَةٌ الأَنْبِيَاءُ ثُمَّ الْعُلَمَاءُ ثُمَّ الشُّهَدَاءُ",
@@ -250,7 +321,8 @@
     "title": "Three will intercede on the Day of Resurrection",
     "text": "“Three will intercede on the Day of Resurrection: The Prophets, then the scholars, then the martyrs.”",
     "rightsUrl": "https://sunnah.com/about",
-    "sourceTextSha256": "2e66b71acd16fc8adfca9824c3ed2594ec15ce4aa9c539e73ba1db365fd9e347"
+    "sourceTextSha256": "2e66b71acd16fc8adfca9824c3ed2594ec15ce4aa9c539e73ba1db365fd9e347",
+    "translationScope": "primary-source-only; additional path wording is available at its own source"
   },
   "ibnmajah-4054": {
     "original": "إِنَّ اللَّهَ عَزَّ وَجَلَّ إِذَا أَرَادَ أَنْ يُهْلِكَ عَبْدًا نَزَعَ مِنْهُ الْحَيَاءَ فَإِذَا نَزَعَ مِنْهُ الْحَيَاءَ لَمْ تَلْقَهُ إِلاَّ مَقِيتًا مُمَقَّتًا فَإِذَا لَمْ تَلْقَهُ إِلاَّ مَقِيتًا مُمَقَّتًا نُزِعَتْ مِنْهُ الأَمَانَةُ فَإِذَا نُزِعَتْ مِنْهُ الأَمَانَةُ لَمْ تَلْقَهُ إِلاَّ خَائِنًا مُخَوَّنًا فَإِذَا لَمْ تَلْقَهُ إِلاَّ خَائِنًا مُخَوَّنًا نُزِعَتْ مِنْهُ الرَّحْمَةُ فَإِذَا نُزِعَتْ مِنْهُ الرَّحْمَةُ لَمْ تَلْقَهُ إِلاَّ رَجِيمًا مُلَعَّنًا فَإِذَا لَمْ تَلْقَهُ إِلاَّ رَجِيمًا مُلَعَّنًا نُزِعَتْ مِنْهُ رِبْقَةُ الإِسْلاَمِ",
@@ -277,6 +349,37 @@
     "title": "When Allah wants to destroy a person",
     "text": "“When Allah wants to destroy a person, He takes away modesty from him, you will only see him with the wrath of Allah upon him, and he will be hated by people. When you only see him with the wrath of Allah upon him, and hated by people, then honesty will be taken away from him, and when honesty is taken away from him, you will only see him as a traitor who is called such by others. When you only see him as a traitor who is called such by others, then mercy will be taken away from him, and when mercy is taken away from him, you will only see him as rejected and accursed, and when you only see him as rejected and accursed, then the bond of Islam will be taken away from him.”",
     "rightsUrl": "https://sunnah.com/about",
-    "sourceTextSha256": "af9b1721b93fec4ab497f6004c578b4baf25cdd668ea2825a90ca392c2ee541a"
+    "sourceTextSha256": "af9b1721b93fec4ab497f6004c578b4baf25cdd668ea2825a90ca392c2ee541a",
+    "translationScope": "primary-source-only; additional path wording is available at its own source"
+  },
+  "tirmidhi-3371": {
+    "original": "الدُّعَاءُ مُخُّ الْعِبَادَةِ.",
+    "chainNodes": {
+      "tirmidhi-3371-chain": [
+        "ali-hujr",
+        "walid-muslim",
+        "abdullah-lahia",
+        "ubaydullah-abi-jafar",
+        "aban-salih",
+        "anas-malik",
+        "messenger"
+      ]
+    },
+    "checkedAt": "2026-10-04",
+    "sourceIds": [
+      "tirmidhi-3371-source"
+    ],
+    "status": "verified",
+    "url": "https://sunnah.com/tirmidhi:3371",
+    "reference": "Jami` at-Tirmidhi 3371",
+    "inBookReference": "Book 48, Hadith 2",
+    "introduction": "Anas bin Malik narrated that :",
+    "title": "The supplication is the essence of worship",
+    "text": "the Prophet said: “The supplication is the essence of worship.”",
+    "gradeOnPage": "Da'if (Darussalam)",
+    "englishReference": "Vol. 6, Book 45, Hadith 3371",
+    "rightsUrl": "https://sunnah.com/about",
+    "sourceTextSha256": "0c9b2d61924ee30c13dde20e42335ee40203e68a6e17c511b9ce96c53f055d04",
+    "translationScope": "primary-source-only; additional path wording is available at its own source"
   }
 }
