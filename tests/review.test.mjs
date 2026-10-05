@@ -1,3 +1,4 @@
+import {legacyEnv} from './legacy-settings.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {catalog,validateCatalog} from '../lib/catalog.mjs';
@@ -24,12 +25,12 @@ test('a teaching plan explains the selected graph instead of inventing new narra
 });
 test('model chooses an ordered sourced teaching plan; arbitrary IDs or model prose cannot reach the UI',async()=>{
  let seen;const fake=async(url,init)=>{seen=JSON.parse(JSON.parse(init.body).input);return Response.json({status:'completed',steps:[{type:'model_output',content:[{type:'text',text:JSON.stringify({refuse:false,factIds:seen.evidence.map(f=>f.id),lessonIds:['lesson-direction','lesson-overview'],prose:'invented biography'})}]}]});};
- const a=await answerQuestion(catalog,{...base,modelId:'gemini-free',question:'اشرح لي السند ببساطة'},{AI_KEY_GEMINI:'test-key'},fake);assert.equal(a.status,'answered');assert.equal(a.engine,'model');assert.deepEqual(a.lessons.map(f=>f.id),['lesson-direction','lesson-overview']);assert.ok(!JSON.stringify(a).includes('invented biography'));assert.ok(a.lessons.every(f=>f.sourceIds.length));
- const invalid=async()=>Response.json({status:'completed',steps:[{type:'model_output',content:[{type:'text',text:JSON.stringify({refuse:false,factIds:seen.evidence.map(f=>f.id),lessonIds:['not-recorded']})}]}]});assert.equal((await answerQuestion(catalog,{...base,modelId:'gemini-free',question:'اشرح لي السند ببساطة'},{AI_KEY_GEMINI:'test-key'},invalid)).status,'refused');
+ const a=await answerQuestion(catalog,{...base,modelId:'gemini-free',question:'اشرح لي السند ببساطة'},legacyEnv({AI_KEY_GEMINI:'test-key'}),fake);assert.equal(a.status,'answered');assert.equal(a.engine,'model');assert.deepEqual(a.lessons.map(f=>f.id),['lesson-direction','lesson-overview']);assert.ok(!JSON.stringify(a).includes('invented biography'));assert.ok(a.lessons.every(f=>f.sourceIds.length));
+ const invalid=async()=>Response.json({status:'completed',steps:[{type:'model_output',content:[{type:'text',text:JSON.stringify({refuse:false,factIds:seen.evidence.map(f=>f.id),lessonIds:['not-recorded']})}]}]});assert.equal((await answerQuestion(catalog,{...base,modelId:'gemini-free',question:'اشرح لي السند ببساطة'},legacyEnv({AI_KEY_GEMINI:'test-key'}),invalid)).status,'refused');
 });
 test('named narrator controls teaching identity even when a different card is selected',async()=>{
  const fake=async(url,init)=>{const evidence=JSON.parse(JSON.parse(init.body).input);assert.ok(evidence.teachingCards.every(f=>!f.text.includes('١٩٨')));return Response.json({status:'completed',steps:[{type:'model_output',content:[{type:'text',text:JSON.stringify({refuse:false,factIds:evidence.evidence.map(f=>f.id),lessonIds:evidence.teachingCards.map(f=>f.id)})}]}]});};
- const a=await answerQuestion(catalog,{...base,narratorId:'sufyan',modelId:'gemini-free',question:'متى توفي محمد بن إبراهيم التيمي'},{AI_KEY_GEMINI:'test-key'},fake);assert.equal(a.narrator.id,'muhammad-al-taymi');assert.deepEqual(a.lessons.map(f=>f.id),['lesson-selected-death']);assert.ok(a.lessons[0].text.includes('١٢٠'));
+ const a=await answerQuestion(catalog,{...base,narratorId:'sufyan',modelId:'gemini-free',question:'متى توفي محمد بن إبراهيم التيمي'},legacyEnv({AI_KEY_GEMINI:'test-key'}),fake);assert.equal(a.narrator.id,'muhammad-al-taymi');assert.deepEqual(a.lessons.map(f=>f.id),['lesson-selected-death']);assert.ok(a.lessons[0].text.includes('١٢٠'));
 });
 test('new learning intents preserve fabricated warnings and reject mixed instructions before the API',async()=>{
  const a=await answerQuestion(catalog,{hadithId:'ibnmajah-1388',chainId:'ibnmajah-1388-chain',question:'لماذا هذا الحديث موضوع'});assert.equal(a.claims[0].id,'attribution-warning');assert.match(a.answer,/أبي سبرة/);

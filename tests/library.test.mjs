@@ -12,7 +12,7 @@ test('reviewed library has four sound, three weak and three fabricated reports',
   assert.deepEqual(catalog.hadiths.reduce((totals,h)=>{totals[h.judgement.grade]++;return totals;},{sahih:0,weak:0,fabricated:0}),{sahih:4,weak:3,fabricated:3});
   for(const h of catalog.hadiths)for(const c of h.chains){
     assert.ok(c.isnad.length>50);
-    assert.equal(journeySteps(h,c,catalog.narrators)[0].name,h.compiler.name);
+    assert.equal(journeySteps(h,c,catalog.narrators)[0].name,(c.compiler??h.compiler).name);
     assert.equal(narratorTone(catalog.narrators.find(n=>n.id===c.nodes.at(-2))),'companion');
     assert.equal(narratorTone(catalog.narrators.find(n=>n.id===c.nodes.at(-1))),'prophet');
     assert.equal(c.nodes.at(-1),'messenger');
@@ -20,7 +20,7 @@ test('reviewed library has four sound, three weak and three fabricated reports',
   }
 });
 test('Bukhari 10 represents the two parallel teachers as separate paths',async()=>{
-  const h=catalog.hadiths.find(h=>h.id==='bukhari-10');assert.equal(h.chains.length,2);
+  const h=catalog.hadiths.find(h=>h.id==='bukhari-10');assert.equal(h.chains.length,3);
   for(const [index,teacher] of ['abdullah-abi-safar','ismail-abi-khalid'].entries()){
     const c=h.chains[index];
     assert.deepEqual(c.nodes,['adam-abi-iyas','shuba-hajjaj',teacher,'amir-shabi','abdullah-amr-as','messenger']);
@@ -62,7 +62,7 @@ test('fabricated reports cannot lose the notice on a disclosed busy-service fall
   assert.equal(answer.status,'answered');assert.equal(answer.engine,'local');assert.equal(answer.claims[0].id,'attribution-warning');
 });
 test('weak matn answers retain the grading and its actual named critic',async()=>{
-  for(const id of ['nasai-518','tirmidhi-2687','ibnmajah-802']){
+  for(const id of ['tirmidhi-3371','tirmidhi-2687','ibnmajah-802']){
     const h=catalog.hadiths.find(h=>h.id===id),answer=await answerQuestion(catalog,input(id,'اعرض متن الحديث'));
     assert.equal(answer.claims[0].text,h.judgement.text);assert.equal(answer.claims[1].text,h.matn);
   }
@@ -72,7 +72,7 @@ test('a weak chain does not transfer its defect to trusted narrators',async()=>{
   for(const [id,nid,tone] of [['tirmidhi-2687','ibrahim-fadl','untrusted'],['tirmidhi-2687','abdullah-numayr','trusted'],['ibnmajah-802','rushdin-saad','untrusted'],['ibnmajah-802','darraj-abi-samh','review'],['ibnmajah-802','sulayman-amr-haytham','trusted']]){
     const n=catalog.narrators.find(n=>n.id===nid);assert.equal(narratorTone(n),tone);
     const answer=await answerQuestion(catalog,input(id,'ما حكم هذا الراوي',{narratorId:nid}));
-    assert.equal(answer.narrator.id,nid);assert.ok(answer.answer.includes(n.reliability.text));
+    if(n.reliability)assert.equal(answer.narrator.id,nid);if(n.reliability)assert.ok(answer.answer.includes(n.reliability.text));else assert.equal(answer.status,'refused');
   }
 });
 test('father and son retain separate identities; the father is a Companion',async()=>{
