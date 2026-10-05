@@ -1,6 +1,6 @@
 # Source register
 
-The current catalog contains 10 reports, 55 narrator identities and 73 source records. Fields, transmission links and assessments cite source IDs in data/catalog.json. Missing information is not inferred.
+The current catalog contains 10 reports, 74 narrator identities and 132 source records. Fields, transmission links and assessments cite source IDs in data/catalog.json. Missing information is not inferred.
 
 | Source ID | Title | Reference | Link |
 | --- | --- | --- | --- |
@@ -81,3 +81,16 @@ The current catalog contains 10 reports, 55 narrator identities and 73 source re
 The individual Sunnah.com English quotations and their reproduction conditions are documented in SUNNAH-ENGLISH-AUDIT.md.
 
 | sunnah-ibrahim-hashimi-11814 | Ibrahim ibn Muhammad al-Hashimi — Sunnah.com | Narrator 11814, linked from Ibn Majah 1388; identity and recorded assessments | [Open source](https://sunnah.com/narrator/11814) |
+
+## Replacement weak report — 4 October 2026
+
+[Tirmidhi 3371](https://sunnah.com/tirmidhi:3371): weak (Darussalam); exact Arabic chain and English quotation.
+
+- [Ali ibn Hujr al-Sadi](https://sunnah.com/narrator/5757) — narrator identity and the recorded biographical fields and assessments.
+- [Al-Walid ibn Muslim al-Qurashi](https://sunnah.com/narrator/1807) — narrator identity and the recorded biographical fields and assessments.
+- [Abdullah ibn Lahiah al-Hadrami](https://sunnah.com/narrator/5033) — narrator identity and the recorded biographical fields and assessments.
+- [Ubayd Allah ibn Abi Jafar al-Misri](https://sunnah.com/narrator/5362) — narrator identity and the recorded biographical fields and assessments.
+- [Aban ibn Salih al-Qurashi](https://sunnah.com/narrator/13) — narrator identity and the recorded biographical fields and assessments.
+- [Anas ibn Malik al-Ansari](https://sunnah.com/narrator/720) — narrator identity and the recorded biographical fields and assessments.
+
+- `sunnah-rijal-3617`: [Abu al-Haytham, Sulayman ibn Amr al-Laythi — Sunnah.com](https://sunnah.com/narrator/3617). Matching identity and trustworthy appraisal, reviewed 4 October 2026.

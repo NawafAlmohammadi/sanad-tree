@@ -8,7 +8,7 @@ Reviewed on 3 October 2026. All ten current records have an exact English quotat
 | bukhari-10 | [Sahih al-Bukhari 10](https://sunnah.com/bukhari:10) | Book 2, Hadith 3 | sahih |
 | bukhari-6018 | [Sahih al-Bukhari 6018](https://sunnah.com/bukhari:6018) | Book 78, Hadith 49 | sahih |
 | bukhari-6116 | [Sahih al-Bukhari 6116](https://sunnah.com/bukhari:6116) | Book 78, Hadith 143 | sahih |
-| nasai-518 | [Sunan an-Nasa'i 518](https://sunnah.com/nasai:518) | Book 6, Hadith 25 | weak |
+| tirmidhi-3371 | [Jami at-Tirmidhi 3371](https://sunnah.com/tirmidhi:3371) | Book 48, Hadith 2 | weak (Darussalam) |
 | tirmidhi-2687 | [Jami` at-Tirmidhi 2687](https://sunnah.com/tirmidhi:2687) | Book 41, Hadith 43 | weak |
 | ibnmajah-802 | [Sunan Ibn Majah 802](https://sunnah.com/ibnmajah:802) | Book 4, Hadith 68 | weak |
 | ibnmajah-1388 | [Sunan Ibn Majah 1388](https://sunnah.com/ibnmajah:1388) | Book 5, Hadith 586 | fabricated |

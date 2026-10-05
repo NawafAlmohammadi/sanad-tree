@@ -49,3 +49,43 @@ The current catalog has 10 reports, 55 narrator identities and 73 source records
 - Explicit tracing highlights one card for 2.4 seconds with enlargement, a dimmed map background and a glow. Only the map scrolls to the current card. Opening the page or selecting a hadith still does not start tracing. Pointer, keyboard and selection feedback are visible; reduced-motion settings disable movement.
 - Ibn Majah 1388 directly links Ibrahim ibn Muhammad to Sunnah.com narrator 11814. His cited assessment is “Truthful, Good Hadith” / “صدوق حسن الحديث”; Ibn Hajar’s wording is “صدوق”. The green card and assistant use that assessment. Al-Mizzi’s uncertainty remains attributed in the chain note. No “thiqa” wording is substituted for “saduq”.
 - The catalogue now contains 74 cited sources and 55 narrators; the ten exact English quotations and 4/3/3 report distribution are unchanged.
+
+## Transparent header and navy favicon — 3 October 2026
+
+- The header now uses the team's supplied `Islamic-University-of-Medinah.webp`, copied unchanged with its original transparency. CSS clips only the empty margins; there is no white logo container. The university artwork retains its original colours and remains the property of the university.
+- The original Sanad chain favicon is restored with a navy (#102438) background and white chain marks. Both icon metadata entries use the updated SVG.
+
+## Unified graph and generated teaching — 4 October 2026
+
+This section supersedes earlier descriptions of separate maps, wheel/touch pausing and ID-only explanations.
+
+- All recorded paths appear in one graph. Shared narrator IDs merge; similarly named identities remain distinct. Curved links preserve the actual directed transmissions and references. The Bukhari 10 branches remain parallel.
+- Smaller circular medallions retain the navy/blue/gold theme and narrator status colours. Focus enlarges one medallion and dims its surroundings. Hover, keyboard focus and selection have visible feedback.
+- Tracing is explicit, 2.6 seconds per node. Wheel and touch yield camera control without pausing the timer. No trace starts on initial load or report selection. Reduced-motion settings are respected.
+- Profiles group the biography, appraisals, period, knowledge and relationships. Relationships and library appearances are computed only from recorded chains.
+- Verified Sunnah.com profile metadata adds the recorded kunyas/generations/periods for Adam (narrator 2), Ismail (989), al-Shabi (4099), Abd al-Razzaq (4533), Abu Hurayra (4396), and Kathir ibn Murra (6576), where fields were missing. Each addition is bound to its existing identity and source; English display text is reviewed. Al-Shabi's disputed death-date range is not converted into an invented exact date. Existing appraisals and qualifications are retained.
+- The default AI models now generate question-specific explanations from catalog facts, followed by independent citation-bound verification. Invalid references, foreign narrator owners and unrecorded numbers are rejected locally. Every paragraph must pass the second check. Evidence and generated text remain visibly distinct. The source-only planner remains available as an explicit mode and for compatible custom configurations.
+- Each AI answer uses two provider calls. This adds latency and quota use; validation failure returns disclosed original evidence. Model checking is a guardrail, not a guarantee that replaces specialist review.
+
+## Branch spacing and verified Abu al-Haytham — 4 October 2026
+
+- Rank layers use fixed spacing, with reserved routing lanes for source links that skip levels. Internal routing points are never displayed as narrators and do not create new transmission claims.
+- Curved links avoid unrelated cards in the initial layouts. Arabic and English captions wrap without truncating their wording and are placed away from cards and other captions. Dragging keeps their geometry current without re-rendering the whole map on every pointer event.
+- Fullscreen fits the branch width automatically. Fit branches is also available in the toolbar and zoom controls. Wider layouts remain pannable on small screens.
+- Entire library results are green for authentic, yellow for weak and red for fabricated reports. Selection preserves the grade colour; light and dark modes have separate palettes.
+- Abu al-Haytham, Sulayman ibn Amr al-Laythi, matches Sunnah.com narrator 3617, directly linked from Ibn Majah 802 and Tirmidhi 2617. His trustworthy appraisal is recorded with attribution to Ibn Hajar, Yahya ibn Main and al-Daraqutni. Both language modes and the assistant receive the same cited profile. The hadith grade is unchanged.
+- Current library: 10 reports, 22 paths, 74 narrator identities, 132 source records. All 91 automated tests, TypeScript checks, data validation and production build passed. Local browser checks covered all ten trees in Arabic and English at desktop and 390-pixel widths, plus dragging with connected links and the visible source-backed profile.
+
+## Source-grounded AI workbench — 4 October 2026
+
+This section supersedes the earlier account of AI features being limited to the selected chain or a teaching-card planner. The approved library and its exact Arabic and Sunnah.com English matn records are unchanged.
+
+- Added genuine model-based literal isnad extraction. The server checks names, continuous passages, ordering and branch IDs, then checks each proposed transmission against its passage. A visitor reviews every link before opening a provisional map. Unmatched identities, grades and sources are not completed from memory; drafts remain separate from the library.
+- Added Arabic/English semantic research over indexed reviewed excerpts for all ten reports and 74 narrator identities. The model retrieves evidence, composes a cited explanation, and checks it independently. Navigation results come only from records actually cited. This is not live web search or full-book retrieval.
+- Added source-bound map commands: the model can choose recorded paths, through-narrator views, junctions, comparisons or recorded review points. The client highlights existing nodes and links and can clear the selection. No generated code or invented graph objects are executed.
+- Added adaptive practice. Correct answers come from recorded graph relationships; the model chooses the next exercise based on recent mistakes and successes and writes a checked explanation. No scholarly grading is generated.
+- Added local rejection of changed explicit quotations and incomplete paragraphs. Provider failures and rejected output are labelled; workbench features never substitute preset output as an AI result. Existing source-only assistant fallback remains explicitly labelled.
+- Live Gemini checks with the current server key produced literal extraction, semantic narrator comparisons, adaptive questions and a map-junction selection. Transient provider-busy responses and rejected outputs were also observed and correctly withheld or disclosed. Two-pass model review reduces errors but does not guarantee scholarly correctness.
+- Operational and privacy details are documented in AI-WORKBENCH.md. No source rights, keys or public audience settings were changed.
+
+The AI workbench release passed 101 automated checks, TypeScript validation, catalog validation and the production build.
