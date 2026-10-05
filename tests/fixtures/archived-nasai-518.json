@@ -1,0 +1,276 @@
+{
+  "hadith": {
+    "id": "nasai-518",
+    "title": "لا صلاة بعد العصر حتى تغيب الشمس",
+    "matn": "لا صلاة بعد العصر حتى تغيب الشمس، ولا بعد الصبح حتى تطلع الشمس.",
+    "sourceIds": [
+      "nasai-518-source"
+    ],
+    "compiler": {
+      "name": "الإمام النسائي",
+      "wording": "أخبرنا",
+      "sourceIds": [
+        "nasai-518-source"
+      ]
+    },
+    "judgement": {
+      "hadithId": "nasai-518",
+      "text": "حكم الألباني على هذا الطريق: ضعيف الإسناد. وبيّن الإتيوبي اختلاف الإسناد وعدم معرفة جدّ نصر. هذا حكم على الطريق المعروض؛ لا يُستنتج منه أن جميع رواته غير ثقات، ولا أنه حكم على كل طرق المتن.",
+      "sourceIds": [
+        "albani-nasai-518",
+        "dhakhira-nasai-518"
+      ],
+      "grade": "weak"
+    },
+    "chains": [
+      {
+        "id": "nasai-518-chain",
+        "label": "طريق سعيد بن عامر كما في النسائي",
+        "sourceIds": [
+          "nasai-518-source"
+        ],
+        "nodes": [
+          "abu-dawud-sulayman-sayf",
+          "said-amir-dubai",
+          "shuba-hajjaj",
+          "saad-ibrahim-zuhri",
+          "nasr-abdurrahman-qurashi",
+          "muadh-qurashi-grandfather",
+          "muadh-ibn-afra",
+          "messenger"
+        ],
+        "links": [
+          {
+            "from": "abu-dawud-sulayman-sayf",
+            "to": "said-amir-dubai",
+            "wording": "حدثنا",
+            "sourceIds": [
+              "nasai-518-source"
+            ]
+          },
+          {
+            "from": "said-amir-dubai",
+            "to": "shuba-hajjaj",
+            "wording": "حدثنا",
+            "sourceIds": [
+              "nasai-518-source"
+            ]
+          },
+          {
+            "from": "shuba-hajjaj",
+            "to": "saad-ibrahim-zuhri",
+            "wording": "عن",
+            "sourceIds": [
+              "nasai-518-source"
+            ]
+          },
+          {
+            "from": "saad-ibrahim-zuhri",
+            "to": "nasr-abdurrahman-qurashi",
+            "wording": "عن",
+            "sourceIds": [
+              "nasai-518-source"
+            ]
+          },
+          {
+            "from": "nasr-abdurrahman-qurashi",
+            "to": "muadh-qurashi-grandfather",
+            "wording": "عن جدّه",
+            "sourceIds": [
+              "nasai-518-source"
+            ]
+          },
+          {
+            "from": "muadh-qurashi-grandfather",
+            "to": "muadh-ibn-afra",
+            "wording": "أنه طاف معه، فقال",
+            "sourceIds": [
+              "nasai-518-source"
+            ]
+          },
+          {
+            "from": "muadh-ibn-afra",
+            "to": "messenger",
+            "wording": "إن رسول الله ﷺ قال",
+            "sourceIds": [
+              "nasai-518-source"
+            ]
+          }
+        ],
+        "note": {
+          "chainId": "nasai-518-chain",
+          "text": "في هذه الرواية طاف معاذ، جدّ نصر، مع معاذ بن عفراء، فسأله عن ترك الصلاة فأجابه بقول النبي ﷺ. ذكر المزي اختلاف الروايات في تعيين الجدّ؛ نحفظ هنا طريق سعيد بن عامر بهويتين منفصلتين لمعاذ، ولا ندمجهما.",
+          "sourceIds": [
+            "nasai-518-source",
+            "tahdhib-nasr"
+          ]
+        },
+        "isnad": "أخبرنا أبو داود قال حدثنا سعيد بن عامر قال حدثنا شعبة عن سعد بن إبراهيم عن نصر بن عبد الرحمن عن جده معاذ: أنه طاف مع معاذ بن عفراء فلم يصل، فقلت: ألا تصلي؟ فقال: إن رسول الله صلى الله عليه وسلم قال"
+      }
+    ]
+  },
+  "narrators": [
+    {
+      "id": "abu-dawud-sulayman-sayf",
+      "name": "أبو داود سليمان بن سيف الحراني",
+      "aliases": [
+        "أبو داود",
+        "سليمان بن سيف",
+        "أبو داود الحراني"
+      ],
+      "sourceIds": [
+        "nasai-518-source",
+        "dhakhira-nasai-518",
+        "sunnah-rijal-3598"
+      ],
+      "bio": {
+        "narratorId": "abu-dawud-sulayman-sayf",
+        "text": "شيخ النسائي في هذا الطريق. المقصود سليمان بن سيف الحراني، لا أبو داود السجستاني صاحب السنن.",
+        "sourceIds": [
+          "dhakhira-nasai-518"
+        ]
+      },
+      "reliability": {
+        "narratorId": "abu-dawud-sulayman-sayf",
+        "status": "trusted",
+        "text": "ابن حجر: ثقة حافظ؛ النسائي: ثقة.",
+        "sourceIds": [
+          "sunnah-rijal-3598"
+        ]
+      }
+    },
+    {
+      "id": "said-amir-dubai",
+      "name": "سعيد بن عامر الضبعي",
+      "aliases": [
+        "سعيد بن عامر",
+        "سعيد بن عامر الضبعي البصري"
+      ],
+      "sourceIds": [
+        "nasai-518-source",
+        "dhakhira-nasai-518",
+        "sunnah-rijal-3349"
+      ],
+      "bio": {
+        "narratorId": "said-amir-dubai",
+        "text": "أبو محمد البصري، من رواة هذا الطريق عن شعبة. يختلف عن الصحابي سعيد بن عامر الجمحي.",
+        "sourceIds": [
+          "dhakhira-nasai-518"
+        ]
+      },
+      "reliability": {
+        "narratorId": "said-amir-dubai",
+        "status": "trusted",
+        "text": "ابن حجر: ثقة صالح؛ أبو حاتم: صدوق وفي حديثه بعض الغلط؛ البخاري: كثير الغلط. لا يلغي التوثيق هذه الأقوال.",
+        "sourceIds": [
+          "sunnah-rijal-3349"
+        ]
+      }
+    },
+    {
+      "id": "saad-ibrahim-zuhri",
+      "name": "سعد بن إبراهيم بن عبد الرحمن بن عوف",
+      "aliases": [
+        "سعد بن إبراهيم",
+        "سعد بن إبراهيم الزهري"
+      ],
+      "sourceIds": [
+        "nasai-518-source",
+        "dhakhira-nasai-518",
+        "sunnah-rijal-3236"
+      ],
+      "bio": {
+        "narratorId": "saad-ibrahim-zuhri",
+        "text": "الزهري المدني، تولى قضاء المدينة. يروي عنه شعبة في هذا السند.",
+        "sourceIds": [
+          "dhakhira-nasai-518"
+        ]
+      },
+      "reliability": {
+        "narratorId": "saad-ibrahim-zuhri",
+        "status": "trusted",
+        "text": "خلاصة Sunnah.com: ثقة.",
+        "sourceIds": [
+          "sunnah-rijal-3236"
+        ]
+      }
+    },
+    {
+      "id": "nasr-abdurrahman-qurashi",
+      "name": "نصر بن عبد الرحمن القرشي",
+      "aliases": [
+        "نصر بن عبد الرحمن",
+        "نصر القرشي"
+      ],
+      "sourceIds": [
+        "nasai-518-source",
+        "dhakhira-nasai-518",
+        "sunnah-rijal-7896"
+      ],
+      "bio": {
+        "narratorId": "nasr-abdurrahman-qurashi",
+        "text": "حجازي؛ يروي في هذا الطريق عن جدّه معاذ القرشي.",
+        "sourceIds": [
+          "dhakhira-nasai-518"
+        ]
+      },
+      "reliability": {
+        "narratorId": "nasr-abdurrahman-qurashi",
+        "status": "review",
+        "text": "ابن حجر: مقبول؛ مصنفو تحرير تقريب التهذيب: مجهول، تفرد شعبة بالرواية عنه؛ وذكره ابن حبان في الثقات. تحفظ الأقوال المختلفة دون حكم من التطبيق.",
+        "sourceIds": [
+          "sunnah-rijal-7896"
+        ]
+      }
+    },
+    {
+      "id": "muadh-qurashi-grandfather",
+      "name": "معاذ القرشي — جدّ نصر",
+      "aliases": [
+        "معاذ",
+        "معاذ القرشي",
+        "جد نصر",
+        "معاذ جد نصر"
+      ],
+      "sourceIds": [
+        "nasai-518-source",
+        "dhakhira-nasai-518"
+      ],
+      "bio": {
+        "narratorId": "muadh-qurashi-grandfather",
+        "text": "جدّ نصر في رواية سعيد بن عامر؛ شخص مستقل عن معاذ بن عفراء في المسار المعروض.",
+        "sourceIds": [
+          "dhakhira-nasai-518"
+        ]
+      }
+    },
+    {
+      "id": "muadh-ibn-afra",
+      "name": "معاذ بن الحارث — ابن عفراء",
+      "aliases": [
+        "معاذ",
+        "معاذ بن عفراء",
+        "معاذ ابن عفراء",
+        "معاذ بن الحارث"
+      ],
+      "sourceIds": [
+        "nasai-518-source",
+        "dhakhira-nasai-518"
+      ],
+      "bio": {
+        "narratorId": "muadh-ibn-afra",
+        "text": "أنصاري شهد بدراً؛ عفراء أمّه. هو الصحابي الذي نقل قول النبي ﷺ في هذه الرواية.",
+        "sourceIds": [
+          "dhakhira-nasai-518"
+        ]
+      },
+      "role": {
+        "narratorId": "muadh-ibn-afra",
+        "type": "companion",
+        "sourceIds": [
+          "dhakhira-nasai-518"
+        ]
+      }
+    }
+  ]
+}
