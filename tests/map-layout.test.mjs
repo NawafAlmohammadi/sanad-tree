@@ -6,6 +6,18 @@ import {wordings} from '../lib/language.mjs';
 import {groundedContext} from '../lib/grounded-assistant.mjs';
 import {answerQuestion} from '../lib/assistant.mjs';
 
+test('intentions wordings retain their own paths and sources after the six chains merge',()=>{
+ const h=catalog.hadiths.find(h=>h.id==='bukhari-1');
+ assert.ok(h,'Intentions report exists');
+ const edge=unifiedGraph(h,catalog.narrators).edges.find(e=>e.from==='umar-ibn-al-khattab'&&e.to==='messenger');
+ const heard=edge.transmissions.find(t=>t.wording==='سمعت');
+ assert.deepEqual(heard.paths.map(p=>p.chainId),['bukhari-1-chain','bukhari-1-via-bukhari-6689','bukhari-1-via-bukhari-6953']);
+ assert.deepEqual(edge.transmissions.find(t=>t.wording==='عن النبي ﷺ قال').paths,[{chainId:'bukhari-1-via-bukhari-2529',sourceIds:['path-bukhari-2529']}]);
+ assert.ok(!heard.paths.some(p=>p.sourceIds.includes('path-bukhari-2529')));
+ const compilerEdge=unifiedGraph(h,catalog.narrators).edges.find(e=>e.from==='compiler'&&e.to==='al-humaydi');
+ assert.ok(compilerEdge.transmissions.every(t=>t.paths.every(p=>h.chains.some(c=>c.id===p.chainId))));
+});
+
 test('all ten unified trees keep their branches spaced and route skipped ranks without adding identities',()=>{
  for(const h of catalog.hadiths)for(const viewport of [350,1200]){
   const g=unifiedGraph(h,catalog.narrators,viewport),byId=new Map(g.nodes.map(n=>[n.key,n]));
