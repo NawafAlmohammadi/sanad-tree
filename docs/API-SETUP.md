@@ -1,17 +1,5 @@
-# ربط المساعد بمفتاحك
+# API setup
 
-**A valid provider API key is required for AI features.** Configure at least one supported provider in `API.env` before using generated explanations, semantic evidence search, AI extraction or adaptive practice. The source-only mode remains explicitly labelled and is not generated AI output.
+A valid model provider key is REQUIRED for generated explanations, semantic search, AI extraction and adaptive practice. Run SETUP.cmd or node scripts/setup.mjs, fill AI_KEY_GEMINI or AI_KEY_GROQ in API.env and restart the server. One provider key is enough. Keep real keys out of GitHub.
 
-١. شغل SETUP.cmd أو node scripts/setup.mjs لإنشاء API.env. احتفظ بالمفتاح على جهازك فقط.
-٢. افتح API.env واكتب AI_KEY_GEMINI= ثم مفتاحك على نفس السطر دون مسافات داخله. احفظ باسم API.env، وأوقف الخادم ثم أعد تشغيله.
-٣. افتح الموقع واختر حديثًا، ثم Gemini من طريقة الإجابة، ثم «اشرح لي هذا السند». كل معلومة يجب أن تحمل المصدر. جرّب طلب البرمجة للتحقق من الامتناع.
-
-## تبديل الموديلات
-
-config/ai-models.json قائمة مزودين. كل عنصر يحدد id وlabel وprovider وmodel وkeyEnv؛ لا يضم المفتاح نفسه. المفتاح في API.env باسم keyEnv، مثل AI_KEY_GEMINI أو AI_KEY_GROQ.
-
-المزودون المدعومون: gemini بواجهة Interactions، openai-compatible بواجهة chat/completions، وanthropic بواجهة messages. مثال بديل في API.env.example؛ لا تستبدل نموذجًا بمعرف غير متاح لحسابك.
-
-يمكن استبدال القائمة كلها بقيمة JSON في AI_MODELS. القيمة [] تعطل الخارجي. الخادم لا يعرض القيم السرية في /api/models؛ يعرض الأسماء وجاهزية وجود مفتاح فقط. لا يستخدم أدوات بحث أو معرفة النموذج العامة في صياغة النصوص؛ يختار أدلة الكتالوج ثم يتحقق البرنامج من معرفاتها ومراجعها. لا يوافق على إجابة حرة أو حذف تنبيه الرواية الموضوعة.
-
-مراجع المزود: [Google AI Studio](https://aistudio.google.com/apikey)، [Interactions](https://ai.google.dev/gemini-api/docs/interactions-overview)، [إدارة مفاتيح Gemini](https://ai.google.dev/gemini-api/docs/api-key). توفر المجانية وحصصها وموديلاتها يراجع من حساب المزود عند الاستخدام.
+Model configuration is in config/ai-models.json. Public source services are separate; they never receive the model key. See [README](../README.md), [approved source APIs](API-SOURCES.md), [AI behaviour](AI-WORKBENCH.md) and [privacy](PRIVACY.md).

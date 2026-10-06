@@ -32,7 +32,7 @@ The geometric SVG ornaments were authored for the project. The presentation uses
 
 ## Hadith data and scholarly references
 
-data/catalog.json records 68 source entries, including title, location, URL and a rights note. SOURCES-REGISTER.md reproduces this metadata, without adding material to the assistant. Narrator summaries and interface explanations are prepared for this project. Ten English hadith quotations are taken verbatim from Sunnah.com, after matching the Arabic text and selected route. See SUNNAH-ENGLISH-AUDIT.md. External links are attribution and verification references, not a blanket redistribution licence. Sunnah.com About, section 8, permits reproducing individual hadith or selections for teaching/didactic/presentation purposes. These ten attributed English records are included as an educational selection under that permission; their owners retain translation rights. No complete third-party pages, books, collections or scans are bundled. Check the relevant owner's conditions before importing larger datasets.
+The active catalog records 104 source entries from guide-approved publishers. Original texts and narrator entries use named Shamela editions; grades cite Dorar and the relevant edition; four published English translations come from HadeethEnc with version notes. See SOURCE-REVIEW.md. Publisher rights are retained; public retrieval or an API does not grant blanket redistribution rights. Confirm applicable permissions for distribution and larger imports. Historical test fixtures are not runtime evidence.
 
 ## AI and hosting services
 
@@ -41,7 +41,7 @@ The hosted demonstration uses Gemini with the existing server-side key. Model ac
 In AI mode the server sends the question and retrieved project evidence to the selected provider. The current Gemini request sets store:false; this does not establish a zero-retention policy for Google's service. Google's unpaid-service terms describe content use and human review. Do not submit personal or confidential material. The intended demonstration audience is adult university students and judges.
 
 - Gemini API terms: https://ai.google.dev/gemini-api/terms (reviewed 3 October 2026).
-- Sunnah.com describes source numbering and translations: https://sunnah.com/about (reviewed 3 October 2026).
+- Approved reference services and source rights: see [API directory](API-SOURCES.md) and [source audit](SOURCE-REVIEW.md).
 - Font licence notices: public/fonts/*-OFL.txt.
 - Installed package licence files: node_modules after npm ci.
 
