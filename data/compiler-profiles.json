@@ -1,0 +1,53 @@
+[
+  {
+    "name": "الإمام البخاري",
+    "nameEn": "Imam al-Bukhari",
+    "fullName": "أبو عبد الله محمد بن إسماعيل بن إبراهيم البخاري",
+    "fullNameEn": "Abu Abdullah Muhammad ibn Ismail ibn Ibrahim al-Bukhari",
+    "birth": "194 هـ",
+    "birthEn": "194 AH",
+    "death": "256 هـ",
+    "deathEn": "256 AH",
+    "book": "صحيح البخاري",
+    "bookEn": "Sahih al-Bukhari",
+    "summary": "من علماء الحديث، رحل لطلب العلم إلى الحجاز والشام ومصر والعراق. استغرق جمع صحيحه وتأليفه نحو ستة عشر عامًا.",
+    "summaryEn": "A hadith scholar who travelled through the Hijaz, Syria, Egypt and Iraq to study. Compiling his Sahih took approximately sixteen years.",
+    "works": "صحيح البخاري، التاريخ الكبير",
+    "worksEn": "Sahih al-Bukhari; al-Tarikh al-Kabir",
+    "source": "https://sunnah.com/bukhari/about"
+  },
+  {
+    "name": "الإمام الترمذي",
+    "nameEn": "Imam at-Tirmidhi",
+    "fullName": "أبو عيسى محمد بن عيسى بن سورة السلمي الترمذي",
+    "fullNameEn": "Abu Isa Muhammad ibn Isa ibn Sawrah as-Sulami at-Tirmidhi",
+    "birth": "209 هـ",
+    "birthEn": "209 AH",
+    "death": "279 هـ",
+    "deathEn": "279 AH",
+    "book": "جامع الترمذي",
+    "bookEn": "Jami at-Tirmidhi",
+    "summary": "عالم بالحديث، درس على البخاري ومسلم وأبي داود. يذكر في جامعه أحكام الروايات، ويشرح الألفاظ الصعبة ويعرض أقوال الفقهاء.",
+    "summaryEn": "A hadith scholar who studied with al-Bukhari, Muslim and Abu Dawud. His Jami discusses report grades, explains difficult expressions and presents jurists’ views.",
+    "works": "جامع الترمذي",
+    "worksEn": "Jami at-Tirmidhi",
+    "source": "https://sunnah.com/tirmidhi/about"
+  },
+  {
+    "name": "الإمام ابن ماجه",
+    "nameEn": "Imam Ibn Majah",
+    "fullName": "أبو عبد الله محمد بن يزيد بن عبد الله الربعي القزويني",
+    "fullNameEn": "Abu Abdullah Muhammad ibn Yazid ibn Abdullah ar-Rabi al-Qazwini",
+    "birth": "209 هـ",
+    "birthEn": "209 AH",
+    "death": "273 هـ",
+    "deathEn": "273 AH",
+    "book": "سنن ابن ماجه",
+    "bookEn": "Sunan Ibn Majah",
+    "summary": "ولد في قزوين، ورحل إلى خراسان والعراق والحجاز ومصر والشام لطلب الحديث. رتّب سننه غالبًا على أبواب الفقه، وكتب أيضًا في التفسير والتاريخ.",
+    "summaryEn": "Born in Qazvin, he travelled to Khurasan, Iraq, the Hijaz, Egypt and Syria to study hadith. His Sunan largely follows legal topics; he also wrote on Quranic interpretation and history.",
+    "works": "السنن، التفسير، التاريخ",
+    "worksEn": "As-Sunan; at-Tafsir; at-Tarikh",
+    "source": "https://sunnah.com/ibnmajah/about"
+  }
+]
