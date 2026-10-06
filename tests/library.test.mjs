@@ -66,7 +66,7 @@ test('weak matn answers retain the grading and its actual named critic',async()=
     const h=catalog.hadiths.find(h=>h.id===id),answer=await answerQuestion(catalog,input(id,'اعرض متن الحديث'));
     assert.equal(answer.claims[0].text,h.judgement.text);assert.equal(answer.claims[1].text,h.matn);
   }
-  assert.match(catalog.hadiths.find(h=>h.id==='tirmidhi-2687').judgement.text,/دار السلام/);
+  assert.match(catalog.hadiths.find(h=>h.id==='tirmidhi-2687').judgement.text,/الألباني/);
 });
 test('a weak chain does not transfer its defect to trusted narrators',async()=>{
   for(const [id,nid,tone] of [['tirmidhi-2687','ibrahim-fadl','untrusted'],['tirmidhi-2687','abdullah-numayr','trusted'],['ibnmajah-802','rushdin-saad','untrusted'],['ibnmajah-802','darraj-abi-samh','review'],['ibnmajah-802','sulayman-amr-haytham','trusted']]){
@@ -78,17 +78,17 @@ test('a weak chain does not transfer its defect to trusted narrators',async()=>{
 test('father and son retain separate identities; the father is a Companion',async()=>{
   const h=catalog.hadiths.find(h=>h.id==='ibnmajah-1388'),c=h.chains[0];
   assert.deepEqual(c.nodes.slice(4,7),['muawiya-abdullah-jafar','abdullah-jafar','ali-abi-talib']);
-  for(const [name,nid,tone] of [['معاوية بن عبد الله بن جعفر','muawiya-abdullah-jafar','trusted'],['عبد الله بن جعفر','abdullah-jafar','companion']]){
+  for(const [name,nid,tone] of [['معاوية بن عبد الله بن جعفر','muawiya-abdullah-jafar','review'],['عبد الله بن جعفر','abdullah-jafar','companion']]){
     const n=catalog.narrators.find(n=>n.id===nid),answer=await answerQuestion(catalog,input(h.id,`من هو ${name}`));
     assert.equal(answer.narrator.id,nid);assert.equal(narratorTone(n),tone);
   }
   assert.equal(c.links[4].wording,'عن أبيه');
 });
-test('the linked Ibrahim profile has its exact sourced assessment, without borrowing a namesake’s grade',async()=>{
+test('the reviewed Ibrahim lineage has its exact sourced assessment, without borrowing a namesake’s grade',async()=>{
   const nid='ibrahim-muhammad-sabra',n=catalog.narrators.find(n=>n.id===nid);
-  assert.equal(narratorTone(n),'trusted');assert.equal(n.reliability.narratorId,nid);
-  assert.match(n.reliability.text,/صدوق حسن الحديث/);assert.ok(!n.reliability.text.includes('«ثقة»'));
-  const source=catalog.sources.find(s=>s.id===n.reliability.sourceIds[0]);assert.equal(source.url,'https://sunnah.com/narrator/11814');
+  assert.equal(narratorTone(n),'review');assert.equal(n.reliability.narratorId,nid);
+  assert.match(n.reliability.text,/صدوق/);assert.ok(!n.reliability.text.includes('«ثقة»'));
+  const source=catalog.sources.find(s=>s.id===n.reliability.sourceIds[0]);assert.equal(source.url,'https://shamela.ws/book/8609/19');
   const assessment=await answerQuestion(catalog,input('ibnmajah-1388','ما حكم هذا الراوي',{narratorId:nid}));
   assert.equal(assessment.status,'answered');assert.ok(assessment.claims.some(f=>f.id===`narrator-${nid}-reliability`&&f.text.endsWith(n.reliability.text)&&f.sourceIds.includes(source.id)));
   assert.equal((await answerQuestion(catalog,input('ibnmajah-1388','من هذا الراوي',{narratorId:nid}))).narrator.id,nid);

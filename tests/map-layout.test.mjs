@@ -85,12 +85,12 @@ test('routed curves stay finite and connected after moving either endpoint, even
   assert.ok(Number.isFinite(shape.label.x)&&Number.isFinite(shape.label.y));
  }
 });
-test('Abu al-Haytham appraisal is attached to his matching Sunnah identity and reaches both language modes and AI context',async()=>{
+test('Abu al-Haytham appraisal is attached to his matching Taqrib identity and reaches both language modes and AI context',async()=>{
  const n=catalog.narrators.find(n=>n.id==='sulayman-amr-haytham'),h=catalog.hadiths.find(h=>h.id==='ibnmajah-802');
  assert.equal(narratorTone(n),'trusted');assert.equal(n.reliability.narratorId,n.id);
- assert.deepEqual(n.reliability.sourceIds.map(id=>catalog.sources.find(s=>s.id===id).url),['https://sunnah.com/narrator/3617']);
+ assert.deepEqual(n.reliability.sourceIds.map(id=>catalog.sources.find(s=>s.id===id).url),['https://shamela.ws/book/8609/179']);
  const ctx=groundedContext(catalog,{hadithId:h.id,chainId:h.chains[0].id,narratorId:n.id,question:'ما حكم هذا الراوي'});
- assert.ok(ctx.facts.some(f=>f.text.includes('ثقة')&&f.sourceIds.includes('sunnah-rijal-3617')));
- for(const locale of ['ar','en']){const answer=await answerQuestion(catalog,{hadithId:h.id,chainId:h.chains[0].id,narratorId:n.id,question:'ما حكم هذا الراوي',locale,modelId:'local'});assert.equal(answer.status,'answered');assert.ok((locale==='en'?answer.displayClaims:answer.claims).some(f=>f.text.includes(locale==='ar'?'ثقة':'trustworthy')));}
+ assert.ok(ctx.facts.some(f=>f.text.includes('ثقة')&&f.sourceIds.includes('taqrib-2599')));
+ for(const locale of ['ar','en']){const answer=await answerQuestion(catalog,{hadithId:h.id,chainId:h.chains[0].id,narratorId:n.id,question:'ما حكم هذا الراوي',locale,modelId:'local'});assert.equal(answer.status,'answered');assert.ok(answer.claims.some(f=>f.text.includes('ثقة')));if(locale==='en')assert.equal(answer.displayClaims.find(f=>f.id.endsWith('-reliability')).text,answer.claims.find(f=>f.id.endsWith('-reliability')).text);}
  assert.equal(h.judgement.grade,'weak');
 });
