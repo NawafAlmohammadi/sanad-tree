@@ -16,7 +16,7 @@ type Props={data:Data;hadith:Hadith;selected:string;onSelect:(id:string)=>void;z
 type Point={x:number;y:number};
 type Note={id:string;color:string;points?:Point[];text?:string;direction?:'rtl'|'ltr';x?:number;y?:number};
 type Tool='move'|'pen'|'eraser'|'text';
-type TraceStep={key:string;chainId:string;pathIndex:number;preceding:string[];edgeKeys:string[];incoming:string|null};
+type TraceStep={key:string;chainId:string;pathIndex:number;preceding:string[];edgeKeys:string[];incoming:string|null;wordings:string[]};
 export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,highlight,onClearHighlight,draft:reviewDraft=false,inspector,library}:Props){
   const {locale,t,name,compiler,trust,wording}=useLanguage();
   const say=(ar:string,en:string)=>locale==='en'?en:ar;
@@ -45,21 +45,23 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
   const world=useMemo(()=>editingWorld(graph),[graph]);
   const people=useMemo(()=>new Map(data.narrators.map(n=>[n.id,n])),[data.narrators]);
   const positions=useMemo(()=>new Map(graph.nodes.map(node=>[node.key,{...node,x:world.paddingX+node.x+(offsets[node.key]?.x??0),y:world.paddingY+node.y+(offsets[node.key]?.y??0)}])),[graph,world,offsets]);
-  function buildEdgeDisplay(){
-    const entries=graph.edges.map(edge=>{const from=positions.get(edge.from)!,to=positions.get(edge.to)!;
-      const full=edge.wordings.map(wording).join(' / ');
-      const caption=edge.wordings.length>1?say(`يروي عن · ${edge.wordings.length} صيغ`,`Narrates from · ${edge.wordings.length} wordings`):full.length>38?say('يروي عن','Narrates from'):full;
-      return {...edge,...linkGeometry(from,to,from.diameter/2,edge.route.map((p:Point)=>({x:p.x+world.paddingX,y:p.y+world.paddingY}))),lines:wrapEdgeLabel(caption)};});
-    const labels=placeEdgeLabels(entries,[...positions.values()]);
-    return new Map(entries.map(edge=>[edge.key,{path:edge.path,lines:edge.lines,...labels.get(edge.key)!}]));
-  }
-  const edgeDisplay=useMemo(buildEdgeDisplay,[graph,world,positions,wording,locale]);
   const journey=useMemo<TraceStep[]>(()=>traceSteps(hadith,data.narrators),[hadith,data.narrators]);
   const last=journey.length-1;
   const [cursor,setCursor]=useState(-1),[playing,setPlaying]=useState(false),[finished,setFinished]=useState(false);
   const step=journey[cursor];
   const active=graph.nodes.find(n=>n.key===step?.key);
-  const trace=useMemo(()=>({nodes:new Set(journey.slice(0,cursor+1).map(s=>s.key)),edges:new Set(journey.slice(0,cursor+1).flatMap(s=>s.edgeKeys)),preceding:new Set(step?.preceding??[])}),[journey,cursor,step]);
+  const trace=useMemo(()=>({nodes:new Set(!finished&&step?[...step.preceding,step.key]:[]),edges:new Set(!finished?step?.edgeKeys??[]:[]),preceding:new Set(!finished?step?.preceding??[]:[])}),[step,finished]);
+  function buildEdgeDisplay(){
+    const entries=graph.edges.map(edge=>{const from=positions.get(edge.from)!,to=positions.get(edge.to)!;
+      const full=edge.wordings.map(wording).join(' / ');
+      const caption=edge.wordings.length>1?say(`يروي عن · ${edge.wordings.length} صيغ`,`Narrates from · ${edge.wordings.length} wordings`):full.length>38?say('يروي عن','Narrates from'):full;
+      const traceLabels=playing&&step?.incoming===edge.key?step.wordings.map(w=>wrapEdgeLabel(wording(w))):[];
+      const baseLines=traceLabels.length&&edge.wordings.length===1?[]:wrapEdgeLabel(caption);
+      return {...edge,...linkGeometry(from,to,from.diameter/2,edge.route.map((p:Point)=>({x:p.x+world.paddingX,y:p.y+world.paddingY}))),baseLines,traceLabels,lines:[...baseLines,...traceLabels.flat()]};});
+    const labels=placeEdgeLabels(entries,[...positions.values()]);
+    return new Map(entries.map(edge=>[edge.key,{path:edge.path,lines:edge.lines,baseLines:edge.baseLines,traceLabels:edge.traceLabels,...labels.get(edge.key)!}]));
+  }
+  const edgeDisplay=useMemo(buildEdgeDisplay,[graph,world,positions,wording,locale,playing,step]);
   const reduced=useRef(false),manualUntil=useRef(0);
   const canvasRef=useRef<HTMLDivElement>(null),cardsRef=useRef<Array<HTMLElement|null>>([]);
   const marker='sanad-arrow-'+useId().replace(/[^a-zA-Z0-9]/g,'');
@@ -228,7 +230,7 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
           <svg className="graph-connections" viewBox={'0 0 '+world.width+' '+world.height} role="group" aria-label={say('وصلات السند','Chain connections')}><defs><marker id={marker} markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="currentColor"/></marker></defs>{graph.edges.map(edge=>{
             const display=edgeDisplay.get(edge.key)!;
             const traversed=trace.edges.has(edge.key),focused=playing&&step?.incoming===edge.key;
-            return <g key={edge.key} ref={el=>{if(el)edgeElements.current.set(edge.key,el);else edgeElements.current.delete(edge.key);}} data-edge-from={edge.from} data-edge-to={edge.to} className={'graph-edge '+(traversed?'is-traced ':'')+(focused?'is-current ':'')+(highlight?(highlight.edgeKeys.includes(`${edge.from}|${edge.to}`)?'ai-highlighted':'ai-muted'):'')}><path d={display.path} markerEnd={'url(#'+marker+')'}/><g className="edge-caption" role="button" tabIndex={0} aria-label={say('عرض صيغ الرواية','Show transmission wordings')} onClick={()=>inspectEdge(edge.key)} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();e.stopPropagation();inspectEdge(edge.key);}}} transform={`translate(${display.x} ${display.y})`}><rect x={-display.width/2} y={-display.height/2} width={display.width} height={display.height} rx="6"/><text textAnchor="middle" direction={locale==='ar'?'rtl':'ltr'}>{display.lines.map((line:string,i:number)=><tspan key={i} x="0" y={(i-(display.lines.length-1)/2)*16+4}>{line}</tspan>)}</text></g></g>;
+            return <g key={edge.key} ref={el=>{if(el)edgeElements.current.set(edge.key,el);else edgeElements.current.delete(edge.key);}} data-edge-from={edge.from} data-edge-to={edge.to} className={'graph-edge '+(traversed?'is-traced ':'')+(focused?'is-current ':'')+(highlight?(highlight.edgeKeys.includes(`${edge.from}|${edge.to}`)?'ai-highlighted':'ai-muted'):'')}><path d={display.path} markerEnd={'url(#'+marker+')'}/><g className="edge-caption" role="button" tabIndex={0} aria-label={say('عرض صيغ الرواية','Show transmission wordings')} onClick={()=>inspectEdge(edge.key)} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();e.stopPropagation();inspectEdge(edge.key);}}} transform={`translate(${display.x} ${display.y})`}><rect x={-display.width/2} y={-display.height/2} width={display.width} height={display.height} rx="6"/><text textAnchor="middle" direction={locale==='ar'?'rtl':'ltr'}>{display.baseLines.map((line:string,i:number)=><tspan key={i} x="0" y={(i-(display.lines.length-1)/2)*16+4}>{line}</tspan>)}</text>{display.traceLabels.map((lines:string[],i:number)=><text key={`${step?.chainId}:${cursor}:${i}`} className="trace-wording" data-trace-chain={step?.chainId} textAnchor="middle" direction={locale==='ar'?'rtl':'ltr'} style={{animationDuration:`${2100/display.traceLabels.length}ms`,animationDelay:`${150+i*2100/display.traceLabels.length}ms`}}>{lines.map((line,j)=><tspan key={j} x="0" y={(display.baseLines.length+display.traceLabels.slice(0,i).flat().length+j-(display.lines.length-1)/2)*16+4}>{line}</tspan>)}</text>)}</g></g>;
           })}</svg>
           {graph.nodes.map(node=>{
             const person=people.get(node.key),tone=person?narratorTone(person):'compiler',Icon=person?icons[tone as keyof typeof icons]:BookOpen;
