@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {graphPoint,clampNode,hitsStroke,editingWorld,clampTranslation} from '../lib/map-editor.mjs';
+import {graphPoint,clampNode,hitsStroke,editingWorld,clampTranslation,translateAnnotation} from '../lib/map-editor.mjs';
 import {curvedLink} from '../lib/sanad-map.mjs';
 
 test('pointer coordinates follow zoom and viewport offsets without shifting the graph',()=>{
@@ -36,4 +36,14 @@ test('text movement clamps its full measured bounds, including RTL and multiline
   assert.equal(box.x+delta.x,12);assert.equal(box.y+delta.y,12);
   const far=clampTranslation({x:9000,y:9000},box,2260,2800);
   assert.equal(box.x+box.width+far.x,2248);assert.equal(box.y+box.height+far.y,2788);
+});
+test('whole-stroke movement preserves shape and undo snapshots, and erasing follows the new position',()=>{
+  const note={id:'drawing',color:'#f87171',points:[{x:100,y:100},{x:130,y:150},{x:170,y:180}]};
+  const snapshot=JSON.stringify(note),delta={x:250,y:-50},moved=translateAnnotation(note,delta);
+  assert.deepEqual(moved.points,[{x:350,y:50},{x:380,y:100},{x:420,y:130}]);
+  assert.equal(moved.id,note.id);assert.equal(moved.color,note.color);assert.equal(JSON.stringify(note),snapshot);
+  assert.equal(hitsStroke({x:380,y:100},moved.points),true);assert.equal(hitsStroke({x:130,y:150},moved.points),false);
+  assert.deepEqual(translateAnnotation(moved,{x:-250,y:50}),note);
+  assert.deepEqual(translateAnnotation({id:'dot',points:[{x:10,y:20}]},{x:3,y:4}).points,[{x:13,y:24}]);
+  assert.deepEqual(translateAnnotation({id:'text',x:40,y:60,text:'ملاحظة'},{x:10,y:-20}),{id:'text',x:50,y:40,text:'ملاحظة'});
 });
