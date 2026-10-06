@@ -1,6 +1,6 @@
 # Source audit — 6 October 2026
 
-This is a technical, source-by-source migration record, not human scholarly approval. The ten report selections, preserved Arabic matns and 22 route node orders are unchanged. Active references now use the guide-approved Shamela editions, Dorar and HadeethEnc. All 104 catalog sources carry provider, review date and literal evidence. Old links exist only in isolated regression fixtures.
+This is a technical, source-by-source migration record, not human scholarly approval. The ten report selections, preserved Arabic matns and 22 route node orders are unchanged. Active references now use the guide-approved Shamela editions, Dorar and HadeethEnc. All 105 catalog sources carry provider, review date and literal evidence. Old links exist only in isolated regression fixtures.
 
 ## Editions
 
@@ -39,7 +39,7 @@ The preserved matn is not silently relabelled as the exact wording of the newly 
 | Report | Path | Source |
 | --- | --- | --- |
 | إنما الأعمال بالنيات | سند الحديث الأول في صحيح البخاري | [ج1 - ص6 - كتاب صحيح البخاري ط السلطانية - باب كيف كان بدء الوحي إلى رسول الله · حديث 1](https://shamela.ws/book/1681/10) |
-| إنما الأعمال بالنيات | صحيح البخاري 54 | [ج1 - ص20 - كتاب صحيح البخاري ط السلطانية - باب ما جاء أن الأعمال بالنية · حديث 54](https://shamela.ws/book/1681/104) |
+| إنما الأعمال بالنيات | صحيح البخاري 54 | [ج1 - ص20 - كتاب صحيح البخاري ط السلطانية - باب ما جاء أن الأعمال بالنية · حديث 54](https://shamela.ws/book/1681/105) |
 | إنما الأعمال بالنيات | صحيح البخاري 2529 | [ج3 - ص145 - كتاب صحيح البخاري ط السلطانية - باب الخطإ والنسيان في العتاقة والطلاق · حديث 2529](https://shamela.ws/book/1681/4021) |
 | إنما الأعمال بالنيات | صحيح البخاري 5070 | [ج7 - ص3 - كتاب صحيح البخاري ط السلطانية - باب من هاجر أو عمل خيرا لتزويج امرأة فله ما نوى · حديث 5070](https://shamela.ws/book/1681/7555) |
 | إنما الأعمال بالنيات | صحيح البخاري 6689 | [ج8 - ص140 - كتاب صحيح البخاري ط السلطانية - باب النية في الأيمان · حديث 6689](https://shamela.ws/book/1681/9984) |
@@ -109,7 +109,7 @@ The preserved matn is not silently relabelled as the exact wording of the newly 
 | سعيد بن مروان البغدادي | [ص241 - كتاب تقريب التهذيب - ذكر من اسمه سعيد إلى آخر حرف السين · ترجمة 2390 · تحقيق محمد عوامة، دار الرشيد، 1406 هـ](https://shamela.ws/book/8609/167) | ابن حجر في تقريب التهذيب: «صدوق كان يستملي على أحمد مات سنة اثنتين وخمسين من الحادية عشرة خ ق». |
 | عنبسة بن عبد الرحمن | [ص433 - كتاب تقريب التهذيب - ذكر من اسمه عمير مصغر وعميرة بفتح أوله · ترجمة 5206 · تحقيق محمد عوامة، دار الرشيد، 1406 هـ](https://shamela.ws/book/8609/359) | ابن حجر في تقريب التهذيب: «متروك رماه أبو حاتم بالوضع من الثامنة ت ق». |
 | عِلاق بن أبي مسلم | [ص436 - كتاب تقريب التهذيب - ذكر من اسمه عمير مصغر وعميرة بفتح أوله · ترجمة 5265 · تحقيق محمد عوامة، دار الرشيد، 1406 هـ](https://shamela.ws/book/8609/362) | ابن حجر في تقريب التهذيب: «مجهول من الخامسة ق». |
-| أبان بن عثمان بن عفان | [ص87 - كتاب تقريب التهذيب - ذكر من اسمه إبراهيم · ترجمة 141 · تحقيق محمد عوامة، دار الرشيد، 1406 هـ](https://shamela.ws/book/8609/13) | ابن حجر في تقريب التهذيب: «ثقة من الثالثة مات سنة خمس ومائة بخ م ٤». |
+| أبان بن عثمان بن عفان | [ص87 - كتاب تقريب التهذيب - ذكر من اسمه إبراهيم · ترجمة 144 · تحقيق محمد عوامة، دار الرشيد، 1406 هـ](https://shamela.ws/book/8609/13) | ابن حجر في تقريب التهذيب: «ثقة من الثالثة مات سنة خمس ومائة بخ م ٤». |
 | عثمان بن عفان | [ص385 - كتاب تقريب التهذيب - ذكر من اسمه عبيدة بفتح أوله · ترجمة 4503 · تحقيق محمد عوامة، دار الرشيد، 1406 هـ](https://shamela.ws/book/8609/311) | companion |
 | محمد بن المصفّى الحمصي | [ص507 - كتاب تقريب التهذيب - ذكر من اسمه محمد · ترجمة 6304 · تحقيق محمد عوامة، دار الرشيد، 1406 هـ](https://shamela.ws/book/8609/433) | ابن حجر في تقريب التهذيب: «صدوق له أوهام وكان يدلس من العاشرة مات سنة ست وأربعين د س ق». |
 | محمد بن حرب الخولاني | [ص473 - كتاب تقريب التهذيب - ذكر من اسمه محمد · ترجمة 5805 · تحقيق محمد عوامة، دار الرشيد، 1406 هـ](https://shamela.ws/book/8609/399) | ابن حجر في تقريب التهذيب: «ثقة من التاسعة مات سنة أربع وتسعين [ومائة] ع». |
@@ -123,7 +123,7 @@ The preserved matn is not silently relabelled as the exact wording of the newly 
 | سفيان بن سعيد الثوري | [ص244 - كتاب تقريب التهذيب - ذكر من اسمه سعيد إلى آخر حرف السين · ترجمة 2445 · تحقيق محمد عوامة، دار الرشيد، 1406 هـ](https://shamela.ws/book/8609/170) | ابن حجر في تقريب التهذيب: «ثقة حافظ فقيه عابد إمام حجة من رؤوس الطبقة السابعة وكان ربما دلس مات سنة إحدى وستين وله أربع وستون ع». |
 | عبد الوهاب بن عبد المجيد الثقفي | [ص368 - كتاب تقريب التهذيب - ذكر من اسمه عبد الرحيم وما بعده · ترجمة 4261 · تحقيق محمد عوامة، دار الرشيد، 1406 هـ](https://shamela.ws/book/8609/294) | ابن حجر في تقريب التهذيب: «ثقة تغير قبل موته بثلاث سنين من الثامنة مات سنة أربع وتسعين عن نحو من ثمانين سنة ع». |
 | أبو النعمان محمد بن الفضل السدوسي | [ص502 - كتاب تقريب التهذيب - ذكر من اسمه محمد · ترجمة 6226 · تحقيق محمد عوامة، دار الرشيد، 1406 هـ](https://shamela.ws/book/8609/428) | ابن حجر في تقريب التهذيب: «ثقة ثبت تغير في آخر عمره من صغار التاسعة مات سنة ثلاث أو أربع وعشرين ع». |
-| حماد بن زيد الأزدي | [ص178 - كتاب تقريب التهذيب - ذكر من اسمه حكيم بضم أوله وهم أربعة · ترجمة 1498 · تحقيق محمد عوامة، دار الرشيد، 1406 هـ](https://shamela.ws/book/8609/104) | ابن حجر في تقريب التهذيب: «ثقة ثبت فقيه قيل إنه كان ضريرا ولعله طرأ عليه لأنه صح أنه كان يكتب من كبار الثامنة مات سنة تسع وسبعين وله إحدى وثمانون سنة ع». |
+| حماد بن زيد الأزدي | [ص178 - كتاب تقريب التهذيب - ذكر من اسمه حكيم بضم أوله وهم أربعة · ترجمة 1498 · تحقيق محمد عوامة، دار الرشيد، 1406 هـ](https://shamela.ws/book/8609/105) | ابن حجر في تقريب التهذيب: «ثقة ثبت فقيه قيل إنه كان ضريرا ولعله طرأ عليه لأنه صح أنه كان يكتب من كبار الثامنة مات سنة تسع وسبعين وله إحدى وثمانون سنة ع». |
 | أبو نعيم الفضل بن دكين | [ص446 - كتاب تقريب التهذيب - ذكر من اسمه الفضل · ترجمة 5401 · تحقيق محمد عوامة، دار الرشيد، 1406 هـ](https://shamela.ws/book/8609/372) | ابن حجر في تقريب التهذيب: «ثقة ثبت من التاسعة مات سنة ثماني عشرة وقيل تسع عشرة وكان مولده سنة ثلاثين وهو من كبار شيوخ البخاري ع». |
 | زكريا بن أبي زائدة الوادعي | [ص216 - كتاب تقريب التهذيب - حرف الزاي · ترجمة 2022 · تحقيق محمد عوامة، دار الرشيد، 1406 هـ](https://shamela.ws/book/8609/142) | ابن حجر في تقريب التهذيب: «ثقة وكان يدلس وسماعه من أبي إسحاق بأخرة من السادسة مات سنة سبع أو ثمان أو تسع وأربعين ع». |
 | عبد العزيز بن عبد الله الأويسي | [ص357 - كتاب تقريب التهذيب - ذكر من اسمه عبد الرحيم وما بعده · ترجمة 4106 · تحقيق محمد عوامة، دار الرشيد، 1406 هـ](https://shamela.ws/book/8609/283) | ابن حجر في تقريب التهذيب: «ثقة من كبار العاشرة خ د ت كن ق». |
@@ -147,3 +147,9 @@ The preserved matn is not silently relabelled as the exact wording of the newly 
 Four published HadeethEnc translations are included: [intentions 4560](https://hadeethenc.com/en/browse/hadith/4560), [Muslim's tongue and hand 10101](https://hadeethenc.com/en/browse/hadith/10101), [speak good 5437](https://hadeethenc.com/en/browse/hadith/5437), and [do not become angry 4709](https://hadeethenc.com/en/browse/hadith/4709). Each record contains the publisher's Arabic version and a wording/version note. The longer intentions version is not falsely labelled as a verbatim translation of Bukhari 1. The six other reports retain Arabic; a reviewed English quotation from the new registry was not verified. Old biography/judgement translations are withheld pending source-bound linguistic review.
 
 Book compiler profiles cite their own Siyar passages. Dates without sufficient checked evidence are explicitly unavailable. No new scholar's judgement has been generated.
+
+## Appraisal display correction
+
+Explicitly trustworthy narrators remain green even when the same source mentions tadlis or late changes in memory. Their complete qualifications remain visible in the attributed appraisal; a green colour is not a verdict on every transmission. Straightforward truthfulness assessments are also green. Qualified weak, unknown or conditional assessments remain marked for review without the misleading label "فيه شك". Yahya ibn Qazaa additionally cites al-Daraqutni's "ثقة" in [Mawsuat aqwal al-Daraqutni, 2:712, entry 3866](https://shamela.ws/book/12764/4337), Alam al-Kutub, first edition 2001, quoting al-Hakim question 510. Ibn Hajar's "مقبول" remains recorded alongside it.
+
+Al-Bukhari's birth in Shawwal 194 AH is cited to [Siyar 12:392](https://shamela.ws/book/10906/7881); his death on the eve of Eid al-Fitr 256 AH is cited to [Siyar 12:468](https://shamela.ws/book/10906/7957). Clicking the report title or its map card opens the original text, grading and per-path references in the interactive left inspector, including fullscreen.
