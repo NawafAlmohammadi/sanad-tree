@@ -103,3 +103,13 @@ Open **http://127.0.0.1:5173**. Keep the server running while using the site.
 - [Sources](docs/SOURCES-REGISTER.md)
 - [API setup](docs/API-SETUP.md)
 - [Tools and licences](docs/TOOLS-AND-LICENSES.md)
+
+## Project credits
+
+Developed by **Nawaf Naif Al-Mohammadi**.
+
+Technical advisor: **Dr. Ahmad Badr al-Din al-Khidr**.
+
+**Islamic University of Madinah**.
+
+The final map editor supports moving entire pen drawings and six annotation colours: red, yellow, blue, green, gold and white.
