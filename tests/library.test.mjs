@@ -86,7 +86,7 @@ test('father and son retain separate identities; the father is a Companion',asyn
 });
 test('the reviewed Ibrahim lineage has its exact sourced assessment, without borrowing a namesake’s grade',async()=>{
   const nid='ibrahim-muhammad-sabra',n=catalog.narrators.find(n=>n.id===nid);
-  assert.equal(narratorTone(n),'review');assert.equal(n.reliability.narratorId,nid);
+  assert.equal(narratorTone(n),'trusted');assert.equal(n.reliability.narratorId,nid);
   assert.match(n.reliability.text,/صدوق/);assert.ok(!n.reliability.text.includes('«ثقة»'));
   const source=catalog.sources.find(s=>s.id===n.reliability.sourceIds[0]);assert.equal(source.url,'https://shamela.ws/book/8609/19');
   const assessment=await answerQuestion(catalog,input('ibnmajah-1388','ما حكم هذا الراوي',{narratorId:nid}));
