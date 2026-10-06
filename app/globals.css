@@ -777,3 +777,6 @@ main{width:100%;max-width:none;padding:16px clamp(12px,1.2vw,28px) 0}
 .hadith-profile blockquote{margin:14px 0;font-size:19px;line-height:2;overflow-wrap:anywhere}
 .hadith-path-source{padding:12px 0;border-bottom:1px solid var(--line)}
 .hadith-path-source summary{cursor:pointer;color:var(--accent);font-size:14px;line-height:1.8}
+.map-hadith-open{display:inline-flex;align-items:center;justify-content:center;width:100%;padding:10px;margin-top:12px;color:var(--accent);font-family:inherit;font-size:14px;background:transparent;border:1px solid var(--line);border-radius:8px;cursor:pointer}
+.map-hadith-open:hover{background:var(--soft)}
+.map-hadith-open:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
