@@ -4,39 +4,43 @@
     "nameEn": "Imam al-Bukhari",
     "fullName": "أبو عبد الله محمد بن إسماعيل بن إبراهيم البخاري",
     "fullNameEn": "Abu Abdullah Muhammad ibn Ismail ibn Ibrahim al-Bukhari",
-    "birth": "194 هـ",
-    "birthEn": "194 AH",
-    "death": "256 هـ",
-    "deathEn": "256 AH",
+    "birth": "لم تُثبت هنا",
+    "birthEn": "Not recorded here",
+    "death": "لم تُثبت هنا",
+    "deathEn": "Not recorded here",
     "book": "صحيح البخاري",
     "bookEn": "Sahih al-Bukhari",
-    "summary": "من علماء الحديث، رحل لطلب العلم إلى الحجاز والشام ومصر والعراق. استغرق جمع صحيحه وتأليفه نحو ستة عشر عامًا.",
-    "summaryEn": "A hadith scholar who travelled through the Hijaz, Syria, Egypt and Iraq to study. Compiling his Sahih took approximately sixteen years.",
-    "works": "صحيح البخاري، التاريخ الكبير",
-    "worksEn": "Sahih al-Bukhari; al-Tarikh al-Kabir",
-    "source": "https://sunnah.com/bukhari/about"
+    "summary": "نقل الذهبي في سير أعلام النبلاء قول البخاري: «صنفت الصحيح في ست عشرة سنة». ",
+    "works": "صحيح البخاري",
+    "source": "https://shamela.ws/book/10906/7894",
+    "sources": [
+      "https://shamela.ws/book/10906/7894"
+    ]
   },
   {
     "name": "الإمام الترمذي",
     "nameEn": "Imam at-Tirmidhi",
     "fullName": "أبو عيسى محمد بن عيسى بن سورة السلمي الترمذي",
     "fullNameEn": "Abu Isa Muhammad ibn Isa ibn Sawrah as-Sulami at-Tirmidhi",
-    "birth": "209 هـ",
-    "birthEn": "209 AH",
+    "birth": "في حدود 210 هـ، كما في سير أعلام النبلاء",
+    "birthEn": "Around 210 AH · see the original source",
     "death": "279 هـ",
     "deathEn": "279 AH",
     "book": "جامع الترمذي",
     "bookEn": "Jami at-Tirmidhi",
-    "summary": "عالم بالحديث، درس على البخاري ومسلم وأبي داود. يذكر في جامعه أحكام الروايات، ويشرح الألفاظ الصعبة ويعرض أقوال الفقهاء.",
-    "summaryEn": "A hadith scholar who studied with al-Bukhari, Muslim and Abu Dawud. His Jami discusses report grades, explains difficult expressions and presents jurists’ views.",
-    "works": "جامع الترمذي",
-    "worksEn": "Jami at-Tirmidhi",
-    "source": "https://sunnah.com/tirmidhi/about"
+    "summary": "ذكر الذهبي رحلته وسماعه بخراسان والعراق والحرمين. هذه نبذة مقتبسة من سير أعلام النبلاء، لا حصر لجميع شيوخه.",
+    "works": "الجامع، الشمائل",
+    "source": "https://shamela.ws/book/10906/8390",
+    "sources": [
+      "https://shamela.ws/book/10906/8389",
+      "https://shamela.ws/book/10906/8390",
+      "https://shamela.ws/book/10906/8396"
+    ]
   },
   {
     "name": "الإمام ابن ماجه",
     "nameEn": "Imam Ibn Majah",
-    "fullName": "أبو عبد الله محمد بن يزيد بن عبد الله الربعي القزويني",
+    "fullName": "أبو عبد الله محمد بن يزيد القزويني",
     "fullNameEn": "Abu Abdullah Muhammad ibn Yazid ibn Abdullah ar-Rabi al-Qazwini",
     "birth": "209 هـ",
     "birthEn": "209 AH",
@@ -44,10 +48,12 @@
     "deathEn": "273 AH",
     "book": "سنن ابن ماجه",
     "bookEn": "Sunan Ibn Majah",
-    "summary": "ولد في قزوين، ورحل إلى خراسان والعراق والحجاز ومصر والشام لطلب الحديث. رتّب سننه غالبًا على أبواب الفقه، وكتب أيضًا في التفسير والتاريخ.",
-    "summaryEn": "Born in Qazvin, he travelled to Khurasan, Iraq, the Hijaz, Egypt and Syria to study hadith. His Sunan largely follows legal topics; he also wrote on Quranic interpretation and history.",
-    "works": "السنن، التفسير، التاريخ",
-    "worksEn": "As-Sunan; at-Tafsir; at-Tarikh",
-    "source": "https://sunnah.com/ibnmajah/about"
+    "summary": "ذكر الذهبي أنه مصنف السنن والتاريخ والتفسير، وأنه ارتحل لكتابة الحديث. رجح وفاته سنة 273 هـ مع ذكر قول آخر.",
+    "works": "السنن، التاريخ، التفسير",
+    "source": "https://shamela.ws/book/10906/8398",
+    "sources": [
+      "https://shamela.ws/book/10906/8396",
+      "https://shamela.ws/book/10906/8398"
+    ]
   }
 ]
