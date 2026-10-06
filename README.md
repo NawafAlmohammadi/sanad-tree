@@ -2,16 +2,24 @@
 
 **[Live demo](https://sanad-tree.nawaf-alsaadi.chatgpt.site/)** · **[Current release — 6 October 2026](docs/RELEASE-2026-10-06.md)**
 
-Explore recorded hadith transmission paths and their sources with an evidence-grounded AI assistant. This package matches the live demo's interface, data, model configuration and application logic.
+Explore recorded hadith transmission paths and their sources with an AI assistant grounded in the competition scientific reference guide. This package matches the live demo's interface, data, model configuration and application logic. Hosting adapters differ: the demo uses Cloudflare, and this package runs a local Node server.
 
 - Merged chain maps, connected narrator dragging, fullscreen, drawing and movable notes.
 - An in-map hadith library and side panels for narrators, book compilers and transmission wordings.
 - Sequential path tracing with one illuminated path and exact source wording fades.
 - A unified AI assistant, hadith-to-tree extraction and interactive practice, in Arabic and English.
 
+## Scientific references
+
+The same ten reports and 22 paths remain. Active references now use named Shamela editions, Dorar grades and published HadeethEnc translations. The assistant can retrieve approved original passages through Islamic Content MCP. Four verified English hadith translations include Arabic-version notes; the other six reports retain Arabic rather than an invented translation.
+
+[Guide compliance and pending human review](docs/SCIENTIFIC-REFERENCE-COMPLIANCE.md) · [Source audit](docs/SOURCE-REVIEW.md) · [Approved APIs](docs/API-SOURCES.md) · [Privacy](docs/PRIVACY.md).
+
+**Formal scientific and linguistic human approval remains required.** Model checks and automated tests do not replace it. Dorar live access was blocked during review; verified library quotations remain available.
+
 ## Download
 
-[Download ZIP](https://github.com/Nawafhikari/sanad-tree/archive/refs/heads/main.zip), then extract it completely. Open the extracted folder containing `package.json`.
+[Download ZIP](https://github.com/NawafAlmohammadi/sanad-tree/archive/refs/heads/main.zip), then extract it completely. Open the extracted folder containing `package.json`.
 
 Install [Node.js LTS](https://nodejs.org/en/download) first. Node.js 22.13 or newer is required; npm is included.
 
