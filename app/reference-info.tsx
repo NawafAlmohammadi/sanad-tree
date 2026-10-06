@@ -1,0 +1,12 @@
+'use client';
+import {REFERENCE_SERVICES} from '@/lib/reference-policy.mjs';
+import {useLanguage} from './language';
+export default function ReferenceInfo(){
+ const {locale}=useLanguage(),en=locale==='en';
+ return <section className="profile-section"><h3>{en?'Scientific references and privacy':'المرجعية العلمية والخصوصية'}</h3>
+ <p>{en?'Original reports and narrator entries use reviewed Shamela editions; reported grades cite Dorar and name the scholar. Published translations come from HadeethEnc. Search may retrieve original passages through the official Islamic Content service.':'النصوص وتراجم الرجال من طبعات الشاملة المحددة، والأحكام من الدرر السنية مع اسم المحدث، والترجمات المنشورة من موسوعة الأحاديث النبوية. يسترجع البحث مقاطع المصدر عبر خدمة المحتوى الإسلامي الرسمية.'}</p>
+ <p>{en?'AI explanations are checked against their evidence. This is automated checking, not human scholarly approval. Personal fatwas and disputed cases are referred to qualified specialists.':'يُفحص شرح الذكاء الاصطناعي مع أدلته؛ هذا فحص آلي وليس اعتمادًا علميًا بشريًا. تُحال الفتاوى الشخصية والمسائل الخلافية إلى المختصين.'}</p>
+ <p>{en?'Your question, relevant source passages and recent questions are sent to the chosen model provider. Questions are not saved by Sanad; they remain in this page session. The provider’s own retention policy applies. Do not include contact or identity details. We do not ask about or profile religious beliefs.':'يُرسل سؤالك والمقاطع اللازمة والأسئلة الأخيرة إلى مزوّد النموذج المختار. لا يحفظ سَنَد الأسئلة؛ تبقى في جلسة الصفحة، وتطبق سياسة الاحتفاظ الخاصة بالمزوّد. لا تضع بيانات اتصال أو هوية. لا نسأل عن المعتقدات ولا ننشئ ملفات عنها.'}</p>
+ <details><summary>{en?'Reference services and access limits':'الخدمات المرجعية وحدود الوصول'}</summary><ul>{REFERENCE_SERVICES.map(s=><li key={s.id}><a href={s.url} target="_blank" rel="noopener noreferrer">{s.name}</a> — {s.scope}{s.mode==='reference-only'?(en?' · reference only':' · رابط مرجعي'):null}</li>)}</ul><p>{en?'Dorar’s live API was blocked during the 6 October 2026 check. The verified library references remain readable; an unavailable service never supplies generated evidence. A published hadith translation usually omits the full chain. Paste a full original chain when no matching chain can be retrieved.':'حُجبت واجهة الدرر المباشرة أثناء فحص 6 أكتوبر 2026. تبقى مراجع المكتبة المتحقق منها متاحة؛ تعذر الخدمة لا يبرر توليد أدلة. غالبًا لا تتضمن الترجمة المنشورة كامل السند؛ ألصق الإسناد الأصلي عندما يتعذر جلبه.'}</p></details>
+ </section>;
+}

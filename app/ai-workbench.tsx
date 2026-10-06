@@ -41,9 +41,9 @@ export default function AIWorkbench({data,hadith,modelId,models,onModel,assistan
     if(mode==='extract'){setExtraction(null);setDraftNarrator('');}
     try {
       const response=await fetch('/api/ai-workbench',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({...payload,action:mode,locale,modelId}),signal:controller.current.signal});
-      const result=await response.json() as {status:string;error?:string;exercise?:Exercise}&Partial<Extraction>;if(turn!==revision.current)return;
+      const result=await response.json() as {status:string;error?:string;answer?:string;exercise?:Exercise}&Partial<Extraction>;if(turn!==revision.current)return;
       if(!response.ok)throw new Error(message(result.error||'SERVICE'));
-      if(result.status==='refused'){setError(say('لم يجد النموذج أدلة كافية لهذا الطلب. لم نُكمل المعلومات بالتخمين.','The model could not find enough evidence for this request. Missing information has been left unresolved.'));return;}
+      if(result.status==='refused'||result.status==='referral'){setError(result.answer||say('لم يجد النموذج أدلة كافية لهذا الطلب. لم نُكمل المعلومات بالتخمين.','The model could not find enough evidence for this request. Missing information has been left unresolved.'));return;}
       if(mode==='extract'&&['draft','recorded'].includes(result.status))setExtraction(result as Extraction);
       else if(result.status==='not_found'){setError(say('لم نعثر على إسناد مطابق. ألصق الحديث بإسناده.','No matching chain was found. Paste the report with its chain.'));return;}
       else if(mode==='learn'&&result.status==='exercise'){setExercise(result.exercise||null);setChoice('');}
@@ -58,6 +58,7 @@ export default function AIWorkbench({data,hadith,modelId,models,onModel,assistan
     <div className="lab-heading"><div><span className="eyebrow"><Sparkles size={15}/>{say('ذكاء اصطناعي يستند إلى الأدلة','AI grounded in evidence')}</span><h2 id="ai-workbench-title">{say('من النص إلى الفهم','From text to understanding')}</h2><p>{say('اسأل، قارن، أو حوّل الحديث إلى شجرة.','Ask, compare, or turn a hadith into a tree.')}</p></div><label className="lab-model">{say('النموذج','Model')}<select aria-label={say('نموذج أدوات الذكاء الاصطناعي','AI workbench model')} value={modelId} onChange={e=>{controller.current?.abort();revision.current++;setBusy(false);setError('');onTabChange();onModel(e.target.value);}}>{models.map(m=><option key={m.id} value={m.id} disabled={!m.ready}>{m.id==='local'?t('الإجابة من المصادر · دون نموذج خارجي'):m.label}</option>)}</select></label></div>
     <div className="lab-tabs" role="tablist" aria-label={say('مزايا الذكاء الاصطناعي','AI features')}>{([{id:'ask',icon:MessageCircle,ar:'مساعد سَنَد',en:'Sanad assistant'},{id:'extract',icon:ScanText,ar:'حديث إلى شجرة',en:'Hadith to tree'},{id:'learn',icon:GraduationCap,ar:'تدريب تفاعلي',en:'Adaptive practice'}] as const).map(({id,icon:Icon,ar,en})=><button id={'lab-tab-'+id} key={id} role="tab" aria-selected={mode===id} aria-controls={'lab-panel-'+id} onClick={()=>selectMode(id)}><Icon size={19}/>{say(ar,en)}</button>)}</div>
     <div className="lab-body" role="tabpanel" id={'lab-panel-'+mode} aria-labelledby={'lab-tab-'+mode}>
+      <p className="assistant-note">{say('ذكاء اصطناعي، وليس فتوى. لا تدخل بيانات شخصية؛ يُرسل الطلب والمقاطع اللازمة إلى مزوّد النموذج.','AI assistance, not a fatwa. Avoid personal details; your request and relevant passages go to the model provider.')}</p>
       {mode==='ask'&&assistant}
       {mode!=='ask'&&mode!=='extract'&&!ready&&<p className="lab-notice" role="note">{say('هذه الأدوات تحتاج نموذجًا خارجيًا مفعّلًا. اختره من القائمة أعلاه.','These tools require an enabled external model. Select one above.')}</p>}
       {mode==='extract'&&<>
