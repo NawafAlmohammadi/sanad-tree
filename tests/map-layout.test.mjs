@@ -18,10 +18,20 @@ test('trace follows each recorded path and lights only its preceding narrators a
     assert.deepEqual(s.preceding,path.slice(0,i).map(n=>n.key));
     assert.ok(!s.preceding.includes(s.key));
     assert.equal(s.incoming,i?`${path[i-1].key}→${s.key}`:null);
+    const expected=i===0?[]:path[i-1].kind==='compiler'?[(chain.compiler??h.compiler).wording].filter(Boolean):[...new Set(chain.links.filter(l=>l.from===path[i-1].key&&l.to===s.key).map(l=>l.wording).filter(Boolean))];
+    assert.deepEqual(s.wordings,expected);
     if(s.incoming)assert.ok(graph.edges.some(e=>e.key===s.incoming&&e.chainIds.includes(chain.id)));
    }
   }
  }
+});
+
+test('shared edges expose only the wording of the active path, including at a new path boundary',()=>{
+ const h=catalog.hadiths.find(h=>h.id==='bukhari-1'),steps=traceSteps(h,catalog.narrators);
+ const shared=steps.filter(s=>s.incoming==='umar-ibn-al-khattab→messenger');
+ assert.deepEqual(shared.find(s=>s.chainId==='bukhari-1-chain').wordings,['سمعت']);
+ assert.deepEqual(shared.find(s=>s.chainId==='bukhari-1-via-bukhari-2529').wordings,['عن النبي ﷺ قال']);
+ for(const chain of h.chains){const start=steps.find(s=>s.chainId===chain.id);assert.deepEqual(start.preceding,[]);assert.deepEqual(start.edgeKeys,[]);assert.deepEqual(start.wordings,[]);}
 });
 
 test('intentions wordings retain their own paths and sources after the six chains merge',()=>{
