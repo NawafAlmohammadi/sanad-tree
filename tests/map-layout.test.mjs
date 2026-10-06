@@ -1,10 +1,28 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {catalog} from '../lib/catalog.mjs';
-import {unifiedGraph,linkGeometry,placeEdgeLabels,wrapEdgeLabel,narratorTone} from '../lib/sanad-map.mjs';
+import {unifiedGraph,traceSteps,journeySteps,linkGeometry,placeEdgeLabels,wrapEdgeLabel,narratorTone} from '../lib/sanad-map.mjs';
 import {wordings} from '../lib/language.mjs';
 import {groundedContext} from '../lib/grounded-assistant.mjs';
 import {answerQuestion} from '../lib/assistant.mjs';
+
+test('trace follows each recorded path and lights only its preceding narrators and incoming connection',()=>{
+ for(const h of catalog.hadiths){
+  const steps=traceSteps(h,catalog.narrators),graph=unifiedGraph(h,catalog.narrators);
+  assert.equal(steps.length,h.chains.reduce((sum,c)=>sum+journeySteps(h,c,catalog.narrators).length,0));
+  for(const [pathIndex,chain] of h.chains.entries()){
+   const path=journeySteps(h,chain,catalog.narrators),traced=steps.filter(s=>s.chainId===chain.id);
+   assert.deepEqual(traced.map(s=>s.key),path.map(n=>n.key));
+   for(const [i,s] of traced.entries()){
+    assert.equal(s.pathIndex,pathIndex);
+    assert.deepEqual(s.preceding,path.slice(0,i).map(n=>n.key));
+    assert.ok(!s.preceding.includes(s.key));
+    assert.equal(s.incoming,i?`${path[i-1].key}→${s.key}`:null);
+    if(s.incoming)assert.ok(graph.edges.some(e=>e.key===s.incoming&&e.chainIds.includes(chain.id)));
+   }
+  }
+ }
+});
 
 test('intentions wordings retain their own paths and sources after the six chains merge',()=>{
  const h=catalog.hadiths.find(h=>h.id==='bukhari-1');
