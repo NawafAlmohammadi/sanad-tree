@@ -6,6 +6,17 @@ import {wordings} from '../lib/language.mjs';
 import {groundedContext} from '../lib/grounded-assistant.mjs';
 import {answerQuestion} from '../lib/assistant.mjs';
 
+test('intentions animation follows the fixed left-to-right branches, keeping source path indices',()=>{
+ const h=catalog.hadiths.find(h=>h.id==='bukhari-1'),steps=traceSteps(h,catalog.narrators);
+ const teachers=steps.filter(s=>s.incoming?.startsWith('compiler→'));
+ assert.deepEqual(teachers.map(s=>s.key),['al-humaydi','muhammad-kathir-abdi','abdullah-maslama-qanabi','yahya-qazaa','qutayba-said','abu-numan-arim']);
+ assert.deepEqual(teachers.map(s=>s.pathIndex),[0,2,1,3,4,5]);
+ for(const width of [350,1200])for(const compact of [false,true]){
+  const graph=unifiedGraph(h,catalog.narrators,width,{compact});
+  assert.deepEqual(graph.nodes.filter(n=>n.rank===1).sort((a,b)=>a.x-b.x).map(n=>n.key),teachers.map(s=>s.key));
+ }
+});
+
 test('trace follows each recorded path and lights only its preceding narrators and incoming connection',()=>{
  for(const h of catalog.hadiths){
   const steps=traceSteps(h,catalog.narrators),graph=unifiedGraph(h,catalog.narrators);
