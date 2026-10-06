@@ -94,3 +94,13 @@ The individual Sunnah.com English quotations and their reproduction conditions a
 - [Anas ibn Malik al-Ansari](https://sunnah.com/narrator/720) — narrator identity and the recorded biographical fields and assessments.
 
 - `sunnah-rijal-3617`: [Abu al-Haytham, Sulayman ibn Amr al-Laythi — Sunnah.com](https://sunnah.com/narrator/3617). Matching identity and trustworthy appraisal, reviewed 4 October 2026.
+
+## Compiler profile cards — 6 October 2026
+
+The short Arabic and English biographical summaries in `data/compiler-profiles.json` were checked against the collection introductions below. They are paraphrases, not new narrator appraisals or translations of hadith texts. Each card links its biographical reference. Its transmission relationships and path numbers come only from the selected report's recorded compiler entries.
+
+- [Sahih al-Bukhari: author biography](https://sunnah.com/bukhari/about): name, birth and death years, study travels, compilation period, and selected works.
+- [Jami at-Tirmidhi: author biography](https://sunnah.com/tirmidhi/about): name, birth and death years, teachers mentioned in the introduction, and features of his collection.
+- [Sunan Ibn Majah: author biography](https://sunnah.com/ibnmajah/about): name, birth and death years, birthplace, study travels, and selected works.
+
+Unknown compiler names receive no invented biographical information. A compiler profile is distinct from the report's grade and from individual narrator reliability.
