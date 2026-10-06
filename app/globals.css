@@ -765,3 +765,15 @@ main{width:100%;max-width:none;padding:16px clamp(12px,1.2vw,28px) 0}
  .map-library-item{min-height:54px;padding:8px 12px}
  .is-expanded .map-canvas-area{min-height:150px}
 }
+
+.hadith-title-button{display:inline-flex;align-items:center;gap:12px;font:inherit;font-weight:inherit;text-align:start;border:0;background:transparent;color:inherit;padding:4px 0;cursor:pointer}
+.hadith-title-button svg{flex-shrink:0;color:var(--accent)}
+.hadith-title-button:hover{color:var(--accent)}
+.hadith-title-button:focus-visible,.map-hadith-button:focus-visible{outline:2px solid var(--gold);outline-offset:5px}
+.map-hadith-button{display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;font-family:inherit;text-align:center;color:var(--ink);transition:filter .2s,box-shadow .2s}
+.map-hadith-button strong{font-size:20px;line-height:1.8}
+.map-hadith-button:hover{filter:brightness(1.15);box-shadow:0 0 20px #81d5f226}
+.hadith-profile .profile-heading .eyebrow{display:flex;align-items:center;gap:8px}
+.hadith-profile blockquote{margin:14px 0;font-size:19px;line-height:2;overflow-wrap:anywhere}
+.hadith-path-source{padding:12px 0;border-bottom:1px solid var(--line)}
+.hadith-path-source summary{cursor:pointer;color:var(--accent);font-size:14px;line-height:1.8}
