@@ -7,7 +7,7 @@ import CompilerProfile from './compiler-profile';
 import {useLanguage} from './language';
 import {BookOpen,ShieldCheck,CircleHelp,ShieldX,Info,RotateCcw,Pause,Plus,Minus,GitBranch,Maximize,Minimize,Move,PenLine,Eraser,Type,Undo2,Trash2,X,Check} from 'lucide-react';
 import type {Data,Hadith} from '@/lib/catalog-types';
-import {unifiedGraph,linkGeometry,wrapEdgeLabel,placeEdgeLabels,narratorTone,TRUST_LABELS} from '@/lib/sanad-map.mjs';
+import {unifiedGraph,traceSteps,linkGeometry,wrapEdgeLabel,placeEdgeLabels,narratorTone,TRUST_LABELS} from '@/lib/sanad-map.mjs';
 import {graphPoint,clampNode,hitsStroke,editingWorld,clampTranslation} from '@/lib/map-editor.mjs';
 
 const TRACE_STEP_MS=2600;
@@ -16,6 +16,7 @@ type Props={data:Data;hadith:Hadith;selected:string;onSelect:(id:string)=>void;z
 type Point={x:number;y:number};
 type Note={id:string;color:string;points?:Point[];text?:string;direction?:'rtl'|'ltr';x?:number;y?:number};
 type Tool='move'|'pen'|'eraser'|'text';
+type TraceStep={key:string;chainId:string;pathIndex:number;preceding:string[];edgeKeys:string[];incoming:string|null};
 export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,highlight,onClearHighlight,draft:reviewDraft=false,inspector,library}:Props){
   const {locale,t,name,compiler,trust,wording}=useLanguage();
   const say=(ar:string,en:string)=>locale==='en'?en:ar;
@@ -53,8 +54,12 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
     return new Map(entries.map(edge=>[edge.key,{path:edge.path,lines:edge.lines,...labels.get(edge.key)!}]));
   }
   const edgeDisplay=useMemo(buildEdgeDisplay,[graph,world,positions,wording,locale]);
-  const last=graph.nodes.length-1;
+  const journey=useMemo<TraceStep[]>(()=>traceSteps(hadith,data.narrators),[hadith,data.narrators]);
+  const last=journey.length-1;
   const [cursor,setCursor]=useState(-1),[playing,setPlaying]=useState(false),[finished,setFinished]=useState(false);
+  const step=journey[cursor];
+  const active=graph.nodes.find(n=>n.key===step?.key);
+  const trace=useMemo(()=>({nodes:new Set(journey.slice(0,cursor+1).map(s=>s.key)),edges:new Set(journey.slice(0,cursor+1).flatMap(s=>s.edgeKeys)),preceding:new Set(step?.preceding??[])}),[journey,cursor,step]);
   const reduced=useRef(false),manualUntil=useRef(0);
   const canvasRef=useRef<HTMLDivElement>(null),cardsRef=useRef<Array<HTMLElement|null>>([]);
   const marker='sanad-arrow-'+useId().replace(/[^a-zA-Z0-9]/g,'');
@@ -104,10 +109,12 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
   },[playing,cursor,last]);
   useEffect(()=>{
     if(!playing||reduced.current||Date.now()<manualUntil.current)return;
-    const canvas=canvasRef.current,card=cardsRef.current[cursor];if(!canvas||!card)return;
+    const canvas=canvasRef.current,card=active&&cardsRef.current[active.index];if(!canvas||!card)return;
     const viewport=canvas.getBoundingClientRect(),bounds=card.getBoundingClientRect();
+    // Keep the camera still while the next narrator is already comfortably visible.
+    if(bounds.left>viewport.left+40&&bounds.right<viewport.right-40&&bounds.top>viewport.top+40&&bounds.bottom<viewport.bottom-40)return;
     canvas.scrollTo({left:canvas.scrollLeft+bounds.left-viewport.left-(canvas.clientWidth-bounds.width)/2,top:Math.max(0,canvas.scrollTop+bounds.top-viewport.top-(canvas.clientHeight-bounds.height)/2),behavior:'smooth'});
-  },[playing,cursor]);
+  },[playing,cursor,active]);
   useEffect(()=>{
     if(!expanded)return;
     const previous=document.activeElement as HTMLElement|null,overflow=document.body.style.overflow;
@@ -216,22 +223,21 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
   }
   // Scrolling yields camera control; the independent trace timer keeps advancing.
   const moveViewport=()=>{manualUntil.current=Date.now()+5200;};
-  const active=graph.nodes[cursor];
   const icons={trusted:ShieldCheck,review:CircleHelp,untrusted:ShieldX,unknown:Info,companion:ShieldCheck,prophet:BookOpen};
   const graphDrawing=useMemo(()=><>
           <svg className="graph-connections" viewBox={'0 0 '+world.width+' '+world.height} role="group" aria-label={say('وصلات السند','Chain connections')}><defs><marker id={marker} markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="currentColor"/></marker></defs>{graph.edges.map(edge=>{
-            const to=positions.get(edge.to)!,display=edgeDisplay.get(edge.key)!;
-            const traversed=to.index<=cursor,focused=playing&&to.index===cursor;
+            const display=edgeDisplay.get(edge.key)!;
+            const traversed=trace.edges.has(edge.key),focused=playing&&step?.incoming===edge.key;
             return <g key={edge.key} ref={el=>{if(el)edgeElements.current.set(edge.key,el);else edgeElements.current.delete(edge.key);}} data-edge-from={edge.from} data-edge-to={edge.to} className={'graph-edge '+(traversed?'is-traced ':'')+(focused?'is-current ':'')+(highlight?(highlight.edgeKeys.includes(`${edge.from}|${edge.to}`)?'ai-highlighted':'ai-muted'):'')}><path d={display.path} markerEnd={'url(#'+marker+')'}/><g className="edge-caption" role="button" tabIndex={0} aria-label={say('عرض صيغ الرواية','Show transmission wordings')} onClick={()=>inspectEdge(edge.key)} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();e.stopPropagation();inspectEdge(edge.key);}}} transform={`translate(${display.x} ${display.y})`}><rect x={-display.width/2} y={-display.height/2} width={display.width} height={display.height} rx="6"/><text textAnchor="middle" direction={locale==='ar'?'rtl':'ltr'}>{display.lines.map((line:string,i:number)=><tspan key={i} x="0" y={(i-(display.lines.length-1)/2)*16+4}>{line}</tspan>)}</text></g></g>;
           })}</svg>
           {graph.nodes.map(node=>{
             const person=people.get(node.key),tone=person?narratorTone(person):'compiler',Icon=person?icons[tone as keyof typeof icons]:BookOpen;
-            const active=playing&&cursor===node.index,chosen=selected===node.key,position=positions.get(node.key)!;
+            const active=playing&&step?.key===node.key,chosen=selected===node.key,position=positions.get(node.key)!;
             const label=person?name(person.id,person.name):compiler(node.name);
             const draftStatus=person?.bio?.sourceIds.includes('identity-review-profile')?say('مطابق للمصدر','Source-matched identity'):say('اسم من النص','Name from the text');
-            return <div key={node.key} ref={el=>{if(el)nodeElements.current.set(node.key,el);else nodeElements.current.delete(node.key);}} data-node-id={node.key} className={'graph-node draggable-node '+(active?'trace-active ':'')+(highlight?(highlight.nodeIds.includes(node.key)?'ai-highlighted':'ai-muted'):'')} style={{left:position.x,top:position.y,width:node.diameter,height:node.diameter}} onPointerDown={e=>startDrag(e,node.key)} onPointerMove={moveDrag} onPointerUp={stopDrag} onPointerCancel={stopDrag} onClickCapture={e=>{if(suppressClick.current){e.preventDefault();e.stopPropagation();suppressClick.current=false;}}}>{person?<button ref={el=>{cardsRef.current[node.index]=el;}} type="button" className={'circle-node tone-'+tone+(chosen?' is-selected':'')} onClick={()=>{setInspection('narrator');onSelect(person.id);}} aria-pressed={chosen} aria-label={label+'، '+(reviewDraft?draftStatus:trust(tone,TRUST_LABELS[tone as keyof typeof TRUST_LABELS]))} title={label} onKeyDown={e=>{if(!e.altKey||!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key))return;e.preventDefault();e.stopPropagation();moveViewport();const next=clampNode({x:position.x+(e.key==='ArrowLeft'?-20:e.key==='ArrowRight'?20:0),y:position.y+(e.key==='ArrowUp'?-20:e.key==='ArrowDown'?20:0)},node.diameter,world.width,world.height);setOffsets(old=>({...old,[node.key]:{x:next.x-world.paddingX-node.x,y:next.y-world.paddingY-node.y}}));}}><span className="node-ornament" aria-hidden="true"/><strong>{label}</strong><span className="circle-status"><Icon size={12}/>{reviewDraft?draftStatus:trust(tone,TRUST_LABELS[tone as keyof typeof TRUST_LABELS])}</span><Info className="circle-info" size={12}/></button>:<button type="button" onClick={()=>{setCompilerKey(node.key);setInspection('compiler');}} aria-label={say('بطاقة المصنّف: ','Compiler profile: ')+label} ref={el=>{cardsRef.current[node.index]=el;}} className={'circle-node tone-compiler'+(compilerKey===node.key&&inspection==='compiler'?' is-selected':'')}><span className="node-ornament" aria-hidden="true"/><BookOpen size={20}/><strong>{label}</strong><small>{t('مصنّف الكتاب · بداية المسار')}</small><Info className="circle-info" size={12}/></button>}{node.chainIds.length>1&&graph.pathCount>1&&<span className="shared-node" title={t('راوٍ مشترك بين الطرق')}><GitBranch size={11}/></span>}</div>;
+            return <div key={node.key} ref={el=>{if(el)nodeElements.current.set(node.key,el);else nodeElements.current.delete(node.key);}} data-node-id={node.key} className={'graph-node draggable-node '+(active?'trace-active ':'')+(trace.nodes.has(node.key)?'trace-visited ':'')+(trace.preceding.has(node.key)?'trace-previous ':'')+(highlight?(highlight.nodeIds.includes(node.key)?'ai-highlighted':'ai-muted'):'')} style={{left:position.x,top:position.y,width:node.diameter,height:node.diameter}} onPointerDown={e=>startDrag(e,node.key)} onPointerMove={moveDrag} onPointerUp={stopDrag} onPointerCancel={stopDrag} onClickCapture={e=>{if(suppressClick.current){e.preventDefault();e.stopPropagation();suppressClick.current=false;}}}>{person?<button ref={el=>{cardsRef.current[node.index]=el;}} type="button" className={'circle-node tone-'+tone+(chosen?' is-selected':'')} onClick={()=>{setInspection('narrator');onSelect(person.id);}} aria-pressed={chosen} aria-label={label+'، '+(reviewDraft?draftStatus:trust(tone,TRUST_LABELS[tone as keyof typeof TRUST_LABELS]))} title={label} onKeyDown={e=>{if(!e.altKey||!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key))return;e.preventDefault();e.stopPropagation();moveViewport();const next=clampNode({x:position.x+(e.key==='ArrowLeft'?-20:e.key==='ArrowRight'?20:0),y:position.y+(e.key==='ArrowUp'?-20:e.key==='ArrowDown'?20:0)},node.diameter,world.width,world.height);setOffsets(old=>({...old,[node.key]:{x:next.x-world.paddingX-node.x,y:next.y-world.paddingY-node.y}}));}}><span className="node-ornament" aria-hidden="true"/><strong>{label}</strong><span className="circle-status"><Icon size={12}/>{reviewDraft?draftStatus:trust(tone,TRUST_LABELS[tone as keyof typeof TRUST_LABELS])}</span><Info className="circle-info" size={12}/></button>:<button type="button" onClick={()=>{setCompilerKey(node.key);setInspection('compiler');}} aria-label={say('بطاقة المصنّف: ','Compiler profile: ')+label} ref={el=>{cardsRef.current[node.index]=el;}} className={'circle-node tone-compiler'+(compilerKey===node.key&&inspection==='compiler'?' is-selected':'')}><span className="node-ornament" aria-hidden="true"/><BookOpen size={20}/><strong>{label}</strong><small>{t('مصنّف الكتاب · بداية المسار')}</small><Info className="circle-info" size={12}/></button>}{node.chainIds.length>1&&graph.pathCount>1&&<span className="shared-node" title={t('راوٍ مشترك بين الطرق')}><GitBranch size={11}/></span>}</div>;
           })}
-  </>,[graph,world,positions,edgeDisplay,playing,cursor,selected,tool,locale,name,compiler,trust,wording,t,onSelect,marker,highlight,reviewDraft,compilerKey,inspection]);
+  </>,[graph,world,positions,edgeDisplay,playing,step,trace,selected,tool,locale,name,compiler,trust,wording,t,onSelect,marker,highlight,reviewDraft,compilerKey,inspection]);
   return <div ref={workspaceRef} className={'map-workspace'+(expanded?' is-expanded':'')+(inspectorOpen?' has-inspector':'')} role={expanded?'dialog':undefined} aria-modal={expanded?true:undefined} aria-label={expanded?say('محرر شجرة الأسانيد','Chain map editor'):undefined} onKeyDown={e=>{
     if(e.key==='Escape'&&expanded){e.preventDefault();e.stopPropagation();if(draft)setDraft(null);else void closeExpanded();}
     if(e.key==='Tab'&&expanded){const items=workspaceRef.current?.querySelectorAll<HTMLElement>('button:not(:disabled),textarea,[tabindex="0"]');if(!items?.length)return;const first=items[0],last=items[items.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}
@@ -241,7 +247,7 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
     </div>}
     {highlight&&<div className="ai-map-banner" role="status"><GitBranch size={16}/><span>{say("تحديد المساعد من الطرق المسجلة","Assistant selection from recorded paths")}</span><button onClick={onClearHighlight}><X size={14}/>{say("إظهار الخريطة كاملة","Show full map")}</button></div>}
     {reviewDraft&&<div className="ai-map-banner draft-warning" role="note">{say("شجرة من النص · الرمادي: حكم الراوي غير متحقق منه","Tree from your text · grey: narrator appraisal not verified")}</div>}
-    <div className="journey-progress" role="progressbar" aria-label={t('تقدم تتبع السند')} aria-valuenow={cursor+1} aria-valuemin={0} aria-valuemax={graph.nodes.length}><span style={{width:((cursor+1)/graph.nodes.length*100)+'%'}}/></div>
+    <div className="journey-progress" role="progressbar" aria-label={t('تقدم تتبع السند')} aria-valuenow={cursor+1} aria-valuemin={0} aria-valuemax={journey.length}><span style={{width:((cursor+1)/journey.length*100)+'%'}}/></div>
     <div className="journey-controls"><span aria-hidden="true">{playing?locale==='en'?'Tracing: '+(active?.kind==='compiler'?compiler(active.name):name(active?.key,active?.name)):'نتتبّع الآن: '+active?.name:finished?t('اكتمل تتبع جميع الطرق'):t('السند كما ورد في المصدر')}</span><div className="map-view-actions"><button onClick={replay}>{playing?<Pause size={15}/>:<RotateCcw size={15}/>} {playing?t('إيقاف الحركة'):t('تتبع المسار')}</button><button ref={expandRef} onClick={toggleExpanded}>{expanded?<Minimize size={16}/>:<Maximize size={16}/>} {expanded?say('إغلاق العرض المكبّر','Exit fullscreen'):say('ملء الشاشة','Fullscreen')}</button></div><span className="sr-only" role="status" aria-live="polite">{playing?t('بدأ تتبع السند'):finished?t('اكتمل تتبع جميع الطرق'):''}</span></div>
     {expanded&&<div className="map-editor-tools" role="toolbar" aria-label={say('أدوات الخريطة','Map tools')}>
       {([{id:'move',icon:Move,ar:'تحريك',en:'Move'},{id:'pen',icon:PenLine,ar:'قلم',en:'Pen'},{id:'eraser',icon:Eraser,ar:'ممحاة',en:'Eraser'},{id:'text',icon:Type,ar:'إضافة نص',en:'Add text'}] as const).map(({id,icon:Icon,ar,en})=><button key={id} aria-pressed={tool===id} onClick={()=>{setTool(id);setDraft(null);stroke.current=null;}}><Icon size={17}/>{say(ar,en)}</button>)}
