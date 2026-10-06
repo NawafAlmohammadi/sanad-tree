@@ -780,3 +780,14 @@ main{width:100%;max-width:none;padding:16px clamp(12px,1.2vw,28px) 0}
 .map-hadith-open{display:inline-flex;align-items:center;justify-content:center;width:100%;padding:10px;margin-top:12px;color:var(--accent);font-family:inherit;font-size:14px;background:transparent;border:1px solid var(--line);border-radius:8px;cursor:pointer}
 .map-hadith-open:hover{background:var(--soft)}
 .map-hadith-open:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* Grade filters share state between the picker and the map library. */
+.grade-filters button{cursor:pointer;min-height:32px;gap:5px;margin:0;font:inherit;font-size:13px;transition:box-shadow .18s,background .18s;}
+.grade-filters button:hover{filter:brightness(1.12)}
+.grade-filters button[aria-pressed="true"]{box-shadow:0 0 0 2px var(--ink);font-weight:700;}
+.grade-filters button:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+.grade-all{color:var(--ink);border-color:var(--line);background:var(--paper)}
+.map-library .grade-filters{padding:2px 12px 12px;gap:6px;flex-shrink:0}
+.map-library .grade-filters button{font-size:12px;padding:3px 8px;min-height:29px}
+.narrator-books ul{padding-inline-start:22px;margin:12px 0;font-size:15px;line-height:1.9}
+.book-symbol-references{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;font-size:12px;color:var(--cyan)}

@@ -247,7 +247,7 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
     if(e.key==='Tab'&&expanded){const items=workspaceRef.current?.querySelectorAll<HTMLElement>('button:not(:disabled),textarea,[tabindex="0"]');if(!items?.length)return;const first=items[0],last=items[items.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}
   }}>
     {!reviewDraft&&<div className="map-legend" aria-label={t('معاني ألوان الرواة')}>
-      <span className="legend-trusted"><ShieldCheck size={14}/> {t('أخضر: موثوق')}</span><span className="legend-review"><CircleHelp size={14}/> {t('أصفر: يحتاج مراجعة')}</span><span className="legend-untrusted"><ShieldX size={14}/> {t('أحمر: ضعيف أو متروك')}</span><span className="legend-unknown">{t('رمادي: لم يسجل حكم')}</span>
+      <span className="legend-trusted"><ShieldCheck size={14}/> {t('أخضر: موثوق')}</span><span className="legend-review"><CircleHelp size={14}/> {t('أصفر: يحتاج مراجعة')}</span><span className="legend-untrusted"><ShieldX size={14}/> {t('أحمر: ضعيف أو متروك')}</span><span className="legend-unknown">{t('رمادي: لم يسجل حكمه')}</span>
     </div>}
     {highlight&&<div className="ai-map-banner" role="status"><GitBranch size={16}/><span>{say("تحديد المساعد من الطرق المسجلة","Assistant selection from recorded paths")}</span><button onClick={onClearHighlight}><X size={14}/>{say("إظهار الخريطة كاملة","Show full map")}</button></div>}
     {reviewDraft&&<div className="ai-map-banner draft-warning" role="note">{say("شجرة من النص · الرمادي: حكم الراوي غير متحقق منه","Tree from your text · grey: narrator appraisal not verified")}</div>}
