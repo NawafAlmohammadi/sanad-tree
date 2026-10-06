@@ -662,5 +662,42 @@
       "originalQuote": "٥٦٥- أنس ابن مالك ابن النضر الأنصاري الخزرجي خادم رسول الله صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ خدمه عشر سنين مشهور [لقبه ذو الأذنين] مات سنة اثنتين وقيل ثلاث وتسعين وقد جاوز المائة ع",
       "newAppraisal": null
     }
+  ],
+  "appraisalDisplay": {
+    "trusted": "Green indicates an explicitly trusted or truthful narrator, not a verdict on every transmission. Material qualifications remain in the attributed appraisal.",
+    "review": "Needs review; never a generic allegation of doubt.",
+    "correctedNarratorIds": [
+      "sufyan",
+      "uthman-asim-hasin",
+      "muhammad-umar-walid",
+      "said-maqburi",
+      "abdrazzaq-hammam",
+      "ibrahim-muhammad-sabra",
+      "said-marwan",
+      "hudayr-kurayb",
+      "sufyan-thawri",
+      "abd-wahhab-thaqafi",
+      "abu-numan-arim",
+      "zakariyya-abi-zaida",
+      "walid-muslim",
+      "ubaydullah-abi-jafar",
+      "yahya-qazaa"
+    ],
+    "yahyaQazaaAdditionalEvidence": {
+      "sourceId": "daraqutni-yahya-qazaa",
+      "quote": "٣٨٦٦ - يحيى بن قزعة، القُرَشِيّ المكي المؤذن.\n• قال الحاكم: قلتُ للدَّارَقُطْنِيِّ يحيى بن قزعة؟ قال ثقة. (٥١٠) ."
+    }
+  },
+  "compilerDates": [
+    {
+      "field": "birth",
+      "url": "https://shamela.ws/book/10906/7881",
+      "quote": "قُلْتُ: وَوُلِدَ أَبُو عَبْدِ اللهِ فِي شَوَّالٍ سَنَةَ أَرْبَعٍ وَتِسْعِيْنَ وَمائَةٍ."
+    },
+    {
+      "field": "death",
+      "url": "https://shamela.ws/book/10906/7957",
+      "quote": "تُوُفِّيَ البُخَارِيُّ لَيْلَةَ السَّبْتِ، لَيْلَةَ الفِطْرِ، عِنْدَ صَلاَةِ العشَاءِ، وَدُفِنَ يَوْمَ الفِطْرِ بَعْدَ صَلاَةِ الظُّهْرِ، سَنَةَ سِتٍّ وَخَمْسِيْنَ وَمائَتَيْنِ، وَعَاشَ اثْنَتَيْنِ وَسِتِّيْنَ سَنَةً إِلاَّ ثَلاَثَةَ عَشَرَ يَوْماً (٢) ."
+    }
   ]
 }

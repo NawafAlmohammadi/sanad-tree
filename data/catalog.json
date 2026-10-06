@@ -1138,6 +1138,17 @@
       "editionId": "8681",
       "verifiedAt": "2026-10-06",
       "evidence": "المتن: «ما ينتهي إليه السند من الكلام»."
+    },
+    {
+      "id": "daraqutni-yahya-qazaa",
+      "title": "الدارقطني · توثيق يحيى بن قزعة",
+      "reference": "موسوعة أقوال أبي الحسن الدارقطني في رجال الحديث وعلله · ج2 ص712، ترجمة 3866 · عالم الكتب، بيروت، الطبعة الأولى 2001م؛ نقل سؤال الحاكم رقم 510",
+      "url": "https://shamela.ws/book/12764/4337",
+      "provider": "shamela",
+      "editionId": "12764",
+      "verifiedAt": "2026-10-06",
+      "evidence": "٣٨٦٦ - يحيى بن قزعة، القُرَشِيّ المكي المؤذن.\n• قال الحاكم: قلتُ للدَّارَقُطْنِيِّ يحيى بن قزعة؟ قال ثقة. (٥١٠) .",
+      "rights": "Short attributed appraisal; edition identified from the publisher record."
     }
   ],
   "narrators": [
@@ -1207,7 +1218,7 @@
       "reliability": {
         "narratorId": "sufyan",
         "text": "ابن حجر في تقريب التهذيب: «ثقة حافظ فقيه إمام حجة إلا أنه تغير حفظه بأخرة وكان ربما دلس لكن عن الثقات من رؤوس الطبقة الثامنة وكان أثبت الناس في عمرو ابن دينار مات في رجب سنة ثمان وتسعين وله إحدى وتسعون سنة ع».",
-        "status": "review",
+        "status": "trusted",
         "sourceIds": [
           "taqrib-2451"
         ]
@@ -1790,7 +1801,7 @@
       "reliability": {
         "narratorId": "uthman-asim-hasin",
         "text": "ابن حجر في تقريب التهذيب: «ثقة ثبت سني وربما دلس من الرابعة مات سنة سبع وعشرين ويقال بعدها وكان يقول إن عاصم ابن بهدلة أكبر منه بسنة واحدة ع».",
-        "status": "review",
+        "status": "trusted",
         "sourceIds": [
           "taqrib-4484"
         ]
@@ -2007,7 +2018,7 @@
       "reliability": {
         "narratorId": "muhammad-umar-walid",
         "text": "ابن حجر في تقريب التهذيب: «صدوق من الحادية عشرة مات سنة ست وخمسين ت س ق».",
-        "status": "review",
+        "status": "trusted",
         "sourceIds": [
           "taqrib-6176"
         ]
@@ -2139,7 +2150,7 @@
       "reliability": {
         "narratorId": "said-maqburi",
         "text": "ابن حجر في تقريب التهذيب: «ثقة من الثالثة تغير قبل موته بأربع سنين وروايته عن عائشة وأم سلمة مرسلة مات في حدود العشرين وقيل قبلها وقيل بعدها ع».",
-        "status": "review",
+        "status": "trusted",
         "sourceIds": [
           "taqrib-2321"
         ]
@@ -2584,7 +2595,7 @@
       "reliability": {
         "narratorId": "abdrazzaq-hammam",
         "text": "ابن حجر في تقريب التهذيب: «ثقة حافظ مصنف شهير عمي في آخر عمره فتغير وكان يتشيع من التاسعة مات سنة إحدى عشرة وله خمس وثمانون ع».",
-        "status": "review",
+        "status": "trusted",
         "sourceIds": [
           "taqrib-4064"
         ]
@@ -2678,7 +2689,7 @@
       "reliability": {
         "narratorId": "ibrahim-muhammad-sabra",
         "text": "ابن حجر في تقريب التهذيب: «صدوق من السادسة ق».",
-        "status": "review",
+        "status": "trusted",
         "sourceIds": [
           "taqrib-244"
         ]
@@ -2822,7 +2833,7 @@
       "reliability": {
         "narratorId": "said-marwan",
         "text": "ابن حجر في تقريب التهذيب: «صدوق كان يستملي على أحمد مات سنة اثنتين وخمسين من الحادية عشرة خ ق».",
-        "status": "review",
+        "status": "trusted",
         "sourceIds": [
           "taqrib-2390"
         ]
@@ -3151,7 +3162,7 @@
       "reliability": {
         "narratorId": "hudayr-kurayb",
         "text": "ابن حجر في تقريب التهذيب: «صدوق من الثالثة مات على رأس المائة ر م د س ق».",
-        "status": "review",
+        "status": "trusted",
         "sourceIds": [
           "taqrib-1153"
         ]
@@ -3330,7 +3341,8 @@
         "يحيى بن قزعة"
       ],
       "sourceIds": [
-        "taqrib-7626"
+        "taqrib-7626",
+        "daraqutni-yahya-qazaa"
       ],
       "bio": {
         "narratorId": "yahya-qazaa",
@@ -3341,10 +3353,11 @@
       },
       "reliability": {
         "narratorId": "yahya-qazaa",
-        "text": "ابن حجر في تقريب التهذيب: «مقبول من العاشرة خ».",
-        "status": "review",
+        "text": "الدارقطني، كما نقلت موسوعة أقواله: «قال الحاكم: قلتُ للدَّارَقُطْنِيِّ يحيى بن قزعة؟ قال ثقة». ابن حجر في تقريب التهذيب: «مقبول من العاشرة خ».",
+        "status": "trusted",
         "sourceIds": [
-          "taqrib-7626"
+          "taqrib-7626",
+          "daraqutni-yahya-qazaa"
         ]
       },
       "classification": {
@@ -3416,7 +3429,7 @@
       "reliability": {
         "narratorId": "sufyan-thawri",
         "text": "ابن حجر في تقريب التهذيب: «ثقة حافظ فقيه عابد إمام حجة من رؤوس الطبقة السابعة وكان ربما دلس مات سنة إحدى وستين وله أربع وستون ع».",
-        "status": "review",
+        "status": "trusted",
         "sourceIds": [
           "taqrib-2445"
         ]
@@ -3464,7 +3477,7 @@
       "reliability": {
         "narratorId": "abd-wahhab-thaqafi",
         "text": "ابن حجر في تقريب التهذيب: «ثقة تغير قبل موته بثلاث سنين من الثامنة مات سنة أربع وتسعين عن نحو من ثمانين سنة ع».",
-        "status": "review",
+        "status": "trusted",
         "sourceIds": [
           "taqrib-4261"
         ]
@@ -3513,7 +3526,7 @@
       "reliability": {
         "narratorId": "abu-numan-arim",
         "text": "ابن حجر في تقريب التهذيب: «ثقة ثبت تغير في آخر عمره من صغار التاسعة مات سنة ثلاث أو أربع وعشرين ع».",
-        "status": "review",
+        "status": "trusted",
         "sourceIds": [
           "taqrib-6226"
         ]
@@ -3662,7 +3675,7 @@
       "reliability": {
         "narratorId": "zakariyya-abi-zaida",
         "text": "ابن حجر في تقريب التهذيب: «ثقة وكان يدلس وسماعه من أبي إسحاق بأخرة من السادسة مات سنة سبع أو ثمان أو تسع وأربعين ع».",
-        "status": "review",
+        "status": "trusted",
         "sourceIds": [
           "taqrib-2022"
         ]
@@ -4155,7 +4168,7 @@
       "reliability": {
         "narratorId": "walid-muslim",
         "text": "ابن حجر في تقريب التهذيب: «ثقة لكنه كثير التدليس والتسوية من الثامنة مات آخر سنة أربع أو أول سنة خمس وتسعين ٤».",
-        "status": "review",
+        "status": "trusted",
         "sourceIds": [
           "taqrib-7456"
         ]
@@ -4249,7 +4262,7 @@
       "reliability": {
         "narratorId": "ubaydullah-abi-jafar",
         "text": "ابن حجر في تقريب التهذيب: «ثقة وقيل عن أحمد إنه لينه وكان فقيها عابدا قال أبو حاتم هو مثل يزيد ابن أبي حبيب من الخامسة مات سنة اثنتين وقيل أربع وقيل خمس وقيل ست وثلاثين ع».",
-        "status": "review",
+        "status": "trusted",
         "sourceIds": [
           "taqrib-4281"
         ]

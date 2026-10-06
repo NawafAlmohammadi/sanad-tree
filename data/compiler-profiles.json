@@ -4,17 +4,31 @@
     "nameEn": "Imam al-Bukhari",
     "fullName": "أبو عبد الله محمد بن إسماعيل بن إبراهيم البخاري",
     "fullNameEn": "Abu Abdullah Muhammad ibn Ismail ibn Ibrahim al-Bukhari",
-    "birth": "لم تُثبت هنا",
-    "birthEn": "Not recorded here",
-    "death": "لم تُثبت هنا",
-    "deathEn": "Not recorded here",
+    "birth": "شوال 194 هـ",
+    "birthEn": "Shawwal 194 AH",
+    "death": "ليلة عيد الفطر 256 هـ",
+    "deathEn": "Eve of Eid al-Fitr, 256 AH",
     "book": "صحيح البخاري",
     "bookEn": "Sahih al-Bukhari",
     "summary": "نقل الذهبي في سير أعلام النبلاء قول البخاري: «صنفت الصحيح في ست عشرة سنة». ",
     "works": "صحيح البخاري",
     "source": "https://shamela.ws/book/10906/7894",
     "sources": [
-      "https://shamela.ws/book/10906/7894"
+      "https://shamela.ws/book/10906/7894",
+      "https://shamela.ws/book/10906/7881",
+      "https://shamela.ws/book/10906/7957"
+    ],
+    "dateEvidence": [
+      {
+        "field": "birth",
+        "url": "https://shamela.ws/book/10906/7881",
+        "quote": "قُلْتُ: وَوُلِدَ أَبُو عَبْدِ اللهِ فِي شَوَّالٍ سَنَةَ أَرْبَعٍ وَتِسْعِيْنَ وَمائَةٍ."
+      },
+      {
+        "field": "death",
+        "url": "https://shamela.ws/book/10906/7957",
+        "quote": "تُوُفِّيَ البُخَارِيُّ لَيْلَةَ السَّبْتِ، لَيْلَةَ الفِطْرِ، عِنْدَ صَلاَةِ العشَاءِ، وَدُفِنَ يَوْمَ الفِطْرِ بَعْدَ صَلاَةِ الظُّهْرِ، سَنَةَ سِتٍّ وَخَمْسِيْنَ وَمائَتَيْنِ، وَعَاشَ اثْنَتَيْنِ وَسِتِّيْنَ سَنَةً إِلاَّ ثَلاَثَةَ عَشَرَ يَوْماً (٢) ."
+      }
     ]
   },
   {
