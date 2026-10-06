@@ -510,9 +510,9 @@ html[lang=en] .circle-node strong{font-size:12px;line-height:1.45;font-family:va
 .graph-stage{flex-shrink:0}
 .map-matn{direction:rtl;cursor:auto}
 html[lang=en] .map-matn{direction:ltr}
-.map-annotations.tool-move .text-annotation{pointer-events:visiblePainted;touch-action:none;cursor:grab}
-.map-annotations.tool-move .text-annotation:active{cursor:grabbing}
-.text-annotation:focus-visible{outline:none;filter:drop-shadow(0 0 3px var(--gold))}
+.map-annotations.tool-move .movable-annotation{pointer-events:visiblePainted;touch-action:none;cursor:grab}
+.map-annotations.tool-move .movable-annotation:active{cursor:grabbing}
+.movable-annotation:focus-visible{outline:none;filter:drop-shadow(0 0 3px var(--gold))}
 .graph-node.is-dragging{z-index:10;filter:none}
 .graph-node.is-dragging .circle-node{animation:none;transition:none;transform:none;cursor:grabbing;box-shadow:0 0 0 2px var(--gold)}
 .map-workspace.is-expanded{position:fixed;inset:0;z-index:1000;background:var(--surface);display:flex;flex-direction:column;max-height:none;width:100%;height:100dvh;padding:12px;box-sizing:border-box;overflow:hidden;color:var(--ink)}
@@ -791,3 +791,6 @@ main{width:100%;max-width:none;padding:16px clamp(12px,1.2vw,28px) 0}
 .map-library .grade-filters button{font-size:12px;padding:3px 8px;min-height:29px}
 .narrator-books ul{padding-inline-start:22px;margin:12px 0;font-size:15px;line-height:1.9}
 .book-symbol-references{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;font-size:12px;color:var(--cyan)}
+
+.map-annotations.tool-move .stroke-annotation .stroke-hit{cursor:grab}
+.map-annotations.tool-move .stroke-annotation:active .stroke-hit{cursor:grabbing}

@@ -9,7 +9,7 @@ import {useLanguage} from './language';
 import {BookOpen,ShieldCheck,CircleHelp,ShieldX,Info,RotateCcw,Pause,Plus,Minus,GitBranch,Maximize,Minimize,Move,PenLine,Eraser,Type,Undo2,Trash2,X,Check} from 'lucide-react';
 import type {Data,Hadith} from '@/lib/catalog-types';
 import {unifiedGraph,traceSteps,linkGeometry,wrapEdgeLabel,placeEdgeLabels,narratorTone,TRUST_LABELS} from '@/lib/sanad-map.mjs';
-import {graphPoint,clampNode,hitsStroke,editingWorld,clampTranslation} from '@/lib/map-editor.mjs';
+import {graphPoint,clampNode,hitsStroke,editingWorld,clampTranslation,translateAnnotation} from '@/lib/map-editor.mjs';
 
 const TRACE_STEP_MS=2600;
 export type MapHighlight={id:string;nodeIds:string[];edgeKeys:string[];pathIds:string[]};
@@ -37,7 +37,7 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
   const [draft,setDraft]=useState<(Point&{text:string})|null>(null);
   const workspaceRef=useRef<HTMLDivElement>(null),stageRef=useRef<HTMLDivElement>(null),expandRef=useRef<HTMLButtonElement>(null);
   const drag=useRef<{key:string;start:Point;origin:Point;moved:boolean;id:number}|null>(null),suppressClick=useRef(false),stroke=useRef<string|null>(null),serial=useRef(0);
-  const textDrag=useRef<{id:string;pointerId:number;start:Point;origin:Point;box:DOMRect;moved:boolean;delta:Point}|null>(null);
+  const annotationDrag=useRef<{id:string;pointerId:number;start:Point;box:DOMRect;moved:boolean;delta:Point}|null>(null);
   const pan=useRef<{id:number;x:number;y:number;left:number;top:number}|null>(null);
   const frame=useRef(0),pending=useRef<(()=>void)|null>(null);
   const nodeElements=useRef(new Map<string,HTMLDivElement>()),edgeElements=useRef(new Map<string,SVGGElement>());
@@ -98,7 +98,7 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
   useEffect(()=>{const id=requestAnimationFrame(expanded||(canvasRef.current?.clientWidth||0)>900?fitBranches:centreMap);return()=>cancelAnimationFrame(id);},[graph,expanded]);
   useEffect(()=>{
     const canvas=canvasRef.current;if(!canvas)return;
-    const observer=new ResizeObserver(([entry])=>{if(!workspaceRef.current?.classList.contains('is-expanded'))setViewportWidth(entry.contentRect.width);else if(!drag.current&&!textDrag.current&&!pan.current)requestAnimationFrame(fitBranches);});
+    const observer=new ResizeObserver(([entry])=>{if(!workspaceRef.current?.classList.contains('is-expanded'))setViewportWidth(entry.contentRect.width);else if(!drag.current&&!annotationDrag.current&&!pan.current)requestAnimationFrame(fitBranches);});
     observer.observe(canvas);return()=>observer.disconnect();
   },[graph]);
   useEffect(()=>{
@@ -167,21 +167,21 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
     if(d.moved)setOffsets(old=>({...old,[d.key]:{x:node.x-world.paddingX-base.x,y:node.y-world.paddingY-base.y}}));
     drag.current=null;e.currentTarget.classList.remove('is-dragging');if(e.currentTarget.hasPointerCapture(e.pointerId))e.currentTarget.releasePointerCapture(e.pointerId);
   }
-  function startTextDrag(e:ReactPointerEvent<SVGGElement>,n:Note){
+  function startAnnotationDrag(e:ReactPointerEvent<SVGGElement>,n:Note){
     if(tool!=='move'||e.button!==0)return;
-    e.stopPropagation();e.preventDefault();textDrag.current={id:n.id,pointerId:e.pointerId,start:point(e),origin:{x:n.x!,y:n.y!},box:e.currentTarget.getBBox(),moved:false,delta:{x:0,y:0}};e.currentTarget.setPointerCapture(e.pointerId);moveViewport();
+    e.stopPropagation();e.preventDefault();annotationDrag.current={id:n.id,pointerId:e.pointerId,start:point(e),box:e.currentTarget.getBBox(),moved:false,delta:{x:0,y:0}};e.currentTarget.setPointerCapture(e.pointerId);moveViewport();
   }
-  function moveTextDrag(e:ReactPointerEvent<SVGGElement>){
-    const d=textDrag.current;if(!d||d.pointerId!==e.pointerId)return;
+  function moveAnnotationDrag(e:ReactPointerEvent<SVGGElement>){
+    const d=annotationDrag.current;if(!d||d.pointerId!==e.pointerId)return;
     const x=e.clientX,y=e.clientY;
     schedule(()=>{const p=graphPoint(x,y,stageRef.current!.getBoundingClientRect(),world.width,world.height),delta=clampTranslation({x:p.x-d.start.x,y:p.y-d.start.y},d.box,world.width,world.height);
       if(!d.moved&&Math.hypot(delta.x,delta.y)<3)return;
       if(!d.moved)checkpoint();d.moved=true;d.delta=delta;noteElements.current.get(d.id)?.setAttribute('transform',`translate(${delta.x} ${delta.y})`);moveViewport();});
   }
-  function stopTextDrag(e:ReactPointerEvent<SVGGElement>){
-    if(textDrag.current?.pointerId!==e.pointerId)return;flush();const d=textDrag.current!;
-    if(d.moved)setNotes(old=>old.map(n=>n.id===d.id?{...n,x:d.origin.x+d.delta.x,y:d.origin.y+d.delta.y}:n));
-    noteElements.current.get(d.id)?.removeAttribute('transform');textDrag.current=null;if(e.currentTarget.hasPointerCapture(e.pointerId))e.currentTarget.releasePointerCapture(e.pointerId);
+  function stopAnnotationDrag(e:ReactPointerEvent<SVGGElement>){
+    if(annotationDrag.current?.pointerId!==e.pointerId)return;flush();const d=annotationDrag.current!;
+    if(d.moved)setNotes(old=>old.map(n=>n.id===d.id?translateAnnotation(n,d.delta):n));
+    noteElements.current.get(d.id)?.removeAttribute('transform');annotationDrag.current=null;if(e.currentTarget.hasPointerCapture(e.pointerId))e.currentTarget.releasePointerCapture(e.pointerId);
   }
   function startPan(e:ReactPointerEvent<HTMLDivElement>){
     if(tool!=='move'||e.button!==0||(e.target as Element).closest('.graph-node,.map-annotations,.zoom-controls,.map-matn,.edge-caption'))return;
@@ -255,9 +255,9 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
     <div className="journey-controls"><span aria-hidden="true">{playing?locale==='en'?'Tracing: '+(active?.kind==='compiler'?compiler(active.name):name(active?.key,active?.name)):'نتتبّع الآن: '+active?.name:finished?t('اكتمل تتبع جميع الطرق'):t('السند كما ورد في المصدر')}</span><div className="map-view-actions"><button onClick={replay}>{playing?<Pause size={15}/>:<RotateCcw size={15}/>} {playing?t('إيقاف الحركة'):t('تتبع المسار')}</button><button ref={expandRef} onClick={toggleExpanded}>{expanded?<Minimize size={16}/>:<Maximize size={16}/>} {expanded?say('إغلاق العرض المكبّر','Exit fullscreen'):say('ملء الشاشة','Fullscreen')}</button></div><span className="sr-only" role="status" aria-live="polite">{playing?t('بدأ تتبع السند'):finished?t('اكتمل تتبع جميع الطرق'):''}</span></div>
     {expanded&&<div className="map-editor-tools" role="toolbar" aria-label={say('أدوات الخريطة','Map tools')}>
       {([{id:'move',icon:Move,ar:'تحريك',en:'Move'},{id:'pen',icon:PenLine,ar:'قلم',en:'Pen'},{id:'eraser',icon:Eraser,ar:'ممحاة',en:'Eraser'},{id:'text',icon:Type,ar:'إضافة نص',en:'Add text'}] as const).map(({id,icon:Icon,ar,en})=><button key={id} aria-pressed={tool===id} onClick={()=>{setTool(id);setDraft(null);stroke.current=null;}}><Icon size={17}/>{say(ar,en)}</button>)}
-      <span className="editor-divider"/>{['#e6c76b','#81d5f2','#f7f9fc'].map(c=><button key={c} className="note-color" style={{background:c}} aria-label={say('لون الملاحظات ','Annotation colour ')+({'#e6c76b':say('ذهبي','gold'),'#81d5f2':say('أزرق','blue'),'#f7f9fc':say('أبيض','white')}[c])} aria-pressed={color===c} onClick={()=>setColor(c)}/>)}
+      <span className="editor-divider"/>{([{value:'#f87171',ar:'أحمر',en:'red'},{value:'#facc15',ar:'أصفر',en:'yellow'},{value:'#60a5fa',ar:'أزرق',en:'blue'},{value:'#4ade80',ar:'أخضر',en:'green'},{value:'#e6c76b',ar:'ذهبي',en:'gold'},{value:'#f7f9fc',ar:'أبيض',en:'white'}] as const).map(c=><button key={c.value} className="note-color" style={{background:c.value}} title={say(c.ar,c.en)} aria-label={say('لون الملاحظات ','Annotation colour ')+say(c.ar,c.en)} aria-pressed={color===c.value} onClick={()=>setColor(c.value)}/>)}
       <button disabled={!history.length} onClick={undo}><Undo2 size={17}/>{say('تراجع','Undo')}</button><button disabled={!notes.length} onClick={()=>{checkpoint();setNotes([]);}}><Trash2 size={17}/>{say('مسح الملاحظات','Clear notes')}</button><button disabled={!Object.keys(offsets).length} onClick={()=>{setOffsets({});requestAnimationFrame(centreMap);}}><RotateCcw size={17}/>{say('ترتيب الرواة','Reset layout')}</button>
-      <button onClick={fitBranches}><Move size={17}/>{say('عرض الفروع','Fit branches')}</button><small>{tool==='move'?say('اسحب الراوي أو النص. اسحب الخلفية للتنقل في المساحة الواسعة.','Drag a narrator or text. Drag the background to explore the larger workspace.'):tool==='pen'?say('ارسم داخل الخريطة.','Draw on the map.'):tool==='eraser'?say('مرّر على الملاحظات لمسحها.','Drag over annotations to erase them.'):say('اضغط في الخريطة لوضع النص.','Click the map to place text.')}</small>
+      <button onClick={fitBranches}><Move size={17}/>{say('عرض الفروع','Fit branches')}</button><small>{tool==='move'?say('اسحب الراوي أو النص أو رسمة القلم. اسحب الخلفية للتنقل في المساحة الواسعة.','Drag a narrator, text or pen drawing. Drag the background to explore the larger workspace.'):tool==='pen'?say('ارسم داخل الخريطة.','Draw on the map.'):tool==='eraser'?say('مرّر على الملاحظات لمسحها.','Drag over annotations to erase them.'):say('اضغط في الخريطة لوضع النص.','Click the map to place text.')}</small>
     </div>}
     <div className="map-canvas-area">
     {library&&<div className="map-library-slot">{library}</div>}
@@ -266,7 +266,7 @@ export default function SanadMap({data,hadith,selected,onSelect,zoom,onZoom,high
         <div ref={stageRef} className="graph-stage" style={{width:world.width,height:world.height}}>
           {graphDrawing}
           <svg className={'map-annotations tool-'+tool} viewBox={'0 0 '+world.width+' '+world.height} aria-label={say('ملاحظات الخريطة','Map annotations')} onPointerDown={startNote} onPointerMove={moveNote} onPointerUp={endNote} onPointerCancel={endNote}>
-            {notes.map(n=><g key={n.id} data-note-id={n.id} className={n.text?'text-annotation':''} tabIndex={n.text&&tool==='move'?0:undefined} role={n.text?'button':undefined} aria-label={n.text?say('تحريك الملاحظة: ','Move annotation: ')+n.text:undefined} onPointerDown={e=>startTextDrag(e,n)} onPointerMove={moveTextDrag} onPointerUp={stopTextDrag} onPointerCancel={stopTextDrag} onKeyDown={e=>{if(tool!=='move'||!n.text||!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key))return;e.preventDefault();e.stopPropagation();const box=noteElements.current.get(n.id)?.getBBox();if(!box)return;const d=clampTranslation({x:e.key==='ArrowLeft'?-20:e.key==='ArrowRight'?20:0,y:e.key==='ArrowUp'?-20:e.key==='ArrowDown'?20:0},box,world.width,world.height);checkpoint();setNotes(old=>old.map(note=>note.id===n.id?{...note,x:n.x!+d.x,y:n.y!+d.y}:note));}} ref={el=>{if(el)noteElements.current.set(n.id,el);else noteElements.current.delete(n.id);}}>{n.points?<polyline points={n.points.length===1?`${n.points[0].x},${n.points[0].y} ${n.points[0].x+.1},${n.points[0].y}`:n.points.map(p=>`${p.x},${p.y}`).join(' ')} fill="none" stroke={n.color} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>:<text x={n.x} y={n.y} fill={n.color} textAnchor={n.direction==='rtl'?'end':'start'} direction={n.direction??'ltr'}>{n.text?.split('\n').map((line,i)=><tspan key={i} x={n.x} dy={i?28:0}>{line}</tspan>)}</text>}</g>)}
+            {notes.map(n=><g key={n.id} data-note-id={n.id} className={'movable-annotation '+(n.points?'stroke-annotation':'text-annotation')} tabIndex={tool==='move'?0:undefined} role="button" aria-label={n.text?say('تحريك الملاحظة: ','Move annotation: ')+n.text:say('تحريك رسمة القلم','Move pen drawing')} onPointerDown={e=>startAnnotationDrag(e,n)} onPointerMove={moveAnnotationDrag} onPointerUp={stopAnnotationDrag} onPointerCancel={stopAnnotationDrag} onKeyDown={e=>{if(tool!=='move'||!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key))return;e.preventDefault();e.stopPropagation();const box=noteElements.current.get(n.id)?.getBBox();if(!box)return;const d=clampTranslation({x:e.key==='ArrowLeft'?-20:e.key==='ArrowRight'?20:0,y:e.key==='ArrowUp'?-20:e.key==='ArrowDown'?20:0},box,world.width,world.height);checkpoint();setNotes(old=>old.map(note=>note.id===n.id?translateAnnotation(note,d):note));}} ref={el=>{if(el)noteElements.current.set(n.id,el);else noteElements.current.delete(n.id);}}>{n.points?<>{tool==='move'&&<polyline className="stroke-hit" points={n.points.length===1?`${n.points[0].x},${n.points[0].y} ${n.points[0].x+.1},${n.points[0].y}`:n.points.map(p=>`${p.x},${p.y}`).join(' ')} fill="none" stroke="transparent" strokeWidth="20" strokeLinecap="round" pointerEvents="stroke"/>}<polyline pointerEvents={tool==='move'?'none':undefined} points={n.points.length===1?`${n.points[0].x},${n.points[0].y} ${n.points[0].x+.1},${n.points[0].y}`:n.points.map(p=>`${p.x},${p.y}`).join(' ')} fill="none" stroke={n.color} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/></>:<text x={n.x} y={n.y} fill={n.color} textAnchor={n.direction==='rtl'?'end':'start'} direction={n.direction??'ltr'}>{n.text?.split('\n').map((line,i)=><tspan key={i} x={n.x} dy={i?28:0}>{line}</tspan>)}</text>}</g>)}
           </svg>
         <div style={{position:'absolute',left:world.paddingX+graph.width/2,top:world.paddingY+graph.height+32,transform:'translateX(-50%)',width:Math.min(graph.width-20,420)}} className={'map-matn grade-'+(hadith.judgement?.grade||'unknown')} role="note" aria-label={t('متن الرواية')} onClick={e=>{if(!(e.target as Element).closest('a,button,summary,details'))setInspection('hadith');}}><BookOpen size={21}/><small>{reviewDraft?say('متن النص المدخل','Supplied report'):hadith.judgement?.grade==='fabricated'?t('نص الرواية الموضوعة — لا يثبت عن النبي ﷺ'):hadith.judgement?.grade==='weak'?t('نص الرواية الضعيفة — انظر حكم المحدث'):t('متن الحديث')}</small>{reviewDraft?<blockquote className="hadith-text" dir="auto">{hadith.matn||say('لم يُدخل متن للرواية.','No report text was supplied.')}</blockquote>:<HadithText hadith={hadith}/>}<button type="button" className="map-hadith-open" onClick={()=>setInspection('hadith')} aria-label={say('عرض المتن والمصدر: ','Show text and source: ')+hadith.title}>{say('المتن والمصدر','Text and source')} ←</button></div>
         </div>
