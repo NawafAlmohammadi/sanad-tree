@@ -1,5 +1,7 @@
 # ربط المساعد بمفتاحك
 
+**A valid provider API key is required for AI features.** Configure at least one supported provider in `API.env` before using generated explanations, semantic evidence search, AI extraction or adaptive practice. The source-only mode remains explicitly labelled and is not generated AI output.
+
 ١. شغل SETUP.cmd أو node scripts/setup.mjs لإنشاء API.env. احتفظ بالمفتاح على جهازك فقط.
 ٢. افتح API.env واكتب AI_KEY_GEMINI= ثم مفتاحك على نفس السطر دون مسافات داخله. احفظ باسم API.env، وأوقف الخادم ثم أعد تشغيله.
 ٣. افتح الموقع واختر حديثًا، ثم Gemini من طريقة الإجابة، ثم «اشرح لي هذا السند». كل معلومة يجب أن تحمل المصدر. جرّب طلب البرمجة للتحقق من الامتناع.

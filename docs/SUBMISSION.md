@@ -1,6 +1,6 @@
 # Delivery checklist
 
-Prepared on 3 October 2026. This file records readiness; it is not proof of submission to the organiser.
+Updated on 6 October 2026. This file records readiness; it is not proof of submission to the organiser.
 
 ## Links
 
@@ -16,17 +16,22 @@ The live solution is a server application. The GitHub repository provides the co
 
 | Item | Readiness |
 | --- | --- |
-| PDF or PowerPoint presentation | Prepared separately as an editable PowerPoint file: 12 main slides and 3 appendices on verification, documentation and current limitations. |
+| PDF or PowerPoint presentation | Prepared separately as an editable PowerPoint file; use the team's chosen final version. |
 | Working live solution | Public visitor access enabled with the team's approval; page, model list and assistant tested without authentication using the existing server-side Gemini key. |
-| Public GitHub repository | Available; download/run instructions are in English. Check the latest commit before submission. |
+| Public GitHub repository | Synchronized with the published demo's application and data; English download/run instructions require a valid provider API key for AI features. |
 | Practical video, no longer than two minutes | To be recorded and supplied by the team. |
 | Setup, operation, sources, tools and licences | Included in README, API.env.example, NOTICE and docs. |
 | Organiser upload and confirmation | Pending: the submission portal and completed video have not been provided. |
 
 ## Current checks
 
-- 61 automated cases passed for the current source and portable version.
-- Data checks: 10 reports, 11 paths, 51 identities and 68 source entries.
+- 131 automated cases passed for the final portable source; data validation, TypeScript and production build passed.
+- Data checks: 10 reports, 22 paths, 74 identities and 132 source entries.
+- The final portable source matches the demo application, data, model configuration and assets. Local API environment adapters are documented in RELEASE-2026-10-06.md.
+
+## Earlier hosted connection checks
+
+The following were recorded on 3 October 2026; they are not new provider requests on the submission day.
 - Public hosted requests returned Arabic and English explanations through the model, with references, without authentication.
 - An unrelated Python-code request was refused without a model call.
 - No API key was present in the checked page or assistant responses. Keys are server-side and excluded from the download.
@@ -44,4 +49,4 @@ These are engineering checks, not an independent scholarly approval or an educat
 
 ## Final presentation
 
-Rehearse slides 1–12 in five minutes, including a short live demonstration. Keep slides 13–15 as supporting evidence for the three-minute question period. The seven judging weights in the supplied opening-session image are 25%, 15%, 15%, 10%, 20%, 10% and 5%; their evidence mapping remains in the separate submission guide. Do not claim measured learning outcomes or a new automatic hadith judgement.
+Rehearse the team's final slides with a short live demonstration and leave time for questions. Keep source references available for review. Do not claim measured learning outcomes or a new automatic hadith judgement.

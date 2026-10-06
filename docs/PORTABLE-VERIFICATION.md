@@ -1,13 +1,15 @@
 # Portable and hosted verification
 
-Updated on 3 October 2026. Engineering checks do not establish independent scholarly approval.
+Updated on 6 October 2026. Engineering checks do not establish independent scholarly approval.
 
 ## Current source and portable package
 
-- All 64 automated cases passed, including narrator identity, references, colours, report-text cards, grounded teaching plans and out-of-scope refusal.
-- The catalog contains 10 reports, 11 paths, 51 identities and 68 source entries: 4 authentic, 3 weak and 3 fabricated reports. The portable catalog matches the hosted source exactly.
+- All 131 automated cases passed for the final portable source, including source validation, narrator identities, unified AI, extraction, interactive practice, map geometry, path-specific wording and out-of-scope refusal.
+- The catalog contains 10 reports, 22 paths, 74 identities and 132 source entries: 4 authentic, 3 weak and 3 fabricated reports. The portable catalog matches the hosted source exactly.
+- Application components, shared libraries, data, public assets, model configuration and tests were compared with published demo source commit `9759f2d41053600f60684666102673c19ebaa550`. The three API route differences are limited to reading `process.env` instead of the hosting environment binding. Unused platform authentication/connector scaffolding is excluded from the standalone package.
+- TypeScript validation and the final portable production build passed on 6 October 2026. The README and setup messages require a provider API key for AI features; no live-demo secret is included.
 - The portable test command includes the teaching-plan review suite and exact-English source-binding tests.
-- The ten-report Sunnah.com audit verified seven exact English quotations. Three unmatched fabricated reports retain Arabic text with an explicit English availability notice. The map, text panel and assistant use the same verified record.
+- Exact English hadith text uses the reviewed source records. Reports without a verified English record retain their availability notice; the map, text panel and assistant use the same record. See SUNNAH-ENGLISH-AUDIT.md for the individual sources.
 - The archive includes source, data, package-lock, API templates, English README and font licence notices. It excludes actual keys, installed dependencies, build output, Git and hosting-account configuration.
 
 ## Portable run checks on 2 October 2026
